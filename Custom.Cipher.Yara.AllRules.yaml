@@ -1,0 +1,121 @@
+name: Custom.DFIR.Yara.AllRules
+author: Github.com/M507
+description: |
+  Fetches Thor.zip from Velociraptor Tools, extracts it, and runs Thor with proper flags depending on the OS.
+
+type: CLIENT
+
+tools:
+  - name: Custom.DFIR.Yara.AllRules.zip
+
+parameters:
+  - name: PSCommand
+    description: PowerShell command to execute on Windows after fetching Thor.zip
+    type: string
+    default: |
+      Add-MpPreference -ExclusionPath "C:\Users\Public";
+      Expand-Archive -Path 'C:\Users\Public\Thor.zip' -DestinationPath 'C:\Users\Public' -Force;
+      C:\Users\Public\Thor\BIN_NAME.exe --utc --rfc3339 --nocsv --nolog --nothordb --module Filescan --allhds --rebase-dir C:\Users\Public\ --json;
+      Remove-MpPreference -ExclusionPath "C:\Users\Public";
+      Get-ChildItem -Path "C:\Users\Public" -Filter "thor*" -Force -ErrorAction SilentlyContinue | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue;
+      Get-ChildItem -Path "C:\Users\Public" -Filter "Thor*" -Force -ErrorAction SilentlyContinue | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue;
+      Get-ChildItem -Path "C:\Users\Public" -Filter "__MACOSX" -Force -ErrorAction SilentlyContinue | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue;
+
+
+  - name: ShellCommand
+    description: Shell (bash) command to execute on Linux/macOS after fetching Thor.zip
+    type: string
+    default: |
+      if ! [ -x "$(which unzip 2>/dev/null)" ]; then
+      echo "[*] unzip not found. Attempting to install it...";
+      if [ -f /etc/debian_version ]; then
+        echo "[*] Detected Debian/Ubuntu";
+        apt update && apt install -y unzip;
+      elif [ -f /etc/redhat-release ]; then
+        echo "[*] Detected RHEL/CentOS";
+        yum install -y unzip || dnf install -y unzip;
+      elif [ -f /etc/os-release ] && grep -qi "fedora" /etc/os-release; then
+        echo "[*] Detected Fedora";
+        dnf install -y unzip;
+      elif [ -d /snap ]; then
+        echo "[*] Detected snap support";
+        snap install unzip;
+      else
+        echo "[!] No known package manager found. Cannot install unzip.";
+        exit 1;
+      fi;
+      fi;
+      unzip -o /var/tmp/Thor.zip -d /var/tmp && chmod +x /var/tmp/Thor/** && /var/tmp/Thor/BIN_NAME --utc --rfc3339 --nocsv --nolog --nothordb --module Filescan --allhds --rebase-dir /var/tmp/ --json && sudo rm -rf /var/tmp/Thor*
+
+
+precondition: |
+  SELECT OS FROM info() WHERE OS =~ "windows" OR OS =~ "linux" OR OS =~ "darwin"
+
+sources:
+  - name: ExecuteShell
+    description: Fetch Thor, extract, and execute based on OS
+    query: |
+      LET os_info <= SELECT OS, Architecture FROM info()
+
+      LET DownloadDir <= if(
+          condition=os_info[0].OS =~ "windows",
+          then="C:\\Users\\Public",
+          else="/var/tmp"
+        )
+
+      LET Mkdir <= if(
+        condition=os_info[0].OS =~ "windows",
+        then={SELECT * FROM execve(argv=["powershell.exe", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-Command", "New-Item -ItemType Directory -Force -Path " + DownloadDir])},
+        else={SELECT * FROM execve(argv=["/bin/bash", "-c", "mkdir -p " + DownloadDir])}
+      )
+
+      LET bin <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="Custom.DFIR.Yara.AllRules.zip"
+      )
+
+      LET ThorZipPath <= bin[0].FullPath
+
+      LET MoveThor <= if(
+        condition=os_info[0].OS =~ "windows",
+        then={SELECT * FROM execve(argv=["powershell.exe", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-Command", "Copy-Item -Path '" + ThorZipPath + "' -Destination 'C:\\Users\\Public\\Thor.zip' -Force"])},
+        else={SELECT * FROM execve(argv=["/bin/bash", "-c", "cp '" + ThorZipPath + "' /var/tmp/Thor.zip"])}
+      )
+        
+      LET PSCommand_replaced <= regex_replace(
+          source=PSCommand,
+          re="BIN_NAME",
+          replace="thor-lite_" + os_info[0].Architecture
+        )
+      
+      LET shell_command_replaced <= regex_replace(
+          source=ShellCommand,
+          re="BIN_NAME",
+          replace="thor-lite_" + os_info[0].Architecture
+        )
+
+
+      SELECT * FROM if(
+          condition=os_info[0].OS =~ "windows",
+          then={
+            SELECT * FROM execve(argv=[
+              "powershell.exe",
+              "-NoProfile",
+              "-NonInteractive",
+              "-ExecutionPolicy", "Bypass",
+              "-Command", 
+              PSCommand_replaced
+            ])
+          },
+          else={
+            SELECT * FROM execve(argv=[
+              "/bin/bash",
+              "-c",
+              shell_command_replaced
+            ])
+          }
+        )
+      
+
+      
+
+

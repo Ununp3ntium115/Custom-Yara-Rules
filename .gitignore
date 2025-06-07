@@ -1,0 +1,4 @@
+Thor/*
+Custom.Cipher.Yara.AllRules.zip
+.*
+!.gitignore
