@@ -6,8 +6,8 @@ A Velociraptor artifact that makes it easy to run Thor YARA scans across your en
 ## Current Directory Structure
 ```
 .
-├── Custom.Cipher.Yara.AllRules.yaml  # Velociraptor artifact configuration
-├── Custom.Cipher.Yara.AllRules.zip   # Packaged Thor for Velociraptor -> contains the below folder called "Thor" 
+├── Custom.DFIR.Yara.AllRules.yaml  # Velociraptor artifact configuration
+├── Custom.DFIR.Yara.AllRules.zip   # Packaged Thor for Velociraptor -> contains the below folder called "Thor" 
 └── Thor/
     ├── config/                       # Thor configuration directory
     │   ├── directory-excludes.cfg    # Directory exclusion patterns
