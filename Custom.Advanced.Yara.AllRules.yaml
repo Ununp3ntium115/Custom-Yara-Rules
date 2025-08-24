@@ -1,0 +1,327 @@
+name: Custom.Advanced.DFIR.Yara.AllRules
+author: Github.com/M507
+description: |
+  Advanced Rust-based Thor YARA scanner for Pyro with enhanced features:
+  
+  - Multi-threaded scanning with configurable concurrency
+  - Real-time progress reporting and streaming results
+  - Advanced filtering and exclusion patterns
+  - Automatic rule updates and signature management
+  - Integration with threat intelligence feeds
+  - Comprehensive audit logging and forensic metadata
+  - Custom output formats (JSON, STIX, CEF, Syslog)
+  - Memory-efficient streaming for large filesystems
+
+type: CLIENT
+version: "2.1.0"
+
+tools:
+  - name: pyro-thor
+    description: "Rust-based Thor YARA scanner binary"
+  - name: Custom.DFIR.Yara.AllRules.zip
+    description: "Thor binaries and rules package"
+
+parameters:
+  - name: ScanTargets
+    description: "JSON array of scan targets with individual configurations"
+    type: string
+    default: '[{"path": "/", "priority": "normal", "depth": -1}]'
+    
+  - name: ScanProfile
+    description: "Predefined scan profile (quick, standard, deep, forensic)"
+    type: string
+    default: "standard"
+    
+  - name: ConcurrencyLevel
+    description: "Number of concurrent scanning threads (0 = auto-detect)"
+    type: int
+    default: 0
+    
+  - name: MaxMemoryMB
+    description: "Maximum memory usage in MB (0 = unlimited)"
+    type: int
+    default: 1024
+    
+  - name: OutputFormats
+    description: "Comma-separated output formats (json,stix,cef,syslog)"
+    type: string
+    default: "json"
+    
+  - name: StreamingResults
+    description: "Enable real-time result streaming to Pyro server"
+    type: bool
+    default: true
+    
+  - name: ThreatIntelFeeds
+    description: "JSON array of threat intelligence feed URLs"
+    type: string
+    default: '[]'
+    
+  - name: CustomRulesets
+    description: "Additional custom YARA rulesets to include"
+    type: string
+    default: ""
+    
+  - name: ExclusionPatterns
+    description: "Advanced exclusion patterns (regex supported)"
+    type: string
+    default: '["^/proc/", "^/sys/", "\\.tmp$", "pagefile\\.sys"]'
+    
+  - name: ForensicMode
+    description: "Enable forensic mode with enhanced metadata collection"
+    type: bool
+    default: false
+    
+  - name: ComplianceMode
+    description: "Enable compliance mode (GDPR, HIPAA, SOX)"
+    type: string
+    default: "none"
+    
+  - name: RetentionDays
+    description: "Result retention period in days (0 = permanent)"
+    type: int
+    default: 90
+
+precondition: |
+  SELECT OS FROM info() WHERE OS =~ "windows" OR OS =~ "linux" OR OS =~ "darwin"
+
+sources:
+  - name: AdvancedPyroThorScan
+    description: "Execute advanced Thor YARA scan with enhanced features"
+    query: |
+      LET os_info <= SELECT OS, Architecture FROM info()
+      LET system_info <= SELECT * FROM info()
+      LET timestamp <= now()
+      LET scan_id <= generate_uuid()
+      
+      -- Parse scan targets
+      LET targets <= parse_json_array(data=ScanTargets)
+      
+      -- Parse exclusion patterns
+      LET exclusions <= parse_json_array(data=ExclusionPatterns)
+      
+      -- Parse threat intel feeds
+      LET intel_feeds <= parse_json_array(data=ThreatIntelFeeds)
+      
+      -- Determine optimal concurrency based on system resources
+      LET optimal_concurrency <= if(
+        condition=ConcurrencyLevel > 0,
+        then=ConcurrencyLevel,
+        else=max(of=1, value=min(of=8, value=system_info[0].CPU.CPU_count))
+      )
+      
+      -- Fetch binaries
+      LET rust_binary <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="pyro-thor"
+      )
+      
+      LET thor_package <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="Custom.DFIR.Yara.AllRules.zip"
+      )
+      
+      -- Create advanced configuration
+      LET advanced_config <= serialize(
+        item=dict(
+          scan_metadata=dict(
+            scan_id=scan_id,
+            timestamp=timestamp,
+            operator=system_info[0].Hostname,
+            profile=ScanProfile,
+            compliance_mode=ComplianceMode,
+            forensic_mode=ForensicMode
+          ),
+          thor=dict(
+            binary_path=format(format="thor-lite_%s", args=[os_info[0].Architecture]),
+            license_path="thor-lite-license.lic",
+            rules_path="custom-signatures",
+            config_path="config/thor.yml",
+            flags=["--utc", "--rfc3339", "--json", "--allhds"] + 
+                  if(condition=ForensicMode, then=["--intense", "--full-proc-dump"], else=["--nocsv", "--nolog"])
+          ),
+          pyro=dict(
+            endpoint=PyroEndpoint,
+            api_key=if(condition=ApiKey, then=ApiKey, else=null),
+            timeout_seconds=1800,  -- 30 minutes for advanced scans
+            streaming_enabled=StreamingResults,
+            batch_size=100
+          ),
+          scanning=dict(
+            targets=targets,
+            profile=ScanProfile,
+            concurrency=optimal_concurrency,
+            max_memory_mb=MaxMemoryMB,
+            output_formats=split(string=OutputFormats, sep=","),
+            exclusion_patterns=exclusions,
+            custom_rulesets=if(condition=CustomRulesets, then=split(string=CustomRulesets, sep=","), else=[]),
+            threat_intel_feeds=intel_feeds,
+            retention_days=RetentionDays,
+            cleanup=CleanupEnabled
+          ),
+          advanced_features=dict(
+            hash_calculation=["md5", "sha1", "sha256"],
+            metadata_extraction=ForensicMode,
+            network_indicators=true,
+            process_analysis=ForensicMode,
+            registry_analysis=if(condition=os_info[0].OS =~ "windows", then=ForensicMode, else=false),
+            timeline_generation=ForensicMode
+          )
+        ),
+        format="yaml"
+      )
+      
+      -- Write advanced config
+      LET temp_config <= tempfile(extension=".yaml", data=advanced_config)
+      
+      -- Build enhanced command arguments
+      LET cmd_args <= [
+        rust_binary[0].FullPath,
+        "--config", temp_config,
+        "--scan-id", scan_id,
+        "--profile", ScanProfile,
+        "--concurrency", str(str=optimal_concurrency),
+        "--max-memory", str(str=MaxMemoryMB)
+      ] + if(condition=VerboseLogging, then=["--verbose"], else=[]) +
+          if(condition=ForensicMode, then=["--forensic"], else=[]) +
+          if(condition=StreamingResults, then=["--streaming"], else=[])
+      
+      -- Pre-scan system analysis
+      LET system_baseline <= SELECT 
+        Hostname, OS, Architecture, 
+        CPU.CPU_count as CPUCores,
+        Memory.TotalPhysicalMemory as TotalRAM,
+        now() as BaselineTimestamp
+      FROM info()
+      
+      -- Execute advanced scan
+      LET scan_execution <= SELECT * FROM execve(
+        argv=cmd_args,
+        length=3600  -- 1 hour timeout for advanced scans
+      )
+      
+      -- Parse and enrich results
+      LET enriched_results <= if(
+        condition=scan_execution[0].ReturnCode = 0,
+        then={
+          SELECT 
+            parse_json(data=Data) as RawResults,
+            dict(
+              scan_metadata=dict(
+                scan_id=scan_id,
+                start_time=timestamp,
+                end_time=now(),
+                duration_seconds=now() - timestamp,
+                system_baseline=system_baseline[0]
+              ),
+              compliance_info=if(
+                condition=ComplianceMode != "none",
+                then=dict(
+                  mode=ComplianceMode,
+                  data_classification="restricted",
+                  retention_policy=RetentionDays,
+                  audit_trail=true
+                ),
+                else=null
+              )
+            ) as Metadata
+          FROM read_file(filename=OutputFile)
+        },
+        else=[]
+      )
+      
+      -- Generate comprehensive report
+      SELECT 
+        scan_id as ScanID,
+        timestamp as ScanTimestamp,
+        now() as ReportTimestamp,
+        ScanProfile as Profile,
+        os_info[0].OS as OperatingSystem,
+        os_info[0].Architecture as Architecture,
+        optimal_concurrency as ConcurrencyUsed,
+        MaxMemoryMB as MemoryLimitMB,
+        scan_execution[0].ReturnCode as ExitCode,
+        scan_execution[0].Stdout as StandardOutput,
+        scan_execution[0].Stderr as StandardError,
+        OutputFile as ResultsFile,
+        enriched_results[0].RawResults as ScanResults,
+        enriched_results[0].Metadata as ScanMetadata,
+        dict(
+          targets_scanned=len(list=targets),
+          exclusions_applied=len(list=exclusions),
+          intel_feeds_used=len(list=intel_feeds),
+          output_formats=split(string=OutputFormats, sep=","),
+          forensic_mode=ForensicMode,
+          compliance_mode=ComplianceMode,
+          streaming_enabled=StreamingResults
+        ) as ScanConfiguration,
+        system_baseline[0] as SystemBaseline
+      FROM scope()
+
+  - name: ThreatIntelUpdate
+    description: "Update threat intelligence feeds and custom rules"
+    query: |
+      LET intel_feeds <= parse_json_array(data=ThreatIntelFeeds)
+      
+      LET rust_binary <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="pyro-thor"
+      )
+      
+      -- Update threat intelligence
+      LET update_execution <= SELECT * FROM execve(
+        argv=[
+          rust_binary[0].FullPath,
+          "--update-intel",
+          "--feeds", ThreatIntelFeeds
+        ],
+        length=300
+      )
+      
+      SELECT 
+        now() as UpdateTimestamp,
+        len(list=intel_feeds) as FeedsProcessed,
+        update_execution[0].ReturnCode as UpdateStatus,
+        update_execution[0].Stdout as UpdateOutput
+      FROM scope()
+
+  - name: SystemHealthCheck
+    description: "Comprehensive system and tool health verification"
+    query: |
+      LET rust_binary <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="pyro-thor"
+      )
+      
+      LET thor_package <= SELECT * FROM Artifact.Generic.Utils.FetchBinary(
+        ToolName="Custom.DFIR.Yara.AllRules.zip"
+      )
+      
+      LET system_info <= SELECT * FROM info()
+      
+      -- Check binary health
+      LET health_check <= SELECT * FROM execve(
+        argv=[rust_binary[0].FullPath, "--health-check", "--verbose"],
+        length=30
+      )
+      
+      -- Check system resources
+      LET resource_check <= SELECT 
+        Memory.AvailablePhysicalMemory as AvailableRAM,
+        Memory.TotalPhysicalMemory as TotalRAM,
+        (Memory.AvailablePhysicalMemory * 100 / Memory.TotalPhysicalMemory) as MemoryAvailablePercent
+      FROM info()
+      
+      SELECT 
+        rust_binary[0].FullPath as RustBinaryPath,
+        thor_package[0].FullPath as ThorPackagePath,
+        health_check[0].Stdout as HealthCheckOutput,
+        health_check[0].ReturnCode = 0 as SystemHealthy,
+        resource_check[0].AvailableRAM as AvailableMemory,
+        resource_check[0].MemoryAvailablePercent as MemoryAvailablePercent,
+        system_info[0].CPU.CPU_count as CPUCores,
+        system_info[0].OS as OperatingSystem,
+        now() as CheckTimestamp,
+        dict(
+          memory_sufficient=resource_check[0].MemoryAvailablePercent > 20,
+          cpu_adequate=system_info[0].CPU.CPU_count >= 2,
+          binary_accessible=health_check[0].ReturnCode = 0,
+          package_available=thor_package[0].FullPath != ""
+        ) as HealthStatus
+      FROM scope()

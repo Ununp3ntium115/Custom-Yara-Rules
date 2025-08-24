@@ -1,4 +1,26 @@
+# Rust
+/target/
+Cargo.lock
+
+# Thor binaries and packages
 Thor/*
 Custom.Cipher.Yara.AllRules.zip
-.*
-!.gitignore
+Custom.DFIR.Yara.AllRules.zip
+*.lic
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
+scan_results.json

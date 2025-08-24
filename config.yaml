@@ -1,0 +1,31 @@
+thor:
+  binary_path: "thor-lite_x86_64"  # Will be auto-detected based on platform
+  license_path: "thor-lite-license.lic"
+  rules_path: "custom-signatures"
+  config_path: "config/thor.yml"
+  flags:
+    - "--utc"
+    - "--rfc3339"
+    - "--nocsv"
+    - "--nolog"
+    - "--nothordb"
+    - "--module"
+    - "Filescan"
+    - "--allhds"
+    - "--json"
+
+pyro:
+  endpoint: "http://localhost:8080"
+  api_key: null  # Set your Pyro API key here
+  timeout_seconds: 300
+
+scanning:
+  output_format: "json"
+  temp_dir: null  # Will use system default
+  cleanup: true
+  exclude_paths:
+    - "/proc"
+    - "/sys" 
+    - "/dev"
+    - "C:\\Windows\\System32"
+  max_file_size_mb: 100
