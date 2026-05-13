@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-13T05:26:16Z",
+  "generated_at": "2026-05-13T19:09:16Z",
   "date_tag": "v2026.05.13",
   "release_tag": "latest",
   "total_rules": 43381,
-  "zip_sha256": "19497a0b2e7b054664197b819c5052523802bd5121a9cd211ab703c8c8ad8b1d",
+  "zip_sha256": "c1d425bcc1a033692afa7a026cfbb5e63ed221097fb8256fd38f1b7671738e94",
   "download_url": "https://github.com/Ununp3ntium115/Custom-Yara-Rules/releases/download/latest/velociraptor-claw-yara-offline.zip",
   "checksum_url": "https://github.com/Ununp3ntium115/Custom-Yara-Rules/releases/download/latest/checksums-yara.sha256",
   "sources": [
