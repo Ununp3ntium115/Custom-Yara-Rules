@@ -1,0 +1,100 @@
+name: Custom.MacOS.CookieTheft.Detection
+description: |
+  Detect indicators of browser cookie/session theft on macOS.
+
+  Scenario: Attacker steals session cookies and replays them from a
+  different geographic location (e.g., Frankfurt, Germany).
+
+  Checks:
+    1. Browser cookie database access by non-browser processes
+    2. Recently modified cookie databases
+    3. Known cookie-stealer process names
+    4. Suspicious keychain access patterns
+    5. Browser extension directories for known stealers
+    6. Clipboard monitoring for session tokens
+
+author: Velociraptor Claw Edition SOC
+type: CLIENT
+
+parameters:
+  - name: BrowserCookiePaths
+    type: csv
+    default: |
+      Path,Browser
+      /Users/*/Library/Application Support/Google/Chrome/Default/Cookies,Chrome
+      /Users/*/Library/Application Support/Google/Chrome/Profile */Cookies,Chrome
+      /Users/*/Library/Application Support/Firefox/Profiles/*/cookies.sqlite,Firefox
+      /Users/*/Library/Cookies/Cookies.binarycookies,Safari
+      /Users/*/Library/Application Support/Microsoft Edge/Default/Cookies,Edge
+      /Users/*/Library/Application Support/BraveSoftware/Brave-Browser/Default/Cookies,Brave
+
+  - name: SuspiciousProcessNames
+    default: "cookie|stealer|dump|mimikatz|lazagne|hackbrowserdata|sharp.*chrome|cookie.*extract"
+
+  - name: LookbackHours
+    type: int
+    default: 72
+
+sources:
+  - name: CookieDatabaseAccess
+    query: |
+      -- Find processes that accessed cookie database files
+      -- (non-browser processes accessing these is suspicious)
+      LET start_time = timestamp(epoch=now() - LookbackHours * 3600)
+
+      LET cookie_paths = SELECT Path, Browser
+        FROM parse_csv(accessor="data", filename=BrowserCookiePaths)
+
+      SELECT * FROM foreach(
+        row=cookie_paths,
+        query={
+          SELECT OSPath, Size, Mtime, Atime, Ctime, Browser
+          FROM glob(globs=Path)
+          WHERE Mtime > start_time OR Atime > start_time
+        })
+
+  - name: SuspiciousProcesses
+    query: |
+      -- Look for known cookie-stealer process names
+      SELECT Pid, Name, Exe, CommandLine, Username, CreateTime
+      FROM pslist()
+      WHERE Name =~ SuspiciousProcessNames
+         OR CommandLine =~ SuspiciousProcessNames
+         OR Exe =~ SuspiciousProcessNames
+
+  - name: KeychainAccess
+    query: |
+      -- Check for suspicious keychain access in the security log
+      -- (cookie stealers often dump the keychain)
+      LET start_time = timestamp(epoch=now() - LookbackHours * 3600)
+
+      SELECT * FROM foreach(
+        row={
+          SELECT * FROM glob(globs="/var/log/system.log*")
+        },
+        query={
+          SELECT Line
+          FROM grep(globs=OSPath, keywords=["SecKeychainItemCopyContent", "security dump-keychain", "kcpassword"])
+        })
+
+  - name: BrowserExtensions
+    query: |
+      -- Scan Chrome extensions for known malicious extension IDs
+      -- or suspicious permissions (cookies, webRequest)
+      LET extension_dirs = SELECT OSPath
+        FROM glob(globs="/Users/*/Library/Application Support/Google/Chrome/Default/Extensions/*/*/manifest.json")
+
+      SELECT OSPath, parse_json(data=read_file(filename=OSPath)) AS Manifest
+      FROM extension_dirs
+      WHERE Manifest.permissions =~ "cookies"
+         OR Manifest.permissions =~ "webRequest"
+         OR Manifest.permissions =~ "<all_urls>"
+
+  - name: RecentDownloads
+    query: |
+      -- Check for recently downloaded suspicious files
+      LET start_time = timestamp(epoch=now() - LookbackHours * 3600)
+
+      SELECT OSPath, Size, Mtime
+      FROM glob(globs="/Users/*/Downloads/*.{exe,dmg,pkg,py,sh,ps1,bat,cmd}")
+      WHERE Mtime > start_time

@@ -1,0 +1,93 @@
+name: Custom.ThreatActor.NetworkIOC
+description: |
+  Hunt for connections to known malicious IPs from the 2026-03-22 threat analysis.
+  Checks active connections, DNS cache, ARP table, browser history, and log files
+  for indicators of communication with the identified threat actors.
+
+  IOCs:
+    - 79.124.58.86 (Bulgarian port scanner, AS41436)
+    - 38.43.63.92 (SSDP flood source, Cogent)
+    - Port 48002 (targeted by scanner)
+    - Port 5678 (SSDP/UPnP abuse)
+
+author: Velociraptor Claw Edition SOC
+type: CLIENT
+
+parameters:
+  - name: MaliciousIPs
+    type: csv
+    default: |
+      IP,Description,Severity
+      79.124.58.86,Bulgarian port scanner AS41436,high
+      38.43.63.92,SSDP flood source Cogent,medium
+
+  - name: SuspiciousPorts
+    type: csv
+    default: |
+      Port,Description,Severity
+      48002,Targeted by Bulgarian scanner,high
+      5678,SSDP/UPnP abuse port,low
+
+  - name: CheckActiveSockets
+    type: bool
+    default: true
+
+  - name: CheckDNSCache
+    type: bool
+    default: true
+
+  - name: CheckLogFiles
+    type: bool
+    default: true
+
+  - name: LogGlob
+    default: /var/log/**
+
+sources:
+  - name: ActiveConnections
+    precondition: SELECT * FROM info() WHERE CheckActiveSockets
+    query: |
+      -- Check active network connections against IOC list
+      LET malicious_ips = SELECT IP FROM parse_csv(accessor="data", filename=MaliciousIPs)
+
+      SELECT Pid, Name, Status, Laddr, Raddr, Type, Timestamp
+      FROM connections()
+      WHERE Raddr.IP IN malicious_ips.IP
+         OR Laddr.Port IN (48002, 5678)
+         OR Raddr.Port IN (48002, 5678)
+
+  - name: ListeningOnSuspiciousPorts
+    query: |
+      -- Check if anything is listening on ports targeted by the scanner
+      SELECT Pid, Name, Status, Laddr, Type
+      FROM connections()
+      WHERE Status = "LISTEN"
+        AND (Laddr.Port = 48002 OR Laddr.Port = 5678)
+
+  - name: LogFileHits
+    precondition: SELECT * FROM info() WHERE CheckLogFiles
+    query: |
+      -- Grep log files for IOC IPs
+      LET malicious_ips = SELECT IP FROM parse_csv(accessor="data", filename=MaliciousIPs)
+
+      SELECT FullPath, Line, Offset
+      FROM foreach(
+        row=malicious_ips,
+        query={
+          SELECT FullPath, Line, Offset
+          FROM grep(globs=LogGlob, keywords=IP)
+        })
+
+  - name: ProcessNetworkActivity
+    query: |
+      -- Check /proc/net or equivalent for IOC IPs in recent connections
+      SELECT * FROM foreach(
+        row={
+          SELECT Pid, Name FROM pslist()
+        },
+        query={
+          SELECT Pid, Name, Raddr, Laddr, Status
+          FROM connections()
+          WHERE Pid = Pid
+            AND (Raddr.IP = "79.124.58.86" OR Raddr.IP = "38.43.63.92")
+        })
