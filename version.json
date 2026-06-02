@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-01 03:00:01",
-  "total_rules": "43006",
+  "updated": "2026-06-02 03:00:00",
+  "total_rules": "43012",
   "vql_artifacts": "29",
   "sources": {
     "yara_forge": {
@@ -20,7 +20,7 @@
     },
     "awesome_yara": {
       "url": "https://github.com/InQuest/awesome-yara",
-      "rule_count": "18212",
+      "rule_count": "18218",
       "includes": ["Neo23x0/signature-base", "Yara-Rules/rules"]
     },
     "yaraify_abusech": {
