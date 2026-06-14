@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-13 03:00:02",
-  "total_rules": "43044",
+  "updated": "2026-06-14 03:00:01",
+  "total_rules": "43058",
   "vql_artifacts": "29",
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
-      "rule_count": "11699",
+      "rule_count": "11706",
       "packages": ["full", "extended", "core"]
     },
     "citizenlab": {
@@ -30,7 +30,7 @@
     },
     "detectraptor": {
       "url": "https://github.com/mgreen27/DetectRaptor",
-      "rule_count": "12753",
+      "rule_count": "12760",
       "description": "Velociraptor YARA & VQL detection artifacts"
     },
     "glassworm_yara": {
