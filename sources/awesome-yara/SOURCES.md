@@ -194,6 +194,8 @@ Rule collections from prior years of the challenge: [100 Days of YARA](https://g
 
 ## Tools
 
+* [AIDebug](https://github.com/anpa1200/AIDebug)
+    - AI-assisted malware reverse-engineering debugger that emits analyst-review YARA candidates, ATT&CK mappings, IOCs, JSON, and HTML reports.
 * [AirBnB BinaryAlert](https://github.com/airbnb/binaryalert)
     - Open-source serverless AWS pipeline where any file uploaded to an S3 bucket is immediately scanned with a configurable set of YARA rules.
 * [alterix](https://github.com/mtnmunuklu/alterix)
@@ -323,6 +325,8 @@ Rule collections from prior years of the challenge: [100 Days of YARA](https://g
     - Collaborative malware analysis framework with YARA rule matching and other features.
 * [PwC Cyber Threat Operations rtfsig](https://github.com/PwCUK-CTO/rtfsig)
     - This tool is designed to make it easy to signature potentially unique parts of RTF files.
+* [Rustinel](https://github.com/Karib0u/rustinel)
+    - Open-source endpoint detection engine for Windows and Linux that scans executables with YARA on process creation and combines results with Sigma and IOC detections.
 * [VirusTotalTools](https://github.com/silascutler/VirusTotalTools)
     - Tools for checking samples against Virus Total, including VT_RuleMGR, for managing threat hunting YARA rules.
 * [shotgunyara](https://github.com/darienhuss/shotgunyara)
