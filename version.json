@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-16 03:00:00",
-  "total_rules": "43063",
+  "updated": "2026-06-18 03:00:05",
+  "total_rules": "43065",
   "vql_artifacts": "30",
   "sources": {
     "yara_forge": {
@@ -20,12 +20,12 @@
     },
     "awesome_yara": {
       "url": "https://github.com/InQuest/awesome-yara",
-      "rule_count": "18222",
+      "rule_count": "18223",
       "includes": ["Neo23x0/signature-base", "Yara-Rules/rules"]
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "343",
+      "rule_count": "344",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
