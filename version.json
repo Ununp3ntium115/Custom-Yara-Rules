@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-21 03:00:02",
-  "total_rules": "43077",
+  "updated": "2026-06-22 03:08:47",
+  "total_rules": "43079",
   "vql_artifacts": "30",
   "sources": {
     "yara_forge": {
@@ -25,7 +25,7 @@
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "346",
+      "rule_count": "348",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
