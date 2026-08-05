@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-24 03:00:01",
-  "total_rules": "43079",
+  "updated": "2026-08-05 03:00:03",
+  "total_rules": "29426",
   "vql_artifacts": "30",
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
-      "rule_count": "11711",
+      "rule_count": "12365",
       "packages": ["full", "extended", "core"]
     },
     "citizenlab": {
@@ -25,12 +25,12 @@
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "348",
+      "rule_count": "357",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
       "url": "https://github.com/mgreen27/DetectRaptor",
-      "rule_count": "12765",
+      "rule_count": "13432",
       "description": "Velociraptor YARA & VQL detection artifacts"
     },
     "glassworm_yara": {
