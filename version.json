@@ -1,36 +1,34 @@
 {
-  "updated": "2026-08-05 03:00:03",
-  "total_rules": "29426",
-  "vql_artifacts": "30",
+  "updated": "2026-08-29 00:18:03",
+  "total_rules": "12377",
+  "vql_artifacts": "31",
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
-      "rule_count": "12365",
+      "rule_count": "24748",
       "packages": ["full", "extended", "core"]
     },
     "citizenlab": {
       "url": "https://github.com/citizenlab/malware-signatures",
-      "rule_count": "0
-0"
+      "rule_count": "4"
     },
     "macos_specific": {
       "url": "https://gist.github.com/pedramamini/c586a151a978f971b70412ca4485c491",
-      "rule_count": "0
-0"
+      "rule_count": "0"
     },
     "awesome_yara": {
       "url": "https://github.com/InQuest/awesome-yara",
-      "rule_count": "18223",
+      "rule_count": "18335",
       "includes": ["Neo23x0/signature-base", "Yara-Rules/rules"]
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "357",
+      "rule_count": "608",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
       "url": "https://github.com/mgreen27/DetectRaptor",
-      "rule_count": "13432",
+      "rule_count": "13438",
       "description": "Velociraptor YARA & VQL detection artifacts"
     },
     "glassworm_yara": {
@@ -44,7 +42,7 @@
     "release_tag": "latest",
     "defined_repo_path": "yara-rules/custom-repo",
     "static_package_url": "https://github.com/Ununp3ntium115/Custom-Yara-Rules/releases/download/latest/velociraptor-claw-yara-offline.zip",
-    "offline_package_url": "https://github.com/Ununp3ntium115/Custom-Yara-Rules/releases/download/latest/velociraptor-claw-yara-offline.zip"
+    "offline_package_url": ""
   },
   "packages": {
     "full": "yara-forge-rules-full.zip",

@@ -60,7 +60,33 @@ CUSTOM_YARA_RULES_RELEASE_TAG="${CUSTOM_YARA_RULES_RELEASE_TAG:-latest}"
 CUSTOM_YARA_RULES_REPO_PATH="${CUSTOM_YARA_RULES_REPO_PATH:-$YARA_DIR/custom-repo}"
 YARA_OFFLINE_ASSET="${YARA_OFFLINE_ASSET:-velociraptor-claw-yara-offline.zip}"
 STATIC_YARA_PACKAGE_URL="${STATIC_YARA_PACKAGE_URL:-https://github.com/Ununp3ntium115/Custom-Yara-Rules/releases/download/latest/velociraptor-claw-yara-offline.zip}"
-CUSTOM_YARA_RULES_DOWNLOAD_URL="$STATIC_YARA_PACKAGE_URL"
+
+
+# Prevent overlapping launchd/manual runs from mixing partially refreshed trees.
+LOCK_DIR="$REPO_ROOT/.git/yara-update.lock"
+if ! mkdir "$LOCK_DIR" 2>/dev/null; then
+    echo "[$TIMESTAMP] Another YARA update is already running; refusing to overlap." >> "$LOG_FILE"
+    exit 2
+fi
+release_lock() { rmdir "$LOCK_DIR" 2>/dev/null || true; }
+trap release_lock EXIT
+
+download() {
+    local url="$1"
+    local destination="$2"
+    curl --fail --show-error --location --retry 3 --retry-delay 2 \
+        --connect-timeout 20 --max-time 600 --output "$destination" "$url"
+}
+
+download_optional() {
+    local url="$1"
+    local destination="$2"
+    rm -f "$destination"
+    if ! download "$url" "$destination"; then
+        echo "[$TIMESTAMP] Optional source unavailable; quarantined without stale fallback: $url" >> "$LOG_FILE"
+        return 0
+    fi
+}
 
 # YARA Forge download URLs
 CORE_URL="https://github.com/YARAHQ/yara-forge/releases/latest/download/yara-forge-rules-core.zip"
@@ -87,7 +113,8 @@ dedupe_case_pairs() {
         local files
         files=$(ls "$dir" 2>/dev/null | awk -v target="$dup_name" 'tolower($0) == tolower(target)')
         # Keep alphabetically first, remove the rest
-        local keep=$(echo "$files" | sort | head -1)
+        local keep
+        keep=$(echo "$files" | sort | head -1)
         while IFS= read -r f; do
             if [[ -n "$f" && "$f" != "$keep" ]]; then
                 rm -f "$dir/$f"
@@ -127,13 +154,13 @@ fi
 # ========================================
 echo "[$TIMESTAMP] Downloading YARA Forge rules..." >> "$LOG_FILE"
 
-curl -L -s -o yara-forge-rules-full.zip "$FULL_URL" 2>> "$LOG_FILE"
+download "$FULL_URL" yara-forge-rules-full.zip 2>> "$LOG_FILE"
 echo "[$TIMESTAMP] Downloaded full rules ($(ls -lh yara-forge-rules-full.zip | awk '{print $5}'))" >> "$LOG_FILE"
 
-curl -L -s -o yara-forge-rules-core.zip "$CORE_URL" 2>> "$LOG_FILE"
+download "$CORE_URL" yara-forge-rules-core.zip 2>> "$LOG_FILE"
 echo "[$TIMESTAMP] Downloaded core rules ($(ls -lh yara-forge-rules-core.zip | awk '{print $5}'))" >> "$LOG_FILE"
 
-curl -L -s -o yara-forge-rules-extended.zip "$EXTENDED_URL" 2>> "$LOG_FILE"
+download "$EXTENDED_URL" yara-forge-rules-extended.zip 2>> "$LOG_FILE"
 echo "[$TIMESTAMP] Downloaded extended rules ($(ls -lh yara-forge-rules-extended.zip | awk '{print $5}'))" >> "$LOG_FILE"
 
 # Extract YARA Forge rules
@@ -160,7 +187,7 @@ echo "[$TIMESTAMP] Citizen Lab rules downloaded" >> "$LOG_FILE"
 # ========================================
 echo "[$TIMESTAMP] Downloading macOS-specific YARA rules..." >> "$LOG_FILE"
 
-curl -L -s -o sources/macos-specific/macos_malware.yar "$MACOS_RULES_URL" 2>> "$LOG_FILE" || true
+download_optional "$MACOS_RULES_URL" sources/macos-specific/macos_malware.yar 2>> "$LOG_FILE"
 echo "[$TIMESTAMP] macOS-specific rules downloaded" >> "$LOG_FILE"
 
 # ========================================
@@ -197,13 +224,14 @@ echo "[$TIMESTAMP] Downloading YARAify/abuse.ch rules..." >> "$LOG_FILE"
 
 # YARAify bulk download - TLP:WHITE community rules
 # Download from: https://yaraify.abuse.ch/yarahub/
-curl -L -s -o sources/yaraify-abusech/yaraify-rules.zip \
-    "https://yaraify.abuse.ch/yarahub/yaraify-rules.zip" 2>> "$LOG_FILE" || true
+download_optional "https://yaraify.abuse.ch/yarahub/yaraify-rules.zip" \
+    sources/yaraify-abusech/yaraify-rules.zip 2>> "$LOG_FILE"
 
 # Extract the rules
 if [ -f "sources/yaraify-abusech/yaraify-rules.zip" ]; then
     cd sources/yaraify-abusech
-    unzip -o -q yaraify-rules.zip 2>/dev/null || true
+    unzip -tqq yaraify-rules.zip
+    unzip -o -q yaraify-rules.zip
     cd "$YARA_DIR"
 fi
 echo "[$TIMESTAMP] YARAify/abuse.ch rules downloaded" >> "$LOG_FILE"
@@ -278,29 +306,12 @@ if [ -d "sources/citizenlab" ] && ls sources/citizenlab/*.yar 1>/dev/null 2>&1; 
     done
 fi
 
-# Add macOS-specific rules
-if [ -f "sources/macos-specific/macos_malware.yar" ]; then
-    echo "// ========== macOS-Specific Rules ==========" >> "$MASTER_FILE"
-    cat sources/macos-specific/macos_malware.yar >> "$MASTER_FILE" 2>/dev/null || true
-    echo "" >> "$MASTER_FILE"
-fi
-
-# Add Awesome-YARA collected rules
-if [ -d "sources/awesome-yara" ] && ls sources/awesome-yara/*.yar 1>/dev/null 2>&1; then
-    echo "// ========== Awesome-YARA Collected Rules ==========" >> "$MASTER_FILE"
-    for file in sources/awesome-yara/*.yar; do
-        cat "$file" >> "$MASTER_FILE" 2>/dev/null || true
-        echo "" >> "$MASTER_FILE"
-    done
-fi
-
-# Add YARAify/abuse.ch rules
-if [ -d "sources/yaraify-abusech" ]; then
-    echo "// ========== YARAify/abuse.ch Rules ==========" >> "$MASTER_FILE"
-    find sources/yaraify-abusech -name "*.yar" -exec cat {} \; >> "$MASTER_FILE" 2>/dev/null || true
-    find sources/yaraify-abusech -name "*.yara" -exec cat {} \; >> "$MASTER_FILE" 2>/dev/null || true
-    echo "" >> "$MASTER_FILE"
-fi
+# Keep non-compatible feeds in sources/ and the offline package for review,
+# but quarantine them from the production master until a yarac compatibility
+# pass proves the complete source can compile without optional modules.
+echo "// Quarantined sources: macOS-specific, Awesome-YARA, YARAify/abuse.ch" >> "$MASTER_FILE"
+echo "// See yara-rules/source-manifest.json for provenance and reasons." >> "$MASTER_FILE"
+echo "" >> "$MASTER_FILE"
 
 # Add DetectRaptor rules
 if [ -d "sources/detectraptor" ] && ls sources/detectraptor/*.yar 1>/dev/null 2>&1; then
@@ -314,11 +325,11 @@ fi
 # Add GlasswormYARA custom rules (from Ununp3ntium115/GlasswormYARA)
 echo "[$TIMESTAMP] Fetching GlasswormYARA custom rules..." >> "$LOG_FILE"
 GLASSWORM_URL="https://raw.githubusercontent.com/Ununp3ntium115/GlasswormYARA/main/Glasswormrules"
-curl -L -s -o sources/glassworm/glassworm-rules.yar "$GLASSWORM_URL" 2>> "$LOG_FILE"
+download "$GLASSWORM_URL" sources/glassworm/glassworm-rules.yar 2>> "$LOG_FILE"
 GLASSWORM_IOCS_URL="https://raw.githubusercontent.com/Ununp3ntium115/GlasswormYARA/main/IOCs-GlassWorm.csv"
-curl -L -s -o sources/glassworm/IOCs-GlassWorm.csv "$GLASSWORM_IOCS_URL" 2>> "$LOG_FILE"
+download "$GLASSWORM_IOCS_URL" sources/glassworm/IOCs-GlassWorm.csv 2>> "$LOG_FILE"
 GLASSWORM_HASHES_URL="https://raw.githubusercontent.com/Ununp3ntium115/GlasswormYARA/main/Glassworm-Files.csv"
-curl -L -s -o sources/glassworm/Glassworm-Files.csv "$GLASSWORM_HASHES_URL" 2>> "$LOG_FILE"
+download "$GLASSWORM_HASHES_URL" sources/glassworm/Glassworm-Files.csv 2>> "$LOG_FILE"
 if [ -f "sources/glassworm/glassworm-rules.yar" ]; then
     GLASSWORM_RULE_COUNT=$(grep -c "^rule " sources/glassworm/glassworm-rules.yar 2>/dev/null || echo "0")
     echo "[$TIMESTAMP] GlasswormYARA: $GLASSWORM_RULE_COUNT rules downloaded" >> "$LOG_FILE"
@@ -351,15 +362,28 @@ fi
 # ========================================
 # 8. Count rules and create version info
 # ========================================
-FORGE_COUNT=$(grep -c "^rule " packages/full/yara-rules-full.yar 2>/dev/null || echo "0")
-CITIZENLAB_COUNT=$(cat sources/citizenlab/*.yar 2>/dev/null | grep -c "^rule " || echo "0")
-MACOS_COUNT=$(cat sources/macos-specific/*.yar 2>/dev/null | grep -c "^rule " || echo "0")
-AWESOME_COUNT=$(cat sources/awesome-yara/*.yar 2>/dev/null | grep -c "^rule " || echo "0")
-YARAIFY_COUNT=$(find sources/yaraify-abusech -name "*.yar" -exec cat {} + 2>/dev/null | grep -c "^rule " || echo "0")
-DETECTRAPTOR_COUNT=$(cat sources/detectraptor/*.yar 2>/dev/null | grep -c "^rule " || echo "0")
-GLASSWORM_COUNT=$(cat sources/glassworm/*.yar 2>/dev/null | grep -c "^rule " || echo "0")
-VQL_ARTIFACT_COUNT=$(find "$YARA_DIR/vql-artifacts" -name "*.yaml" -o -name "*.yml" 2>/dev/null | wc -l | tr -d ' ' || echo "0")
-TOTAL_COUNT=$(grep -c "^rule " "$MASTER_FILE" 2>/dev/null || echo "unknown")
+count_rules_in_dir() {
+    local dir="$1"
+    local count=0 file file_count
+    [[ -d "$dir" ]] || { printf '0'; return; }
+    while IFS= read -r -d '' file; do
+        file_count=$(grep -c "^rule " "$file" 2>/dev/null || true)
+        [[ "$file_count" =~ ^[0-9]+$ ]] || file_count=0
+        count=$((count + file_count))
+    done < <(find "$dir" -type f \( -name "*.yar" -o -name "*.yara" \) -print0 2>/dev/null)
+    printf '%s' "$count"
+}
+
+FORGE_COUNT=$(count_rules_in_dir packages/full)
+CITIZENLAB_COUNT=$(count_rules_in_dir sources/citizenlab)
+MACOS_COUNT=$(count_rules_in_dir sources/macos-specific)
+AWESOME_COUNT=$(count_rules_in_dir sources/awesome-yara)
+YARAIFY_COUNT=$(count_rules_in_dir sources/yaraify-abusech)
+DETECTRAPTOR_COUNT=$(count_rules_in_dir sources/detectraptor)
+GLASSWORM_COUNT=$(count_rules_in_dir sources/glassworm)
+VQL_ARTIFACT_COUNT=$(find "$YARA_DIR/vql-artifacts" -type f \( -name "*.yaml" -o -name "*.yml" \) 2>/dev/null | wc -l | tr -d ' ')
+TOTAL_COUNT=$(grep -c "^rule " "$MASTER_FILE" 2>/dev/null || true)
+[[ "$TOTAL_COUNT" =~ ^[0-9]+$ ]] || TOTAL_COUNT=0
 
 echo "[$TIMESTAMP] Rule counts - Forge: $FORGE_COUNT, Citizen Lab: $CITIZENLAB_COUNT, macOS: $MACOS_COUNT, Awesome: $AWESOME_COUNT, YARAify: $YARAIFY_COUNT, DetectRaptor: $DETECTRAPTOR_COUNT, Glassworm: $GLASSWORM_COUNT, Total: $TOTAL_COUNT" >> "$LOG_FILE"
 echo "[$TIMESTAMP] VQL Artifacts: $VQL_ARTIFACT_COUNT" >> "$LOG_FILE"
@@ -452,6 +476,7 @@ fi
 
 # Copy version info
 cp "$YARA_DIR/version.json" "$OFFLINE_DIR/" 2>/dev/null || true
+cp "$YARA_DIR/source-manifest.json" "$OFFLINE_DIR/" 2>/dev/null || true
 
 # Create README for the offline package
 cat > "$OFFLINE_DIR/README.md" << OFFLINEREADME
@@ -469,6 +494,7 @@ cat > "$OFFLINE_DIR/README.md" << OFFLINEREADME
 - \`vql-artifacts/\` - Velociraptor VQL detection artifacts
 - \`detection-data/\` - CSV detection data files
 - \`version.json\` - Version and source information
+- \`source-manifest.json\` - Source licenses, provenance, and production/quarantine status
 
 ## Sources
 
@@ -517,6 +543,9 @@ rm -rf "$OFFLINE_DIR"
 
 # Clean up temp directory
 rm -rf "$TMP_DIR"
+
+# Do not commit or publish a package that fails manifest, ZIP, or yarac checks.
+bash "$SCRIPT_DIR/validate-yara-package.sh" >> "$LOG_FILE" 2>&1
 
 # Clean up old backups older than 7 days
 find "$YARA_DIR" -name "packages.backup.*" -mtime +7 -exec rm -rf {} \; 2>/dev/null || true
