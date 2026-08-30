@@ -19,4 +19,4 @@ Packages in this repository are generated and published from:
 
 The source build runs on a schedule locally (launchd) and publishes both a dated release and the static `latest` release.
 
-Last synced: 2026-08-29T21:50:19Z
+Last synced: 2026-08-30T09:01:31Z

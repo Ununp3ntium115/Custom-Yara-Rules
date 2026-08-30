@@ -12,9 +12,9 @@
  * Force Exclude Importance Level: 20
  * Minimum Age (in days): 1
  * Minimum Score: 60
- * Creation Date: 2026-08-23
- * Number of Rules: 10757
- * Skipped: 17 (age), 465 (quality), 1402 (score), 0 (importance)
+ * Creation Date: 2026-08-30
+ * Number of Rules: 10763
+ * Skipped: 17 (age), 461 (quality), 1401 (score), 0 (importance)
  */
 
 import "dotnet"
@@ -28,7 +28,7 @@ import "string"
  * YARA Rule Set
  * Repository Name: ReversingLabs
  * Repository: https://github.com/reversinglabs/reversinglabs-yara-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: e0a0be54aa1e11ccfd6854e4f19e9476f328fd84
  * Number of Rules: 1239
  * Skipped: 0 (age), 0 (quality), 1 (score), 0 (importance)
@@ -5877,8 +5877,8 @@ rule REVERSINGLABS_Win32_Ransomware_ONI : TC_DETECTION MALICIOUS MALWARE FILE
 		description = "Yara rule that detects Oni ransomware."
 		author = "ReversingLabs"
 		id = "9190aee2-1119-546e-82ca-a7aba44a9d7f"
-		date = "2026-08-23"
-		date = "2026-08-23"
+		date = "2026-08-30"
+		date = "2026-08-30"
 		modified = "2020-12-07"
 		reference = "ReversingLabs"
 		source_url = "https://github.com/reversinglabs/reversinglabs-yara-rules//blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Oni.yara#L1-L82"
@@ -18976,8 +18976,8 @@ rule REVERSINGLABS_Bytecode_MSIL_Ransomware_Oct : TC_DETECTION MALICIOUS MALWARE
 		description = "Yara rule that detects Oct ransomware."
 		author = "ReversingLabs"
 		id = "e811a0ba-52df-5e88-ab71-df91d5cb584a"
-		date = "2026-10-23"
-		date = "2026-10-23"
+		date = "2026-10-30"
+		date = "2026-10-30"
 		modified = "2021-08-12"
 		reference = "ReversingLabs"
 		source_url = "https://github.com/reversinglabs/reversinglabs-yara-rules//blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Oct.yara#L1-L68"
@@ -60195,7 +60195,7 @@ rule REVERSINGLABS_Win32_PUA_Domaiq : TC_DETECTION MALICIOUS MALWARE FILE
  * YARA Rule Set
  * Repository Name: R3c0nst
  * Repository: https://github.com/fboldewin/YARA-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 54e9e6899b258b72074b2b4db6909257683240c2
  * Number of Rules: 26
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -60954,10 +60954,10 @@ rule R3C0NST_ATM_Malware_XFS_ALICE : FILE
  * YARA Rule Set
  * Repository Name: CAPE
  * Repository: https://github.com/kevoreilly/CAPEv2
- * Retrieval Date: 2026-08-23
- * Git Commit: 4da22e64a6576c72f554a6d8def7ac6e650a3a18
- * Number of Rules: 185
- * Skipped: 0 (age), 26 (quality), 0 (score), 0 (importance)
+ * Retrieval Date: 2026-08-30
+ * Git Commit: 50e5dcd2de91cd36c2685037809fa102ccb0590a
+ * Number of Rules: 186
+ * Skipped: 0 (age), 25 (quality), 0 (score), 0 (importance)
  *
  * 
  * LICENSE
@@ -61637,8 +61637,8 @@ rule CAPE_Ryuk : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Ryuk.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Ryuk.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b4463993d8956e402b927a3dcfa2ca9693a959908187f720372f2d3a40e6db0c"
 		score = 75
 		quality = 70
@@ -61663,8 +61663,8 @@ rule CAPE_Varenyky : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Varenyky.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Varenyky.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "602f1b8b60b29565eabe2171fde4eb58546af68f8acecad402a7a51ea9a08ed9"
 		score = 75
 		quality = 70
@@ -61686,8 +61686,8 @@ rule CAPE_Kpot : FILE
 		date = "2020-10-19"
 		modified = "2020-10-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Kpot.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Kpot.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "75abaab9a10e8ac8808425c389238285ab9bd9cb76f0cd03cc1e35b3ea0a1b0f"
 		score = 75
 		quality = 70
@@ -61711,8 +61711,8 @@ rule CAPE_Gandcrab : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Gandcrab.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Gandcrab.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "354ed566dbafbe8e9531bb771d9846952eb8c0e70ee94c26d09368159ce4142c"
 		score = 75
 		quality = 70
@@ -61737,8 +61737,8 @@ rule CAPE_Hijackloaderstub
 		date = "2026-01-26"
 		modified = "2026-01-26"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/HijackLoader.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/HijackLoader.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "686a19a416b94f6ccdd1891ff027452c84b2171ee4268ff971f490e18948a6f5"
 		score = 75
 		quality = 70
@@ -61762,8 +61762,8 @@ rule CAPE_Darkcloud : FILE
 		date = "2025-10-16"
 		modified = "2025-10-16"
 		reference = "https://x.com/YungBinary/status/1971585972912689643"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DarkCloud.yar#L1-L39"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DarkCloud.yar#L1-L39"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "e9a67fce4c1e4ffa7322c225522263aa4db94ae9f29113a81f5216fb4fa68b57"
 		score = 75
 		quality = 68
@@ -61807,8 +61807,8 @@ rule CAPE_Trickbot
 		date = "2019-10-30"
 		modified = "2023-02-07"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/TrickBot.yar#L1-L20"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/TrickBot.yar#L1-L20"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "47cc2070b43957601a72745329a9d14fb3fbfd4d2b31cacc35d4ac750dde31ea"
 		score = 75
 		quality = 70
@@ -61839,8 +61839,8 @@ rule CAPE_Trickbot_Permadll_UEFI_Module
 		date = "2019-10-30"
 		modified = "2023-02-07"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/TrickBot.yar#L22-L38"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/TrickBot.yar#L22-L38"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "491115422a6b94dc952982e6914adc39"
 		logic_hash = "564055f56fd19bed8900e6d451ba050b4e9013a9208a3bdc3d3d563567d225d2"
 		score = 75
@@ -61868,8 +61868,8 @@ rule CAPE_Remus : FILE
 		date = "2026-07-31"
 		modified = "2026-08-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Remus.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Remus.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "836b4219141a17ba963155881d8d166fe528fcb8804135ceac4141de03796601"
 		score = 75
 		quality = 70
@@ -61895,8 +61895,8 @@ rule CAPE_Latrodectus
 		date = "2024-01-18"
 		modified = "2025-05-10"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Latrodectus.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Latrodectus.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "a547cff9991a713535e5c128a0711ca68acf9298cc2220c4ea0685d580f36811"
 		logic_hash = "a8430299930f4c8de0a88c6836d4821871f7183cc5ff44ea9be84fbea47bbb13"
 		score = 75
@@ -61923,8 +61923,8 @@ rule CAPE_Latrodectus_AES
 		date = "2024-01-18"
 		modified = "2025-05-10"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Latrodectus.yar#L18-L34"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Latrodectus.yar#L18-L34"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "5cecb26a3f33c24b92a0c8f6f5175da0664b21d7c4216a41694e4a4cad233ca8"
 		logic_hash = "058d278c16527969066d1b4ea7f0e3ab2809d5480cdab06ec476b465e0c4795a"
 		score = 75
@@ -61952,8 +61952,8 @@ rule CAPE_Tclient : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/TClient.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/TClient.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6edcd01e4722b367723ed77d9596877d16ee35dc4c160885d125f83e45cee24d"
 		score = 75
 		quality = 70
@@ -61975,8 +61975,8 @@ rule CAPE_Gootkit : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Gootkit.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Gootkit.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "26704b6b0adca51933fc9d5e097930320768fd0e9355dcefc725aee7775316e7"
 		score = 75
 		quality = 70
@@ -61998,8 +61998,8 @@ rule CAPE_Adaptixbeacon
 		date = "2025-06-16"
 		modified = "2025-10-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AdaptixBeacon.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AdaptixBeacon.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "f78f5803be5704420cbb2e0ac3c57fcb3d9cdf443fbf1233c069760bee115b5d"
 		logic_hash = "2c1d09cd5e19e5a09dde65411691afd5922959d4a7b5232b28ebf56f26d2f07d"
 		score = 75
@@ -62028,8 +62028,8 @@ rule CAPE_Zeuspanda : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/ZeusPanda.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/ZeusPanda.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "43d8a56cae9fd23c053f6956851734d3270b46a906236854502c136e3bb1e761"
 		score = 75
 		quality = 70
@@ -62053,8 +62053,8 @@ rule CAPE_Netsupport : FILE
 		date = "2025-10-17"
 		modified = "2025-10-17"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/NetSupport.yar#L3-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/NetSupport.yar#L3-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "d12e46d74ae0ba9f599d27dc2f55ff92a6648accbcd1a43cc3f1a9a2755e5fc7"
 		score = 75
 		quality = 70
@@ -62079,8 +62079,8 @@ rule CAPE_Petya : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Petya.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Petya.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f819261bb34f3b2eb7dc2f843b56be25105570fe902a77940a632a54fbe0d014"
 		score = 75
 		quality = 70
@@ -62104,8 +62104,8 @@ rule CAPE_Codoso : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Codoso.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Codoso.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "32c9ed2ac29e8905266977a9ee573a252442d96fb9ec97d88642180deceec3f8"
 		score = 75
 		quality = 70
@@ -62129,8 +62129,8 @@ rule CAPE_Salat : FILE
 		date = "2026-04-17"
 		modified = "2026-04-17"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Salat.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Salat.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "162a7398e0b2a83029bc3369127330636dce2b4f0874a17049cd90995ad89911"
 		score = 75
 		quality = 70
@@ -62155,8 +62155,8 @@ rule CAPE_Smokeloader
 		date = "2019-10-30"
 		modified = "2025-11-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/SmokeLoader.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/SmokeLoader.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "8e2f95af9b25ccfd8ad7b56f75a37bb085bde1b2feda2e6502568e86c928ed68"
 		score = 75
 		quality = 70
@@ -62183,8 +62183,8 @@ rule CAPE_Doppelpaymer : FILE
 		date = "2019-11-15"
 		modified = "2022-06-27"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DoppelPaymer.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DoppelPaymer.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "73a2575671bafc31a70af3ce072d6f94ae172b12202baebba586a02524cb6f9d"
 		score = 75
 		quality = 70
@@ -62207,8 +62207,8 @@ rule CAPE_Nightshadec2 : FILE
 		date = "2025-09-04"
 		modified = "2025-09-12"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/NightshadeC2.yar#L1-L20"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/NightshadeC2.yar#L1-L20"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "963c012d56c62093d105ab5044517fdcce4ab826f7782b3e377932da1df6896d"
 		logic_hash = "f9fabc391e21180a1c92abea0a5ded6d7669e8d8f2330b69d6c1227c9b4237a0"
 		score = 75
@@ -62238,8 +62238,8 @@ rule CAPE_Chaosbot : FILE
 		date = "2025-10-16"
 		modified = "2025-10-16"
 		reference = "https://x.com/YungBinary/status/1976580501508182269"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/ChaosBot.yar#L1-L24"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/ChaosBot.yar#L1-L24"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "fcb04697dbef62497421318d5dfe7cdf5533b432975ebbfb3bd64ebbfeb4a592"
 		score = 75
 		quality = 62
@@ -62273,8 +62273,8 @@ rule CAPE_Carbanak : FILE
 		date = "2023-11-30"
 		modified = "2024-03-18"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Carbanak.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Carbanak.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "c9c1b06cb9c9bd6fc4451f5e2847a1f9524bb2870d7bb6f0ee09b9dd4e3e4c84"
 		logic_hash = "8ed5ab07f1635dc7cdf296e86a71a0a99d0b2faef8fc460f43d426b24b8c8367"
 		score = 75
@@ -62299,8 +62299,8 @@ rule CAPE_Cryptoshield : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Cryptoshield.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Cryptoshield.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "46064b4c69cb1af01330c5d194ef50728e0f0479e9fbf72828822935f8e37ac6"
 		score = 75
 		quality = 70
@@ -62324,8 +62324,8 @@ rule CAPE_Asyncrat_Kingrat
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L1-L30"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L1-L30"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "1400d2029dfb66d8f2dc34db8643d6301f3af9bd356639f883d2c10bcc0c3947"
 		score = 75
 		quality = 58
@@ -62363,8 +62363,8 @@ rule CAPE_Stormkitty : FILE
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L32-L57"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L32-L57"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "258f5d9da80ff912459194b1139f062491df21a44456942951e2bd98e4b86c9b"
 		score = 75
 		quality = 66
@@ -62399,8 +62399,8 @@ rule CAPE_Worldwind : FILE
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L60-L82"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L60-L82"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "9bb04fad460193cd877ea7f2de9337f69aadda01aee6c79f0a23cdf564b1e6c8"
 		score = 75
 		quality = 70
@@ -62435,8 +62435,8 @@ rule CAPE_Prynt : FILE
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L85-L107"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L85-L107"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "84f2b33285ab1d129a62940a02990639cc8f7c92d490d7257e6aed9170d1e34e"
 		score = 75
 		quality = 70
@@ -62462,6 +62462,46 @@ rule CAPE_Prynt : FILE
 	condition:
 		uint16( 0 ) == 0x5a4d and 1 of ( $c* ) and ( 1 of ( $x* ) or 2 of ( $m* ) or 3 of ( $s* ) )
 }
+rule CAPE_Xworm : FILE
+{
+	meta:
+		description = "Detects XWorm"
+		author = "ditekSHen"
+		id = "bf9115a7-850a-5326-860c-a9a71bc7e50c"
+		date = "2024-10-09"
+		modified = "2025-02-03"
+		reference = "https://github.com/kevoreilly/CAPEv2"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L110-L136"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
+		logic_hash = "5a86c2f0a188135e53d86c176806a208abbe3dd830bde364016859ffa5294bd7"
+		score = 75
+		quality = 68
+		tags = "FILE"
+		cape_type = "XWorm Payload"
+
+	strings:
+		$x1 = "XWorm " wide nocase
+		$x2 = /XWorm\s(V|v)\d+\.\d+/ fullword wide
+		$s1 = "RunBotKiller" fullword wide
+		$s2 = "XKlog.txt" fullword wide
+		$s3 = /(shell|reg)fuc/ fullword wide
+		$s4 = "closeshell" fullword ascii
+		$s5 = { 62 00 79 00 70 00 73 00 73 00 00 ?? 63 00 61 00 6c 00 6c 00 75 00 61 00 63 00 00 ?? 73 00 63 00 }
+		$s6 = { 44 00 44 00 6f 00 73 00 54 00 00 ?? 43 00 69 00 6c 00 70 00 70 00 65 00 72 00 00 ?? 50 00 45 00 }
+		$s7 = { 69 00 6e 00 6a 00 52 00 75 00 6e 00 00 ?? 73 00 74 00 61 00 72 00 74 00 75 00 73 00 62 }
+		$s8 = { 48 6f 73 74 00 50 6f 72 74 00 75 70 6c 6f 61 64 65 72 00 6e 61 6d 65 65 65 00 4b 45 59 00 53 50 4c 00 4d 75 74 65 78 78 00 }
+		$v2_1 = "PING!" fullword wide
+		$v2_2 = "Urlhide" fullword wide
+		$v2_3 = /PC(Restart|Shutdown)/ fullword wide
+		$v2_4 = /(Start|Stop)(DDos|Report)/ fullword wide
+		$v2_5 = /Offline(Get|Keylogger)/ wide
+		$v2_6 = "injRun" fullword wide
+		$v2_7 = "Xchat" fullword wide
+		$v2_8 = "UACFunc" fullword ascii wide
+
+	condition:
+		uint16( 0 ) == 0x5a4d and ( ( 1 of ( $x* ) and ( 3 of ( $s* ) or 3 of ( $v2* ) ) ) or 6 of them )
+}
 rule CAPE_Xworm_Kingrat
 {
 	meta:
@@ -62471,8 +62511,8 @@ rule CAPE_Xworm_Kingrat
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L138-L155"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L138-L155"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3914be652bb7271e5e6b89d05edf10a54f8ddaf9e22d194b60501aa2cdd495d3"
 		score = 75
 		quality = 66
@@ -62503,8 +62543,8 @@ rule CAPE_Dcrat_Kingrat
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L224-L243"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L224-L243"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "73ac27c3f0fc71d053e89690b5a7d29c1f8b0ea0a22e8595148a9001799fae54"
 		score = 75
 		quality = 62
@@ -62536,8 +62576,8 @@ rule CAPE_Quasarrat : FILE
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L245-L266"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L245-L266"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "556b19dc0980761198ea31a285f281adae084463d24bff1eda15326436ad562b"
 		score = 75
 		quality = 70
@@ -62571,8 +62611,8 @@ rule CAPE_Quasarrat_Kingrat
 		date = "2024-10-09"
 		modified = "2025-02-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AsyncRAT.yar#L268-L287"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AsyncRAT.yar#L268-L287"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "1f4296a592134edbe52e256dc353143af02e897ff1afad98f3dac0c5ab13f3f7"
 		score = 75
 		quality = 70
@@ -62604,8 +62644,8 @@ rule CAPE_Amatera : FILE
 		date = "2025-06-19"
 		modified = "2025-06-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Amatera.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Amatera.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "35eb93548a0c037d392f870c05e0e9fb1aeff3a5a505e1d4a087f7465ed1f6af"
 		logic_hash = "1c02f04846568b85acbd4101b2e944dc824179f7cff1bceaec1c657939b610d5"
 		score = 75
@@ -62630,8 +62670,8 @@ rule CAPE_Obfuscar : FILE
 		date = "2025-03-07"
 		modified = "2025-03-07"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Obfuscar.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Obfuscar.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "54581e83e5fa13fae4bda74016b3fa1d18c92e2659f493ebe54d70fd5f77bba5"
 		score = 75
 		quality = 70
@@ -62652,8 +62692,8 @@ rule CAPE_Azorult : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Azorult.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Azorult.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "4691cf48d513d1965416b0cce1b6e19c8f7b393a940afd68b7c6ca8c0d125d90"
 		score = 75
 		quality = 70
@@ -62676,8 +62716,8 @@ rule CAPE_Mykings : FILE
 		date = "2025-10-24"
 		modified = "2025-10-26"
 		reference = "https://x.com/YungBinary/status/1981108948498333900"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/MyKings.yar#L1-L23"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/MyKings.yar#L1-L23"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "82647dd23c0247faa045893ec1cf111da2a30528a1b737b59ce1b71172a64473"
 		score = 75
 		quality = 70
@@ -62711,8 +62751,8 @@ rule CAPE_Qakbot5 : FILE
 		date = "2019-10-30"
 		modified = "2024-04-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/QakBot.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/QakBot.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "59559e97962e40a15adb2237c4d01cfead03623aff1725616caeaa5a8d273a35"
 		logic_hash = "cc23a92f45619d44af824128b743c259dd9dfa7cb5106932f3425f3dfd1dccdf"
 		score = 75
@@ -62738,8 +62778,8 @@ rule CAPE_Qakbot4 : FILE
 		date = "2019-10-30"
 		modified = "2024-04-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/QakBot.yar#L17-L35"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/QakBot.yar#L17-L35"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b2870e33abffbb3ff49b7891b0f5c538ab48ee63da5553929d4e37dec921344f"
 		score = 75
 		quality = 70
@@ -62769,8 +62809,8 @@ rule CAPE_Lockbit : FILE
 		date = "2020-05-14"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Lockbit.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Lockbit.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "80ab705c8246a0bd5b3de65146cf32b102f39bf9444bdf1d366b5a794c1229b9"
 		score = 75
 		quality = 70
@@ -62796,8 +62836,8 @@ rule CAPE_Arkei : FILE
 		date = "2019-10-30"
 		modified = "2025-01-10"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Arkei.yar#L1-L50"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Arkei.yar#L1-L50"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "296e420880d8d2f24424d0411e7ef4939e18147689557512f410da48498a44c9"
 		score = 75
 		quality = 70
@@ -62853,8 +62893,8 @@ rule CAPE_Vidar : FILE
 		date = "2019-10-30"
 		modified = "2026-06-08"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Vidar.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Vidar.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "35f2aa1e2a3f233b3c25893fdb447f11b2ff9f6fdaab1bc1499a12b25c8cb3ee"
 		score = 75
 		quality = 70
@@ -62877,8 +62917,8 @@ rule CAPE_Vidarold : FILE
 		date = "2019-10-30"
 		modified = "2026-06-08"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Vidar.yar#L14-L35"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Vidar.yar#L14-L35"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5d4c030536ed41cf4e0dcb77b2fe4553d789ee2b8095a4b3e050692335a8709d"
 		score = 75
 		quality = 70
@@ -62912,8 +62952,8 @@ rule CAPE_Nighthawk
 		date = "2022-12-03"
 		modified = "2022-12-05"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Nighthawk.yar#L3-L24"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Nighthawk.yar#L3-L24"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "2d77912678e06503ffef0e8ed84aa4f9ac74357480d57742fbae619acebfb5f2"
 		score = 75
 		quality = 70
@@ -62937,8 +62977,8 @@ rule CAPE_Nitrogenloader : FILE
 		date = "2024-10-29"
 		modified = "2026-05-04"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/NitrogenLoader.yar#L1-L36"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/NitrogenLoader.yar#L1-L36"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "7b603d63a23201ff0b6ffa9acdd650df9caa1731837d559d93b3d8ce1d82a962"
 		hash = "50c2afd792bfe2966133ee385054eaae1f73b04e013ef3434ef2407f99d7f037"
 		hash = "4926dee7da0da522c34ffeebb32f28703fd689a52543332c8d28ccfea223f43a"
@@ -62984,8 +63024,8 @@ rule CAPE_Remcos : FILE
 		date = "2019-10-30"
 		modified = "2022-05-10"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Remcos.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Remcos.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "38142e784ad437d9592353b924f74777bb62e5ed176c811230a2021a437d4710"
 		score = 75
 		quality = 68
@@ -63010,8 +63050,8 @@ rule CAPE_Bumblebee : FILE
 		date = "2022-04-21"
 		modified = "2024-10-29"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BumbleBee.yar#L35-L50"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BumbleBee.yar#L35-L50"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "bc7c2ce9d3cd598c9510dc64d78048999f2f89ee5a84cd0d6046dbdfabe260ee"
 		score = 75
 		quality = 70
@@ -63038,8 +63078,8 @@ rule CAPE_Bumblebee2024
 		date = "2022-04-21"
 		modified = "2024-10-29"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BumbleBee.yar#L52-L68"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BumbleBee.yar#L52-L68"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "db58272c1ba74bc6e6a90bdacf7e8feec94be5da2b5123e0475ce86448f3edb2"
 		score = 75
 		quality = 70
@@ -63067,8 +63107,8 @@ rule CAPE_Stealc : FILE
 		date = "2023-02-22"
 		modified = "2025-08-21"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Stealc.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Stealc.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "77d6f1914af6caf909fa2a246fcec05f500f79dd56e5d0d466d55924695c702d"
 		logic_hash = "a6165168b7c74761b91d1691465688c748227b830813067edb4e9bdc934271c4"
 		score = 75
@@ -63092,8 +63132,8 @@ rule CAPE_Stealcv2 : FILE
 		date = "2023-02-22"
 		modified = "2025-08-21"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Stealc.yar#L15-L32"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Stealc.yar#L15-L32"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "911c6a7f63e91a788898f3cc6e66396e39d5bd48f8fbaac49ee5dbbdaa64d5a0"
 		score = 75
 		quality = 70
@@ -63122,8 +63162,8 @@ rule CAPE_Wanacry : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/WanaCry.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/WanaCry.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "16d5e39f043d27bbf22f8f21e13971b7e0709b07e44746dd157d11ee4cc51944"
 		score = 75
 		quality = 70
@@ -63149,8 +63189,8 @@ rule CAPE_Nanolocker : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/NanoLocker.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/NanoLocker.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "fe6c8a4e259c3c526f8f50771251f6762b2b92a4df2e8bfc705f282489f757db"
 		score = 75
 		quality = 70
@@ -63174,8 +63214,8 @@ rule CAPE_Bazar : FILE
 		date = "2021-08-26"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Bazar.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Bazar.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "9375f59b56e47fd0b90b089afdf3be8f16f960038fc625523a2e2d5509ab099d"
 		score = 75
 		quality = 70
@@ -63198,8 +63238,8 @@ rule CAPE_Fareit : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Fareit.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Fareit.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ed35391ffc949219f380da3f22bc8397a7d5c742bd68e227c3becdebcab5cf83"
 		score = 75
 		quality = 70
@@ -63221,8 +63261,8 @@ rule CAPE_Doomedloader : FILE
 		date = "2024-04-12"
 		modified = "2024-05-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DoomedLoader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DoomedLoader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "54a5962ef49ebf987908c4ea1559788f7c96a7e4ea61d2973636e998a0239c77"
 		score = 75
 		quality = 70
@@ -63246,8 +63286,8 @@ rule CAPE_Darkgate
 		date = "2023-08-09"
 		modified = "2024-02-26"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DarkGate.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DarkGate.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "25c0e77a83676c6a18445f8df0b1f7a9148de5f64eeb532f9a4f4d4652dd8191"
 		score = 75
 		quality = 70
@@ -63274,8 +63314,8 @@ rule CAPE_Ursnif : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Ursnif.yar#L1-L19"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Ursnif.yar#L1-L19"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "46e79fde81ff5352314618021e394b2e0322df07170c7279363290b7134935fd"
 		score = 75
 		quality = 70
@@ -63304,8 +63344,8 @@ rule CAPE_Dreambot : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Dreambot.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Dreambot.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "29c6d648d5d38667c5824c2d20a83a20448c2ae6054ddddb2b2b7f8bdb69f74b"
 		score = 75
 		quality = 70
@@ -63330,8 +63370,8 @@ rule CAPE_Lokibot : FILE
 		date = "2022-02-01"
 		modified = "2022-02-01"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/LokiBot.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/LokiBot.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "a5b3d518371138740e913d2d6ce4fa22d3da5cea7e034c7d6b4b502e6bf44b06"
 		score = 75
 		quality = 70
@@ -63354,8 +63394,8 @@ rule CAPE_Agent_Tesla
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L1-L17"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L1-L17"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3945754129dcc58e0abfd7485f5ff0c0afdd1078ae2cf164ca8f59a6f79db1be"
 		score = 75
 		quality = 70
@@ -63381,8 +63421,8 @@ rule CAPE_Agenttesla : FILE
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L19-L41"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L19-L41"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "1bf9b26c4cf87e674ddffabe40aba5a45499c6a04d4ff3e43c3cda4cbcb4d188"
 		score = 75
 		quality = 70
@@ -63414,8 +63454,8 @@ rule CAPE_Agentteslav2 : FILE
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L43-L67"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L43-L67"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b45296b3b94fa1ff32de48c94329a17402461fb6696e9390565c4dba9738ed78"
 		score = 75
 		quality = 70
@@ -63451,8 +63491,8 @@ rule CAPE_Agentteslav3 : FILE
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L69-L115"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L69-L115"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "cc9bbbcf3608b49a76b098acf846ff03eae5e9cb107697627d62661fa1be36c2"
 		score = 75
 		quality = 70
@@ -63490,8 +63530,8 @@ rule CAPE_Agentteslav4 : FILE
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L117-L130"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L117-L130"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "0a39036f408728ab312a54ff3354453d171424f57f9a8f3b42af867be3037ca9"
 		score = 75
 		quality = 70
@@ -63516,8 +63556,8 @@ rule CAPE_Agentteslav4Jit
 		date = "2019-10-30"
 		modified = "2026-01-14"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AgentTesla.yar#L132-L145"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AgentTesla.yar#L132-L145"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "8f7144d2a989ce8d291af926b292f5f0f7772e707b0e49797eba13ecf91b90bc"
 		score = 75
 		quality = 70
@@ -63542,8 +63582,8 @@ rule CAPE_Eternalromance : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/EternalRomance.yar#L1-L33"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/EternalRomance.yar#L1-L33"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5390fae3e2411a715cdc965df8648c0c4c511d53d5f76031714f1b784b58eb0d"
 		score = 75
 		quality = 68
@@ -63587,8 +63627,8 @@ rule CAPE_Zerot : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/ZeroT.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/ZeroT.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f60ae25ac3cd741b8bdc5100b5d3c474b5d9fbe8be88bfd184994bae106c3803"
 		score = 75
 		quality = 68
@@ -63614,8 +63654,8 @@ rule CAPE_Rhadamanthys
 		date = "2023-01-25"
 		modified = "2025-12-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Rhadamanthys.yar#L1-L19"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Rhadamanthys.yar#L1-L19"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3ccfc97202690dd996ffd2b4f09d31e6ee322bf9f0b7759f9b8c455164995f84"
 		score = 75
 		quality = 70
@@ -63645,8 +63685,8 @@ rule CAPE_Rhadamanthysloader
 		date = "2023-01-25"
 		modified = "2025-12-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Rhadamanthys.yar#L21-L33"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Rhadamanthys.yar#L21-L33"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5505c9ba1f0c6cb9aa9c212bf8bc2c49ad544e99996a1f4c1fa79a27a14d4c7f"
 		score = 75
 		quality = 70
@@ -63670,8 +63710,8 @@ rule CAPE_Scarab : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Scarab.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Scarab.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "0d8fa7ab4c8e5699f17f9e9444e85a42563a840a8e7ee9eda54add3a6845d1c6"
 		score = 75
 		quality = 70
@@ -63695,8 +63735,8 @@ rule CAPE_Conti : FILE
 		date = "2020-10-19"
 		modified = "2021-03-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Conti.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Conti.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c9842f93d012d0189b9c6f10ad558b37ae66226bbb619ad677f6906ccaf0e848"
 		score = 75
 		quality = 70
@@ -63720,8 +63760,8 @@ rule CAPE_Locky : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Locky.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Locky.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "9786c54a2644d9581fefe64be11b26e22806398e54e961fa4f19d26eae039cd7"
 		score = 75
 		quality = 70
@@ -63745,8 +63785,8 @@ rule CAPE_Xenorat
 		date = "2024-10-09"
 		modified = "2024-10-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/XenoRAT.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/XenoRAT.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "26f520fb69a52d05786fac0e9e38f5db9601da0a3e7768e00975a9684f3560ef"
 		score = 75
 		quality = 66
@@ -63773,8 +63813,8 @@ rule CAPE_Zloader : FILE
 		date = "2020-04-04"
 		modified = "2025-12-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Zloader.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Zloader.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "adbd0c7096a7373be82dd03df1aae61cb39e0a155c00bbb9c67abc01d48718aa"
 		logic_hash = "525670973b67aac048199529c97d6be00b0a8cca9bc90deb647366d92a5ea540"
 		score = 75
@@ -63803,8 +63843,8 @@ rule CAPE_Zloader2024 : FILE
 		date = "2020-04-04"
 		modified = "2025-12-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Zloader.yar#L20-L34"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Zloader.yar#L20-L34"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "49405370a33abbf131c5d550cebe00780cc3fd3cbe888220686582ae88f16af7"
 		logic_hash = "27d883f6d6cab07e602f97a0a032a152386693f79dabf1bb87b0a8a053a38b03"
 		score = 75
@@ -63830,8 +63870,8 @@ rule CAPE_Zloader2025 : FILE
 		date = "2020-04-04"
 		modified = "2025-12-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Zloader.yar#L36-L49"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Zloader.yar#L36-L49"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "86ffd411b42d8d06bdb294f48e79393adeea586c56c5c75c1a68ce6315932881"
 		logic_hash = "cc9c39f0b5e7e8c8853982d9c896bbaac5a36bb0f501c8901d8854f2d5e1a19c"
 		score = 75
@@ -63856,8 +63896,8 @@ rule CAPE_Rcsession
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/RCSession.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/RCSession.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ebd1e9e615a91c35b36332cad55519607323469df738cec4464288b45787630d"
 		score = 75
 		quality = 70
@@ -63880,8 +63920,8 @@ rule CAPE_Dridexloader : FILE
 		date = "2019-11-12"
 		modified = "2021-03-10"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DridexLoader.yar#L1-L17"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DridexLoader.yar#L1-L17"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "20696b1f14539c8ecf21bffc696596040c20b1ee2fcedc173945482c0baca588"
 		score = 75
 		quality = 70
@@ -63908,8 +63948,8 @@ rule CAPE_Rozena
 		date = "2024-03-13"
 		modified = "2024-03-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Rozena.yar#L1-L10"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Rozena.yar#L1-L10"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c415a8108b58a125a604031bb8d73b58a8aae5429b5b765e35fa8a4add9cd135"
 		score = 75
 		quality = 70
@@ -63932,8 +63972,8 @@ rule CAPE_Formbook
 		date = "2019-10-30"
 		modified = "2023-10-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Formbook.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Formbook.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "63ee4dd6fe5ed2a3e5ee88ba7de48d2c9e0024961a550d0fdb68891c9885e05e"
 		score = 75
 		quality = 70
@@ -63962,8 +64002,8 @@ rule CAPE_Tscookie : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/TSCookie.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/TSCookie.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "0461c7fd14c74646437654f0a63a4a89d4efad620e197a8ca1e8d390618842c3"
 		score = 75
 		quality = 70
@@ -63987,8 +64027,8 @@ rule CAPE_Bitpaymer : FILE
 		date = "2019-11-27"
 		modified = "2019-11-27"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BitPaymer.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BitPaymer.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6ae0dc9a36da13e483d8d653276b06f59ecc15c95c754c268dcc91b181677c4c"
 		score = 75
 		quality = 70
@@ -64011,8 +64051,8 @@ rule CAPE_Monsterv2 : FILE
 		date = "2025-09-06"
 		modified = "2025-09-12"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/MonsterV2.yar#L1-L21"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/MonsterV2.yar#L1-L21"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "d4e65f860e69b2eee8a818a4146d91b84ce6da30c8fa27593587932e4f0847a8"
 		score = 75
 		quality = 70
@@ -64044,8 +64084,8 @@ rule CAPE_Ursnifv3 : FILE
 		date = "2022-05-31"
 		modified = "2023-03-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/UrsnifV3.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/UrsnifV3.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "501cd52388aba16f9d33b4555f310e1ad58326916b15358a485c701acb87abd8"
 		score = 75
 		quality = 70
@@ -64074,8 +64114,8 @@ rule CAPE_Rokrat : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/RokRat.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/RokRat.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "2aaa7de7ccd59e0da690f4bc0c7deaacf61314d61f8d2aa3ce6f6892f50612ec"
 		score = 75
 		quality = 70
@@ -64098,8 +64138,8 @@ rule CAPE_Petrwrap : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/PetrWrap.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/PetrWrap.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6dd1cf5639b63d0ab41b24080dad68d285f2e3969ad34fd724c83e7a0dd4b968"
 		score = 75
 		quality = 70
@@ -64124,8 +64164,8 @@ rule CAPE_Cerber : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Cerber.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Cerber.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "16a8f808c28d3b142c079a305aba7f553f2452e439710bf610a06f8f2924d5a3"
 		score = 75
 		quality = 70
@@ -64147,8 +64187,8 @@ rule CAPE_Hancitor : FILE
 		date = "2019-10-30"
 		modified = "2020-10-20"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Hancitor.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Hancitor.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "84003542a2f587b5fbd43731c4240759806f8ee46df2bd96aae4a3c09d97e41c"
 		score = 75
 		quality = 70
@@ -64173,8 +64213,8 @@ rule CAPE_Amadey : FILE
 		date = "2021-02-18"
 		modified = "2025-08-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Amadey.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Amadey.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "988258716d5296c1323303e8fe4efd7f4642c87bfdbe970fe9a3bb3f410f70a4"
 		logic_hash = "5a7405a174b63826500f3b04c6f10bc9b40d5b49e85377bef027204e75dd1e9e"
 		score = 75
@@ -64200,8 +64240,8 @@ rule CAPE_Emotetloader : FILE
 		date = "2022-05-31"
 		modified = "2022-05-31"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/EmotetLoader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/EmotetLoader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "410872d25ed3a89a2cba108f952d606cd1c3bf9ccc89ae6ab3377b83665c2773"
 		score = 75
 		quality = 70
@@ -64223,8 +64263,8 @@ rule CAPE_Kronos : FILE
 		date = "2019-10-30"
 		modified = "2020-07-02"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Kronos.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Kronos.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "52ce9caf3627efe8ae86df6ca59e51e9f738e13ac0265f797e8d70123dbcaeb3"
 		score = 75
 		quality = 70
@@ -64249,8 +64289,8 @@ rule CAPE_Megacortex : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/MegaCortex.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/MegaCortex.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5de1d8241260070241c91b97f18feb2a90069e3b158e863e2d9f568799c244e6"
 		score = 75
 		quality = 70
@@ -64274,8 +64314,8 @@ rule CAPE_Nitrobunnydownloader : FILE
 		date = "2025-10-28"
 		modified = "2025-11-05"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/NitroBunnyDownloader.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/NitroBunnyDownloader.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "960e59200ec0a4b5fb3b44e6da763f5fec4092997975140797d4eec491de411b"
 		logic_hash = "dcc1348c1d1af0c854376cf6331538951362b43d8d76c0ad73bbbdeb1ab4c135"
 		score = 75
@@ -64304,8 +64344,8 @@ rule CAPE_Badrabbit : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BadRabbit.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BadRabbit.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "309e14ab4ea2f919358631f9d8b2aaff1f51e7708b6114e4e6bf4a9d9a5fc86c"
 		score = 75
 		quality = 70
@@ -64329,8 +64369,8 @@ rule CAPE_Jaff : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Jaff.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Jaff.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6806a5eeee04b7436ff694addc334bfc0f1ee611116904d57be9506acfd47418"
 		score = 75
 		quality = 70
@@ -64355,8 +64395,8 @@ rule CAPE_Cargobayloader : FILE
 		date = "2023-02-20"
 		modified = "2023-02-20"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/CargoBayLoader.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/CargoBayLoader.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "75e975031371741498c5ba310882258c23b39310bd258239277708382bdbee9c"
 		logic_hash = "1d5c4ca79f97e1fac358189a8c6530be12506974fc2fb42f63b0b621536a45c9"
 		score = 75
@@ -64380,8 +64420,8 @@ rule CAPE_Seduploader : FILE
 		date = "2019-10-30"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Seduploader.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Seduploader.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "d70c886699169d4dafc5b063c93682a34af5667df6d293b52256ddc19ab9c516"
 		score = 75
 		quality = 70
@@ -64403,8 +64443,8 @@ rule CAPE_Buerloader : FILE
 		date = "2020-10-29"
 		modified = "2022-05-31"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BuerLoader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BuerLoader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "05c1f008f0a2bb8232867977fb23a5ae8312f10f0637c6265561052596319c29"
 		score = 75
 		quality = 70
@@ -64428,8 +64468,8 @@ rule CAPE_Nemty : FILE
 		date = "2020-04-03"
 		modified = "2020-04-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Nemty.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Nemty.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "a05974b561c67b4f1e0812639b74831edcf65686a06c0d380f0b45739e342419"
 		score = 75
 		quality = 70
@@ -64453,8 +64493,8 @@ rule CAPE_Oyster
 		date = "2024-03-01"
 		modified = "2024-05-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Oyster.yar#L1-L19"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Oyster.yar#L1-L19"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "8bae0fa9f589cd434a689eebd7a1fde949cc09e6a65e1b56bb620998246a1650"
 		logic_hash = "23ab1518712dbce8319b87785d7ffc0c2b61de82c2bbf533ebf0aae39ec33540"
 		score = 75
@@ -64484,8 +64524,8 @@ rule CAPE_Phantomstealer : FILE
 		date = "2026-07-28"
 		modified = "2026-07-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/PhantomStealer.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/PhantomStealer.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "2f6051f4653aca8f6db27b2ecf7156913f5d18542fdcd58ebc4b4bb41c1c3fb2"
 		score = 75
 		quality = 70
@@ -64509,8 +64549,8 @@ rule CAPE_Lumma : FILE
 		date = "2024-01-05"
 		modified = "2025-07-08"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Lumma.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Lumma.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ca7822292c58af68e7a1610362bf0b5d27c93e3222ceec8d216e05a442008f37"
 		score = 75
 		quality = 70
@@ -64537,8 +64577,8 @@ rule CAPE_Cobaltstrikestager
 		date = "2023-01-18"
 		modified = "2023-01-18"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/CobaltStrikeStager.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/CobaltStrikeStager.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6a55b0c3ab5f557dfb7a3f8bd616ede1bd9b93198590fc9d52aa19c1154388c5"
 		score = 75
 		quality = 70
@@ -64563,8 +64603,8 @@ rule CAPE_Squirrelwaffle : FILE
 		date = "2021-09-22"
 		modified = "2021-10-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/SquirrelWaffle.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/SquirrelWaffle.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5f799333398421d537ec7a87ca94f6cc9cf1e53e55b353036a5132440990e500"
 		score = 75
 		quality = 70
@@ -64587,8 +64627,8 @@ rule CAPE_Koiloader
 		date = "2024-10-25"
 		modified = "2024-10-25"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/KoiLoader.yar#L1-L35"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/KoiLoader.yar#L1-L35"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "b462e3235c7578450b2b56a8aff875a3d99d22f6970a01db3ba98f7ecb6b01a0"
 		logic_hash = "264a536632f8f11c904b00c9d2e505b3263c733ad8fbc2ef19c25a5ad58cef90"
 		score = 75
@@ -64632,8 +64672,8 @@ rule CAPE_Masslogger : FILE
 		date = "2020-10-20"
 		modified = "2020-11-24"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/MassLogger.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/MassLogger.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c8d82694810aafbdc6a35a661e7431e9536035e2f7fef90b9359064c4209b66c"
 		score = 75
 		quality = 70
@@ -64656,8 +64696,8 @@ rule CAPE_Ramnit : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Ramnit.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Ramnit.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6f661f47bdf8377b0fb96f190fcb964c0ed2b43ce7ae7880f9dfce9e43837efd"
 		score = 75
 		quality = 70
@@ -64681,8 +64721,8 @@ rule CAPE_Atlas : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Atlas.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Atlas.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c3f73b29df5caf804dbfe3e6ac07a9e2c772bd2a126f0487e4a65e72bd501e6e"
 		score = 75
 		quality = 70
@@ -64706,8 +64746,8 @@ rule CAPE_Socks5Systemz : FILE
 		date = "2024-05-22"
 		modified = "2025-05-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Socks5Systemz.yar#L1-L19"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Socks5Systemz.yar#L1-L19"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "7e324bacd1ea57585435b6a5a4c93bda63ca146c100f2361a1c5530b87668299"
 		score = 75
 		quality = 70
@@ -64737,8 +64777,8 @@ rule CAPE_Aurastealer
 		date = "2025-09-02"
 		modified = "2025-09-02"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/AuraStealer.yar#L1-L18"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/AuraStealer.yar#L1-L18"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "960b83639a898509dc272f3235822401a8f861fa6607991993285b618b882d8b"
 		score = 75
 		quality = 70
@@ -64767,8 +64807,8 @@ rule CAPE_Magniber : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Magniber.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Magniber.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "1875754bdf98c1886f31f6c6e29992a98180f74d8fa168ae391e2c660d760618"
 		score = 75
 		quality = 70
@@ -64790,8 +64830,8 @@ rule CAPE_Azer : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Azer.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Azer.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "48bd4a4e071f10d1911c4173a0cd39c69fed7a3b29eb92beffe709899f4cefa5"
 		score = 75
 		quality = 70
@@ -64815,8 +64855,8 @@ rule CAPE_Pikabotloader : FILE
 		date = "2023-02-13"
 		modified = "2024-03-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/PikaBot.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/PikaBot.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "7e5f1f2911545ee6bd36b54f2627fbdec1b957f4b91df901dd1c6cbd4dff0231"
 		score = 75
 		quality = 70
@@ -64840,8 +64880,8 @@ rule CAPE_Pikabot : FILE
 		date = "2023-02-13"
 		modified = "2024-03-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/PikaBot.yar#L15-L28"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/PikaBot.yar#L15-L28"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ed07217c373831a9a67d914854154988696e6fcea70dedabf333385f0e7bb8b7"
 		score = 75
 		quality = 70
@@ -64866,8 +64906,8 @@ rule CAPE_Pik23 : FILE
 		date = "2023-02-13"
 		modified = "2024-03-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/PikaBot.yar#L30-L44"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/PikaBot.yar#L30-L44"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "59f42ecde152f78731e54ea27e761bba748c9309a6ad1c2fd17f0e8b90f8aed1"
 		logic_hash = "71a71df2f2a075294941c54eed06cafaaa4d3294e45b3a0098c1cffddd0438bc"
 		score = 75
@@ -64893,8 +64933,8 @@ rule CAPE_Blister : FILE
 		date = "2022-05-10"
 		modified = "2023-09-20"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Blister.yar#L1-L17"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Blister.yar#L1-L17"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "afb77617a4ca637614c429440c78da438e190dd1ca24dc78483aa731d80832c2"
 		hash = "d3eab2a134e7bd3f2e8767a6285b38d19cd3df421e8af336a7852b74f194802c"
 		logic_hash = "f26d85fdf0eb07e67fe38c43c5f6d024bfb7b2a333cb3411f5cdcff6bf5db12d"
@@ -64922,8 +64962,8 @@ rule CAPE_Hermes : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Hermes.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Hermes.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "9bc974173f39a57e7adfbf8ae106a20d960557696b4c3ce16e9b4e47d3e9e95b"
 		score = 75
 		quality = 70
@@ -64947,8 +64987,8 @@ rule CAPE_Vipkeylogger : FILE
 		date = "2025-09-11"
 		modified = "2025-09-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/VIPKeyLogger.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/VIPKeyLogger.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b9dba7562bba4807c0789692d44650996e62c8d0c4031dedd65773877621b1de"
 		score = 75
 		quality = 70
@@ -64973,8 +65013,8 @@ rule CAPE_Kovter : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Kovter.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Kovter.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "888fccb8fbfbe6c05ec63bc5658b4743f8e10a96ef51b3868c2ff94afec76f2d"
 		score = 75
 		quality = 70
@@ -64999,8 +65039,8 @@ rule CAPE_Mole : FILE
 		date = "2019-10-30"
 		modified = "2019-10-30"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/Mole.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/Mole.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "8be4d190d554a610360c0e04b33da59eb00319395e5b2000d580546ce6503786"
 		score = 75
 		quality = 70
@@ -65024,8 +65064,8 @@ rule CAPE_Stxrat : FILE
 		date = "2026-04-11"
 		modified = "2026-04-14"
 		reference = "https://www.esentire.com/blog/stx-rat-a-new-rat-in-2026-with-infostealer-capabilities"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/STXRat.yar#L49-L120"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/STXRat.yar#L49-L120"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f82b832e6bf936ff936332c059b1d3b981ce387bf82964ecf64a9cb12cda955d"
 		score = 75
 		quality = 70
@@ -65098,8 +65138,8 @@ rule CAPE_Bruteratel
 		date = "2024-07-11"
 		modified = "2024-07-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/BruteRatel.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/BruteRatel.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "0984977c716d6f8e068c045166eb5db77c9fbce27513e555dceca348375f1a66"
 		score = 75
 		quality = 70
@@ -65124,8 +65164,8 @@ rule CAPE_Dridexv4 : FILE
 		date = "2019-10-30"
 		modified = "2022-05-31"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/CAPE/DridexV4.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/CAPE/DridexV4.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "cb103fe5f2d4792e3c612db4e2d84a4c8b0ce0f9a8443e9147e2c345f1dbdff6"
 		score = 75
 		quality = 70
@@ -65151,8 +65191,8 @@ rule CAPE_Themida : FILE
 		date = "2024-09-11"
 		modified = "2024-09-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/data/yara/binaries/Themida.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/data/yara/binaries/Themida.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c4f1e01a3fe3cb66062ce03253bfe9edc09dc6f1a77db99b281106e8ceff9257"
 		score = 75
 		quality = 70
@@ -65174,8 +65214,8 @@ rule CAPE_Xworm_1
 		date = "2023-11-07"
 		modified = "2023-11-07"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/XWorm.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/XWorm.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "d8e103f3470e83d71cd4992b74698c0721b8a69d764fdb7a4543997b2853014a"
 		score = 75
 		quality = 70
@@ -65197,8 +65237,8 @@ rule CAPE_Pikahook : FILE
 		date = "2024-03-07"
 		modified = "2024-03-12"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Pikabot.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Pikabot.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "2a50a5f2d905122a5b7ac8ca3666b47caa24d325e246841129e53807daf2a1dd"
 		score = 75
 		quality = 70
@@ -65223,8 +65263,8 @@ rule CAPE_Pikexport : FILE
 		date = "2024-03-07"
 		modified = "2024-03-12"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Pikabot.yar#L16-L28"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Pikabot.yar#L16-L28"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "238dcc5611ed9066b63d2d0109c9b623f54f8d7b61d5f9de59694cfc60a4e646"
 		logic_hash = "33f58703a0e40c2361343dbdcc17111aafbf5cc912393edda79005c6ec566f42"
 		score = 75
@@ -65248,8 +65288,8 @@ rule CAPE_Vbcrypter
 		date = "2021-03-28"
 		modified = "2021-03-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/VBCrypter.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/VBCrypter.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "a62bca62ab624ab1a2c2e612c5b7e6d543006026a49c07c46800499e31e41c4e"
 		score = 75
 		quality = 70
@@ -65271,8 +65311,8 @@ rule CAPE_Mysterysnail
 		date = "2021-10-16"
 		modified = "2021-10-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/MysterySnail.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/MysterySnail.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "9402dbbbfdd286e2309ee83fc08194f70f73657a3a4e3785dfbcb564dbee86a8"
 		score = 75
 		quality = 70
@@ -65294,8 +65334,8 @@ rule CAPE_Latrodectus_1 : FILE
 		date = "2024-02-26"
 		modified = "2024-02-26"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Latrodectus.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Latrodectus.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "378d220bc863a527c2bca204daba36f10358e058df49ef088f8b1045604d9d05"
 		logic_hash = "c2c9f23e287253d766425c05eb774f6e07bdcbabc259e04b723a1a87c8b91fbd"
 		score = 75
@@ -65318,8 +65358,8 @@ rule CAPE_Slowloader
 		date = "2024-09-23"
 		modified = "2024-09-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/SlowLoader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/SlowLoader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f07528c646ebd980a5e843caa4a4715e31b22c3cd091576600e9fe45d7fc2fe4"
 		score = 75
 		quality = 70
@@ -65342,8 +65382,8 @@ rule CAPE_Gettickcountantivm
 		date = "2021-12-14"
 		modified = "2022-02-25"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/GetTickCountAntiVM.yar#L1-L20"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/GetTickCountAntiVM.yar#L1-L20"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "662bc7839ed7ddd82d5fdafa29fafd9a9ec299c28820fe4104fbba9be1a09c42"
 		hash = "00f1537b13933762e1146e41f3bac668123fac7eacd0aa1f7be0aa37a91ef3ce"
 		hash = "549bca48d0bac94b6a1e6eb36647cd007fed5c0e75a0e4aa315ceabdafe46541"
@@ -65374,8 +65414,8 @@ rule CAPE_Smokeinjector : FILE
 		date = "2023-02-06"
 		modified = "2025-11-19"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/SmokeLoader.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/SmokeLoader.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "757a2bf8aceb92bee839bfcaba3b1a8bc4c037812b969e0f493e4f7a4ddc9ede"
 		score = 75
 		quality = 70
@@ -65398,8 +65438,8 @@ rule CAPE_Risepro : FILE
 		date = "2023-12-16"
 		modified = "2023-12-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/RisePro.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/RisePro.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "1b69a1dd5961241b926605f0a015fa17149c3b2759fb077a30a22d4ddcc273f6"
 		logic_hash = "055ca8328923b91f93c116e4a856366356fa11155f4e9fde95da31129b51386a"
 		score = 75
@@ -65424,8 +65464,8 @@ rule CAPE_Anticuckoo : FILE
 		date = "2023-03-17"
 		modified = "2023-03-17"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/AntiCuckoo.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/AntiCuckoo.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "ad5e52f144bb4a1dae3090978c6ecb4c7732538c9b62a6cedd32eccee6094be5"
 		logic_hash = "a039aeca2dae44980e8bffafacfda90975e107001be50f11ac916b35ad43592e"
 		score = 75
@@ -65448,8 +65488,8 @@ rule CAPE_Qakbot5_1 : FILE
 		date = "2022-03-16"
 		modified = "2024-02-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/QakBot.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/QakBot.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "303ea2d8d1a7f0fd0ca5508dae2c1b83c03b1e3e975760f15d36d93bcc152767"
 		score = 75
 		quality = 70
@@ -65473,8 +65513,8 @@ rule CAPE_Qakbot4_1 : FILE
 		date = "2022-03-16"
 		modified = "2024-02-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/QakBot.yar#L15-L29"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/QakBot.yar#L15-L29"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ad75b07b9b786f634fd46cbe6dc089d3f732673320e70714e8ab058f0392c9f5"
 		score = 75
 		quality = 70
@@ -65500,8 +65540,8 @@ rule CAPE_Qakbotloader : FILE
 		date = "2022-03-16"
 		modified = "2024-02-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/QakBot.yar#L31-L46"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/QakBot.yar#L31-L46"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "6f99171c95a8ed5d056eeb9234dbbee123a6f95f481ad0e0a966abd2844f0e1a"
 		logic_hash = "00869c0a9bf62cde3f46ca915b0ef689557b09dc58d6de34609e3998abfa7e98"
 		score = 75
@@ -65528,8 +65568,8 @@ rule CAPE_Qakbotantivm
 		date = "2022-03-16"
 		modified = "2024-02-16"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/QakBot.yar#L48-L59"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/QakBot.yar#L48-L59"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "e269497ce458b21c8427b3f6f6594a25d583490930af2d3395cb013b20d08ff7"
 		logic_hash = "20f1cd28f38945a3aa328e77e78525fb1ffc47ecf54d5a40c2f18264c3973989"
 		score = 75
@@ -65552,8 +65592,8 @@ rule CAPE_Guloaderprecursor : FILE
 		date = "2020-12-29"
 		modified = "2023-10-02"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Guloader.yar#L17-L28"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Guloader.yar#L17-L28"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ea05c352739366a03da302074b01537382ba26f7fd5049004f156e47d284f070"
 		score = 75
 		quality = 70
@@ -65576,8 +65616,8 @@ rule CAPE_Heavenssyscall : FILE
 		date = "2024-03-25"
 		modified = "2024-03-25"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/HeavensSyscall.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/HeavensSyscall.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "aeb981fcba0936ff8b1be4c601445fd45e5d3b74856a9439d351edd57f5a50c3"
 		score = 75
 		quality = 70
@@ -65601,8 +65641,8 @@ rule CAPE_Loadersyscall
 		date = "2024-10-29"
 		modified = "2025-07-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/NitrogenLoader.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/NitrogenLoader.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3c7ffd8b95032cffecff7fa7e5f5f561cce13e1109f6a9b30bc743642b495e45"
 		score = 75
 		quality = 70
@@ -65626,8 +65666,8 @@ rule CAPE_Nitrogenloaderaes
 		date = "2024-10-29"
 		modified = "2025-07-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/NitrogenLoader.yar#L15-L27"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/NitrogenLoader.yar#L15-L27"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "de8ed0e98948cfadfd579e334fd9ce9f777ddbd988de897529ba71cb5eb2d396"
 		score = 75
 		quality = 70
@@ -65651,8 +65691,8 @@ rule CAPE_Nitrogenloaderbypass
 		date = "2024-10-29"
 		modified = "2025-07-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/NitrogenLoader.yar#L29-L41"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/NitrogenLoader.yar#L29-L41"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3a034d3ddd18723ea1f91814c8c2a2c47a749dfd1496a5d4777d8ff8bfab3457"
 		score = 75
 		quality = 70
@@ -65676,8 +65716,8 @@ rule CAPE_Nitrogenloaderconfig
 		date = "2024-10-29"
 		modified = "2025-07-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/NitrogenLoader.yar#L43-L66"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/NitrogenLoader.yar#L43-L66"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "06d49ebf3f67476c83a77734dff0245a51027a35d92e5af07bb9146db5b156ca"
 		score = 75
 		quality = 70
@@ -65712,8 +65752,8 @@ rule CAPE_Bumblebeeshellcode_1
 		date = "2022-04-21"
 		modified = "2023-02-08"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BumbleBee.yar#L18-L32"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BumbleBee.yar#L18-L32"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "865510868ee7c089c2ada0645098e851ca2bb9084a74315ce16296eb19c93ab4"
 		score = 75
 		quality = 70
@@ -65739,8 +65779,8 @@ rule CAPE_Stealcanti : FILE
 		date = "2023-02-22"
 		modified = "2025-09-01"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Stealc.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Stealc.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "77d6f1914af6caf909fa2a246fcec05f500f79dd56e5d0d466d55924695c702d"
 		logic_hash = "4132e8094b0b49a89e9f40a8b1a6abbf105bbb04e4ddf3ce739e39fc2baf0d13"
 		score = 75
@@ -65764,8 +65804,8 @@ rule CAPE_Stealcstrings : FILE
 		date = "2023-02-22"
 		modified = "2025-09-01"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Stealc.yar#L15-L26"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Stealc.yar#L15-L26"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6d402446a979c00b6257ace9924db381d98c530b22968bd2776c66d58c7faefc"
 		score = 75
 		quality = 70
@@ -65788,8 +65828,8 @@ rule CAPE_Stealcv2Strings : FILE
 		date = "2023-02-22"
 		modified = "2025-09-01"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Stealc.yar#L28-L43"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Stealc.yar#L28-L43"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "923f70edb3ad70957576994008729bf7a087479eed1973c42161aa96fa694baa"
 		score = 75
 		quality = 70
@@ -65816,8 +65856,8 @@ rule CAPE_Stealcv2Datecheck : FILE
 		date = "2023-02-22"
 		modified = "2025-09-01"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Stealc.yar#L45-L56"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Stealc.yar#L45-L56"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f074aceb7c111156752891acac8690c00dad7c26240fb0752cc12a9a65aa3d30"
 		score = 75
 		quality = 70
@@ -65840,8 +65880,8 @@ rule CAPE_Agentteslav3Jit
 		date = "2023-09-13"
 		modified = "2024-02-27"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/AgentTesla.yar#L16-L26"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/AgentTesla.yar#L16-L26"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "62a49cf4295df637f96ba7c127cfc4aeb9af2fcced497fdf34d726a062edc1ec"
 		score = 75
 		quality = 70
@@ -65863,8 +65903,8 @@ rule CAPE_Rhadamanthys_1
 		date = "2023-01-25"
 		modified = "2025-11-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Rhadamanthys.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Rhadamanthys.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "3c8fbfe14f81e099fc900023d9c856e3f45b99af38889ed952b2ac67a636f51d"
 		score = 75
 		quality = 70
@@ -65889,8 +65929,8 @@ rule CAPE_Rhadaanti
 		date = "2023-01-25"
 		modified = "2025-11-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Rhadamanthys.yar#L15-L24"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Rhadamanthys.yar#L15-L24"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b54fd25e3297d358f2a8ec3a868bb4d233ee32d6942f21a53c3d25d35164530b"
 		score = 75
 		quality = 70
@@ -65912,8 +65952,8 @@ rule CAPE_Rhadunhook
 		date = "2023-01-25"
 		modified = "2025-11-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Rhadamanthys.yar#L26-L36"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Rhadamanthys.yar#L26-L36"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "f2da2f1ee6b0a3b9fe58b2c35ccf0a0f6dee44228ec92659370d30defdef7ea3"
 		score = 75
 		quality = 70
@@ -65937,8 +65977,8 @@ rule CAPE_Darkgateloader
 		date = "2023-08-09"
 		modified = "2025-04-07"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/DarkGateLoader.yar#L1-L15"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/DarkGateLoader.yar#L1-L15"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "00692123615d2f7eaf8aea07754fc9439cf58e1fb8eb4f44f0428b362f27e794"
 		score = 75
 		quality = 70
@@ -65964,8 +66004,8 @@ rule CAPE_Zloader_1 : FILE
 		date = "2021-03-12"
 		modified = "2024-05-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Zloader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Zloader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "319adca805083c7f5854fe840447cf961addbd748f1f25eb8ec8cdeed7af38aa"
 		score = 75
 		quality = 70
@@ -65988,8 +66028,8 @@ rule CAPE_Zloader_2024 : FILE
 		date = "2021-03-12"
 		modified = "2024-05-03"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Zloader.yar#L14-L26"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Zloader.yar#L14-L26"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "38d555ef5f613cf7ca043697c479100a7a22e7f043acf8b6a46f8009eb92fd7e"
 		score = 75
 		quality = 70
@@ -66013,8 +66053,8 @@ rule CAPE_Singlestepantihook
 		date = "2021-08-26"
 		modified = "2021-08-26"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/SingleStepAntiHook.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/SingleStepAntiHook.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "fc9f36b0ecc13192fe8b6caaff256ac52c1f14480223d629a38ba84e90dd0809"
 		score = 75
 		quality = 70
@@ -66036,8 +66076,8 @@ rule CAPE_Dridexloader_1 : FILE
 		date = "2021-03-09"
 		modified = "2021-03-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/DridexLoader.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/DridexLoader.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "00a3e4e80a2558ee52035f091e2339fa2dad6f6515b9dc099f2f3800e4c70bce"
 		score = 75
 		quality = 70
@@ -66059,8 +66099,8 @@ rule CAPE_Formhooka
 		date = "2021-03-07"
 		modified = "2026-05-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Formbook.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Formbook.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "21b8101a7039cfad0e9d49cc1f055bc23a2eb4c973dcda2a81a007e452d77a6d"
 		score = 75
 		quality = 70
@@ -66085,8 +66125,8 @@ rule CAPE_Formconfa
 		date = "2021-03-07"
 		modified = "2026-05-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Formbook.yar#L32-L44"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Formbook.yar#L32-L44"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b0aa4cec55a21245d8104380c531dd6cc0fdef64fbefd79616eadfb4e95b2d75"
 		score = 75
 		quality = 70
@@ -66110,8 +66150,8 @@ rule CAPE_Formhelper
 		date = "2021-03-07"
 		modified = "2026-05-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Formbook.yar#L46-L58"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Formbook.yar#L46-L58"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "e049fba8e53934587f97bda5108cf9cece4169a8ff65a5d2788a98f709a68dc0"
 		score = 75
 		quality = 70
@@ -66135,8 +66175,8 @@ rule CAPE_Formconfb
 		date = "2021-03-07"
 		modified = "2026-05-15"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Formbook.yar#L60-L75"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Formbook.yar#L60-L75"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "c8bf1d3c242a02ae8bee42d570010c8b4a881db64d82b157fc4ac18f71e11f71"
 		score = 75
 		quality = 70
@@ -66163,8 +66203,8 @@ rule CAPE_Ursnifv3_1
 		date = "2021-06-17"
 		modified = "2023-03-23"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/UrsnifV3.yar#L1-L16"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/UrsnifV3.yar#L1-L16"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "d679546e37ee58087fce75920b2ce4e6d2b9ae55fb1ef80d14ec14309396757c"
 		score = 75
 		quality = 70
@@ -66191,8 +66231,8 @@ rule CAPE_Privateloader
 		date = "2024-10-04"
 		modified = "2024-10-04"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/PrivateLoader.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/PrivateLoader.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "204a86bb3743f19fed0fe55ff5ccd716661f7f315b5966a29e434ccb3e160526"
 		score = 75
 		quality = 70
@@ -66215,8 +66255,8 @@ rule CAPE_Emotetpacker : FILE
 		date = "2022-03-31"
 		modified = "2022-06-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/EmotetPacker.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/EmotetPacker.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "5a95d1d87ce69881b58a0e3aafc1929861e2633cdd960021d7b23e2a36409e0d"
 		logic_hash = "5f27d9d18884f7e0805f69960869b332c1577bf8be8ac103285e8bf98cda0ffd"
 		score = 75
@@ -66240,8 +66280,8 @@ rule CAPE_Modiloader : FILE
 		date = "2023-10-19"
 		modified = "2025-01-31"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/ModiLoader.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/ModiLoader.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "1f0cbf841a6bc18d632e0bc3c591266e77c99a7717a15fc4b84d3e936605761f"
 		logic_hash = "9e64e0c40192cc832a1ffa7b3ac65a704596af82515d03706cd7aa1f4498f32f"
 		score = 75
@@ -66265,8 +66305,8 @@ rule CAPE_Modiloaderold : FILE
 		date = "2023-10-19"
 		modified = "2025-01-31"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/ModiLoader.yar#L15-L53"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/ModiLoader.yar#L15-L53"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "fc006377e6d41515503b0b234ff87f59d930a7d9f8b32d2e072de79b9c52ddc4"
 		score = 75
 		quality = 66
@@ -66310,8 +66350,8 @@ rule CAPE_Rdtscpantivm
 		date = "2021-12-11"
 		modified = "2021-12-11"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/RdtscpAntiVM.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/RdtscpAntiVM.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "be0f9b52fb630730a38160f4ad2d50b6b4bea5edd82e3ea4d1e257cf7b090910"
 		score = 75
 		quality = 70
@@ -66333,8 +66373,8 @@ rule CAPE_Buerloader_1 : FILE
 		date = "2021-03-13"
 		modified = "2021-03-13"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BuerLoader.yar#L1-L11"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BuerLoader.yar#L1-L11"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6f9f9b4c01251c0643c61701084cca2bdfeea08ca95f982355565cf05483d940"
 		score = 75
 		quality = 70
@@ -66356,8 +66396,8 @@ rule CAPE_Icedidsyscallwritemem : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L1-L13"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L1-L13"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "6b068106b038e9efeb9057cadf314d400c1ada1a1cc70336d3272da3a212c993"
 		score = 75
 		quality = 70
@@ -66381,8 +66421,8 @@ rule CAPE_Icedidhook
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L15-L25"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L15-L25"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "fd62e0ed6f2a18472fa9336daee0e8a3a55e21779a8385394e85f96da928e24f"
 		score = 75
 		quality = 70
@@ -66404,8 +66444,8 @@ rule CAPE_Icedidpackera : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L27-L40"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L27-L40"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "fbad60002286599ca06d0ecb3624740efbf13ee5fda545341b3e0bf4d5348cfe"
 		logic_hash = "aa0681e7794546355e6d61f739c49035a493cdfca7e666531d74e3835ec44408"
 		score = 75
@@ -66430,8 +66470,8 @@ rule CAPE_Icedidpackerb : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L42-L56"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L42-L56"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "6517ef2c579002ec62ddeb01a3175917c75d79ceca355c415a4462922c715cb6"
 		logic_hash = "fde1e2c0124d180b2fa3d0675b35e8d78fdd7b06cd27e9228c148aa29ce30ee7"
 		score = 75
@@ -66456,8 +66496,8 @@ rule CAPE_Icedidpackerc : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L58-L71"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L58-L71"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "c06805b6efd482c1a671ec60c1469e47772c8937ec0496f74e987276fa9020a5"
 		hash = "265c1857ac7c20432f36e3967511f1be0b84b1c52e4867889e367c0b5828a844"
 		logic_hash = "f1e75e380ab0947fdfda012b7a5077a1c2ef51163239846ab2dc29cac95ba166"
@@ -66482,8 +66522,8 @@ rule CAPE_Icedidpackerd : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L73-L86"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L73-L86"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		hash = "7b226f8cc05fa7d846c52eb0ec386ab37f9bae04372372509daa6bacc9f885d8"
 		logic_hash = "6685e0246f5a11ce0ca33447837de06506b447a5f8591423e2b76f2ab0274dc7"
 		score = 75
@@ -66508,8 +66548,8 @@ rule CAPE_Icedsleep : FILE
 		date = "2021-03-30"
 		modified = "2023-11-28"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/IcedID.yar#L88-L99"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/IcedID.yar#L88-L99"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "0b1a8be95b1b8a3b066837f9e47561ee8202d741b39d64e626c0461c2fbf7c70"
 		score = 75
 		quality = 70
@@ -66532,8 +66572,8 @@ rule CAPE_Lumma_1 : FILE
 		date = "2024-01-05"
 		modified = "2024-05-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Lumma.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Lumma.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "a8f9212b619796f91f14c4164e4d2f30c66b51118f22f3d6c310841b6707b7b0"
 		score = 75
 		quality = 70
@@ -66558,8 +66598,8 @@ rule CAPE_Lummaremap
 		date = "2024-01-05"
 		modified = "2024-05-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Lumma.yar#L16-L27"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Lumma.yar#L16-L27"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "51093379fbd041f75bdfe161bc9dfcc7d782c23ce16d625ca558bb58d8d57713"
 		score = 75
 		quality = 70
@@ -66582,8 +66622,8 @@ rule CAPE_Aurastealerbypass
 		date = "2025-09-02"
 		modified = "2025-09-02"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/AuraStealer.yar#L1-L14"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/AuraStealer.yar#L1-L14"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "ae174c96c262b1734c58bd6c5f7112221b08596c180612e4970acada35dbd070"
 		score = 75
 		quality = 70
@@ -66608,8 +66648,8 @@ rule CAPE_Blister_1 : FILE
 		date = "2022-05-10"
 		modified = "2024-05-09"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/Blister.yar#L1-L17"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/Blister.yar#L1-L17"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "aba379b93c85241cf250829832b2c8a5eaafb3abd0ff955dbaf0d06489c00deb"
 		score = 75
 		quality = 70
@@ -66637,8 +66677,8 @@ rule CAPE_Bruteratelsyscall
 		date = "2024-07-11"
 		modified = "2024-07-22"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BruteRatel.yar#L1-L12"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BruteRatel.yar#L1-L12"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "5ed054b3cd5d2659c250945d55d6adac90945963c34ad2af0f8d7436141e86b6"
 		score = 75
 		quality = 70
@@ -66661,8 +66701,8 @@ rule CAPE_Bruteratelpacker
 		date = "2024-07-11"
 		modified = "2024-07-22"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BruteRatel.yar#L14-L26"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BruteRatel.yar#L14-L26"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "2ccb17efe378d034df34d20d7580c58171d0fd11c18fef6c9a23f1ba238514e6"
 		score = 75
 		quality = 70
@@ -66686,8 +66726,8 @@ rule CAPE_Bruterateldate
 		date = "2024-07-11"
 		modified = "2024-07-22"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BruteRatel.yar#L28-L39"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BruteRatel.yar#L28-L39"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "88589b2d08aea03565668ff1b9af20b6fe11cda50d867c60db7cb4d1826b0fd7"
 		score = 75
 		quality = 70
@@ -66710,8 +66750,8 @@ rule CAPE_Bruteratelconfig
 		date = "2024-07-11"
 		modified = "2024-07-22"
 		reference = "https://github.com/kevoreilly/CAPEv2"
-		source_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/analyzer/windows/data/yara/BruteRatel.yar#L41-L51"
-		license_url = "https://github.com/kevoreilly/CAPEv2/blob/4da22e64a6576c72f554a6d8def7ac6e650a3a18/LICENSE"
+		source_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/analyzer/windows/data/yara/BruteRatel.yar#L41-L51"
+		license_url = "https://github.com/kevoreilly/CAPEv2/blob/50e5dcd2de91cd36c2685037809fa102ccb0590a/LICENSE"
 		logic_hash = "b1815aafec940ab6c8daafc68ccf294845221ada260de5209dcb7e49ccd061c7"
 		score = 75
 		quality = 70
@@ -66728,7 +66768,7 @@ rule CAPE_Bruteratelconfig
  * YARA Rule Set
  * Repository Name: BinaryAlert
  * Repository: https://github.com/airbnb/binaryalert/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: a9c0f06affc35e1f8e45bb77f835b92350c68a0b
  * Number of Rules: 74
  * Skipped: 0 (age), 4 (quality), 3 (score), 0 (importance)
@@ -69021,7 +69061,7 @@ rule BINARYALERT_Malware_Macos_Apt_Sofacy_Xagent
  * YARA Rule Set
  * Repository Name: DeadBits
  * Repository: https://github.com/deadbits/yara-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: d002f7ecee23e09142a3ac3e79c84f71dda3f001
  * Number of Rules: 18
  * Skipped: 0 (age), 5 (quality), 0 (score), 0 (importance)
@@ -69268,7 +69308,7 @@ rule DEADBITS_Acbackdoor_ELF : LINUX MALWARE BACKDOOR
 		description = "No description has been set in the source file - DeadBits"
 		author = "Adam M. Swanda"
 		id = "82eb41bf-cd1d-5b00-973b-31a79c75cfc0"
-		date = "2019-11-23"
+		date = "2019-11-30"
 		modified = "2019-12-04"
 		reference = "https://www.intezer.com/blog-acbackdoor-analysis-of-a-new-multiplatform-backdoor/"
 		source_url = "https://github.com/deadbits/yara-rules//blob/d002f7ecee23e09142a3ac3e79c84f71dda3f001/rules/ACBackdoor_Linux.yara#L1-L41"
@@ -69813,7 +69853,7 @@ rule DEADBITS_Winnti_Linux : LINUXMALWARE FILE
  * YARA Rule Set
  * Repository Name: DelivrTo
  * Repository: https://github.com/delivr-to/detections
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: f85e1d0c477cbf4689d1cfe4a80049c465673b23
  * Number of Rules: 8
  * Skipped: 0 (age), 4 (quality), 3 (score), 0 (importance)
@@ -70017,7 +70057,7 @@ rule DELIVRTO_SUSP_PDF_MHT_Activemime_Sept23 : FILE
  * YARA Rule Set
  * Repository Name: ESET
  * Repository: https://github.com/eset/malware-ioc
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 812c573dc8c354210893775b2de97d1fbf29be1b
  * Number of Rules: 97
  * Skipped: 0 (age), 16 (quality), 2 (score), 0 (importance)
@@ -72293,7 +72333,7 @@ rule ESET_Apt_Windows_TA410_Flowcloud_Header_Decryption : FILE
 		description = "Matches the function used to decrypt resources headers in TA410 FlowCloud"
 		author = "ESET Research"
 		id = "403c1845-bc25-5a49-8553-8a0be18d6970"
-		date = "2026-01-23"
+		date = "2026-01-30"
 		modified = "2022-04-27"
 		reference = "https://github.com/eset/malware-ioc/"
 		source_url = "https://github.com/eset/malware-ioc/blob/812c573dc8c354210893775b2de97d1fbf29be1b/ta410/ta410.yar#L417-L496"
@@ -73542,7 +73582,7 @@ rule ESET_Apt_Windows_Invisimole_C2 : FILE
  * YARA Rule Set
  * Repository Name: FireEye-RT
  * Repository: https://github.com/mandiant/red_team_tool_countermeasures/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 3561b71724dbfa3e2bb78106aaa2d7f8b892c43b
  * Number of Rules: 155
  * Skipped: 0 (age), 9 (quality), 7 (score), 0 (importance)
@@ -77777,7 +77817,7 @@ rule FIREEYE_RT_Hacktool_MSIL_Sharpstomp_1 : FILE
  * YARA Rule Set
  * Repository Name: GCTI
  * Repository: https://github.com/chronicle/GCTI
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 1c5fd42b1895098527fde00c2d9757edf6b303bb
  * Number of Rules: 89
  * Skipped: 0 (age), 2 (quality), 0 (score), 0 (importance)
@@ -80965,7 +81005,7 @@ rule GCTI_Cobaltstrike_Resources_Template_Py_V3_3_To_V4_X
  * YARA Rule Set
  * Repository Name: Malpedia
  * Repository: https://github.com/malpedia/signator-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: c901f97b7df03e41917da74c2a84b04c227316c2
  * Number of Rules: 1608
  * Skipped: 0 (age), 36 (quality), 2 (score), 0 (importance)
@@ -147359,7 +147399,7 @@ rule MALPEDIA_Win_Babar_Auto : FILE
  * YARA Rule Set
  * Repository Name: Trellix ARC
  * Repository: https://github.com/advanced-threat-research/Yara-Rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 1919562a59f190bda60c982424f6a24c542ee3e0
  * Number of Rules: 127
  * Skipped: 17 (age), 18 (quality), 5 (score), 0 (importance)
@@ -151974,7 +152014,7 @@ rule TRELLIX_ARC_MALWARE_Blackpos_Pdb : POS FILE
  * YARA Rule Set
  * Repository Name: Arkbird SOLG
  * Repository: https://github.com/StrangerealIntel/DailyIOC
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: a873ff1298c43705e9c67286f3014f4300dd04f7
  * Number of Rules: 165
  * Skipped: 0 (age), 23 (quality), 38 (score), 0 (importance)
@@ -157433,7 +157473,7 @@ rule ARKBIRD_SOLG_MAL_Mailo_Jun_2021_1 : FILE
  * YARA Rule Set
  * Repository Name: Telekom Security
  * Repository: https://github.com/telekom-security/malware_analysis/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 755efb66586f53fea34926f78a8d2054a8e8e74b
  * Number of Rules: 7
  * Skipped: 0 (age), 10 (quality), 0 (score), 0 (importance)
@@ -157656,7 +157696,7 @@ rule TELEKOM_SECURITY_Crylock_Hta : FILE
  * YARA Rule Set
  * Repository Name: Volexity
  * Repository: https://github.com/volexity/threat-intel
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: a7eaa9d97a5d0c193f4a3ac99a6239e6ccc211de
  * Number of Rules: 95
  * Skipped: 0 (age), 1 (quality), 1 (score), 0 (importance)
@@ -161174,7 +161214,7 @@ rule VOLEXITY_Informational_Win_3Cx_Msi : UTA0040
  * YARA Rule Set
  * Repository Name: JPCERTCC
  * Repository: https://github.com/JPCERTCC/MalConfScan/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 19ec0d145535a6a4cfd37c0960114f455a8c343e
  * Number of Rules: 30
  * Skipped: 0 (age), 4 (quality), 0 (score), 0 (importance)
@@ -162018,7 +162058,7 @@ rule JPCERTCC_Elf_Wellmess : FILE
  * YARA Rule Set
  * Repository Name: SecuInfra
  * Repository: https://github.com/SIFalcon/Detection
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 2d7c66d7d16c7541bf2a9a83a7a6d334364a26fd
  * Number of Rules: 38
  * Skipped: 0 (age), 17 (quality), 1 (score), 0 (importance)
@@ -163118,7 +163158,7 @@ rule SECUINFRA_SUSP_Reverse_Run_Key : FILE
  * YARA Rule Set
  * Repository Name: RussianPanda
  * Repository: https://github.com/RussianPanda95/Yara-Rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 790ec6378c8e8262a673603ef0172bedf0967d58
  * Number of Rules: 106
  * Skipped: 0 (age), 2 (quality), 3 (score), 0 (importance)
@@ -165837,7 +165877,7 @@ rule RUSSIANPANDA_Smartapesg_JS_Dropper_Stage1 : FILE
 		hash = "8769d9ebcf14b24a657532cd96f9520f54aa0e799399d840285311dfebe3fb15"
 		logic_hash = "de7e4ec30c780699b46de7baf2a916fdb7331da2ee7c2d637422ea664cd03b82"
 		score = 75
-		quality = 60
+		quality = 85
 		tags = "FILE"
 
 	strings:
@@ -165885,7 +165925,7 @@ rule RUSSIANPANDA_Smartapesg_JS_Netsupportrat_Stage2 : FILE
  * YARA Rule Set
  * Repository Name: CadoSecurity
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 8
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -166134,7 +166174,7 @@ rule CADOSECURITY_Lambda_Malware : FILE
  * YARA Rule Set
  * Repository Name: Check Point
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 4
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -166348,7 +166388,7 @@ rule CHECK_POINT_Apt_Nazar_Component_Guids
  * YARA Rule Set
  * Repository Name: BlackBerry
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 22
  * Skipped: 0 (age), 1 (quality), 0 (score), 0 (importance)
@@ -167032,7 +167072,7 @@ rule BLACKBERRY_Mal_Backdoor_Chachi_RAT : FILE
  * YARA Rule Set
  * Repository Name: Cluster25
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 8
  * Skipped: 0 (age), 2 (quality), 0 (score), 0 (importance)
@@ -167283,7 +167323,7 @@ rule CLUSTER25_Sidewinder_Apt_Rtf_Cve_2017_0199 : FILE
  * YARA Rule Set
  * Repository Name: Dragon Threat Labs
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 3
  * Skipped: 0 (age), 4 (quality), 0 (score), 0 (importance)
@@ -167370,7 +167410,7 @@ rule DRAGON_THREAT_LABS_Apt_C16_Win_Memory_Pcclient : MEMORY APT
  * YARA Rule Set
  * Repository Name: Microsoft
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 21
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -167973,7 +168013,7 @@ rule MICROSOFT_Trojan_Win32_Plakpeer : PLATINUM
  * YARA Rule Set
  * Repository Name: NCSC
  * Repository: https://github.com/mikesxrs/Open-Source-YARA-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ec0056f767db98bf6d5fd63877ad51fb54d350e9
  * Number of Rules: 17
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -168443,7 +168483,7 @@ rule NCSC_Sparrowdoor_Xor
  * YARA Rule Set
  * Repository Name: Dr4k0nia
  * Repository: https://github.com/dr4k0nia/yara-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 4b10f9b79a4cfb3ec9cb5675f32cc7ee6885fbd8
  * Number of Rules: 5
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -168621,7 +168661,7 @@ rule DR4K0NIA_Msil_Susp_Obf_Antidump : FILE
  * YARA Rule Set
  * Repository Name: EmbeeResearch
  * Repository: https://github.com/embee-research/Yara-detection-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: ac56d6f6fd2a30c8cb6e5c0455d6519210a8b0f4
  * Number of Rules: 36
  * Skipped: 0 (age), 9 (quality), 2 (score), 0 (importance)
@@ -169600,7 +169640,7 @@ rule EMBEERESEARCH_Win_Icedid_Encryption_Oct_2022 : FILE
  * YARA Rule Set
  * Repository Name: AvastTI
  * Repository: https://github.com/avast/ioc
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: a450ddabed95984422909c75ac52b6841f685983
  * Number of Rules: 33
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -170463,7 +170503,7 @@ rule AVASTTI_Cobaltstrike_Beacon_Xored_X64
  * YARA Rule Set
  * Repository Name: SBousseaden
  * Repository: https://github.com/sbousseaden/YaraHunts/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 71b27a2a7c57c2aa1877a11d8933167794e2b4fb
  * Number of Rules: 19
  * Skipped: 0 (age), 7 (quality), 15 (score), 0 (importance)
@@ -171026,7 +171066,7 @@ rule SBOUSSEADEN_Mimikatz_Memssp_Hookfn
  * YARA Rule Set
  * Repository Name: Elceef
  * Repository: https://github.com/elceef/yara-rulz
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 5683b294a12cf0c875b624933586029ae43a852f
  * Number of Rules: 19
  * Skipped: 0 (age), 1 (quality), 0 (score), 0 (importance)
@@ -171580,7 +171620,7 @@ rule ELCEEF_ZIP_High_Ratio_Single_Doc : FILE
  * YARA Rule Set
  * Repository Name: Cod3nym
  * Repository: https://github.com/cod3nym/detection-rules/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 86a04c4594cb48895192aad4af164f21f568c136
  * Number of Rules: 11
  * Skipped: 0 (age), 1 (quality), 2 (score), 0 (importance)
@@ -171983,7 +172023,7 @@ rule COD3NYM_MAL_NET_Limecrypter_Runpe_Jan24 : FILE
  * YARA Rule Set
  * Repository Name: craiu
  * Repository: https://github.com/craiu/yararules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 23cf0ca22021fa3684e180a18416b9ae1b695243
  * Number of Rules: 13
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -173148,10 +173188,10 @@ rule CRAIU_Susp_Ios_Shutdown
  * YARA Rule Set
  * Repository Name: DitekSHen
  * Repository: https://github.com/ditekshen/detection
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: e76c93dcdedff04076380ffc60ea54e45b313635
- * Number of Rules: 1322
- * Skipped: 0 (age), 224 (quality), 7 (score), 0 (importance)
+ * Number of Rules: 1326
+ * Skipped: 0 (age), 220 (quality), 7 (score), 0 (importance)
  *
  * 
  * LICENSE
@@ -175517,7 +175557,7 @@ rule DITEKSHEN_MALWARE_Win_NETEAGLE : FILE
 		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
 		logic_hash = "148de0ca332d3885d94eae8d15eb4aaa2bc4950c691c0e8817c816b7d4c55510"
 		score = 75
-		quality = 50
+		quality = 75
 		tags = "FILE"
 
 	strings:
@@ -176438,6 +176478,38 @@ rule DITEKSHEN_MALWARE_Win_Iamthekingkingofhearts : FILE
 	condition:
 		uint16( 0 ) == 0x5a4d and ( ( 1 of ( $u* ) and 4 of ( $s* ) ) or ( all of ( $u* ) and 3 of ( $s* ) ) or ( 5 of them ) )
 }
+rule DITEKSHEN_MALWARE_Win_Cobaltstrike : FILE
+{
+	meta:
+		description = "CobaltStrike payload"
+		author = "ditekSHen"
+		id = "140e16d0-0102-5650-a371-c95013d7f021"
+		date = "2020-11-06"
+		modified = "2024-11-01"
+		reference = "https://github.com/ditekshen/detection"
+		source_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/yara/malware.yar#L1845-L1864"
+		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
+		logic_hash = "43513aef0ed715f0c214d7a14e465350f9c1bcadf87535e1c12561e976398bb3"
+		score = 75
+		quality = 50
+		tags = "FILE"
+
+	strings:
+		$s1 = "%%IMPORT%%" fullword ascii
+		$s2 = "www6.%x%x.%s" fullword ascii
+		$s3 = "cdn.%x%x.%s" fullword ascii
+		$s4 = "api.%x%x.%s" fullword ascii
+		$s5 = "%s (admin)" fullword ascii
+		$s6 = "could not spawn %s: %d" fullword ascii
+		$s7 = "Could not kill %d: %d" fullword ascii
+		$s8 = "Could not connect to pipe (%s): %d" fullword ascii
+		$s9 = /%s\.\d[(%08x).]+\.%x%x\.%s/ ascii
+		$pwsh1 = "IEX (New-Object Net.Webclient).DownloadString('http" ascii
+		$pwsh2 = "powershell -nop -exec bypass -EncodedCommand \"%s\"" fullword ascii
+
+	condition:
+		uint16( 0 ) == 0x5a4d and ( 5 of ( $s* ) or ( all of ( $pwsh* ) and 2 of ( $s* ) ) or ( #s9 > 6 and 4 of them ) )
+}
 rule DITEKSHEN_MALWARE_Win_Redlinedropperahk : FILE
 {
 	meta:
@@ -176886,6 +176958,48 @@ rule DITEKSHEN_MALWARE_Win_Poullight : FILE
 
 	condition:
 		uint16( 0 ) == 0x5a4d and 7 of them
+}
+rule DITEKSHEN_MALWARE_Win_Snakekeylogger : FILE
+{
+	meta:
+		description = "Detects Snake Keylogger"
+		author = "ditekSHen"
+		id = "e44bf33c-916d-5dc3-ba2a-89e13f1511a2"
+		date = "2020-11-06"
+		modified = "2024-11-01"
+		reference = "https://github.com/ditekshen/detection"
+		source_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/yara/malware.yar#L2178-L2207"
+		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
+		logic_hash = "7d787026b290c3c6a43c7de83233f22980733e7401260ff2f763e6f1b534ecba"
+		score = 75
+		quality = 67
+		tags = "FILE"
+		clamav_sig = "MALWARE.Win.Trojan.SnakeKeylogger"
+
+	strings:
+		$id1 = "SNAKE-KEYLOGGER" fullword ascii
+		$id2 = "----------------S--------N--------A--------K--------E----------------" ascii
+		$s1 = "_KPPlogS" fullword ascii
+		$s2 = "_Scrlogtimerrr" fullword ascii
+		$s3 = "_Clpreptimerr" fullword ascii
+		$s4 = "_clprEPs" fullword ascii
+		$s5 = "_kLLTIm" fullword ascii
+		$s6 = "_TPSSends" fullword ascii
+		$s7 = "_ProHfutimer" fullword ascii
+		$s8 = "GrabbedClp" fullword ascii
+		$s9 = "StartKeylogger" fullword ascii
+		$x1 = "$%SMTPDV$" wide
+		$x2 = "$#TheHashHere%&" wide
+		$x3 = "%FTPDV$" wide
+		$x4 = "$%TelegramDv$" wide
+		$x5 = "KeyLoggerEventArgs" ascii
+		$m1 = "| Snake Keylogger" ascii wide
+		$m2 = /(Screenshot|Clipboard|keystroke) Logs ID/ ascii wide
+		$m3 = "SnakePW" ascii wide
+		$m4 = "\\SnakeKeylogger\\" ascii wide
+
+	condition:
+		( uint16( 0 ) == 0x5a4d and ( all of ( $id* ) or 6 of ( $s* ) or ( 1 of ( $id* ) and 3 of ( $s* ) ) or 4 of ( $x* ) ) ) or ( 2 of ( $m* ) )
 }
 rule DITEKSHEN_MALWARE_Linux_Xorddos : FILE
 {
@@ -180345,7 +180459,7 @@ rule DITEKSHEN_MALWARE_Win_Maktub : FILE
 		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
 		logic_hash = "5c11d04fc3088eb8a0132b9ed83748ddb7e1bbe9d03b9e884d4003181cbb6d69"
 		score = 75
-		quality = 75
+		quality = 50
 		tags = "FILE"
 
 	strings:
@@ -183310,6 +183424,53 @@ rule DITEKSHEN_MALWARE_Win_Crimsonrat : FILE
 	condition:
 		uint16( 0 ) == 0x5a4d and 6 of them
 }
+rule DITEKSHEN_MALWARE_Win_Actionrat : FILE
+{
+	meta:
+		description = "Detects ActionRAT, CSharp and Delfi variants"
+		author = "ditekSHen"
+		id = "ceb4bd65-85c0-5614-a7cb-8f3f2f849eae"
+		date = "2020-11-06"
+		modified = "2024-11-01"
+		reference = "https://github.com/ditekshen/detection"
+		source_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/yara/malware.yar#L6922-L6955"
+		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
+		logic_hash = "1552cda3f02c08582e3dd97df98416635a25005081627097df181bfc6aac4665"
+		score = 75
+		quality = 71
+		tags = "FILE"
+
+	strings:
+		$x1 = /<action>(connect|command|drives|getfiles|upload|execute|download)<action>/ fullword wide
+		$x2 = "aHR0cDovLzE0NC45MS42NS4xMDAv" wide
+		$x3 = "aHR0cDovL21mYWhvc3QuZGRucy5uZXQv" wide
+		$f1 = "<updateCommand>b__" ascii
+		$f2 = "<getDrives>b__" ascii
+		$f3 = "<getStatus>b__" ascii
+		$f4 = "<getDirectories>b__" ascii
+		$f5 = "<updateUpload>b__" ascii
+		$f6 = "<infinity>b__" ascii
+		$f7 = "<uploadFile>b__" ascii
+		$s1 = "beaconURL" ascii
+		$s2 = "PingReply" ascii
+		$s3 = "updateUpload" ascii
+		$s4 = "updateCommand" ascii
+		$s5 = "runCommand" ascii
+		$s6 = "uploadFile" ascii
+		$s7 = "SELECT * FROM MSFT_NetAdapter WHERE ConnectorPresent = True AND DeviceID = '{0}'" fullword wide
+		$s8 = "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
+		$s9 = "Mozilla/3.0" fullword wide
+		$s10 = "|directory|N/A|" fullword wide
+		$s11 = "cmd.exe /c" fullword wide
+		$c1 = /Content-Disposition: form-data; name=(hostname|hid|id|action|secondary)/ fullword wide
+		$c2 = /(classification|updatecs|update|beacon)\.php/ wide
+		$c3 = "Content-Disposition: form-data;name=\"{0}\";filename=\"{1}\"filepath=\"{2}\"" fullword wide
+		$pdb1 = "D:\\Projects\\C#\\HTTP-Simple\\WindowsMediaPlayer - HTTP - " ascii
+		$pdb2 = "\\WindowsMediaPlayer10\\obj\\x86\\Release\\winow4.pdb" ascii
+
+	condition:
+		uint16( 0 ) == 0x5a4d and ( #x1 > 5 or ( all of ( $f* ) and ( 1 of ( $s* ) or 2 of ( $c* ) ) ) or 7 of ( $s* ) or all of ( $c* ) or ( all of ( $pdb* ) and 4 of them ) or ( 2 of ( $x* ) and 5 of them ) )
+}
 rule DITEKSHEN_MALWARE_Win_Nodachi : FILE
 {
 	meta:
@@ -185484,7 +185645,7 @@ rule DITEKSHEN_MALWARE_Win_Rapid : FILE
 		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
 		logic_hash = "c3f1bffeb402951da8bcccc899b2cdeb3c218b342d8338c750b9ff275537b4b5"
 		score = 75
-		quality = 50
+		quality = 75
 		tags = "FILE"
 
 	strings:
@@ -187267,7 +187428,7 @@ rule DITEKSHEN_MALWARE_Win_Arrowrat : FILE
 		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
 		logic_hash = "13e6d4fd274f75c50aa4110276812d02885c03cfc269dde480db66955e5f703a"
 		score = 75
-		quality = 75
+		quality = 50
 		tags = "FILE"
 
 	strings:
@@ -187602,7 +187763,7 @@ rule DITEKSHEN_MALWARE_Win_Akira : FILE
 		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
 		logic_hash = "73dd0a1b21be8ff7362536f6b6255cd19510632782effd67a56d7656bebf04ff"
 		score = 75
-		quality = 50
+		quality = 75
 		tags = "FILE"
 
 	strings:
@@ -193035,6 +193196,36 @@ rule DITEKSHEN_INDICATOR_TOOL_EXFIL_Sharpbox : FILE
 
 	condition:
 		uint16( 0 ) == 0x5a4d and 7 of them
+}
+rule DITEKSHEN_INDICATOR_TOOL_EXP_Petitpotam01 : FILE
+{
+	meta:
+		description = "Detect tool potentially exploiting/attempting PetitPotam"
+		author = "ditekSHen"
+		id = "12d7b533-f477-5fbb-8b1f-1a93c9a63500"
+		date = "2020-11-06"
+		modified = "2024-09-25"
+		reference = "https://github.com/ditekshen/detection"
+		source_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/yara/indicator_tools.yar#L1127-L1143"
+		license_url = "https://github.com/ditekshen/detection/blob/e76c93dcdedff04076380ffc60ea54e45b313635/LICENSE.txt"
+		logic_hash = "37a9477b41560904e8874ecaf93eb2667b9450b5d42665677abc1442538f9000"
+		score = 75
+		quality = 50
+		tags = "FILE"
+
+	strings:
+		$s1 = "\\pipe\\lsarpc" fullword wide
+		$s2 = "\\%s" fullword wide
+		$s3 = "ncacn_np" fullword wide
+		$s4 = /EfsRpc(OpenFileRaw|EncryptFileSrv|DecryptFileSrv|QueryUsersOnFile|QueryRecoveryAgents|RemoveUsersFromFile|AddUsersToFile)/ wide
+		$r1 = "RpcBindingFromStringBindingW" fullword ascii
+		$r2 = "RpcStringBindingComposeW" fullword ascii
+		$r3 = "RpcStringFreeW" fullword ascii
+		$r4 = "RPCRT4.dll" fullword ascii
+		$r5 = "NdrClientCall2" fullword ascii
+
+	condition:
+		uint16( 0 ) == 0x5a4d and ( all of ( $s* ) and 4 of ( $r* ) )
 }
 rule DITEKSHEN_INDICATOR_TOOL_PET_Sharpstrike : FILE
 {
@@ -209089,9 +209280,9 @@ rule DITEKSHEN_INDICATOR_KB_CERT_3B0E3879266F3Bc98225B390 : FILE
  * YARA Rule Set
  * Repository Name: WithSecureLabs
  * Repository: https://github.com/WithSecureLabs/iocs
- * Retrieval Date: 2026-08-23
- * Git Commit: 744f4ab39110a4a9f7a74b9000921a9e8efde237
- * Number of Rules: 25
+ * Retrieval Date: 2026-08-30
+ * Git Commit: 1a8384468dd292c6d2c5114c32e42dc0da1f5ae1
+ * Number of Rules: 26
  * Skipped: 0 (age), 1 (quality), 0 (score), 0 (importance)
  *
  * 
@@ -209131,8 +209322,8 @@ rule WITHSECURELABS_Ducktail_Artifacts : FILE
 		date = "2022-07-18"
 		modified = "2022-07-26"
 		reference = "https://labs.withsecure.com/publications/ducktail"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/DUCKTAIL/ducktail_artifacts.yar#L1-L20"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/DUCKTAIL/ducktail_artifacts.yar#L1-L20"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		hash = "3dbd9e1c3d0fd6358d4adcba04fdfc0b6e8acc49"
 		hash = "9370243589327b458486e3f7637779c2a96b4250"
 		hash = "b98170b18b906aee771dbd4dbd31e5963a90a50e"
@@ -209161,8 +209352,8 @@ rule WITHSECURELABS_Ducktail_Nativeaot : FILE
 		date = "2022-11-17"
 		modified = "2022-11-22"
 		reference = "https://labs.withsecure.com/publications/ducktail_returns"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/DUCKTAIL/ducktail_nativeaot.yara#L2-L22"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/DUCKTAIL/ducktail_nativeaot.yara#L2-L22"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		hash = "b043e4639f89459cae85161e6fbf73b22470979e"
 		hash = "073b092bf949c31628ee20f7458067bbb05fda3a"
 		hash = "d1f6b5f9718a2fe9eaac0c1a627228d3f3b86f87"
@@ -209184,8 +209375,8 @@ rule WITHSECURELABS_Ducktail_Dotnet_Core_Infostealer : FILE
 		date = "2022-07-18"
 		modified = "2022-07-25"
 		reference = "https://labs.withsecure.com/publications/ducktail"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/DUCKTAIL/ducktail_dotnet_core_infostealer.yar#L1-L103"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/DUCKTAIL/ducktail_dotnet_core_infostealer.yar#L1-L103"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		hash = "b260f3857990e11fa267d3f1cad4c9bed59a9d4b"
 		hash = "db74863c01817bf4eba39cd8a0ebbce9bda85a37"
 		hash = "3a4b395301f61b7e6afc0ab27dc02331455181d0"
@@ -209288,8 +209479,8 @@ rule WITHSECURELABS_SILKLOADER
 		date = "2023-03-15"
 		modified = "2023-03-15"
 		reference = "https://labs.withsecure.com/publications/silkloader"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/SILKLOADER/silkloader.yar#L2-L20"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/SILKLOADER/silkloader.yar#L2-L20"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		hash = "c83ac6dc96febd49c7c558e8cf85dd8bcb3a84fdc78b3ba72ebf681566dc1865"
 		hash = "e4dadabd1cee7215ff6e31e01f6b0dd820851685836592a14f982f2c7972fc25"
 		hash = "d77a59e6ba3a8f3c000a8a8955af77d2898f220f7bf3c0968bf0d7c8ac25a5ad"
@@ -209316,8 +209507,8 @@ rule WITHSECURELABS_Andariel_Tomcryptor
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L4-L39"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L4-L39"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "fafd0b969f70f1b986d77c705cc0ba5c5c775c8200b6043d6d3755893c707964"
 		score = 75
 		quality = 50
@@ -209335,8 +209526,8 @@ rule WITHSECURELABS_Andariel_Undercrypt
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L40-L53"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L40-L53"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "38ae107a8eeea3d54c34fa62fb8e8eb133489fc90337920c14319a2e7b51603a"
 		score = 75
 		quality = 75
@@ -209362,8 +209553,8 @@ rule WITHSECURELABS_Andariel_Undercrypt_Versioninfo
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L54-L67"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L54-L67"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "2d87246f89128a97136c021653211109d44dc9c75be747e58c7d09ebdac092ed"
 		score = 75
 		quality = 75
@@ -209382,8 +209573,8 @@ rule WITHSECURELABS_Andariel_Starshellrat
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L68-L85"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L68-L85"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "b210ab8790710a8d53a0775550d94e0604dd80c4681a90dcd093ec8ceccc6da5"
 		score = 75
 		quality = 75
@@ -209413,8 +209604,8 @@ rule WITHSECURELABS_Andariel_Gopherrat
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L86-L105"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L86-L105"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "2a42590be19b4b9a258c63f683c724165d64cc7bf22e4b7e7dec3ff73ea9175c"
 		score = 75
 		quality = 75
@@ -209443,8 +209634,8 @@ rule WITHSECURELABS_Andariel_Portscanner_Versioninfo
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L106-L114"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L106-L114"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "b7be7cbaeb686c55425695ee324b87c6e01c46c9850cf160025cb5dd8ce7ea1f"
 		score = 75
 		quality = 75
@@ -209462,8 +209653,8 @@ rule WITHSECURELABS_Andariel_EDR_KILLER_Script
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L115-L124"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L115-L124"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "c26618981d6fafd81cfbae6ad302e8e742fa6fb97589f26ea811c910904960a6"
 		score = 75
 		quality = 75
@@ -209485,8 +209676,8 @@ rule WITHSECURELABS_Andariel_Jelusrat_PDB : FILE
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L125-L141"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L125-L141"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "a14d808ff783b7c42f3e4600386d578d63c88a0cd7c492cb1a026e0580b551f3"
 		score = 75
 		quality = 75
@@ -209508,8 +209699,8 @@ rule WITHSECURELABS_Andariel_Jelusrat_Plugin
 		date = "2026-01-22"
 		modified = "2026-01-22"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/Andariel2025/andariel.yara#L142-L152"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Andariel2025/andariel.yara#L142-L152"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "4006238e639232a6f01db518fa666ae23600cbfb19746bddad991ac04011a87b"
 		score = 75
 		quality = 75
@@ -209517,6 +209708,30 @@ rule WITHSECURELABS_Andariel_Jelusrat_Plugin
 
 	condition:
 		pe.exports( "testPlugin" ) and pe.exports ( "beginPlugin" ) and pe.exports ( "endPlugin" ) and pe.exports ( "processCommand" )
+}
+rule WITHSECURELABS_Fake_Vpn_Client_Hta
+{
+	meta:
+		description = "Detects HTA files masqeurading as fake VPN clients"
+		author = "WithSecure"
+		id = "8c8da6db-edde-5a34-8fe8-7ad7887e7078"
+		date = "2026-08-26"
+		modified = "2026-08-26"
+		reference = "https://github.com/WithSecureLabs/iocs"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/Initial_Access_SEO_Poisoning/fake_vpn_client_hta.yara#L1-L12"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
+		logic_hash = "1dfcaabcd99b0ca271e27d4302f1287f0a59619ef9996f078c867e4f442be8c7"
+		score = 75
+		quality = 75
+		tags = ""
+		target_entity = "file"
+
+	strings:
+		$a = "yes-hta-2025"
+		$b = "X-From-HTA"
+
+	condition:
+		any of them
 }
 rule WITHSECURELABS_Tanglecrypt : FILE
 {
@@ -209527,8 +209742,8 @@ rule WITHSECURELABS_Tanglecrypt : FILE
 		date = "2025-11-25"
 		modified = "2025-11-24"
 		reference = "https://labs.withsecure.com/publications/tanglecrypt"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/TangleCrypt/TangleCrypt_YARA.yar#L1-L27"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/TangleCrypt/TangleCrypt_YARA.yar#L1-L27"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		hash = "2936f5f3ff24f5bb42eace4ad2d64989b19dc6cd75d8f4ee83496ee6bdf169f6"
 		hash = "fb3fc93dc627c7dfd8d95c1d66c2cb66caac92783b6d6eb33ac5b91647871ae6"
 		logic_hash = "0d980d72e6ddcc9eedc5977bf895f358144f5720c2ca32266854497afad4a382"
@@ -209554,8 +209769,8 @@ rule WITHSECURELABS_DAYLIGHT
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L1-L11"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L1-L11"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "bc16cbe538d2d4bba7ec3332b525d79e74ab9dec8f545e5f12720e185b24d3dd"
 		score = 75
 		quality = 73
@@ -209577,8 +209792,8 @@ rule WITHSECURELABS_TEASOUP
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L13-L24"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L13-L24"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "357e3d23dac84db54b65ff1727e89eb1dab6e0d06461ebd8368d265c3d1f88bd"
 		score = 75
 		quality = 75
@@ -209601,8 +209816,8 @@ rule WITHSECURELABS_LOOKVALPS
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L26-L36"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L26-L36"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "ef694f6fee59578d9ccd909ca506771ec5cda94a64232895558cc141a09cf6e3"
 		score = 75
 		quality = 75
@@ -209624,8 +209839,8 @@ rule WITHSECURELABS_LOOKVALJS
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L38-L47"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L38-L47"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "4714815c64a6ba989d4d7554d3ac39702d067fd7299460a6db80dbd3e4b3abff"
 		score = 75
 		quality = 75
@@ -209646,8 +209861,8 @@ rule WITHSECURELABS_GREYVIBE_JSLOADER_1
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L49-L59"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L49-L59"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "e00567601c35f15985e97cb37b272ecf6fbf928b78c192123f418810b0061a8e"
 		score = 75
 		quality = 75
@@ -209669,8 +209884,8 @@ rule WITHSECURELABS_GREYVIBE_JSLOADER_2
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L61-L73"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L61-L73"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "c6fc0969bb62de731e9770447df565e427b03c69851708a0a30a4da20f176236"
 		score = 75
 		quality = 75
@@ -209694,8 +209909,8 @@ rule WITHSECURELABS_Phantomrelay_Fingerprint
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L75-L89"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L75-L89"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "88e2cf9106731fe9e7e76ed00a09e81828029e68e0e40ca58c8efad93e9e16b5"
 		score = 75
 		quality = 75
@@ -209721,8 +209936,8 @@ rule WITHSECURELABS_GREYVIBE_Phantomrelay_Watchdog : FILE
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L91-L103"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L91-L103"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "19d5fdaf2e2c98637971427761e316fd405a0f6d8e7f539dc9f72d20313ba43c"
 		score = 75
 		quality = 75
@@ -209746,8 +209961,8 @@ rule WITHSECURELABS_Legionrelay_Client
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L105-L119"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L105-L119"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "ba3fff2de891e880884434150f7a6331356a234ad0b2bc572e158a9b7ac03c0c"
 		score = 75
 		quality = 75
@@ -209773,8 +209988,8 @@ rule WITHSECURELABS_Fallspy
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L121-L139"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L121-L139"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "29575182e5399930764cdc33d1a62d020618ad630a01d4f503a38a241069fe4d"
 		score = 75
 		quality = 75
@@ -209804,8 +210019,8 @@ rule WITHSECURELABS_Phantomrelay_Client : FILE
 		date = "2026-05-28"
 		modified = "2026-05-28"
 		reference = "https://github.com/WithSecureLabs/iocs"
-		source_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/GREYVIBE/greyvibe.yara#L141-L153"
-		license_url = "https://github.com/WithSecureLabs/iocs/blob/744f4ab39110a4a9f7a74b9000921a9e8efde237/LICENSE"
+		source_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/GREYVIBE/greyvibe.yara#L141-L153"
+		license_url = "https://github.com/WithSecureLabs/iocs/blob/1a8384468dd292c6d2c5114c32e42dc0da1f5ae1/LICENSE"
 		logic_hash = "3d5ad744d1689b71604d55ec75a971f1a1f89c3f030c069a5ea205e4a3e4fac4"
 		score = 75
 		quality = 75
@@ -209824,7 +210039,7 @@ rule WITHSECURELABS_Phantomrelay_Client : FILE
  * YARA Rule Set
  * Repository Name: HarfangLab
  * Repository: https://github.com/HarfangLab/iocs
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: 3e2b674bf2f591ac46301420671ba553de094dea
  * Number of Rules: 39
  * Skipped: 0 (age), 1 (quality), 0 (score), 0 (importance)
@@ -211245,8 +211460,8 @@ rule HARFANGLAB_Custom_Ateraagent_Operator : FILE
  * YARA Rule Set
  * Repository Name: LOLDrivers
  * Repository: https://github.com/magicsword-io/LOLDrivers/
- * Retrieval Date: 2026-08-23
- * Git Commit: 5554706c8350a7b4a8631f05f490e563cd4b6e0a
+ * Retrieval Date: 2026-08-30
+ * Git Commit: c8652a34e287988f1c826ca671909342317eaf95
  * Number of Rules: 46
  * Skipped: 0 (age), 0 (quality), 744 (score), 0 (importance)
  *
@@ -211465,8 +211680,8 @@ rule LOLDRIVERS_MAL_Driver_773B
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1-L16"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1-L16"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "773b4a1efb9932dd5116c93d06681990759343dfe13c0858d09245bc610d5894"
 		logic_hash = "5906a3c80fce46b8a546449ada8c70dfdfdfedcd516543c6584fb1c715be240a"
 		score = 70
@@ -211490,8 +211705,8 @@ rule LOLDRIVERS_MAL_Driver_Basil_Windivertsys_Windivertdriver_2F43
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L18-L39"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L18-L39"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "2f43f4251be4d72dd56c91bf6cce475d379eb9ba6c4dda2be3022ea633d5e807"
 		hash = "8248306bcc5fae20fd4f3d5c44f962c85cddbe020b34a1799350ce2034154b7d"
 		hash = "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2"
@@ -211522,8 +211737,8 @@ rule LOLDRIVERS_MAL_Driver_Basil_Windivertsys_Windivertdriver_8DA0
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L41-L62"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L41-L62"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2"
 		hash = "2f43f4251be4d72dd56c91bf6cce475d379eb9ba6c4dda2be3022ea633d5e807"
 		hash = "8248306bcc5fae20fd4f3d5c44f962c85cddbe020b34a1799350ce2034154b7d"
@@ -211554,8 +211769,8 @@ rule LOLDRIVERS_MAL_Driver_Chingachgukdengerk_Vusbbussys_Virtualusbbusdriver_B4F
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L64-L84"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L64-L84"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "b4f33ffef069c18e8a8834eb448dd1f1dbdaae93b140cfff5a1db015eb3ada2f"
 		logic_hash = "178a4e8398ab6c663a1b6d1c810948a5efe1f9d97c2c9e2177d6763e0de3bc7d"
 		score = 70
@@ -211584,8 +211799,8 @@ rule LOLDRIVERS_MAL_Driver_Crowdstrikeinc_Csagentsys_Crowdstrikefalconsensor_06E
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L86-L110"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L86-L110"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "06eccd102c9105957773b32538943531d9c39d0a504ceb3b9b155e97e3b0b134"
 		hash = "1e42c8cb410a7ed653cfe62bbd8cf191f31a47337fe1ffcc35232d03f2da05ef"
 		hash = "6a2a0f9c56ee9bf7b62e1d4e1929d13046cd78a93d8c607fe4728cc5b1e8d050"
@@ -211619,8 +211834,8 @@ rule LOLDRIVERS_MAL_Driver_Crowdstrikeinc_Csagentsys_Crowdstrikefalconsensor_94B
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L112-L135"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L112-L135"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "94b87b1cdaf1d86c2bc4eacef45608d0f16fdd3b981b88cdddc16b6bc64fe25d"
 		hash = "1e42c8cb410a7ed653cfe62bbd8cf191f31a47337fe1ffcc35232d03f2da05ef"
 		hash = "6a2a0f9c56ee9bf7b62e1d4e1929d13046cd78a93d8c607fe4728cc5b1e8d050"
@@ -211653,8 +211868,8 @@ rule LOLDRIVERS_MAL_Driver_Dwadsafeloadsys_E112
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L137-L157"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L137-L157"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "e1123b59a801e243a64270d0c6ab1277e5e3afba9c19023807409f53c1b0204b"
 		logic_hash = "163d4ccfa2d9d46ef55e9d6fc28f832e390996757322f50c91afca95ce57db4a"
 		score = 70
@@ -211683,8 +211898,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_008F
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L159-L200"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L159-L200"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "008fa89822b7a1f91e5843169083202ea580f7b06eb6d5cae091ba844d035f25"
 		hash = "02ebf848fa618eba27065db366b15ee6629d98f551d20612ac38b9f655f37715"
 		hash = "21617210249d2a35016e8ca6bd7a1edda25a12702a2294d56010ee8148637f5a"
@@ -211735,8 +211950,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_06DD
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L202-L234"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L202-L234"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "06ddf49ac8e06e6b83fccba1141c90ea01b65b7db592c54ffe8aa6d30a75c0b8"
 		hash = "07759750fbb93c77b5c3957c642a9498fcff3946a5c69317db8d6be24098a4a0"
 		hash = "087270d57f1626f29ba9c25750ca19838a869b73a1f71af50bdf37d6ff776212"
@@ -211778,8 +211993,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_0740
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L236-L269"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L236-L269"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "0740359baef32cbb0b14a9d1bd3499ea2e770ff9b1c85898cfac8fd9aca4fa39"
 		hash = "0f7bfa10075bf5c193345866333d415509433dbfe5a7d45664b88d72216ff7c3"
 		hash = "29348ebe12d872c5f40e316a0043f7e5babe583374487345a79bad0ba93fbdfe"
@@ -211822,8 +212037,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_07BE
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L271-L305"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L271-L305"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "07beac65e28ee124f1da354293a3d6ad7250ed1ce29b8342acfd22252548a5af"
 		hash = "1d23ab46ad547e7eef409b40756aae9246fbdf545d13946f770643f19c715e80"
 		hash = "200f98655d1f46d2599c2c8605ebb7e335fee3883a32135ca1a81e09819bc64a"
@@ -211867,8 +212082,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_082A
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L307-L365"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L307-L365"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "082a79311da64b6adc3655e79aa090a9262acaac3b917a363b9571f520a17f6a"
 		hash = "083f821d90e607ed93221e71d4742673e74f573d0755a96ad17d1403f65a2254"
 		hash = "0f98492c92e35042b09032e3d9aedc357e4df94fc840217fa1091046f9248a06"
@@ -211936,8 +212151,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_0AAB
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L367-L416"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L367-L416"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "0aab2deae90717a8876d46d257401d265cf90a5db4c57706e4003c19eee33550"
 		hash = "14b89298134696f2fd1b1df0961d36fa6354721ea92498a349dc421e79447925"
 		hash = "15cf366f7b3ee526db7ce2b5253ffebcbfaa4f33a82b459237c049f854a97c0c"
@@ -211996,8 +212211,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_0F58
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L418-L450"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L418-L450"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "0f58e09651d48d2b1bcec7b9f7bb85a2d1a7b65f7a51db281fe0c4f058a48597"
 		hash = "087270d57f1626f29ba9c25750ca19838a869b73a1f71af50bdf37d6ff776212"
 		hash = "0d676baac43d9e2d05b577d5e0c516fba250391ab0cb11232a4b17fd97a51e35"
@@ -212039,8 +212254,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_14B8
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L452-L501"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L452-L501"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "14b89298134696f2fd1b1df0961d36fa6354721ea92498a349dc421e79447925"
 		hash = "36c65aeb255c06898ffe32e301030e0b74c8bca6fe7be593584b8fdaacd4e475"
 		hash = "673bbc7fa4154f7d99af333014e888599c27ead02710f7bc7199184b30b38653"
@@ -212099,8 +212314,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_28F5
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L503-L524"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L503-L524"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "28f5aa194a384680a08c0467e94a8fc40f8b0f3f2ac5deb42e0f51a80d27b553"
 		hash = "2fd43a749b5040ebfafd7cdbd088e27ef44341d121f313515ebde460bf3aaa21"
 		hash = "7824931e55249a501074a258b4f65cd66157ee35672ba17d1c0209f5b0384a28"
@@ -212131,8 +212346,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_2FD4
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L526-L547"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L526-L547"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "2fd43a749b5040ebfafd7cdbd088e27ef44341d121f313515ebde460bf3aaa21"
 		hash = "7824931e55249a501074a258b4f65cd66157ee35672ba17d1c0209f5b0384a28"
 		hash = "28f5aa194a384680a08c0467e94a8fc40f8b0f3f2ac5deb42e0f51a80d27b553"
@@ -212163,8 +212378,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_30E0
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L549-L570"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L549-L570"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "30e083cd7616b1b969a92fd18cf03097735596cce7fcf3254b2ca344e526acc2"
 		hash = "a906251667a103a484a6888dca3e9c8c81f513b8f037b98dfc11440802b0d640"
 		logic_hash = "0c302fd9d99a5d2fc73b34910a51c9bc064b2ad3143b6da4b8524c50f541c569"
@@ -212194,8 +212409,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_41AD
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L572-L606"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L572-L606"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "41ad660820c41fc8b1860b13dc1fea8bc8cb2faceb36ed3e29d40d28079d2b1f"
 		hash = "a7a665a695ec3c0f862a0d762ad55aff6ce6014359647e7c7f7e3c4dc3be81b7"
 		hash = "9a42fa1870472c38a56c0a70f62e57a3cdc0f5bc142f3a400d897b85d65800ac"
@@ -212239,8 +212454,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_7662
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L608-L649"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L608-L649"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "7662187c236003308a7951c2f49c0768636c492f8935292d02f69e59b01d236d"
 		hash = "a85d3fd59bb492a290552e5124bfe3f9e26a3086d69d42ccc44737b5a66673ec"
 		hash = "60ee78a2b070c830fabb54c6bde0d095dff8fad7f72aa719758b3c41c72c2aa9"
@@ -212291,8 +212506,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_AAF0
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L651-L709"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L651-L709"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "aaf04d89fd15bc61265e545f8e1da80e20f59f90058ed343c62ee24358e3af9e"
 		hash = "4b97d63ebdeda6941bb8cef5e94741c6cca75237ca830561f2262034805f0919"
 		hash = "c42c1e5c3c04163bf61c3b86b04a5ec7d302af7e254990cef359ac80474299da"
@@ -212360,8 +212575,8 @@ rule LOLDRIVERS_MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_DDF4
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L711-L744"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L711-L744"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "ddf427ce55b36db522f638ba38e34cd7b96a04cb3c47849b91e7554bfd09a69a"
 		hash = "bcb774b6f6ff504d2db58096601bc5cb419c169bfbeaa3af852417e87d9b2aa0"
 		hash = "af4f42197f5ce2d11993434725c81ecb6f54025110dedf56be8ffc0e775d9895"
@@ -212404,8 +212619,8 @@ rule LOLDRIVERS_MAL_Driver_Gmer_Gmersys_Gmer_0052
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L746-L767"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L746-L767"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "0052aa88e42055a2eed5ddd17c3499c692360155e5e031a211edfcef577acce3"
 		hash = "18c909a2b8c5e16821d6ef908f56881aa0ecceeaccb5fa1e54995935fcfd12f7"
 		logic_hash = "8b7692316b92194c57edb7cfa44a69441e9541414a59364cbeb87f070fa97e32"
@@ -212435,8 +212650,8 @@ rule LOLDRIVERS_MAL_Driver_Legalcorp_Pciexpressvideocapture_FD22
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L769-L788"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L769-L788"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "fd223833abffa9cd6cc1848d77599673643585925a7ee51259d67c44d361cce8"
 		logic_hash = "46ff8b6469cbd4f4db4965f08a5df1a79d6c3f21d92d2b390df82e5807738798"
 		score = 70
@@ -212464,8 +212679,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Ndislansys_Microsoftwindowsopera
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L790-L810"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L790-L810"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "b0eb4d999e4e0e7c2e33ff081e847c87b49940eb24a9e0794c6aa9516832c427"
 		logic_hash = "4032161d51e52d628e614970992fbae4f2294a8b2779160812233ccaef94e7f7"
 		score = 70
@@ -212494,8 +212709,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Ntbiosys_Microsoftrwindowsrntope
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L812-L832"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L812-L832"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "96bf3ee7c6673b69c6aa173bb44e21fa636b1c2c73f4356a7599c121284a51cc"
 		hash = "c0d88db11d0f529754d290ed5f4c34b4dba8c4f2e5c4148866daabeab0d25f9c"
 		logic_hash = "139d8b63b53e2c6db2ceb2f0509599c23b854c2b4c02e37cc226ed36589ed5e9"
@@ -212525,8 +212740,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Ntbiosys_Microsoftrwindowsrntope
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L834-L854"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L834-L854"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "c0d88db11d0f529754d290ed5f4c34b4dba8c4f2e5c4148866daabeab0d25f9c"
 		hash = "96bf3ee7c6673b69c6aa173bb44e21fa636b1c2c73f4356a7599c121284a51cc"
 		logic_hash = "74ad0b57644d82a77bc902786250156f5e3700671bdf9765055b5908dc345a67"
@@ -212556,8 +212771,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Srvnetsys_Microsoftwindowsoperat
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L856-L876"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L856-L876"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "f6c316e2385f2694d47e936b0ac4bc9b55e279d530dd5e805f0d963cb47c3c0d"
 		logic_hash = "af5fe5f0852f2e654996aea7dccec8428dc8e9720797fc91d4243a0f480a0dc8"
 		score = 70
@@ -212586,8 +212801,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperati
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L878-L900"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L878-L900"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "06a0ec9a316eb89cb041b1907918e3ad3b03842ec65f004f6fa74d57955573a4"
 		hash = "8d9a2363b757d3f127b9c6ed8f7b8b018e652369bc070aa3500b3a978feaa6ce"
 		hash = "b9dad0131c51e2645e761b74a71ebad2bf175645fa9f42a4ab0e6921b83306e3"
@@ -212619,8 +212834,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperati
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L902-L922"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L902-L922"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "6908ebf52eb19c6719a0b508d1e2128f198d10441551cbfb9f4031d382f5229f"
 		logic_hash = "bc1f89fd51c08995cdcf3090db6d3de1f96abc7193e6a71ac7d758f9c68f0def"
 		score = 70
@@ -212649,8 +212864,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperati
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L924-L944"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L924-L944"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "81c7bb39100d358f8286da5e9aa838606c98dfcc263e9a82ed91cd438cb130d1"
 		logic_hash = "5f24b13eb3f9a5c863e43fe39ff1bc6e6bb67928aa62b7179d315836a0421952"
 		score = 70
@@ -212679,8 +212894,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperati
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L946-L968"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L946-L968"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "e7af7bcb86bd6bab1835f610671c3921441965a839673ac34444cf0ce7b2164e"
 		hash = "b9dad0131c51e2645e761b74a71ebad2bf175645fa9f42a4ab0e6921b83306e3"
 		hash = "8d9a2363b757d3f127b9c6ed8f7b8b018e652369bc070aa3500b3a978feaa6ce"
@@ -212712,8 +212927,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Windbgsys_Microsoftwindowsoperat
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L970-L1005"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L970-L1005"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "06c5ebd0371342d18bc81a96f5e5ce28de64101e3c2fd0161d0b54d8368d2f1f"
 		hash = "139f8412a7c6fdc43dcfbbcdba256ee55654eb36a40f338249d5162a1f69b988"
 		hash = "32882949ea084434a376451ff8364243a50485a3b4af2f2240bb5f20c164543d"
@@ -212758,8 +212973,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Windbgsys_Microsoftwindowsoperat
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1007-L1042"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1007-L1042"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "6994b32e3f3357f4a1d0abe81e8b62dd54e36b17816f2f1a80018584200a1b77"
 		hash = "5b932eab6c67f62f097a3249477ac46d80ddccdc52654f8674060b4ddf638e5d"
 		hash = "ea50f22daade04d3ca06dedb497b905215cba31aae7b4cab4b533fda0c5be620"
@@ -212804,8 +213019,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wintapixsys_Microsoftwindowsoper
 		date = "2026-04-28"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1044-L1064"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1044-L1064"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "1485c0ed3e875cbdfc6786a5bd26d18ea9d31727deb8df290a1c00c780419a4e"
 		hash = "8578bff36e3b02cc71495b647db88c67c3c5ca710b5a2bd539148550595d0330"
 		logic_hash = "e60ece0c0d46a41696efb8bd55931e8f6368237fcd782d891fa84384fff2c7ce"
@@ -212835,8 +213050,8 @@ rule LOLDRIVERS_MAL_Driver_Microsoftcorporation_Wintapixsys_Microsoftwindowsoper
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1066-L1086"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1066-L1086"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "8578bff36e3b02cc71495b647db88c67c3c5ca710b5a2bd539148550595d0330"
 		hash = "1485c0ed3e875cbdfc6786a5bd26d18ea9d31727deb8df290a1c00c780419a4e"
 		logic_hash = "dd85f0dc471425fe692e5a51580a97facdaea45505c48b5e01dd6dbc975f2ffe"
@@ -212866,8 +213081,8 @@ rule LOLDRIVERS_MAL_Driver_Mimidrv_Mimidrvmimikatz_2FAF
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1088-L1105"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1088-L1105"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "2faf95a3405578d0e613c8d88d534aa7233da0a6217ce8475890140ab8fb33c8"
 		logic_hash = "4495d60de69a9e2928c8c8512ebadbd8bd9671c4848c756b1b2be7095000161b"
 		score = 70
@@ -212893,8 +213108,8 @@ rule LOLDRIVERS_MAL_Driver_Paloaltonetworksinc_Tdevfltsys_Cortexxdradvancedendpo
 		date = "2026-07-10"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1107-L1126"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1107-L1126"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "8284c8676cc22c4b2e66826ac16986da7ddecba1f2776b16771be17bfdc45dc2"
 		logic_hash = "46da747e7362e38544ec0e107a02614155b3c235d02add7846a3ffc7537418b5"
 		score = 70
@@ -212923,8 +213138,8 @@ rule LOLDRIVERS_MAL_Driver_Pinchinstechnologycoltd_Rwtkrlsys_Ransomwareterminato
 		date = "2025-09-18"
 		modified = "2026-07-10"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1128-L1148"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1128-L1148"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "090d409f86430e078694e621ad0bd5e458d32aa727f0eb99bda3961577df8d49"
 		hash = "04e1f364c0fcebaa1f0833c0595a976d0625ed3390441b4f2d1aedb314bf2497"
 		logic_hash = "079ccac2c3427b198a0873ee69ab4ce8631a4b35fa3829468883a0acf2852b94"
@@ -212954,8 +213169,8 @@ rule LOLDRIVERS_MAL_Driver_Pinchinstechnologycoltd_Rwtkrlsys_Ransomwareterminato
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1150-L1170"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1150-L1170"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "146b8f4fc91a4915e8f6aa6e0d871f7161a809c46760ef602bab534836142436"
 		logic_hash = "0e49dff13e48c047366391dd6e7114a093d3cfeb8b27ba0d66b0ce4983a1445e"
 		score = 70
@@ -212984,8 +213199,8 @@ rule LOLDRIVERS_MAL_Driver_Pinchinstechnologycoltd_Rwtkrlsys_Ransomwareterminato
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1172-L1192"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1172-L1192"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "1a74c2bde0c9a76486657ccb9c79ea87c9891a32cdd4aa15c7542f7c9487a539"
 		logic_hash = "5e3e2880da2a9754d4b944617053b10e6c47b3115f544a82c2505ac6958ec193"
 		score = 70
@@ -213014,8 +213229,8 @@ rule LOLDRIVERS_MAL_Driver_Pinchinstechnologycoltd_Rwtkrlsys_Ransomwareterminato
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1194-L1214"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1194-L1214"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "930da474a6d1be97b54f2c81e883e14d62897aa58622e5b040e412bd36cee0a7"
 		logic_hash = "b4d25b7e1a98b006af44acae4dff17c1a401687add8e1554271b06e42a924f74"
 		score = 70
@@ -213044,8 +213259,8 @@ rule LOLDRIVERS_MAL_Driver_Sensecorp_42B2
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1216-L1233"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1216-L1233"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "42b22faa489b5de936db33f12184f6233198bdf851a18264d31210207827ba25"
 		logic_hash = "efa506290575bbc70909280080fd85a732c733339e7d984753010c0496aec348"
 		score = 70
@@ -213071,8 +213286,8 @@ rule LOLDRIVERS_MAL_Driver_Sensecorp_7F45
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1235-L1252"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1235-L1252"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "7f4555a940ce1156c9bcea9a2a0b801f9a5e44ec9400b61b14a7b1a6404ffdf6"
 		logic_hash = "e7fb00da35e8923567e443830650672094b18d8b49d614d138ed36726fee9019"
 		score = 70
@@ -213098,8 +213313,8 @@ rule LOLDRIVERS_MAL_Driver_Tonecinc_Idmtdisys_Internetdownloadmanager_2C1B
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1254-L1276"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1254-L1276"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "2c1b65c2988b337182f1ba57b404793454e30a7fd328d34bc2e79857dc437a4a"
 		hash = "44ebb0f534e7cdfec06d5234358d219798a313219b214d72aa23afc5a57d7ea9"
 		hash = "77225a99b2e0e2b4007fb2f5a96d356e13deab45b9ef54c175d5452de8a211a7"
@@ -213130,8 +213345,8 @@ rule LOLDRIVERS_MAL_Driver_Windowsrwinddkprovider_Netfiltersys_Windowsrwinddkdri
 		date = "2025-09-18"
 		modified = "2026-04-28"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
-		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/detections/yara/yara-rules_mal_drivers.yar#L1278-L1298"
-		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/5554706c8350a7b4a8631f05f490e563cd4b6e0a/LICENSE"
+		source_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/detections/yara/yara-rules_mal_drivers.yar#L1278-L1298"
+		license_url = "https://github.com/magicsword-io/LOLDrivers//blob/c8652a34e287988f1c826ca671909342317eaf95/LICENSE"
 		hash = "206006a11f233b9ae876952308f6d60d7a75c80b4d530a3e6146a0b4d8cd3e4f"
 		logic_hash = "228cc65de47535e5b1514db5c9d98c638013c45b65de75c74e4a8f1e2016a167"
 		score = 70
@@ -213155,8 +213370,8 @@ rule LOLDRIVERS_MAL_Driver_Windowsrwinddkprovider_Netfiltersys_Windowsrwinddkdri
  * YARA Rule Set
  * Repository Name: SEKOIA
  * Repository: https://github.com/SEKOIA-IO/Community
- * Retrieval Date: 2026-08-23
- * Git Commit: 0cfec8bbe51bc92b4d612e53312f158b7597b151
+ * Retrieval Date: 2026-08-30
+ * Git Commit: fa3a9630ef9ce484fb1b945480a43f989e6865d4
  * Number of Rules: 731
  * Skipped: 0 (age), 10 (quality), 8 (score), 0 (importance)
  *
@@ -213191,8 +213406,8 @@ rule SEKOIA_Tool_Nssm_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_nssm_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_nssm_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "beceae2fdc4f7729a93e94ac2ccd78cc"
 		logic_hash = "ca883f3ed9f510cbcd9b96ad167e9d6725341c311b023f22edcba721e801f07d"
 		score = 75
@@ -213220,8 +213435,8 @@ rule SEKOIA_Ransomware_Win_Voidcrypt : FILE
 		date = "2021-10-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_voidcrypt.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_voidcrypt.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7e28bae5830df779bf2367482fb966f5cab691a6c8c474950f7442d8fec054a0"
 		score = 75
 		quality = 80
@@ -213246,8 +213461,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_7 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_7.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_7.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "27b5f3d24f7269e80b628be044d828d365fdba25891a5a1ecc973c419cf1dc6c"
 		score = 75
 		quality = 80
@@ -213273,8 +213488,8 @@ rule SEKOIA_Apt_Unk_Hrserv_Memory_Commands_Strings
 		date = "2023-11-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unk_hrserv_memory_commands_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unk_hrserv_memory_commands_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a87c35658ded301c098f9ee8ee5886a54e89537eabd145cf82b0286c703a77d2"
 		score = 75
 		quality = 80
@@ -213301,8 +213516,8 @@ rule SEKOIA_Infostealer_Win_Xfiles : FILE
 		date = "2022-02-03"
 		modified = "2024-12-19"
 		reference = "https://twitter.com/3xp0rtblog/status/1375206169384521730"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_xfiles.yar#L1-L50"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_xfiles.yar#L1-L50"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "404ee02fa1905f49c3c3ca525cfb3c5ba1d2ec46554239035c1891d21f547a2c"
 		score = 75
 		quality = 78
@@ -213356,8 +213571,8 @@ rule SEKOIA_Implant_Win_Mysterysnail : FILE
 		date = "2021-10-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_mysterysnail.yar#L4-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_mysterysnail.yar#L4-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "37c02a5916ad7ce3190ce926d576365d1e17fee0f10e9b31619ea4b6fee29ae6"
 		score = 75
 		quality = 80
@@ -213377,8 +213592,8 @@ rule SEKOIA_Tool_Realblindingedr_Strings : FILE
 		date = "2024-09-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_realblindingedr_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_realblindingedr_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "cb6219e2b6577b8d4a18114d595e10d7"
 		hash = "d0a251709c24a8f4c26d456dea22d90f"
 		logic_hash = "7b6a54c935bb40bd1be1d25be452d7185fd6f9dacbd7cbcde7cb37dfea09775e"
@@ -213409,8 +213624,8 @@ rule SEKOIA_Implant_Any_Sliver_Not_Stripped : FILE
 		date = "2021-11-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_any_sliver_not_stripped.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_any_sliver_not_stripped.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5240f3ea1fb421697eeb12eb17d0b31c036b53f39c3a590473d87065b5d28e3e"
 		score = 75
 		quality = 80
@@ -213434,8 +213649,8 @@ rule SEKOIA_Hacktool_Dnscat2_Strings : FILE
 		date = "2022-02-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_dnscat2_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_dnscat2_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "40d906ca3a00f7d3e2f8d043dbbc77a2a57fd133f4812b863aec6d5a0f57a8c9"
 		score = 75
 		quality = 80
@@ -213464,8 +213679,8 @@ rule SEKOIA_Apt_Ta410_Driver_Keylogger : FILE
 		date = "2022-10-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_ta410_driver_keylogger.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_ta410_driver_keylogger.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5ed152cc068f194cb7bf8c34744f0f1ebd4f621e6ae47f14bab64b18d94af4c5"
 		score = 75
 		quality = 80
@@ -213495,8 +213710,8 @@ rule SEKOIA_Apt_Kimsuky_Vbs_Powershell_Downloader : FILE
 		date = "2022-08-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_vbs_powershell_downloader.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_vbs_powershell_downloader.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dc24ca206a3122b34be978287f907b12c809f76058fe9355bbd00b3159b0a4d4"
 		score = 75
 		quality = 80
@@ -213521,8 +213736,8 @@ rule SEKOIA_Apt_Scanbox_Obfuscated_Versions : FILE
 		date = "2022-09-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_scanbox_obfuscated_versions.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_scanbox_obfuscated_versions.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0395d1ac9a593aa8249f6d16c485e431349cecf2f379d2b5bac466541f71968c"
 		score = 75
 		quality = 80
@@ -213550,8 +213765,8 @@ rule SEKOIA_Malicious_Lnk_Exploiting_Webdav_Share_Generic : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malicious_lnk_exploiting_webdav_share_generic.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malicious_lnk_exploiting_webdav_share_generic.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "cffb40e13e3aa6761330090b42314c36"
 		logic_hash = "8179ef8ac43cb67a1b70baf7824452834f498d988df84e138c857ac0ef164b4b"
 		score = 75
@@ -213578,8 +213793,8 @@ rule SEKOIA_Hacktool_Credentialkatz : FILE
 		date = "2024-10-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/Meckazin/ChromeKatz"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_credentialkatz.yar#L1-L34"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_credentialkatz.yar#L1-L34"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2762e066128e186526c5ff272fc9184c0262d81d8c513e6515c25c189418931c"
 		logic_hash = "dbfc0a6e8ad6701a071cb76564a2aeb9924ff7f13306f5dca1e1045c51f07ae7"
 		score = 75
@@ -213620,8 +213835,8 @@ rule SEKOIA_Loader_Win_Gcleaner : FILE
 		date = "2022-10-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_gcleaner.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_gcleaner.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f38aaab2911e4e901780bb6df2c58f02fa80d3e39fb56f60072285d0a929ba23"
 		score = 75
 		quality = 80
@@ -213651,8 +213866,8 @@ rule SEKOIA_Ransomware_Win_Redeemer : FILE
 		date = "2022-12-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_redeemer.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_redeemer.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c1798a18e763277d19a3b698459244a2bc2eeebbbf239db7540d1493955ce5f0"
 		score = 75
 		quality = 80
@@ -213684,8 +213899,8 @@ rule SEKOIA_Backdoor_Powershellempire_Gen : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_powershellempire_gen.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_powershellempire_gen.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "21f255bcfb6da2aa996ed61ff5fb29a9355de6169095f7c3141a1b7f3cea5c2d"
 		score = 75
 		quality = 76
@@ -213709,8 +213924,8 @@ rule SEKOIA_Tool_Sharpefspotato_Strings : FILE
 		date = "2023-06-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sharpefspotato_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sharpefspotato_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4987b0d728472186a255adc1fba2d72288dd1f2b368212afd08ea8d7ff18e992"
 		score = 75
 		quality = 80
@@ -213736,8 +213951,8 @@ rule SEKOIA_Infostealer_Win_Raccoon_Str_Takemypainback : FILE
 		date = "2022-10-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_raccoon_str_takemypainback.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_raccoon_str_takemypainback.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "50d30828dab7e197619eeac4ebd2ab6692a9ac40a5091e23642cd1bdde8e9910"
 		score = 75
 		quality = 80
@@ -213764,8 +213979,8 @@ rule SEKOIA_Infostealer_Win_Enigma_Initial_Loader : FILE
 		date = "2023-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_enigma_initial_loader.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_enigma_initial_loader.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "03b9d7296b01e8f3fb3d12c4d80fe8a1bb0ab2fd76f33c5ce11b40729b75fb23"
 		logic_hash = "b7687a480a2a633e7cc9a60d62f3392011712bd018ed634927419cfb4edb4a78"
 		score = 75
@@ -213797,8 +214012,8 @@ rule SEKOIA_Infostealer_Win_Mars_Stealer_Variant_Llcppc1 : FILE
 		date = "2022-03-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_mars_stealer_variant_llcppc1.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_mars_stealer_variant_llcppc1.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f9d92338fa31c38648b72d7f9a953201c7e498237bc9d02d6247d1882d1e3432"
 		score = 75
 		quality = 80
@@ -213821,8 +214036,8 @@ rule SEKOIA_Apt_Badmagic_Startrevsocks_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_startrevsocks_pshscript.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_startrevsocks_pshscript.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6a4615afb836330634cde9559dacfff50daef44a370f6191c6771a2066074a31"
 		score = 75
 		quality = 80
@@ -213847,8 +214062,8 @@ rule SEKOIA_Unknown_Quad7_Wildcard_Login : FILE
 		date = "2024-07-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/unknown_quad7_wildcard_login.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/unknown_quad7_wildcard_login.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "4d9067e7cf517158337123a30a9bd0e3"
 		hash = "43ea387b8294cc4d0baaef6d26ff7c72"
 		hash = "777d6f907da38365924a0c2a12e973c5"
@@ -213878,8 +214093,8 @@ rule SEKOIA_Infostealer_Win_Eternity : FILE
 		date = "2022-03-23"
 		modified = "2024-12-19"
 		reference = "hxxp://xssforumv3isucukbxhdhwz67hoa5e2voakcfkuieq4ch257vsburuid.]onion/threads/62331/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_eternity.yar#L3-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_eternity.yar#L3-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "06f0f7f51100278160f5bc4f588bb6a9d749be308f879bd5704666bf90764bf9"
 		score = 75
 		quality = 80
@@ -213912,8 +214127,8 @@ rule SEKOIA_Apt_Nobelium_Acrobox_Downloader_Apr2022 : FILE
 		date = "2022-05-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_nobelium_acrobox_downloader_apr2022.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_nobelium_acrobox_downloader_apr2022.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ebcbdf13908971eea3e5b291719527e2e454a9ee3b98b5dc66149b2bb3b8fe67"
 		score = 75
 		quality = 80
@@ -213943,8 +214158,8 @@ rule SEKOIA_Implant_Lin_Geacon : FILE
 		date = "2024-01-11"
 		modified = "2024-12-19"
 		reference = "https://www.sentinelone.com/blog/geacon-brings-cobalt-strike-capabilities-to-macos-threat-actors/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_lin_geacon.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_lin_geacon.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c6fa5815bf618eb588d511f18231042944dee20c1b13096c44910d43ca552bfa"
 		score = 75
 		quality = 80
@@ -213984,8 +214199,8 @@ rule SEKOIA_Rat_Win_Hiddenz : FILE
 		date = "2022-08-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_hiddenz.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_hiddenz.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "92f62c893d8a081cd52deaaac93d622fbb1c8e9c7df214e34c6b8066be72a424"
 		score = 75
 		quality = 80
@@ -214010,8 +214225,8 @@ rule SEKOIA_Dropper_Win_Konni_Cab : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/dropper_win_konni_cab.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/dropper_win_konni_cab.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b49bb875d5ddd4b815da5bd184ec7f1d23cfb7ad316760c9a9876607245d0a95"
 		score = 75
 		quality = 80
@@ -214037,8 +214252,8 @@ rule SEKOIA_Crypter_Win_Dotrunpex : FILE
 		date = "2023-06-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crypter_win_dotrunpex.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crypter_win_dotrunpex.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8a2b9e19b49ba17f976241bec5323121ba13d2ce39fdcf2777fd97a230211e75"
 		score = 75
 		quality = 80
@@ -214061,8 +214276,8 @@ rule SEKOIA_Loader_Win_Fudloader : FILE
 		date = "2023-09-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/0day2/FUD-Loader/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_fudloader.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_fudloader.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bf19169963cfcbcf41a2dc5f9447738e957878972590b2a8d310eed1c54f3676"
 		score = 75
 		quality = 80
@@ -214093,8 +214308,8 @@ rule SEKOIA_Wiper_Win_Caddywiper : FILE
 		date = "2022-03-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_win_caddywiper.yar#L4-L37"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_win_caddywiper.yar#L4-L37"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b66b179eac03afafdc69f62c207819eceecfbf994c9efa464fda0d2ba44fe2d7"
 		hash = "ea6a416b320f32261da8dafcf2faf088924f99a3a84f7b43b964637ea87aef72"
 		hash = "a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea"
@@ -214121,8 +214336,8 @@ rule SEKOIA_Tool_Pivotnacci_Webshell : FILE
 		date = "2024-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_pivotnacci_webshell.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_pivotnacci_webshell.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a57792915b4c888547ebe0b08b928e4bc32b3526c98a3ccc9fca0193cedee20a"
 		score = 75
 		quality = 80
@@ -214153,8 +214368,8 @@ rule SEKOIA_Generic_Perl_Reverse_Shell : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_perl_reverse_shell.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_perl_reverse_shell.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d0a23db712746bac4684d6b4508dd891caf06d72af153b1a0ab489a93edbfaf4"
 		score = 75
 		quality = 80
@@ -214179,8 +214394,8 @@ rule SEKOIA_Tool_Sharphoundexecutable_Strings : FILE
 		date = "2022-08-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sharphoundexecutable_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sharphoundexecutable_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1b28a2b9dd594f344a1a2a74fd9b30527a66dabb451b21afca40a0e6ec8d3553"
 		score = 75
 		quality = 80
@@ -214208,8 +214423,8 @@ rule SEKOIA_Crime_Sload_Powershellarchiveexfiltrator_Strings : FILE
 		date = "2022-08-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_powershellarchiveexfiltrator_strings.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_powershellarchiveexfiltrator_strings.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7d6234ced7e5915a5b27ce2065772c74adb5c2398a8c972421fb5ec6b1b7771f"
 		score = 75
 		quality = 80
@@ -214234,8 +214449,8 @@ rule SEKOIA_Apt_Gamaredon_Subtle_Paws : FILE
 		date = "2024-02-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_subtle_paws.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_subtle_paws.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2fcebcf3401912e06ca4a34bf4e8d5318c6b2e08b00c4939ab932f3fb94cbc89"
 		score = 75
 		quality = 80
@@ -214262,8 +214477,8 @@ rule SEKOIA_Tool_Pchunter_And_Related_Certificate : FILE
 		date = "2022-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_pchunter_and_related_certificate.yar#L3-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_pchunter_and_related_certificate.yar#L3-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "924a85b2eaec73b628e705b3bb2e464582a71c19317d2023b1422b1b8ad97a51"
 		score = 75
 		quality = 80
@@ -214283,8 +214498,8 @@ rule SEKOIA_Infostealer_Win_Fwit_Strings : FILE
 		date = "2023-06-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_fwit_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_fwit_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4e28b6d67e2087b2f28817b19812b8bd56227175cd3d9c7037290127d4ec05a5"
 		score = 75
 		quality = 80
@@ -214309,8 +214524,8 @@ rule SEKOIA_Apt_Cloudatlas_Powertunnel_Loader
 		date = "2022-11-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powertunnel_loader.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powertunnel_loader.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "742374ad22d9333ef071fe95058f28ae00325cca833b557481ef5d453b3a4977"
 		score = 75
 		quality = 55
@@ -214336,8 +214551,8 @@ rule SEKOIA_Backdoor_Lin_Bifrost : FILE
 		date = "2024-03-05"
 		modified = "2024-12-19"
 		reference = "https://unit42.paloaltonetworks.com/new-linux-variant-bifrost-malware/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_lin_bifrost.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_lin_bifrost.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8e85cb6f2215999dc6823ea3982ff4376c2cbea53286e95ed00250a4a2fe4729"
 		hash = "2aeb70f72e87a1957e3bc478e1982fe608429cad4580737abe58f6d78a626c05"
 		hash = "f2bef6bed27f4b527118dd62b4035003c14afaffa72729c8117f213623f644ec"
@@ -214364,8 +214579,8 @@ rule SEKOIA_Hacktool_Sharpview_Strings : FILE
 		date = "2022-02-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_sharpview_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_sharpview_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "762e8d292e052cb0922743c2f5b14170e91fe440e05331892b20b5921e0559da"
 		score = 75
 		quality = 80
@@ -214393,8 +214608,8 @@ rule SEKOIA_Infostealer_Win_Aurora : FILE
 		date = "2022-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_aurora.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_aurora.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e88cbb012ffb65aa8a70b76163a834c0bc4615b0effc93945c6d915e33c04549"
 		score = 75
 		quality = 78
@@ -214437,8 +214652,8 @@ rule SEKOIA_Apt_Agent_Racoon_Strings : FILE
 		date = "2023-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_agent_racoon_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_agent_racoon_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4e32606edffab0907e343ab2fef8642c0064d83c2933531619f9dee8957d2fe4"
 		score = 75
 		quality = 80
@@ -214468,8 +214683,8 @@ rule SEKOIA_Implant_Win_Quasarrat
 		date = "2023-03-17"
 		modified = "2024-12-19"
 		reference = "https://blog.alyac.co.kr/5103"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_quasarrat.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_quasarrat.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d3c1d65a23aaea5423025cb2f755d0f2298cbf02b2a4e34430eae8c3e1263185"
 		score = 75
 		quality = 80
@@ -214497,8 +214712,8 @@ rule SEKOIA_Apt_Gelsemium_Firewood_Backdoor : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gelsemium_firewood_backdoor.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gelsemium_firewood_backdoor.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2251bc7910fe46fd0baf8bc05599bdcf"
 		logic_hash = "dea8c7cfb35b3cc026a0df844e118b495e3ad0a85f55e2fd3b63a41dde2ea944"
 		score = 75
@@ -214525,8 +214740,8 @@ rule SEKOIA_Apt_Flightnight_Malicious_Lnk : FILE
 		date = "2024-04-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_flightnight_malicious_lnk.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_flightnight_malicious_lnk.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3446852709fe425b2c053ffdb9c078cf20e442ef50fe20402d3b4c9e9d8b543a"
 		score = 75
 		quality = 80
@@ -214552,8 +214767,8 @@ rule SEKOIA_Ursnif_Ldr4
 		date = "2024-12-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ursnif_ldr4.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ursnif_ldr4.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6fe237c6370a1b99bddb7bee4170d29cbb780dc445f5d5039201ddbaf05c63db"
 		score = 75
 		quality = 80
@@ -214587,8 +214802,8 @@ rule SEKOIA_Apt_Micdown_Encrypted_Configuration : FILE
 		date = "2023-08-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_micdown_encrypted_configuration.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_micdown_encrypted_configuration.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9b80bd284f9aa9e4073bdead7bb0c5412ec1809c36a85dfd35d9ea7ac62da8a3"
 		score = 75
 		quality = 80
@@ -214611,8 +214826,8 @@ rule SEKOIA_Apt_Rusticweb_Stealer : FILE
 		date = "2024-01-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_rusticweb_stealer.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_rusticweb_stealer.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "68f802ef442e68cbcca789eae2bb8a4395af86699320e5a8101c07469e7555fb"
 		score = 75
 		quality = 80
@@ -214639,8 +214854,8 @@ rule SEKOIA_Apt_Icepeony_Iceevent : FILE
 		date = "2024-10-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_icepeony_iceevent.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_icepeony_iceevent.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "07c291c9cea4430676c303128bbbb8e3"
 		hash = "489b573b37ab8bc74cca3704e723b895"
 		hash = "265f6cf778d26e62903fb295f89507e3"
@@ -214671,8 +214886,8 @@ rule SEKOIA_Spyware_And_Bahamut
 		date = "2022-11-23"
 		modified = "2024-12-19"
 		reference = "https://www.welivesecurity.com/2022/11/23/bahamut-cybermercenary-group-targets-android-users-fake-vpn-apps/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/spyware_and_bahamut.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/spyware_and_bahamut.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "c51dc2132c830c560aaeae4bf48e5f0d28c84b36d27840b5c2ba170d87f4afa5"
 		hash = "d7e2cf642b236dba9ba0cbe5a9dc28baf22477973d5ce163e21ec40f5f26e078"
 		logic_hash = "5f44c938fed9b32eaf183be979a67e0c7fde409e72875359105ad7ffb393893d"
@@ -214699,8 +214914,8 @@ rule SEKOIA_Tool_Swor : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_swor.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_swor.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "d3f92b3349109fc6de26f5e40800fec15308c27fa4fe81fe42af5030637a3a63"
 		logic_hash = "bcd1c0afece740b82b606aad8bdebcc88b72ae61df6513318215a217021efab4"
 		score = 75
@@ -214728,8 +214943,8 @@ rule SEKOIA_Loader_Amadey_Standalone_May23 : FILE
 		date = "2023-05-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_amadey_standalone_may23.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_amadey_standalone_may23.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "40d2d7a52066ca4e1a65c82ebfa882a77616a1c68f1d315946ab14467787d468"
 		score = 75
 		quality = 80
@@ -214754,8 +214969,8 @@ rule SEKOIA_Backdoor_Win_Ketrum2
 		date = "2022-10-19"
 		modified = "2024-12-19"
 		reference = "https://www.intezer.com/blog/research/the-evolution-of-apt15s-codebase-2020/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_ketrum2.yar#L4-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_ketrum2.yar#L4-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "271384a078f2a2f58e14d7703febae8a28c6e2d7ddb00a3c8d3eead4ea87a0c0"
 		hash = "aa467945dd7b9b095e592fc96384bb385f2c95d00d5424e42bb6ab09827cb0ce"
 		hash = "aacaf0d4729dd6fda2e452be763d209f92d107ecf24d8a341947c545de9b7311"
@@ -214789,8 +215004,8 @@ rule SEKOIA_Ransomware_Win_Wing : FILE
 		date = "2024-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_wing.yar#L1-L52"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_wing.yar#L1-L52"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c9f373c12f4fb5efc29d0f293a2e0b46cf03c1abe124e9dd4118bef6c6e3f731"
 		score = 75
 		quality = 78
@@ -214846,8 +215061,8 @@ rule SEKOIA_Tool_Tacticalrmm_Installer_Strings : FILE
 		date = "2024-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_tacticalrmm_installer_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_tacticalrmm_installer_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0f8d66eb1c9c6ed9571a1dd7de05072aec6d3cda874618889d4fd51e5965bb26"
 		score = 75
 		quality = 80
@@ -214874,8 +215089,8 @@ rule SEKOIA_Yara_Runascs : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/yara_runascs.yar#L3-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/yara_runascs.yar#L3-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fe9b02704d07b5ebe6ad94283e4c1ec2846a54f5c1fb2115a1f6411cf8c19059"
 		score = 75
 		quality = 80
@@ -214905,8 +215120,8 @@ rule SEKOIA_Apt_Sandworm_Notpetya_Strings : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_notpetya_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_notpetya_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5600071de4b4022a71c48fbcd4b5e47ff6dfa291cc5eac65720bbf763068a6e3"
 		score = 75
 		quality = 80
@@ -214934,8 +215149,8 @@ rule SEKOIA_Apt_Sandworm_Caddywiper_Stacked_Strings : FILE
 		date = "2022-04-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_caddywiper_stacked_strings.yar#L1-L74"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_caddywiper_stacked_strings.yar#L1-L74"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e8c94e8611a50080368785d2b341a95d5359d1d814e1d665553324118700ed10"
 		score = 75
 		quality = 80
@@ -215017,8 +215232,8 @@ rule SEKOIA_Apt_Ta410_Flowcloud_Rtti : FILE
 		date = "2022-10-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_ta410_flowcloud_rtti.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_ta410_flowcloud_rtti.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "97f052c409c9b5de025d34180979cd4c322e67bab9f894d3b56c928340a6859b"
 		score = 75
 		quality = 80
@@ -215043,8 +215258,8 @@ rule SEKOIA_Loader_Win_Purecrypter : FILE
 		date = "2022-09-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_purecrypter.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_purecrypter.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5d0d733a4f8447d2d51656a20640fc9482581e19ba1d53fed7d98e85bb748763"
 		score = 75
 		quality = 80
@@ -215068,8 +215283,8 @@ rule SEKOIA_Rat_Darkvision_String : FILE
 		date = "2024-09-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_darkvision_string.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_darkvision_string.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8ec5526cecc596e0711c82e39cd4f2ce"
 		hash = "2dd476464e46d91ffe68483cb478d9b4"
 		hash = "20de7547d79d3637430b6a0787e59df5"
@@ -215104,8 +215319,8 @@ rule SEKOIA_Backdoor_Sandman_Strings : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_sandman_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_sandman_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "74ee1b73532d9050d5ed7ea0bed158322288a2f5b65255804ebf10dc1a4ea55b"
 		score = 75
 		quality = 80
@@ -215135,8 +215350,8 @@ rule SEKOIA_Infostealer_Win_Lumma_Strings_Sept23 : FILE
 		date = "2023-09-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_lumma_strings_sept23.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_lumma_strings_sept23.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "099dd81a72f8c9dac38fd0f9ab4e99b60f0e7742d6a64313e2989aa8955c01ec"
 		score = 75
 		quality = 55
@@ -215166,8 +215381,8 @@ rule SEKOIA_Apt_Cloudatlas_Powertunnel : FILE
 		date = "2022-11-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powertunnel.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powertunnel.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "aadb2739957d17c7e82e3abf7a178ab7b6e4a598fbbdb1a06d0c0531656d4ef6"
 		score = 75
 		quality = 80
@@ -215194,8 +215409,8 @@ rule SEKOIA_Implant_Macos_Geacon : FILE
 		date = "2024-01-11"
 		modified = "2024-12-19"
 		reference = "https://www.sentinelone.com/blog/geacon-brings-cobalt-strike-capabilities-to-macos-threat-actors/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_macos_geacon.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_macos_geacon.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "284574d185d3777a373f4a19e0870eec5245fb8ea5ebd6124bc281f8c74e0998"
 		score = 75
 		quality = 80
@@ -215235,8 +215450,8 @@ rule SEKOIA_Pe_Stealer_Scarletstealer_Strings : FILE
 		date = "2023-12-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/pe_stealer_scarletstealer_strings.yar#L1-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/pe_stealer_scarletstealer_strings.yar#L1-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "308055cbe960614112682585b5709a62c2639752df07661d6b2bb13e390b3b08"
 		score = 75
 		quality = 80
@@ -215275,8 +215490,8 @@ rule SEKOIA_Guloader_Vbscript : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guloader_vbscript.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guloader_vbscript.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d0398b19ec57cff8afd52b06dc9da18788b1eefdf6be70650138e9b342d91d24"
 		score = 75
 		quality = 80
@@ -215301,8 +215516,8 @@ rule SEKOIA_Generic_Python_Reverse_Shell : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_python_reverse_shell.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_python_reverse_shell.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ced9923ef8018796545d93d9ac8ba3138dd7d4e79db742eb3babcd94c8d3c304"
 		score = 75
 		quality = 80
@@ -215328,8 +215543,8 @@ rule SEKOIA_Apt_Kimsuky_Validator_Strings : FILE
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_validator_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_validator_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a627dae8c12f0f6f8472bc12b8e1a85137f92f6e389f817ab9023c90720a42b0"
 		score = 75
 		quality = 80
@@ -215354,8 +215569,8 @@ rule SEKOIA_Tool_Win_Blackfly_Proxy_Config : FILE
 		date = "2023-02-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_blackfly_proxy_config.yar#L4-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_blackfly_proxy_config.yar#L4-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a421d933209f3a81f7430f1b933074701a1fc965c1b4bc321cc7b4e89802f483"
 		score = 75
 		quality = 80
@@ -215380,8 +215595,8 @@ rule SEKOIA_Apt_Stripedfly : FILE
 		date = "2023-11-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_stripedfly.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_stripedfly.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ded64ae30cf994162d4af649a34eadd4b8619cbced4392a6684129f8cf906136"
 		score = 75
 		quality = 80
@@ -215406,8 +215621,8 @@ rule SEKOIA_Malware_Sugargh0St_Strings : FILE
 		date = "2023-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_sugargh0st_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_sugargh0st_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b878b5d3b3f62952d79c0ea5811838f4e79302b85f25494e91dc730dec8e1d8d"
 		score = 75
 		quality = 80
@@ -215433,8 +215648,8 @@ rule SEKOIA_Ransomware_Win_Fonix : FILE
 		date = "2021-10-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_fonix.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_fonix.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2085fae62c07f63723a417566c204b0a9942de35ed80272d1486dc2c96ca0037"
 		score = 75
 		quality = 80
@@ -215458,8 +215673,8 @@ rule SEKOIA_Tool_Exploit_Comahawk_Strings : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_exploit_comahawk_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_exploit_comahawk_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a80fed3fd64562dd3e2fa197ca3d2aaf8e33783729b725c71f7eb8931af70d82"
 		score = 75
 		quality = 80
@@ -215486,8 +215701,8 @@ rule SEKOIA_Ransomware_Win_Dodo_2023 : FILE
 		date = "2023-02-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_dodo_2023.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_dodo_2023.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "aee45cc2540d49a28e765c30f1c4d0b853c1a74ea2260bd7614ece8e54c3bcb3"
 		logic_hash = "01924360ef4bbecd220439290eba22838a3977793fdebd0ef0be74c342c0d152"
 		score = 75
@@ -215517,8 +215732,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_12 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_12.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_12.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5c9692337c0dd533c7e49bd3850feedad93b256bc2fba45af6121f50ad83f4cc"
 		score = 75
 		quality = 80
@@ -215544,8 +215759,8 @@ rule SEKOIA_Apt_Evasive_Panda_Downloader_Certificate_Exe : FILE
 		date = "2024-03-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_evasive_panda_downloader_certificate_exe.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_evasive_panda_downloader_certificate_exe.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "38115b463378f58035a0ef0536a6af4adbec7c275164758d312e95300670b695"
 		score = 75
 		quality = 80
@@ -215568,8 +215783,8 @@ rule SEKOIA_Dropper_Mac_Lazarus_Manuscrypt : FILE
 		date = "2022-04-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/dropper_mac_lazarus_manuscrypt.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/dropper_mac_lazarus_manuscrypt.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "dced1acbbe11db2b9e7ae44a617f3c12d6613a8188f6a1ece0451e4cd4205156"
 		hash = "9d9dda39af17a37d92b429b68f4a8fc0a76e93ff1bd03f06258c51b73eb40efa"
 		logic_hash = "dbe75a34f91906fc275c04af0fc068923993bab37a7574b3fe38733d87f31835"
@@ -215597,8 +215812,8 @@ rule SEKOIA_Backdoor_Powershellempire_Batlauchers : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_powershellempire_batlauchers.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_powershellempire_batlauchers.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0453c739ad936b0cc5ed2e36ba4a011a90600b74ca23c08165c23a3e63fe60e9"
 		score = 75
 		quality = 74
@@ -215623,8 +215838,8 @@ rule SEKOIA_Tool_Exploit_Badpotato_Strings : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_exploit_badpotato_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_exploit_badpotato_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a45935ea5877a4b81468cbe0e1a4a7232b955771442f84bb3b88b7992ed23937"
 		score = 75
 		quality = 80
@@ -215652,8 +215867,8 @@ rule SEKOIA_Apt_Muddywater_Powgoop_Loader : FILE
 		date = "2022-01-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_powgoop_loader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_powgoop_loader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "70f20928d2bbe081f0595ecdbb6dbe58a2f0807032598d88d829513e6d75287f"
 		score = 75
 		quality = 80
@@ -215680,8 +215895,8 @@ rule SEKOIA_Apt_Mustang_Panda_Toneins : FILE
 		date = "2022-11-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustang_panda_toneins.yar#L4-L44"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustang_panda_toneins.yar#L4-L44"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b71932f16ffb1d8d1780b6f9b4db2f0c98d1c770829a4d2284e78c19d37e54bb"
 		score = 75
 		quality = 80
@@ -215720,8 +215935,8 @@ rule SEKOIA_Launcher_Win_Stealthmutant_Bat_Launcher : FILE
 		date = "2021-08-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/launcher_win_stealthmutant_bat_launcher.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/launcher_win_stealthmutant_bat_launcher.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "06ae4bc3ed938738dfca10c182a6a2363aa6aa70e730aefd41f6fe73c675785d"
 		score = 75
 		quality = 80
@@ -215750,8 +215965,8 @@ rule SEKOIA_Apt_Sidecopy_Reverserat_Strings : FILE
 		date = "2023-05-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sidecopy_reverserat_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sidecopy_reverserat_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "be657405b5703dc402b53350aa7ef18529bda3dc44c759585c4cfa1bc1eb76ff"
 		score = 75
 		quality = 80
@@ -215782,8 +215997,8 @@ rule SEKOIA_Implant_Win_Graphiron_Downloader : FILE
 		date = "2023-02-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_graphiron_downloader.yar#L4-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_graphiron_downloader.yar#L4-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0d0a675516f1ff9247f74df31e90f06b0fea160953e5e3bada5d1c8304cfbe63"
 		hash = "878450da2e44f5c89ce1af91479b9a9491fe45211fee312354dfe69e967622db"
 		logic_hash = "f0aa0541cbf3f93ee136cf3235a4935f1c0588b5cdb21203abee9f61baf3f4f2"
@@ -215806,8 +216021,8 @@ rule SEKOIA_Crybercrime_Prophetspider_Proxy : FILE
 		date = "2022-02-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crybercrime_prophetspider_proxy.yar#L3-L41"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crybercrime_prophetspider_proxy.yar#L3-L41"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "711ef3fc6ac488200415b7178c7f639ad9f6c72077bbebac2e6d5e0bed7120dd"
 		score = 75
 		quality = 80
@@ -215853,8 +216068,8 @@ rule SEKOIA_Ta410_Control_Flow_Obfuscation : FILE
 		date = "2022-10-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ta410_control_flow_obfuscation.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ta410_control_flow_obfuscation.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "6cf78943728286d0bddd99049d81065673ab7f679029cdd5f5dc69f90197136e"
 		logic_hash = "3ee6ee07e7a7be285290ec91de649afff3e5dc222bcfc58709b642d4dd53dc41"
 		score = 75
@@ -215885,8 +216100,8 @@ rule SEKOIA_Infostealer_Win_Leaf : FILE
 		date = "2023-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_leaf.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_leaf.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f8c0ff694c9f7a02613000d85a40f6b400dcca60711e589f7ccd3546f571aea6"
 		score = 75
 		quality = 80
@@ -215926,8 +216141,8 @@ rule SEKOIA_Apt_Gelsemium_Wolfsbane_Backdoor : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gelsemium_wolfsbane_backdoor.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gelsemium_wolfsbane_backdoor.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1418fe9a743226b9661a2b6decb19db0"
 		logic_hash = "97d5076ca4c204a2e2276fd250d64bc140da1f2c8dec9996db7a622385f2c0ac"
 		score = 75
@@ -215956,8 +216171,8 @@ rule SEKOIA_Rootkit_Win_Purplefox_Svchost_Txt : FILE
 		date = "2022-03-28"
 		modified = "2024-12-19"
 		reference = "https://www.trendmicro.com/en_us/research/22/c/purple-fox-uses-new-arrival-vector-and-improves-malware-arsenal.html"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rootkit_win_purplefox_svchost_txt.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rootkit_win_purplefox_svchost_txt.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a1de949cb2e898ed031f5c796f7152af12dfae5431dfaf269f25ebe72f0ae004"
 		score = 75
 		quality = 80
@@ -215985,8 +216200,8 @@ rule SEKOIA_Apt_Kimsuky_Vbs : FILE
 		date = "2024-09-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_vbs.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_vbs.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "12386be22ca82fce98a83a5a19e632bc"
 		hash = "7b5783d42240651af78ebf7e01b31fe8"
 		hash = "ff7d68e5fb253664ce64c85457b28041"
@@ -216017,8 +216232,8 @@ rule SEKOIA_Apt_Badmagic_Commonmagic_Generic_2 : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_commonmagic_generic_2.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_commonmagic_generic_2.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d3916ab749ae5b6e0a8abdc9641de13e0328809a6e20c6ce04ada5dbfb742689"
 		score = 75
 		quality = 80
@@ -216044,8 +216259,8 @@ rule SEKOIA_Tool_Masky_Strings : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_masky_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_masky_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "35dc536879d9464919028ace6b65b225455621035184d7b58468d259ccda62aa"
 		score = 75
 		quality = 80
@@ -216072,8 +216287,8 @@ rule SEKOIA_Unknown_7777_Xlogin : FILE
 		date = "2024-07-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/unknown_7777_xlogin.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/unknown_7777_xlogin.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "4d9067e7cf517158337123a30a9bd0e3"
 		hash = "43ea387b8294cc4d0baaef6d26ff7c72"
 		hash = "777d6f907da38365924a0c2a12e973c5"
@@ -216101,8 +216316,8 @@ rule SEKOIA_Keylogger_Win_Donot
 		date = "2023-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/keylogger_win_donot.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/keylogger_win_donot.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "eb935f84335e934346511b4108f70df469deef6ecaaba809c144197c04a28f64"
 		score = 75
 		quality = 80
@@ -216126,8 +216341,8 @@ rule SEKOIA_Crime_Sload_Scheduledtask_Dropper_Strings
 		date = "2022-08-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_scheduledtask_dropper_strings.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_scheduledtask_dropper_strings.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3a48009933d1de47314ec15c262375636574a7565016eab3792106fa2c0ba79f"
 		score = 75
 		quality = 78
@@ -216152,8 +216367,8 @@ rule SEKOIA_Apt_Kimsuky_Fpspy : FILE
 		date = "2024-09-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_fpspy.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_fpspy.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "6d6c1b175e435f5564341cc1f2c33ddf"
 		hash = "54c58b72f98cb63c44e7694add551e9d"
 		logic_hash = "65904b77a30b2e2a25f8d80ab32742f0ad931f07c034ae576a4fbde7e1fd999c"
@@ -216182,8 +216397,8 @@ rule SEKOIA_Apt_Gamaredon_Gammaload_Malicioushta : FILE
 		date = "2022-08-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_gammaload_malicioushta.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_gammaload_malicioushta.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e41ce63e7c6df2edb548ddc57d51af914dab9200e37eb12463169d587205aa7a"
 		score = 75
 		quality = 80
@@ -216210,8 +216425,8 @@ rule SEKOIA_Loader_Win_Squirrelwaffle : FILE
 		date = "2021-09-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_squirrelwaffle.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_squirrelwaffle.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ab1a95f09564d0417d5c06c578d4dc8d790ec09bc67716d8c9e5207262a0594d"
 		score = 75
 		quality = 80
@@ -216235,8 +216450,8 @@ rule SEKOIA_Apt_Lazarus_Backdoored_Jslib : FILE
 		date = "2024-10-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_backdoored_jslib.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_backdoored_jslib.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "52e92be527690f4e63608cbc699e2f70"
 		logic_hash = "205ad321afcb22ae2bf6cf2a58ce970ea9b0edda7fab60ddeda5ea36ecfe3cb9"
 		score = 75
@@ -216262,8 +216477,8 @@ rule SEKOIA_Loader_Win_Doppeldridex
 		date = "2021-09-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_doppeldridex.yar#L3-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_doppeldridex.yar#L3-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4ceed302cb36b73d98070996ede64742579a261ef3ede6e1eb1723ddca32e839"
 		score = 75
 		quality = 80
@@ -216283,8 +216498,8 @@ rule SEKOIA_Unk_Quad7_Netd_Strings : FILE
 		date = "2024-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/unk_quad7_netd_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/unk_quad7_netd_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "cdb37db4543dde5ca2bd98a43699828f"
 		logic_hash = "abd59c5fa0c4c73a2cd9a2263d5573d896c6c0d71d96bd59167b1e2d7fbf108e"
 		score = 75
@@ -216314,8 +216529,8 @@ rule SEKOIA_Launcher_Win_Mistcloak : FILE
 		date = "2022-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/launcher_win_mistcloak.yar#L4-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/launcher_win_mistcloak.yar#L4-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fc2731ec4e2917be1ad169908ed324931a93f6998aee606319750b5cc02715e2"
 		score = 75
 		quality = 80
@@ -216342,8 +216557,8 @@ rule SEKOIA_Apt_Susp_Apt28_Uac0063_Malicious_Doc : FILE
 		date = "2024-07-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_susp_apt28_uac0063_malicious_doc.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_susp_apt28_uac0063_malicious_doc.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "93322be0785556e627d2b09832c18e39c115e6a6fbff64b1e590e1ddcf8f6a43"
 		logic_hash = "27aeadbb76dd4e670a85e8fcd1e885b69845537dd937aacc1808902e75008848"
 		score = 65
@@ -216370,8 +216585,8 @@ rule SEKOIA_Infostealer_Win_Irontiger_Chrome_Stealer : FILE
 		date = "2023-03-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_irontiger_chrome_stealer.yar#L3-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_irontiger_chrome_stealer.yar#L3-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dfddebf9623661508e993541106d4dcbb2270b311b2902567bd309810aff58dd"
 		score = 75
 		quality = 80
@@ -216408,8 +216623,8 @@ rule SEKOIA_Apt_Scanbox_Framework_Not_Obfuscated : FILE
 		date = "2022-09-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_scanbox_framework_not_obfuscated.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_scanbox_framework_not_obfuscated.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "52779571eb4e68442542a1c4cff58d5b00a264bb567396126cd93dc4ec4eda45"
 		score = 75
 		quality = 80
@@ -216440,8 +216655,8 @@ rule SEKOIA_Rat_Win_Lilith
 		date = "2023-02-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_lilith.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_lilith.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ac2ad9e68616e6e7d07e105293545c96b72c956dbcf3c3bf317460cafc13be48"
 		score = 75
 		quality = 76
@@ -216465,8 +216680,8 @@ rule SEKOIA_Apt_Konni : FILE
 		date = "2022-09-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_konni.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_konni.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8f178421fd0968f4ce809054022579c7fc8dede5f6514e89966d13acb83d75d9"
 		score = 75
 		quality = 80
@@ -216497,8 +216712,8 @@ rule SEKOIA_Apt_Gamaredon_Lnks_Farl139_Hostname : FILE
 		date = "2023-01-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_lnks_farl139_hostname.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_lnks_farl139_hostname.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8be31a4fed363f0e2791efb96a229f6cdec5bfaeaf3e9cd880f8d25c9ae0435e"
 		score = 75
 		quality = 80
@@ -216521,8 +216736,8 @@ rule SEKOIA_Loader_Amadey_Clipper_Plugin : FILE
 		date = "2023-05-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_amadey_clipper_plugin.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_amadey_clipper_plugin.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6f5a2fa9c687f0fb2423ca97540d0173551dd04b31d092e4d47d6d7d22dfb965"
 		score = 75
 		quality = 80
@@ -216551,8 +216766,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_13 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_13.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_13.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fb6b71bf1e89abf872fb3ef02a228f370f0fcc10d5aab70418fe8735283165da"
 		score = 75
 		quality = 80
@@ -216578,8 +216793,8 @@ rule SEKOIA_Suspicious_Users_Dev : FILE
 		date = "2022-12-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/suspicious_users_dev.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/suspicious_users_dev.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6084b319efb7b4137517c63dd2ed1023a4b25513b7ac50e95154bbac0fea0af7"
 		score = 65
 		quality = 80
@@ -216604,8 +216819,8 @@ rule SEKOIA_Tool_Htran_Strings : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_htran_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_htran_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6a414cec8ad623c735779b9005074f88b07d88b29b23918d98a541a2612a3fa0"
 		score = 75
 		quality = 80
@@ -216633,8 +216848,8 @@ rule SEKOIA_Infostealer_Win_Grmsk_Strings : FILE
 		date = "2023-11-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_grmsk_strings.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_grmsk_strings.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a2f638556edf5b2cabcd67e7d29a9e3f554b707af688f79b89f2f67d493093b3"
 		score = 75
 		quality = 55
@@ -216669,8 +216884,8 @@ rule SEKOIA_Rat_Win_Dcrat_Qwqdanchun : FILE
 		date = "2023-01-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/qwqdanchun/DcRat"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_dcrat_qwqdanchun.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_dcrat_qwqdanchun.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e6f8664e57ecce3bd7b2af5c67d564d526b32d12218b772b0e9f53709044e14d"
 		score = 75
 		quality = 80
@@ -216705,8 +216920,8 @@ rule SEKOIA_Malware_Venom_Admin_Strings : FILE
 		date = "2022-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_venom_admin_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_venom_admin_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "205f16b07f58290b2898de7a7dd1e20f3d7651d738f0b15bf810f9be66eedf3d"
 		score = 75
 		quality = 80
@@ -216736,8 +216951,8 @@ rule SEKOIA_Ransomware_Win_Raworld
 		date = "2024-07-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_raworld.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_raworld.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "583dd2ea8e20a87d0b67783d1dd59212eb133de1f945d5b4afad89e8a5017d35"
 		score = 75
 		quality = 80
@@ -216768,8 +216983,8 @@ rule SEKOIA_Ransomware_Win_Scransom : FILE
 		date = "2023-08-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_scransom.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_scransom.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3b8034bc5e0919d6c05dd2f2079c40836f241f2db02c1baf70ecb530db90847f"
 		score = 75
 		quality = 80
@@ -216809,8 +217024,8 @@ rule SEKOIA_Ransomware_Win_Eking_Rich_Header
 		date = "2021-10-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_eking_rich_header.yar#L4-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_eking_rich_header.yar#L4-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0028200fc2e929dba6fcc4ddf5d8e07825842e2f65c69ad94ebd032ae3748c90"
 		score = 75
 		quality = 80
@@ -216830,8 +217045,8 @@ rule SEKOIA_Observerstealer : FILE
 		date = "2024-02-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/observerstealer.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/observerstealer.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "690bd5a16e780884641a66f06256a4147c092788f155644a8589d38b70dc4acc"
 		score = 75
 		quality = 55
@@ -216859,8 +217074,8 @@ rule SEKOIA_Tool_Sy_Runas : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sy_runas.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sy_runas.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b606f921b0ff6adf0e6979d43be0ddf77e2967e703562f1dea4406d1f5b3f5fd"
 		score = 75
 		quality = 80
@@ -216886,8 +217101,8 @@ rule SEKOIA_Apt_Apt29_Wineloader_Malicious_Pdf : FILE
 		date = "2024-03-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt29_wineloader_malicious_pdf.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt29_wineloader_malicious_pdf.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "9712217ff3597468b48cdf45da588005de3a725ba554789bb7e5ae1b0f7c02a7"
 		hash = "3739b2eae11c8367b576869b68d502b97676fb68d18cc0045f661fbe354afcb9"
 		logic_hash = "784f5ab2602e2185e8253b5b8d9a084ede0604457b0a0674fceffbcb226e3ba1"
@@ -216915,8 +217130,8 @@ rule SEKOIA_Ransomware_Win_Chaos : FILE
 		date = "2022-01-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_chaos.yar#L1-L46"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_chaos.yar#L1-L46"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1947e6de8f74fe7bc52107d4a57e19eacf022121f5decee54a8c90797be844c6"
 		score = 75
 		quality = 78
@@ -216966,8 +217181,8 @@ rule SEKOIA_Apt_Gamaredon_Doc_External_Template : FILE
 		date = "2023-01-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_doc_external_template.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_doc_external_template.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "51412081fa7e62fa342b0ed6da18009b39e3952286f2bd319fbe10e0b1761e02"
 		score = 75
 		quality = 80
@@ -216992,8 +217207,8 @@ rule SEKOIA_Apt_Uac0099_Lonepage : FILE
 		date = "2024-01-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uac0099_lonepage.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uac0099_lonepage.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "479f438acb63c76e09722640b973e76d1f1924bf24db477ca6898d123091d5f8"
 		score = 75
 		quality = 76
@@ -217024,8 +217239,8 @@ rule SEKOIA_Hacktool_Duplicatedump_Strings : FILE
 		date = "2023-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_duplicatedump_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_duplicatedump_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "feff083ed432781884941fc02eee6d6ce54f70f1b85d24db2f3e1d0147a81a7a"
 		score = 75
 		quality = 80
@@ -217052,8 +217267,8 @@ rule SEKOIA_Apt_Kimsuky_Sharptongue_C2_Source
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharptongue_c2_source.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharptongue_c2_source.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c301a99876cfe2863546c990654aa922f9327e0eb010968eaea43f1d8ced76da"
 		score = 75
 		quality = 80
@@ -217079,8 +217294,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_4 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_4.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_4.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ee67eb7b51ff6f3882c6b3ad86c3581396ba02f616c29a0190d0a2ad3d2ea614"
 		score = 75
 		quality = 80
@@ -217106,8 +217321,8 @@ rule SEKOIA_Guloader_Powershell_1 : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guloader_powershell_1.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guloader_powershell_1.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9fd2d0e31f939e7e96444eaa4802c9c33407c5fb77067670d8ce2d3796199961"
 		score = 75
 		quality = 80
@@ -217133,8 +217348,8 @@ rule SEKOIA_Merlin_Crossplatform : FILE
 		date = "2022-01-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/merlin_crossplatform.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/merlin_crossplatform.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "975cc4fe0d89383188f9fd3c516d1e853dd6070d7703c0b5b5874dc1e7e6f32a"
 		score = 75
 		quality = 80
@@ -217162,8 +217377,8 @@ rule SEKOIA_Apt_Cloudatlas_Powershower_Obfuscated : FILE
 		date = "2022-11-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powershower_obfuscated.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powershower_obfuscated.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fdb1edb3982eb5356cdf5fd1fa9fcc41d5048848b2a05589e87836ac0b05ec7a"
 		score = 75
 		quality = 80
@@ -217188,8 +217403,8 @@ rule SEKOIA_Water_Sigbin_Group
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/water_sigbin_group.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/water_sigbin_group.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dd51945bf79e37b50d377eda3641eb32438dcb5a1c55fb4a9b66a5b5a8b5ed0d"
 		score = 75
 		quality = 80
@@ -217216,8 +217431,8 @@ rule SEKOIA_Merlin_Win_Dll : FILE
 		date = "2022-01-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/merlin_win_dll.yar#L4-L42"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/merlin_win_dll.yar#L4-L42"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "eefaed10bd3accc884673437a1cc6b8c503db4ef797e58bd95daec36a297c4be"
 		score = 75
 		quality = 80
@@ -217244,8 +217459,8 @@ rule SEKOIA_Apt_Sugargh0Stcampaign_Malicious_Lnk : FILE
 		date = "2023-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sugargh0stcampaign_malicious_lnk.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sugargh0stcampaign_malicious_lnk.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9efa131fdb02f31812c8a3f2053e1b60d0970c748eb0f82aed92a1c0719e048c"
 		score = 75
 		quality = 80
@@ -217269,8 +217484,8 @@ rule SEKOIA_Unk_Quad7_Updtae_Reverse_Shell_Strings : FILE
 		date = "2024-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/unk_quad7_updtae_reverse_shell_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/unk_quad7_updtae_reverse_shell_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "40b5ac87ff87634c48fdd2cf64ccb66b"
 		hash = "4b8e97260d9ef6ca774675be682d9c8c"
 		logic_hash = "0e816716d4d7fd35617b1ac96ae99d68d5b96f64f8bef83d0f6aba2a3fbd9326"
@@ -217301,8 +217516,8 @@ rule SEKOIA_Guloader_Unpacker : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guloader_unpacker.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guloader_unpacker.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6be9d7fa829480466aef2a7e78a7dadfac92f7774ab3374254305040c105496f"
 		score = 75
 		quality = 80
@@ -217327,8 +217542,8 @@ rule SEKOIA_Hacktool_Win_Powertool : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_win_powertool.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_win_powertool.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "aeccba821e528ca03abc8b50362d450ba2c12ab443454faf5b2809aecd163648"
 		score = 75
 		quality = 80
@@ -217357,8 +217572,8 @@ rule SEKOIA_Apt_Cloudatlas_Init_Module_Virtualalloc : FILE
 		date = "2023-09-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_init_module_virtualalloc.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_init_module_virtualalloc.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "02a1a9582f5ccf421b08c41c35049416b9cdefc9228daf6b38d95e9b0930cc5a"
 		hash = "c7f19c7c295c86867ea7fa4597ba0cebe12f751753866e7298fd5d84676facc3"
 		logic_hash = "31ffaeccc0b8fe36eea3b3a8200eff6a420b1a3937fd439dc84121654fcea502"
@@ -217391,8 +217606,8 @@ rule SEKOIA_Ransomware_Linux_Icefire_2023 : FILE
 		date = "2023-02-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_linux_icefire_2023.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_linux_icefire_2023.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e9cc7fdfa3cf40ff9c3db0248a79f4817b170f2660aa2b2ed6c551eae1c38e0b"
 		logic_hash = "25033bd33311b070809d150f60803f32011d78a6a74d6b5f620a3216f0f95a6e"
 		score = 75
@@ -217424,8 +217639,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_11 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_11.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_11.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "00c0dcc244db608d3a0d7500cdebadcc69ba0d56091a0a1fd7d58c27d255861f"
 		score = 75
 		quality = 80
@@ -217451,8 +217666,8 @@ rule SEKOIA_Malware_Win_Passlib : FILE
 		date = "2022-07-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_win_passlib.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_win_passlib.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5e76f7c40a00182ee076720b4c19a45e82a8ce11740fdd8e9419f9d9e93cdb41"
 		score = 75
 		quality = 80
@@ -217490,8 +217705,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_1 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_1.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_1.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "20e42042bd03bde3d0eec42f81d560896e8ec9e67ad64611dc4bc21152db3ff0"
 		score = 75
 		quality = 80
@@ -217517,8 +217732,8 @@ rule SEKOIA_Backdoor_Xploitspy_Strings : FILE
 		date = "2022-08-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_xploitspy_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_xploitspy_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "eabb1dbeaa8aefc33beb7fb158bbd8ad2c5b848d34c99473704da36a6dc461aa"
 		score = 75
 		quality = 80
@@ -217552,8 +217767,8 @@ rule SEKOIA_Infostealer_Win_Lighting : FILE
 		date = "2022-04-07"
 		modified = "2024-12-19"
 		reference = "https://blog.cyble.com/2022/04/05/inside-lightning-stealer/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_lighting.yar#L1-L40"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_lighting.yar#L1-L40"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1c1d39ce886a433a352c55bf436b959ef528ad7ce38027243ed5b5f1ac79822f"
 		score = 75
 		quality = 78
@@ -217597,8 +217812,8 @@ rule SEKOIA_Hacktool_Defendercontrol_Strings : FILE
 		date = "2022-03-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_defendercontrol_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_defendercontrol_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8372ab6f922471c28b528d908527f52d393cf6e6308d6acad882d6d5862df43c"
 		score = 75
 		quality = 80
@@ -217623,8 +217838,8 @@ rule SEKOIA_Apt_Spynote_Android_Dex_Strings : FILE
 		date = "2022-08-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_spynote_android_dex_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_spynote_android_dex_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "474617628afe110d9e7ea2acef57c5e560139b57aa7e497bf9e111af239e9588"
 		score = 75
 		quality = 80
@@ -217650,8 +217865,8 @@ rule SEKOIA_Apt_Luckymouse_Rshell_Strings_All_Platform : FILE
 		date = "2022-08-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_luckymouse_rshell_strings_all_platform.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_luckymouse_rshell_strings_all_platform.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ef923b6633a2b7dfa645a31c7c2d0e00872ebad6ec7748568c2b306c29b6b29b"
 		score = 75
 		quality = 80
@@ -217678,8 +217893,8 @@ rule SEKOIA_Implant_Any_Sliver : FILE
 		date = "2021-11-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_any_sliver.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_any_sliver.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c7a2790fd13de0476cfe16ef26b2d4c8775f4f453d076c78975e2c372f03322c"
 		score = 75
 		quality = 80
@@ -217706,8 +217921,8 @@ rule SEKOIA_Tool_Execit_Obfuscator_Strings : FILE
 		date = "2024-09-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_execit_obfuscator_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_execit_obfuscator_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1c185e2e11d8eadccfb130766ca30d85"
 		hash = "a0898f57f2b139ea278d8a7e97bbe358"
 		hash = "e0e12a8891f5585ce1ad55dbffb4f9c2"
@@ -217743,8 +217958,8 @@ rule SEKOIA_Dotnet_Injector_New_Payload : FILE
 		date = "2022-12-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/dotnet_injector_new_payload.yar#L3-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/dotnet_injector_new_payload.yar#L3-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8b5e2f6e7947471e10e0ec85eef1cebe1904c2e77b7cfe92e578ebe306041842"
 		score = 75
 		quality = 80
@@ -217776,8 +217991,8 @@ rule SEKOIA_Apt_Mustangpanda_Payload : FILE
 		date = "2022-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_payload.yar#L1-L42"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_payload.yar#L1-L42"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "734d42aed4574de620773f1f2d08c6b1fc206efd1b576f0f3679edcc0b2ce91d"
 		score = 75
 		quality = 80
@@ -217827,8 +218042,8 @@ rule SEKOIA_Crime_Sload_Vbs_Wsf_Downloader : FILE
 		date = "2022-08-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_vbs_wsf_downloader.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_vbs_wsf_downloader.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bd6a9112edb01544463aa7112432ad49360221e89a9ac15d5e8f6731b2b8780a"
 		score = 75
 		quality = 76
@@ -217854,8 +218069,8 @@ rule SEKOIA_Exploit_Cve20191458_Strings : CVE_2019_1458 FILE
 		date = "2022-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_cve20191458_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_cve20191458_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8e22a79b3d7dc45d63062c71909faee61584c71b6ea7353ba0f40c00745a2075"
 		score = 75
 		quality = 80
@@ -217883,8 +218098,8 @@ rule SEKOIA_Loader_Win_Revil_Loader
 		date = "2021-07-19"
 		modified = "2024-12-19"
 		reference = "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/revil-ransomware-uses-dll-sideloading"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_revil_loader.yar#L4-L34"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_revil_loader.yar#L4-L34"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1fe9b489c25bb23b04d9996e8107671edee69bd6f6def2fe7ece38a0fb35f98e"
 		hash = "50416e50797cf88a48d086e718c003e2d10c3847b1a251669d6f10f8d3546e03"
 		hash = "66490c59cb9630b53fa3fa7125b5c9511afde38edab4459065938c1974229ca8"
@@ -217917,8 +218132,8 @@ rule SEKOIA_Rat_Lin_Gobrat_2023 : FILE
 		date = "2023-06-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_lin_gobrat_2023.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_lin_gobrat_2023.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "36cb17d9d118bd9692106c8aafab2462aacf1cdad3a6afb0e4f1de898a7db0e1"
 		hash = "28a714f7cec4445dbd507b85016c8e96ed5e378bcabe2e422c499975122b3f03"
 		hash = "1e80a084ab89da2375bc3cc2f5a37975edff709ef29a3fa2b4df4ccb6d5afe10"
@@ -217944,8 +218159,8 @@ rule SEKOIA_Tool_Efspotato : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_efspotato.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_efspotato.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cbfd72a16f02903b1ad6fdf3e25f6c5508145d6be4c1776bb77f1ccd6c1954b3"
 		score = 75
 		quality = 80
@@ -217970,8 +218185,8 @@ rule SEKOIA_Crime_Sload_Mainpowershellimplant : FILE
 		date = "2022-08-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_mainpowershellimplant.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_mainpowershellimplant.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "37ec263dddf7719d03a3d58b4b196597737a1e28f8072f3933cdf954f2b696cd"
 		score = 75
 		quality = 80
@@ -218008,8 +218223,8 @@ rule SEKOIA_Apt_Sugardump_Credentials_Stealer_Smtp : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sugardump_credentials_stealer_smtp.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sugardump_credentials_stealer_smtp.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1f423f38ff323e67667e35af5603e608cba6eaf8d98633467b0292c5f81c8d1c"
 		score = 75
 		quality = 80
@@ -218035,8 +218250,8 @@ rule SEKOIA_Apt_Cloudmensis_Downloader_Strings : FILE
 		date = "2022-07-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudmensis_downloader_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudmensis_downloader_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9532530f9b6c39d64611354f5d3c95e7c8b9ebf917ab797c162c3b51945db1fc"
 		score = 75
 		quality = 80
@@ -218062,8 +218277,8 @@ rule SEKOIA_Downloader_Win_Newsterminal : FILE
 		date = "2024-08-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_newsterminal.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_newsterminal.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2b756515400d7e3b6e21ee3a83f313c8"
 		logic_hash = "45c6c2b5b3723bf3ed46c82e6a254547d8c8b3446bb2fa4b4f0fc8441731ae7e"
 		score = 75
@@ -218090,8 +218305,8 @@ rule SEKOIA_Backdoor_Win_Sponsor : FILE
 		date = "2024-03-29"
 		modified = "2024-12-19"
 		reference = "https://www.welivesecurity.com/en/eset-research/sponsor-batch-filed-whiskers-ballistic-bobcats-scan-strike-backdoor/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_sponsor.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_sponsor.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e5ee874bd59bb2a6dec700686544e7914312abff166a7390b34f7cb29993267a"
 		hash = "e2b74ed355d68bed2e7242baecccd7eb6eb480212d6cc54526bc4ff7e6f57629"
 		hash = "2a99cf7d73d453f3554e24bf3efa49d8109da9e8543db815a8f813559d083f8f"
@@ -218122,8 +218337,8 @@ rule SEKOIA_Apt_Polonium_Megacreep_Strings : FILE
 		date = "2022-10-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_polonium_megacreep_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_polonium_megacreep_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f4881e15854b082d8e6b8a28a7eb1518c559577b1b3ce76e404d67b1fe723fde"
 		score = 75
 		quality = 80
@@ -218158,8 +218373,8 @@ rule SEKOIA_Shell_Win_Danfuan : FILE
 		date = "2022-11-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/shell_win_danfuan.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/shell_win_danfuan.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "96929ef478a8773022233a4092b3c157867aae6ee185568a6327d033c05a68f1"
 		score = 75
 		quality = 80
@@ -218184,8 +218399,8 @@ rule SEKOIA_Infostealer_Win_Solarmarker_Powershell : FILE
 		date = "2022-12-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_solarmarker_powershell.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_solarmarker_powershell.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "32267cf7e03ed65da969aeeff5ef5d7291e47446ea11a4b391f085967e8aa67d"
 		score = 75
 		quality = 80
@@ -218216,8 +218431,8 @@ rule SEKOIA_Apt_Toneshell_Shellcode : FILE
 		date = "2024-10-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_toneshell_shellcode.yar#L1-L34"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_toneshell_shellcode.yar#L1-L34"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0e164677681dce2aa75d3621d9f3df1449c3e67a3551817693856d80ccc48eca"
 		score = 75
 		quality = 80
@@ -218259,8 +218474,8 @@ rule SEKOIA_Apt_Andariel_Siennablue : FILE
 		date = "2023-11-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_andariel_siennablue.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_andariel_siennablue.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0876deb2e76098ac8d304737243d3a76e9741b2ca1570034bec51fea5a40818d"
 		score = 75
 		quality = 80
@@ -218286,8 +218501,8 @@ rule SEKOIA_Tool_Runpeinmemory_Strings : FILE
 		date = "2024-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_runpeinmemory_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_runpeinmemory_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "154f3db98f8ee902ec7b58812525dbbef837ae30279c40b8d95ec93ae1260a69"
 		score = 75
 		quality = 80
@@ -218312,8 +218527,8 @@ rule SEKOIA_Tool_Safetykatz : FILE
 		date = "2023-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_safetykatz.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_safetykatz.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f443dd5be1e15f8385427d965f8c8476c5f1b57b7c9ab53d9e13eb47735e09d3"
 		score = 75
 		quality = 80
@@ -218339,8 +218554,8 @@ rule SEKOIA_Rootkit_Win_Purplefox_Kernel_Driver : FILE
 		date = "2022-03-28"
 		modified = "2024-12-19"
 		reference = "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/c/purple-fox-uses-new-arrival-vector-and-improves-malware-arsenal/IOCs-Purple-Fox.txt"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rootkit_win_purplefox_kernel_driver.yar#L3-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rootkit_win_purplefox_kernel_driver.yar#L3-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "91d7caca7c0c41e70813d52b5662bf0238d078fca519bfc2c03f3f87fe3805b8"
 		score = 75
 		quality = 80
@@ -218367,8 +218582,8 @@ rule SEKOIA_Miner_Win_Xmrig_Strings : FILE
 		date = "2024-01-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/miner_win_xmrig_strings.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/miner_win_xmrig_strings.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "34aa0da9d3bb277927c87a3745ec9e35881682319c91141da6ff1cff7e0610d9"
 		score = 75
 		quality = 80
@@ -218409,8 +218624,8 @@ rule SEKOIA_Backdoor_Opensource_Northstar_Strings : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_opensource_northstar_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_opensource_northstar_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c4cf8935137c1420106807240de7583ca8f5c0b231f51bba279aedf672e25274"
 		score = 75
 		quality = 80
@@ -218439,8 +218654,8 @@ rule SEKOIA_Downloader_Win_Andarloader : FILE
 		date = "2023-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_andarloader.yar#L4-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_andarloader.yar#L4-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "02135f60f3edff0b9baa4c20715ee6a80c94f282079bf879265f5e020d37cf88"
 		hash = "54ed7a7430974cc2ea694f49f3e637b835dcd24aa19d66af854ad47b87068c92"
 		logic_hash = "33e5490b9564333c27a2c23d7f0362c582ca3bd352cafde6b334dc376fd37762"
@@ -218462,8 +218677,8 @@ rule SEKOIA_Hacktool_Ntospy_Strings : FILE
 		date = "2023-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_ntospy_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_ntospy_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e5bd963419e515d65a03592051822fd801f4a21d54cdb18d408556c4bfef78f5"
 		score = 75
 		quality = 80
@@ -218488,8 +218703,8 @@ rule SEKOIA_Tool_Ssf_Strings : FILE
 		date = "2024-05-31"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_ssf_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_ssf_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a6fa09a25c90e00466a2b59f8c604084996224c93021ad72ed8705bf05da5d97"
 		score = 75
 		quality = 80
@@ -218519,8 +218734,8 @@ rule SEKOIA_Infostealer_Win_Stealerium : FILE
 		date = "2022-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_stealerium.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_stealerium.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f420848164ad4b6966f2a776a58d90b7d70c8b151a42d6f56b654f1700b5e564"
 		score = 75
 		quality = 78
@@ -218563,8 +218778,8 @@ rule SEKOIA_Apt_3Cx_Payload_Stealer : FILE
 		date = "2023-03-31"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_3cx_payload_stealer.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_3cx_payload_stealer.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "17630ab86a3da3408e29765c0c30f14c76b870b88fea634b998392fe5d46cfa2"
 		score = 75
 		quality = 80
@@ -218590,8 +218805,8 @@ rule SEKOIA_Clwiper_Strings : FILE
 		date = "2022-09-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/clwiper_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/clwiper_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b6bcd7e20b07ab8a9a54672f60a8ffe6d6bf787630f01b9dcefd1cbc78297050"
 		score = 75
 		quality = 80
@@ -218619,8 +218834,8 @@ rule SEKOIA_Apt_Apt29_Wineloader_Malicious_Hta
 		date = "2024-03-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt29_wineloader_malicious_hta.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt29_wineloader_malicious_hta.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "efafcd00b9157b4146506bd381326f39"
 		logic_hash = "0cc4692e5ff3f258c287f28030147f725d6a534c4f2f7a2a4ff49a305b7fd13d"
 		score = 75
@@ -218646,8 +218861,8 @@ rule SEKOIA_Apt_Redhotel_Maliciouslnk_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_redhotel_maliciouslnk_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_redhotel_maliciouslnk_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8e2c17040ec78cbcdc07bb2cf9dd7e01"
 		hash = "dc613a519e515ca817fdfb88f81fc9d7"
 		hash = "6f7d85c196c277a6a619f6d94b8f69b9"
@@ -218680,8 +218895,8 @@ rule SEKOIA_Tool_Nping_Strings : FILE
 		date = "2022-08-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_nping_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_nping_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0c7216438e9c974d889e4ccc8cdb99ab18d1dc403820d60914b80ff9bc4528fa"
 		score = 75
 		quality = 80
@@ -218708,8 +218923,8 @@ rule SEKOIA_Apt_Badmagic_Startngrok_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_startngrok_pshscript.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_startngrok_pshscript.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f15f9dc2c35f3f7cd816aa539c03b857254c3628c9b14eacca1110bb85b1a24c"
 		score = 75
 		quality = 80
@@ -218736,8 +218951,8 @@ rule SEKOIA_Malware_Remcom_Strings : FILE
 		date = "2022-08-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_remcom_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_remcom_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a46bb87bf4722303d33707afb19c8d4f209b98a88552363363520536911469ae"
 		score = 75
 		quality = 80
@@ -218765,8 +218980,8 @@ rule SEKOIA_Crypter_Vbs_To_Exe
 		date = "2023-01-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crypter_vbs_to_exe.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crypter_vbs_to_exe.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4b3a411de3f36a7f9a310e1b789988c3d9d53eb195d04b374bdf1e5b4157b1e9"
 		score = 75
 		quality = 55
@@ -218793,8 +219008,8 @@ rule SEKOIA_Apt_Uac0154_Powershell_Infection_Chain_2 : FILE
 		date = "2023-10-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uac0154_powershell_infection_chain_2.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uac0154_powershell_infection_chain_2.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "029d88971030a377b3c93ba4c986668e53b01ee03ba94a0a4ceb54b20b72ff2d"
 		score = 75
 		quality = 80
@@ -218821,8 +219036,8 @@ rule SEKOIA_Apt_Aptk47_Asyncshell : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_aptk47_asyncshell.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_aptk47_asyncshell.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "ce6a589d5e3604112e5595a1f8d53e1e"
 		hash = "751f427da8e11d8ab394574260735220"
 		logic_hash = "ac202f7dc317d17118badf71c32776c5666eea4a47e1b439a287b6b8766e9da6"
@@ -218852,8 +219067,8 @@ rule SEKOIA_Apt_Qnapworm_Loader_May2022 : FILE
 		date = "2022-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_qnapworm_loader_may2022.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_qnapworm_loader_may2022.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d31fdaaacd417a4191e79e3a287e84c55109158eaacc789b2129e2ba94e443f6"
 		score = 75
 		quality = 80
@@ -218889,8 +219104,8 @@ rule SEKOIA_Backoor_Win_Tinyturla_Ng : FILE
 		date = "2024-03-04"
 		modified = "2024-12-19"
 		reference = "https://blog.talosintelligence.com/tinyturla-next-generation/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backoor_win_tinyturla_ng.yar#L3-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backoor_win_tinyturla_ng.yar#L3-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "267071df79927abd1e57f57106924dd8a68e1c4ed74e7b69403cdcdf6e6a453b"
 		hash = "d6ac21a409f35a80ba9ccfe58ae1ae32883e44ecc724e4ae8289e7465ab2cf40"
 		logic_hash = "a2fe2187e0cdd02fa31cbbecd600d044d4d12788ea6f76086aef7e77cbf232a0"
@@ -218919,8 +219134,8 @@ rule SEKOIA_Apt_Unknown_Sessionmanageriis_Strings : FILE
 		date = "2022-07-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unknown_sessionmanageriis_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unknown_sessionmanageriis_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b1058b07c8e40431f8f3841b5ad49b4d6ead21a91d014f24c083f37eeacc5ac5"
 		score = 75
 		quality = 80
@@ -218949,8 +219164,8 @@ rule SEKOIA_Hacktool_Win_Cookiekatz : FILE
 		date = "2024-10-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/Meckazin/ChromeKatz"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_win_cookiekatz.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_win_cookiekatz.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "fef9fc33a788489af44b2f732c450d4ef018fbaced7f5471230b282dfd6f1169"
 		logic_hash = "a030f551d0f3dedf0f19e22b415aa87dd1c43ab2242db8b5cad14ae6b7695b3a"
 		score = 75
@@ -218994,8 +219209,8 @@ rule SEKOIA_Apt_Lazarus_Gopuram_Backdoor : FILE
 		date = "2023-04-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_gopuram_backdoor.yar#L3-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_gopuram_backdoor.yar#L3-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "97b95b4a5461f950e712b82783930cb2a152ec0288c00a977983ca7788342df7"
 		hash = "beb775af5196f30e0ee021790a4978ca7a7ac2a7cf970a5a620ffeb89cc60b2c"
 		logic_hash = "c019b65d28a7b0edf408a1a159a7535e7e14593bbd42c8df3201108ed02f96c0"
@@ -219023,8 +219238,8 @@ rule SEKOIA_Downloader_Win_Donot
 		date = "2023-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_donot.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_donot.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f6a03e6cfda74c1fbb1e8939a66735498d604a821b8b51492c2c5c6a46a38b6e"
 		score = 75
 		quality = 80
@@ -219049,8 +219264,8 @@ rule SEKOIA_Implant_Win_Pingpull : FILE
 		date = "2022-06-13"
 		modified = "2024-12-19"
 		reference = "https://unit42.paloaltonetworks.com/pingpull-gallium/#Protections-and-Mitigations"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_pingpull.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_pingpull.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "778d429e4c6d7575ddeea5144f9554f2b6ca46175d4202d338bef01dc9668b97"
 		score = 75
 		quality = 80
@@ -219073,8 +219288,8 @@ rule SEKOIA_Apt_Oilrig_Saitama_Backdoor_May2022 : FILE
 		date = "2022-05-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_saitama_backdoor_may2022.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_saitama_backdoor_may2022.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b3876995fde9c26052c39859684cec05e8c1bc8e2a62946b49ed328e84499dc6"
 		score = 75
 		quality = 80
@@ -219101,8 +219316,8 @@ rule SEKOIA_Apt_Badmagic_Generic_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_generic_pshscript.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_generic_pshscript.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f442e1ba815cc7eae0c627db5ad1917021d69b8ce37155923a0f19776aeba95d"
 		score = 75
 		quality = 80
@@ -219126,8 +219341,8 @@ rule SEKOIA_Apt_Andariel_Dorarat_Strings : FILE
 		date = "2024-06-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_andariel_dorarat_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_andariel_dorarat_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "21e1c77d486cbf6ddaa2eca673275c7c21cc59fa9551c2eb02c526518ed5b217"
 		score = 75
 		quality = 80
@@ -219153,8 +219368,8 @@ rule SEKOIA_Malware_Valleyrat_1Ststage_Strings : FILE
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_valleyrat_1ststage_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_valleyrat_1ststage_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "78c45b8bd9241646512483d179d48b0e42e97fa1c18d6afd1af4423f7b7ce3c6"
 		score = 75
 		quality = 80
@@ -219181,8 +219396,8 @@ rule SEKOIA_Ransomware_Win_Shrinklocker
 		date = "2024-06-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_shrinklocker.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_shrinklocker.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7770b0946b9bb482f23c4ce0d753393e0d42a6fd8b31029847d74356296f0cf1"
 		score = 75
 		quality = 80
@@ -219216,8 +219431,8 @@ rule SEKOIA_Wiper_Win_Dnwipe : FILE
 		date = "2022-11-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_win_dnwipe.yar#L4-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_win_dnwipe.yar#L4-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "634ca80a168c9d98ce87a3a1a451769bddb7ae27e28b3682693b34ccce2c7ad4"
 		score = 75
 		quality = 80
@@ -219242,8 +219457,8 @@ rule SEKOIA_Hacktool_Earthworm_Strings : FILE
 		date = "2022-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_earthworm_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_earthworm_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0460c62fefc3d594ca758a37fbe1716182ffdca2920fedd32a707f7117702176"
 		score = 75
 		quality = 80
@@ -219269,8 +219484,8 @@ rule SEKOIA_Ransomware_Win_Honkai_Jan2023 : FILE
 		date = "2023-02-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_honkai_jan2023.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_honkai_jan2023.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "989cf96da60d9ebfb6f364717b4f0cae1667fdc7f9d89f77acc254ab47d439e6"
 		logic_hash = "19f831f77e043f11b790b7f24e9f585e4986d9af6580bae7c344b7960f2f0965"
 		score = 75
@@ -219301,8 +219516,8 @@ rule SEKOIA_Implant_Win_Flagpro : FILE
 		date = "2022-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_flagpro.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_flagpro.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "eb1aba9924af474d6d890572a9bf72e0d1aa5dc31dd4cc34648195b0207ab4d6"
 		score = 75
 		quality = 80
@@ -219334,8 +219549,8 @@ rule SEKOIA_Infostealer_Win_Mars_Stealer_Xor_Routine : FILE
 		date = "2022-04-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_mars_stealer_xor_routine.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_mars_stealer_xor_routine.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c7e65550a225431552e8a81bbce81dd66350021b6444c94fe7a37aa96712e9b1"
 		score = 75
 		quality = 80
@@ -219358,8 +219573,8 @@ rule SEKOIA_Apt_Implant_Xdealer_Linux_Variant_Strings : FILE
 		date = "2024-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_implant_xdealer_linux_variant_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_implant_xdealer_linux_variant_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "400beb53d0f7b7727962175c7c4f8dfccdfed56bb3978d3e847147e8ad7644fb"
 		score = 75
 		quality = 80
@@ -219388,8 +219603,8 @@ rule SEKOIA_Rat_Win_Ratel_Strings : FILE
 		date = "2023-04-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_ratel_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_ratel_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ff5640b03ec3e535cdb86c2a0feb52d0c472928ff88a36ec9f66ac8aa07c9f69"
 		score = 75
 		quality = 80
@@ -219423,8 +219638,8 @@ rule SEKOIA_Tool_Bore_Rust_Any_Platform : FILE
 		date = "2023-07-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_bore_rust_any_platform.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_bore_rust_any_platform.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c51d75088897aaffef904d560f750d780a0c814b89bf433a05189fbf7bb3285c"
 		score = 75
 		quality = 80
@@ -219454,8 +219669,8 @@ rule SEKOIA_Apt_Implant_Xdealer_Strings : FILE
 		date = "2024-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_implant_xdealer_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_implant_xdealer_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "13c0bbc933f68164b0fe1c2768148bb649b1755bed0cfbc6ed90188fab6876d5"
 		score = 75
 		quality = 80
@@ -219482,8 +219697,8 @@ rule SEKOIA_Recotool_Adfind_Strings : FILE
 		date = "2022-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/recotool_adfind_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/recotool_adfind_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cc1e1dceff28136082f19cebc7584ba08c9006b964e37fc3fda91bc0b41906dc"
 		score = 75
 		quality = 80
@@ -219510,8 +219725,8 @@ rule SEKOIA_Ransomware_Win_Karma : FILE
 		date = "2021-08-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_karma.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_karma.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ef272be7ae5fea084120db95f7b002e9061d72442836e836ca43ddc7b461be4e"
 		score = 75
 		quality = 80
@@ -219539,8 +219754,8 @@ rule SEKOIA_Apt_Lazarus_Vhd_Ransomware_Downloader : FILE
 		date = "2022-11-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_vhd_ransomware_downloader.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_vhd_ransomware_downloader.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "042ab0029d170937af9b9ee6a8e499843532c84cf99faed3d2d47cb18a1500ac"
 		score = 75
 		quality = 80
@@ -219567,8 +219782,8 @@ rule SEKOIA_Apt_Mustangpanda_Xoreddll : FILE
 		date = "2022-07-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_xoreddll.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_xoreddll.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "685be191cf187c0d5bfd00354400c47a961c9d047aa7e65e4cfc2201ec5eb1bc"
 		score = 75
 		quality = 80
@@ -219596,8 +219811,8 @@ rule SEKOIA_Loader_Fakebat_Initial_Powershell_May24 : FILE
 		date = "2024-05-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_fakebat_initial_powershell_may24.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_fakebat_initial_powershell_may24.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6a699df361b0cb2baf1d0b128f795aa9918ebe11daaeb1fa49aebf9320add762"
 		score = 75
 		quality = 80
@@ -219624,8 +219839,8 @@ rule SEKOIA_Apt_Apt41_Powershell_Exfiltration_Script : FILE
 		date = "2023-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt41_powershell_exfiltration_script.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt41_powershell_exfiltration_script.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0ba4118855d6bd54cbb3a35e3b5fc36484eeb1e742ed3480e6c967b078ec4881"
 		score = 75
 		quality = 72
@@ -219651,8 +219866,8 @@ rule SEKOIA_Apt_Lazarus_Dangerouspassword_Lnk : FILE
 		date = "2022-07-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_dangerouspassword_lnk.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_dangerouspassword_lnk.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "79731450c4623f614c55d8c08d879579e21fd38c85d2a288724b6e9470de6e29"
 		score = 75
 		quality = 80
@@ -219679,8 +219894,8 @@ rule SEKOIA_Infostealer_Win_Whitesnake_Xor_Rc4_July12 : FILE
 		date = "2023-07-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_whitesnake_xor_rc4_july12.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_whitesnake_xor_rc4_july12.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f14b95e5cb6ffaab14d0890847fe6e9dcfc3ee0b884c34d24d786420e2411a80"
 		score = 75
 		quality = 76
@@ -219709,8 +219924,8 @@ rule SEKOIA_Rat_Win_Nighthawk : FILE
 		date = "2022-11-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_nighthawk.yar#L3-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_nighthawk.yar#L3-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0551ca07f05c2a8278229c1dc651a2b1273a39914857231b075733753cb2b988"
 		hash = "9a57919cc5c194e28acd62719487c563a8f0ef1205b65adbe535386e34e418b8"
 		hash = "38881b87826f184cc91559555a3456ecf00128e01986a9df36a72d60fb179ccf"
@@ -219739,8 +219954,8 @@ rule SEKOIA_Apt_Kimsuky_Malicious_Vba : FILE
 		date = "2022-08-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_malicious_vba.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_malicious_vba.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "68d7b757f660907fcea3ea03c4027b429f8acdef6569d63cdb744e9d77637080"
 		score = 75
 		quality = 80
@@ -219764,8 +219979,8 @@ rule SEKOIA_Apt_Gamaredon_Powerrevshell : FILE
 		date = "2023-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_powerrevshell.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_powerrevshell.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fc5abcdf47641c1e7978cf076550f38987305bb2171b3e65f7865102a065af43"
 		score = 75
 		quality = 80
@@ -219792,8 +220007,8 @@ rule SEKOIA_Apt_Muddywater_Powgoop_Decode_Loop : FILE
 		date = "2022-01-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_powgoop_decode_loop.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_powgoop_decode_loop.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1d60f53014fb1934a85a573856244431c8f565c2f024511991817e6235566815"
 		score = 75
 		quality = 80
@@ -219818,8 +220033,8 @@ rule SEKOIA_Backdoor_Win_Volgmer : FILE
 		date = "2023-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_volgmer.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_volgmer.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "3098e6e7ae23b3b8637677da7bfc0ba720e557e6df71fa54a8ef1579b6746061"
 		hash = "7339cfa5a67f5a4261c18839ef971d7f96eaf60a46190cab590b439c71c4742b"
 		hash = "8daa6b20caf4bf384cc7912a73f243ce6e2f07a5cb3b3e95303db931c3fe339f"
@@ -219859,8 +220074,8 @@ rule SEKOIA_Gen_Empire_Onedrive_Stager
 		date = "2022-01-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/gen_empire_onedrive_stager.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/gen_empire_onedrive_stager.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "90b3548cd3f4f7f936da70ec95dbe0ff3c1421d40a6e8557952d28d358b7c1f1"
 		score = 75
 		quality = 76
@@ -219884,8 +220099,8 @@ rule SEKOIA_Koi_Netstealer : FILE
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/koi_netstealer.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/koi_netstealer.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "814db1092820ff1ed9e592dc92c72ad73643eb6d68df9f593ed637434373e41b"
 		score = 75
 		quality = 80
@@ -219912,8 +220127,8 @@ rule SEKOIA_Rule_Lazarus_Generic_Downloader_7C3F94702Fa7 : FILE
 		date = "2022-08-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rule_lazarus_generic_downloader_7c3f94702fa7.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rule_lazarus_generic_downloader_7c3f94702fa7.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1ee58eb760fb74ef089f7d3eb423f314fe1c22e8c85b01eba0e965dea8c846ce"
 		score = 75
 		quality = 80
@@ -219940,8 +220155,8 @@ rule SEKOIA_Launcher_Win_Romcom_Launcher : FILE
 		date = "2022-11-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/launcher_win_romcom_launcher.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/launcher_win_romcom_launcher.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7d94f187c3fb85cbfe961dd3b292dc1abd36a8cee7c9ff9ec08c4c1e23d38588"
 		score = 75
 		quality = 78
@@ -219964,8 +220179,8 @@ rule SEKOIA_Apt_Uac0154_Powershell_Infection_Chain_1 : FILE
 		date = "2023-10-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uac0154_powershell_infection_chain_1.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uac0154_powershell_infection_chain_1.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a849c397e7f61e41ea7e67a265717d7d66f6af42f3d1e930020d1433dd3aab18"
 		score = 75
 		quality = 80
@@ -219991,8 +220206,8 @@ rule SEKOIA_Backdoor_Blueshell : FILE
 		date = "2023-09-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_blueshell.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_blueshell.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "348ae383f2aaef544951641dd7e2879afa23e37bdf429c6255254115bd3e10d5"
 		score = 75
 		quality = 80
@@ -220023,8 +220238,8 @@ rule SEKOIA_Infostealer_Win_Nosu : FILE
 		date = "2022-12-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_nosu.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_nosu.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f18db2008aa9175fc423133fd6d5872c5750d011aad73c373505347443d5032c"
 		score = 75
 		quality = 80
@@ -220049,8 +220264,8 @@ rule SEKOIA_Apt_Mustangpanda_Malicious_Lnk_Worm : FILE
 		date = "2023-09-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_malicious_lnk_worm.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_malicious_lnk_worm.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ca19a925af695cbbb41fdfbb161dceafeb8aae6d42000cc09bb07e1dbdfdb9e5"
 		score = 75
 		quality = 80
@@ -220073,8 +220288,8 @@ rule SEKOIA_Win_Malware_Agnianestealer : FILE
 		date = "2023-08-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_malware_agnianestealer.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_malware_agnianestealer.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0aa40fcb713ab40711108290e8274d783c1336a2c4c03eba2fcc4a44f2ebe39f"
 		score = 75
 		quality = 80
@@ -220098,8 +220313,8 @@ rule SEKOIA_Apt_Muddywater_Manifestation_Backdoor_Obfuscated : FILE
 		date = "2022-01-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_manifestation_backdoor_obfuscated.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_manifestation_backdoor_obfuscated.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8610f0895fafd2bc9a19bbff816754b563565ba6b105cc3d0a32b80bf5ebdc47"
 		score = 75
 		quality = 80
@@ -220124,8 +220339,8 @@ rule SEKOIA_Bot_Lin_Enemybot_April22 : FILE
 		date = "2022-04-14"
 		modified = "2024-12-19"
 		reference = "https://twitter.com/3xp0rtblog/status/137520616938452173://www.fortinet.com/blog/threat-research/enemybot-a-look-into-keksecs-latest-ddos-botnet"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_lin_enemybot_april22.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_lin_enemybot_april22.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "18ea06e60259f8d7d639b0e4659f0f5e166e9589d617f5766c06968af5e56aa6"
 		score = 75
 		quality = 80
@@ -220157,8 +220372,8 @@ rule SEKOIA_Dropper_Win_Ninerat
 		date = "2023-12-12"
 		modified = "2024-12-19"
 		reference = "https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/dropper_win_ninerat.yar#L4-L41"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/dropper_win_ninerat.yar#L4-L41"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "534f5612954db99c86baa67ef51a3ad88bc21735bce7bb591afa8a4317c35433"
 		hash = "f91188d23b14526676706a5c9ead05c1a91ea0b9d6ac902623bc565e1c200a59"
 		logic_hash = "00f69545c7351fba8b45e2b4d21855ba8ae94f2d10df199732665e8f3f00c1b4"
@@ -220184,8 +220399,8 @@ rule SEKOIA_Ransomware_Win_Lorenz : FILE
 		date = "2022-02-10"
 		modified = "2024-12-19"
 		reference = "https://www.cybereason.com/blog/cybereason-vs.-lorenz-ransomware"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_lorenz.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_lorenz.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "355de0f172c9e877bbca7f75c0bfb07d83ae7f43e7674a7f84c4e4d519dfa7c0"
 		score = 75
 		quality = 80
@@ -220215,8 +220430,8 @@ rule SEKOIA_Truesightkiller_Avkiller_Strings : FILE
 		date = "2024-10-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/truesightkiller_avkiller_strings.yar#L1-L45"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/truesightkiller_avkiller_strings.yar#L1-L45"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "891202963430a4b1dea2dc5b9af01dc5"
 		hash = "367af202029bf51fc347a8f414fa2a5c"
 		hash = "64439836d69084b129c2dc4264176149"
@@ -220268,8 +220483,8 @@ rule SEKOIA_Apt_Coathanger_Files : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_coathanger_files.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_coathanger_files.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5406d8a99e16f08f1ffca548ea1dd1e27e7707506e796e0fc263bcdbb681632d"
 		score = 75
 		quality = 80
@@ -220300,8 +220515,8 @@ rule SEKOIA_Apt_Konni_Dropper : FILE
 		date = "2023-11-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_konni_dropper.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_konni_dropper.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6d1b1f5ccbdc20908891e5f40ceb85c251b1ca2a395fa4b106e63718c6393a22"
 		score = 75
 		quality = 80
@@ -220327,8 +220542,8 @@ rule SEKOIA_Tool_Lsass_Dump_Strings : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_lsass_dump_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_lsass_dump_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f4540f42902c068b9290239729c45324"
 		logic_hash = "7dfee9368297b3fd6c7f247a65b5344da0f5438c2145c5d53af48983d0d9a745"
 		score = 75
@@ -220354,8 +220569,8 @@ rule SEKOIA_Apt37_Rokrat_Macho
 		date = "2022-09-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt37_rokrat_macho.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt37_rokrat_macho.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "526dc4594db099ed8090a673e761f84f6dd7ce860e380214e4d3f1ec08fc2345"
 		score = 75
 		quality = 66
@@ -220384,8 +220599,8 @@ rule SEKOIA_Apt_Uta0218_Upstyle_Backdoor_Strings : FILE
 		date = "2024-04-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uta0218_upstyle_backdoor_strings.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uta0218_upstyle_backdoor_strings.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bcba657b0b302f4b46f09bc4b815a581d22208b5d9f99e1233878f775241f92e"
 		score = 75
 		quality = 80
@@ -220416,8 +220631,8 @@ rule SEKOIA_Downloader_Win_Apt33_Tickler : FILE
 		date = "2024-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_apt33_tickler.yar#L4-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_apt33_tickler.yar#L4-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e6fff291b73812e5a999fbc566e8f7181dcdf01b849a9664ba05fe0a2bc982fe"
 		score = 75
 		quality = 80
@@ -220437,8 +220652,8 @@ rule SEKOIA_Tool_3Proxy_Strings : FILE
 		date = "2024-03-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_3proxy_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_3proxy_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f1d9bea9975af9bfa3f1a8cbf2c1d65fe1d39f303d5dbe6131887653cbbe7021"
 		score = 75
 		quality = 80
@@ -220463,8 +220678,8 @@ rule SEKOIA_Installer_Win_Minibus : FILE
 		date = "2024-04-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/installer_win_minibus.yar#L4-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/installer_win_minibus.yar#L4-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "26ca51cb067e1fdf1b8ad54ba49883bc5d1945952239aec0c4840754bff76621"
 		hash = "90fa29cc98be1d715df26d22079bdb8ce1d1fd3ce6a4efb39a4c192134e01020"
 		logic_hash = "24326c9f5dcb7e66d47b65bf6bec6fe78be18c8d41a3039fbd09b453568a3f8f"
@@ -220490,8 +220705,8 @@ rule SEKOIA_Apt_Oilrig_Oilbooster_Strings : FILE
 		date = "2023-12-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_oilbooster_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_oilbooster_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9562d373ba7602d250aec1eefa2d671da64e897e490da284ffa0e310074266cf"
 		score = 75
 		quality = 80
@@ -220517,8 +220732,8 @@ rule SEKOIA_Malware_Win_Mex : FILE
 		date = "2022-07-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_win_mex.yar#L1-L57"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_win_mex.yar#L1-L57"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1335a212d1af0087cd0e0402f3d6c864d1aafd3df3f1e4bb3851c96c3ff403cb"
 		score = 75
 		quality = 55
@@ -220581,8 +220796,8 @@ rule SEKOIA_Downloader_Kimsuky_Lnk
 		date = "2024-07-16"
 		modified = "2024-12-19"
 		reference = "https://blogs.jpcert.or.jp/en/2024/07/attack-activities-by-kimsuky-targeting-japanese-organizations.html"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_kimsuky_lnk.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_kimsuky_lnk.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "3065b8e4bb91b4229d1cea671e8959da8be2e7482067e1dd03519c882738045e"
 		hash = "d912f49d24792aa7197509f76e2097ac3858cde23199e1b40f2516948d39c589"
 		hash = "e936445935c4a636614f7113e4121695a5f3e4a6c137b7cdcceb6f629aa957c4"
@@ -220611,8 +220826,8 @@ rule SEKOIA_Tool_Quarkspwdump : FILE
 		date = "2023-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_quarkspwdump.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_quarkspwdump.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4799e1d1c749a536d7920e3c333d69f7130376c6a0f0e0ca8f0b61e438266adb"
 		score = 75
 		quality = 80
@@ -220637,8 +220852,8 @@ rule SEKOIA_Technique_Csv_Dde_Exec_Regex : FILE
 		date = "2022-02-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/technique_csv_dde_exec_regex.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/technique_csv_dde_exec_regex.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fd4c64ad094b8ed543cc6990f2e4f341bb38ba0b4d335347e5676475da94dc06"
 		score = 75
 		quality = 53
@@ -220665,8 +220880,8 @@ rule SEKOIA_Apt_Mustangpanda_Coolclient : FILE
 		date = "2023-03-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_coolclient.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_coolclient.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9fd552604299ecb8fa28042ee26e72bbe4fb9804ad087bf4a373b2c2e17d43b0"
 		score = 75
 		quality = 80
@@ -220691,8 +220906,8 @@ rule SEKOIA_Apt_37_Chinotto : FILE
 		date = "2023-02-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_37_chinotto.yar#L1-L50"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_37_chinotto.yar#L1-L50"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "feab7940559392bbf38f29267509340569160e0a3b257fd86e5c65ae087ea014"
 		hash = "c9d2c8b6011a53e68e4a6c6e51142cef3348951d0b379e49b1a65a1891538df5"
 		hash = "2f5be3773e7e3a2f6806cdef154adfabc454c0e57a49e437c5889ce09b739302"
@@ -220747,8 +220962,8 @@ rule SEKOIA_Tool_Inswor_Strings : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_inswor_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_inswor_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "c393128a143b2a3397100b4a30c75112"
 		logic_hash = "b25072e6a9fa5728c24c91056a221778f5fbc9d8ba7a78a6684cd6755761373e"
 		score = 75
@@ -220774,8 +220989,8 @@ rule SEKOIA_Backdoor_Win_Feedload : FILE
 		date = "2023-10-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_feedload.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_feedload.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f251144f7ad0be0045034a1fc33fb896e8c32874e0b05869ff5783e14c062486"
 		logic_hash = "18eb3fc9b11ed21a76a2921c3d9681b09cf2f306263c2ece76c1bf4a65467777"
 		score = 75
@@ -220799,8 +221014,8 @@ rule SEKOIA_Tool_Juicypotatong_Strings : FILE
 		date = "2023-06-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_juicypotatong_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_juicypotatong_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7014b206b293c8254304d97bec7b367c6039566f60511a51d4a41d3e1ed98612"
 		score = 75
 		quality = 80
@@ -220825,8 +221040,8 @@ rule SEKOIA_Infostealer_Win_Spacestealer : FILE
 		date = "2022-11-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_spacestealer.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_spacestealer.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "94edfd0606816ff01d1345357a852cab4321d8881921e51ba96d8d2d4cb893b5"
 		score = 75
 		quality = 80
@@ -220865,8 +221080,8 @@ rule SEKOIA_Bot_Win_Yamabot : FILE
 		date = "2023-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_win_yamabot.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_win_yamabot.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1e4de822695570421eb2f12fdfe1d32ab8639655e12180a7ab3cf429e7811b8f"
 		hash = "66415464a0795d0569efa5cb5664785f74ed0b92a593280d689f3a2ac68dca66"
 		hash = "74529dd15d1953a47f0d7ecc2916b2b92865274a106e453a24943ca9ee434643"
@@ -220894,8 +221109,8 @@ rule SEKOIA_Backdoor_Win_Spacecolon : FILE
 		date = "2023-08-25"
 		modified = "2024-12-19"
 		reference = "https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_spacecolon.yar#L1-L39"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_spacecolon.yar#L1-L39"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1251df19c521e9ee9da307d56eea265265f2bee4a8e7eec099e4ebfb4e2bd7a2"
 		score = 75
 		quality = 78
@@ -220941,8 +221156,8 @@ rule SEKOIA_Apt_Kimsuky_Toddlershark_Strings : FILE
 		date = "2024-03-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_toddlershark_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_toddlershark_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dee9d03f498437dd6d8399975cd91ec44307067ac4642b9ff31df1a6d6b10468"
 		score = 75
 		quality = 80
@@ -220970,8 +221185,8 @@ rule SEKOIA_Apt_Unc3524_Quietexit_Strings : FILE
 		date = "2022-05-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unc3524_quietexit_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unc3524_quietexit_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9f8bc7516fdefd94c6bddaf77ea3ac1ba8a3a6380530118c4b28d74b42eaae54"
 		score = 75
 		quality = 80
@@ -221000,8 +221215,8 @@ rule SEKOIA_Infostealer_Win_Solarmarker_Dll : FILE
 		date = "2022-12-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_solarmarker_dll.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_solarmarker_dll.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5be0a95adb7e486cdec5f0e8433afed41516fc1a990e1d1ba00db7e8fb32dbbb"
 		score = 75
 		quality = 80
@@ -221034,8 +221249,8 @@ rule SEKOIA_Apt_Turla_Comlook : FILE
 		date = "2023-10-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_turla_comlook.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_turla_comlook.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "882a2efda4c3888c34a2802797c9eac4ab8b96774f2eea19e586ff9c8adb9292"
 		score = 75
 		quality = 80
@@ -221071,8 +221286,8 @@ rule SEKOIA_Rootkit_Diamorphine_Strings : FILE
 		date = "2024-10-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rootkit_diamorphine_strings.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rootkit_diamorphine_strings.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "622675e83bab630adc0f1c6c46c4d6d1"
 		hash = "013b23213975d2646e2435f058afcacf"
 		hash = "f068e83721f10ad74bb6f386a4375a91"
@@ -221111,8 +221326,8 @@ rule SEKOIA_Pe_Princeransomware_Strings : FILE
 		date = "2024-08-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/pe_princeransomware_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/pe_princeransomware_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8bd8de169f45e32bab53f6e06088836d6f0526105f03efa1faf84f3b02c43011"
 		hash = "a83aad6861c8fdfe2392b8e286ab7051d223c6b0bbba5996165964f429657a37"
 		logic_hash = "18577c5673b4fc5280dee88aefac3747c254a97fdc84b584af241277361f6400"
@@ -221139,8 +221354,8 @@ rule SEKOIA_Latrodectus_Exports : FILE
 		date = "2024-07-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/latrodectus_exports.yar#L3-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/latrodectus_exports.yar#L3-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "01385f31b1f2fc94453a2ead136a1f7fb253a72bee95f74d755acfa97abdb26d"
 		score = 75
 		quality = 80
@@ -221160,8 +221375,8 @@ rule SEKOIA_Infostealer_Win_Titan : FILE
 		date = "2023-01-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_titan.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_titan.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "996dc320c83f57c47afe50ad032bac43ad1fbfbbd5a86e517089a062b0382993"
 		score = 75
 		quality = 80
@@ -221194,8 +221409,8 @@ rule SEKOIA_Infostealer_Win_Daolpu_Str : FILE
 		date = "2024-07-23"
 		modified = "2024-12-19"
 		reference = "https://www.crowdstrike.com/blog/fake-recovery-manual-used-to-deliver-unidentified-stealer/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_daolpu_str.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_daolpu_str.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9372a88efcdca6ca57f354fb31569522e5458271cc51dfedf09c6178a47a5b67"
 		score = 75
 		quality = 80
@@ -221228,8 +221443,8 @@ rule SEKOIA_Backdoor_Lin_Sysupdate : FILE
 		date = "2023-03-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_lin_sysupdate.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_lin_sysupdate.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "93e17cd535444e9cabc7440b1226526e67ddb81a84eb6377689a62f268b9dfee"
 		score = 75
 		quality = 80
@@ -221257,8 +221472,8 @@ rule SEKOIA_Tool_Ladon_Strings : FILE
 		date = "2024-06-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_ladon_strings.yar#L1-L61"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_ladon_strings.yar#L1-L61"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6f2a34bddea2a2370c0a45cde888f51632689973373e3c6ba739a34dc220bfa1"
 		score = 75
 		quality = 78
@@ -221312,8 +221527,8 @@ rule SEKOIA_Hacktool_Win_Processhacker : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_win_processhacker.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_win_processhacker.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cfcfaa7f3afc8b82ce0188d9ead63746a7effd40acb6ad504f8d70a45d8476d5"
 		score = 75
 		quality = 80
@@ -221338,8 +221553,8 @@ rule SEKOIA_Rat_Win_Babylon : FILE
 		date = "2023-08-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_babylon.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_babylon.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "142f10e519561d6552c9cb8d267280b9ede203a2f4723d904ab07217b0565bd1"
 		score = 75
 		quality = 80
@@ -221374,8 +221589,8 @@ rule SEKOIA_Apt_Kimsuky_Sharptongue_Vbslauncher_Strings : FILE
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharptongue_vbslauncher_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharptongue_vbslauncher_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9e1383a71b4ab5ca1de5016061f0e9c83e6f3e1a41eef25dae15cd1aab8b581f"
 		score = 75
 		quality = 80
@@ -221400,8 +221615,8 @@ rule SEKOIA_Apt_Gamaredon_Gammaload_Maliciouslnk : FILE
 		date = "2022-08-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_gammaload_maliciouslnk.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_gammaload_maliciouslnk.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "94ba156cd6697a9999b6a4f78c4356ea3382b7b3e7a1af79d488aa34df2c3b40"
 		score = 75
 		quality = 80
@@ -221425,8 +221640,8 @@ rule SEKOIA_Hacktool_Ligolo_Strings : FILE
 		date = "2022-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_ligolo_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_ligolo_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "12609bed61ef4d86737bc652a75c74f01e4a251466129ff56da0d7e002566d50"
 		score = 75
 		quality = 80
@@ -221453,8 +221668,8 @@ rule SEKOIA_Malware_Venom_Agent_Strings : FILE
 		date = "2022-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_venom_agent_strings.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_venom_agent_strings.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "66dd1cb7bd66fcf78c8eaad8aaab7cfd624b898b7b479e571bacf5c4e48edac9"
 		score = 75
 		quality = 80
@@ -221493,8 +221708,8 @@ rule SEKOIA_Tool_Xiebroc2_Strings
 		date = "2024-09-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_xiebroc2_strings.yar#L1-L40"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_xiebroc2_strings.yar#L1-L40"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "84e665bcbf963a2cf67d879aa3422d79"
 		hash = "3558c376420724694ba244a2e2acd20c"
 		hash = "e29fb9cd825db51a7a2e519f188e61ba"
@@ -221542,8 +221757,8 @@ rule SEKOIA_Infostealer_Win_Stormkitty : FILE
 		date = "2023-03-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_stormkitty.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_stormkitty.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "57a4603faf6af9742db79f9bc8751f3a5c091b6271998434f0a3b9f5c30cb1e8"
 		score = 75
 		quality = 80
@@ -221580,8 +221795,8 @@ rule SEKOIA_Apt_Apt29_Quarterrig
 		date = "2023-04-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt29_quarterrig.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt29_quarterrig.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9628418789a9bc24c7e44dbc9106ffa6316aefebe33b91c749b54cb5462b1309"
 		score = 75
 		quality = 80
@@ -221607,8 +221822,8 @@ rule SEKOIA_Apt_Unc4990_Explorer_Ps1
 		date = "2024-02-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unc4990_explorer_ps1.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unc4990_explorer_ps1.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5085f738e23b801c7e36408d189755086d91c0bb266af6738c80510eb85e598f"
 		score = 75
 		quality = 80
@@ -221635,8 +221850,8 @@ rule SEKOIA_Apt_Badmagic_Commonmagic_Main : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_commonmagic_main.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_commonmagic_main.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9bcfd6e9e150399c7f11abc41205119ddf24ea0fef5816ed905cd9b1e9ec5c1e"
 		score = 75
 		quality = 80
@@ -221661,8 +221876,8 @@ rule SEKOIA_Malware_Tinyshell_Strings : FILE
 		date = "2024-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_tinyshell_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_tinyshell_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "fffc89ebbe6ea37072077996e27f86dd"
 		hash = "59a97d4fbd3a54e991dc7e1f0451acf5"
 		hash = "d7ee59eab7f703bfaf1002a39b05c7b9"
@@ -221694,8 +221909,8 @@ rule SEKOIA_Apt_Dark_Pink_Pdb_Path : FILE
 		date = "2023-01-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_dark_pink_pdb_path.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_dark_pink_pdb_path.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f67e0d50975697424313acc77a9c86e1c2b41fde1663e4f5d8f4765acb997775"
 		score = 75
 		quality = 76
@@ -221719,8 +221934,8 @@ rule SEKOIA_Implant_Win_Geacon : FILE
 		date = "2024-01-11"
 		modified = "2024-12-19"
 		reference = "https://www.sentinelone.com/blog/geacon-brings-cobalt-strike-capabilities-to-macos-threat-actors/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_geacon.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_geacon.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "74b0d2fbb8b7f6666543ba4fdfd9f9d2064d3a89d21c90d794b57f0009199fea"
 		score = 75
 		quality = 80
@@ -221760,8 +221975,8 @@ rule SEKOIA_Tool_Edrsandblast_Kernelcallbacks : FILE
 		date = "2024-11-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_edrsandblast_kernelcallbacks.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_edrsandblast_kernelcallbacks.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ffb1185dca42c5b2b273c3a48f3ba86204a3474a9a045f72dbdb0ba7c9e89c7d"
 		score = 75
 		quality = 80
@@ -221787,8 +222002,8 @@ rule SEKOIA_Apt_Menupass_Maliciouslibvlc_Dll
 		date = "2022-04-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_menupass_maliciouslibvlc_dll.yar#L3-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_menupass_maliciouslibvlc_dll.yar#L3-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "de56e112a477d3a77146f1b84c8aa3e66a382a87f1492dd50aa1de9458b33717"
 		score = 75
 		quality = 80
@@ -221808,8 +222023,8 @@ rule SEKOIA_Guloader_Unpacker_Decoded : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guloader_unpacker_decoded.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guloader_unpacker_decoded.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5de4a147b2dea8a144905b7f1786199bfeef3006ac58179409cfd3dcaa116725"
 		score = 75
 		quality = 80
@@ -221835,8 +222050,8 @@ rule SEKOIA_Trojan_Android_Cerberus : FILE
 		date = "2022-01-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_android_cerberus.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_android_cerberus.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "18109733d15c994015646e786a7c6177a1209200fd4c80042db3d48c97c02030"
 		score = 75
 		quality = 80
@@ -221866,8 +222081,8 @@ rule SEKOIA_Infostealer_Win_Phoenixwave : FILE
 		date = "2022-04-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_phoenixwave.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_phoenixwave.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "efeffb2f0df4c2f8156c401bac5f44c415c4c3e02e84e8db55dad68488f39fea"
 		score = 75
 		quality = 80
@@ -221908,8 +222123,8 @@ rule SEKOIA_Rat_Win_Xworm_V2 : FILE
 		date = "2022-11-07"
 		modified = "2024-12-19"
 		reference = "https://blog.cyble.com/2022/08/19/evilcoder-project-selling-multiple-dangerous-tools-online/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_xworm_v2.yar#L1-L38"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_xworm_v2.yar#L1-L38"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "58a2dbfbd453855021942902a6d55d150eee3acba67a294da24448cfca4f811e"
 		score = 75
 		quality = 78
@@ -221954,8 +222169,8 @@ rule SEKOIA_Apt_Lazarus_Vhd_Ransomware_Loader : FILE
 		date = "2022-11-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_vhd_ransomware_loader.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_vhd_ransomware_loader.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "33000fd79b5aae59dcbf445bb4d0d65cf5f939f376a4e3d9e23e14b11ca297da"
 		score = 75
 		quality = 80
@@ -221991,8 +222206,8 @@ rule SEKOIA_Trojan_Win_Bbtok_Iso_Sep23 : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://research.checkpoint.com/2023/behind-the-scenes-of-bbtok-analyzing-a-bankers-server-side-components/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_win_bbtok_iso_sep23.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_win_bbtok_iso_sep23.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "140e83d2e0d012cdd5625ea89c3b3af05a80877cfc8215bbe20823e7e88c80b1"
 		logic_hash = "efef1e4e50d84cd30c025c86beb751c73a996cca896f90729571f48259ffc110"
 		score = 75
@@ -222020,8 +222235,8 @@ rule SEKOIA_Downloader_Mac_Rustbucket_Swiftloader
 		date = "2023-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_mac_rustbucket_swiftloader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_mac_rustbucket_swiftloader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7c5bf60787bfd076c8806eaa4f1185f5b9fda69008376624ab3d17f207eb16a4"
 		hash = "bc90adde92bd47b4de7d384e5b20c1a1791d603629bd0fcba4b550fb35e93216"
 		hash = "c9a7b42c7b29ca948160f95f017e9e9ae781f3b981ecf6edbac943e52c63ffc8"
@@ -222048,8 +222263,8 @@ rule SEKOIA_Backdoor_Powershellempire_Python : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_powershellempire_python.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_powershellempire_python.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "81c74a73ff7fe02420f29a53b350f1b53964f5a04f0694fed5b1b4bd6cc5ad03"
 		score = 75
 		quality = 80
@@ -222073,8 +222288,8 @@ rule SEKOIA_Tool_Exploit_Rottenpotato_Strings : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_exploit_rottenpotato_strings.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_exploit_rottenpotato_strings.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c634fcced6889caf895ddf57bab5564fb2b0a4c83f1d6ba4dae655f2e5d935db"
 		score = 75
 		quality = 80
@@ -222107,8 +222322,8 @@ rule SEKOIA_Backdoor_Win_Rokrat : FILE
 		date = "2023-07-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_rokrat.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_rokrat.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "84760cac26513915ebfb0a80ad3ddabe62f03ec4fda227d63e764f9c4a118c4e"
 		hash = "758348521331bb18241d1cfc90d7e687dbc5bad8d596a2b2d6a9deb6cfc8cb1d"
 		hash = "2a253c2aa1db3f809c86f410e4bd21f680b7235d951567f24d614d8e4d041576"
@@ -222141,8 +222356,8 @@ rule SEKOIA_Downloader_Win_Curl_Agent
 		date = "2023-05-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_curl_agent.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_curl_agent.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b34375ec051c969adec82901c1130b0a389261912559d70c652ee826cb2d4107"
 		score = 75
 		quality = 80
@@ -222169,8 +222384,8 @@ rule SEKOIA_Apt_Sandworm_Powergap_Apr2022 : FILE
 		date = "2022-04-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_powergap_apr2022.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_powergap_apr2022.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f1532cce42ab1315d3ab7882fa43ad05255055da720a123bed034242d439da2a"
 		score = 75
 		quality = 68
@@ -222198,8 +222413,8 @@ rule SEKOIA_Exploit_Ez_Pwnkit_Strings : FILE
 		date = "2024-01-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_ez_pwnkit_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_ez_pwnkit_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "36ec579f6c2dfeaf4ae6f6559d565d418a1f31199102eaa390ca36493f5b18cd"
 		score = 75
 		quality = 80
@@ -222223,8 +222438,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_6 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_6.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_6.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "38919408d2d0a9f51822302f4f821bf5776f119bf0d1b54b71b1040c7ad59da5"
 		score = 75
 		quality = 80
@@ -222251,8 +222466,8 @@ rule SEKOIA_Backdoor_Win_Andardoor : FILE
 		date = "2023-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_andardoor.yar#L4-L34"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_andardoor.yar#L4-L34"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "631836634222f4e081d3070c92150a4e14f06bcdd462fbfdf0756aa1f2661b59"
 		score = 75
 		quality = 80
@@ -222280,8 +222495,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_3 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_3.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_3.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ef62075c804080c0450f856b768da84a32f20e2f1ce5714e477b3e6f01d60503"
 		score = 75
 		quality = 80
@@ -222307,8 +222522,8 @@ rule SEKOIA_Apt_Cloudatlas_Powershower_Module : FILE
 		date = "2022-11-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powershower_module.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powershower_module.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7542eb882ee44203d806ad936126be2476b6e3a85ad8c93b6fd6c8226fe82617"
 		score = 75
 		quality = 80
@@ -222334,8 +222549,8 @@ rule SEKOIA_Loader_Win_Erbium : FILE
 		date = "2022-09-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_erbium.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_erbium.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e93e9dbf0e5412afa4640b4cf5d94374c4df38f8044d44c375e86508c0d4190a"
 		score = 75
 		quality = 80
@@ -222361,8 +222576,8 @@ rule SEKOIA_Apt_Coathanger_Beacon : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_coathanger_beacon.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_coathanger_beacon.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e44496e62de8c885d5bd941819a97f4c0dd90ce2d0cfe9d042ab9590cc354ddb"
 		score = 75
 		quality = 80
@@ -222390,8 +222605,8 @@ rule SEKOIA_Loader_Win_Jinxloader_Strings : FILE
 		date = "2023-12-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_jinxloader_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_jinxloader_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "816cb6019cba1aa2e229ab476fcdf378348981920cbe17d3dfb875f8b2dcbf81"
 		score = 75
 		quality = 80
@@ -222417,8 +222632,8 @@ rule SEKOIA_Infostealer_Win_Vidar_Str_Jul22 : FILE
 		date = "2022-07-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_vidar_str_jul22.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_vidar_str_jul22.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "394d148155d46753df188a252678c5ce9d0aa321da8907e74b844d5aa8494a47"
 		score = 75
 		quality = 80
@@ -222454,8 +222669,8 @@ rule SEKOIA_Latrodectus_Br4_Js_Dropper
 		date = "2024-06-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/latrodectus_br4_js_dropper.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/latrodectus_br4_js_dropper.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a835bd9a9ad68fd2f285ec5c04a5c78ba5ca85381ff30048ac375bef220fd72f"
 		score = 75
 		quality = 80
@@ -222479,8 +222694,8 @@ rule SEKOIA_Apt_Apt29_Malicious_Rdp_File : FILE
 		date = "2024-10-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt29_malicious_rdp_file.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt29_malicious_rdp_file.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "db326d934e386059cc56c4e61695128e"
 		hash = "b38e7e8bba44bc5619b2689024ad9fca"
 		hash = "f58cf55b944f5942f1d120d95140b800"
@@ -222513,8 +222728,8 @@ rule SEKOIA_Tool_Paexec_Strings : FILE
 		date = "2022-09-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_paexec_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_paexec_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9c3bae822fd317bdc89c07542b05f6255d6af214071194570500eb2a12924ff6"
 		score = 75
 		quality = 80
@@ -222540,8 +222755,8 @@ rule SEKOIA_Storm_1811_Screenconnect_Update
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/storm_1811_screenconnect_update.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/storm_1811_screenconnect_update.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ad61e28566375fd3c029df79e1b608aac921ab8121a43bd01314c9112197c32e"
 		score = 75
 		quality = 55
@@ -222571,8 +222786,8 @@ rule SEKOIA_Apt_Toddycat_Waexp_Strings : FILE
 		date = "2024-04-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_toddycat_waexp_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_toddycat_waexp_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4377183b326329fb14ae3911fbb1e29cde220d7b247d048fba4bbbda9de8938d"
 		score = 75
 		quality = 80
@@ -222597,8 +222812,8 @@ rule SEKOIA_Tool_Sharpnbtscan_Strings : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sharpnbtscan_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sharpnbtscan_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "adc19140e84c4aa3433b8ae4096355e384bbd106326ed56b54fb44a86fd9fbc6"
 		score = 75
 		quality = 80
@@ -222624,8 +222839,8 @@ rule SEKOIA_Apt_Apt28_Document_Phishing_Webpage : FILE
 		date = "2024-04-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_document_phishing_webpage.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_document_phishing_webpage.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b64888c1d8568cf9d8f4dfcd2e18093db8635966d88abaa368dc46a1e4453782"
 		score = 75
 		quality = 80
@@ -222655,8 +222870,8 @@ rule SEKOIA_Apt_Oilrig_Webshell : FILE
 		date = "2024-10-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_webshell.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_webshell.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0e0879bafa1becf7e4aef008229a79ab8e0c50eda03232abd5cbb8fc59f482d3"
 		score = 75
 		quality = 80
@@ -222682,8 +222897,8 @@ rule SEKOIA_Apt_Reaper_2Fa_Phishing_Webpage
 		date = "2023-03-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_reaper_2fa_phishing_webpage.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_reaper_2fa_phishing_webpage.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3f0ae0b35ea181b4712feeb34e866519921917179297148982e5298df9f133a9"
 		score = 75
 		quality = 80
@@ -222714,8 +222929,8 @@ rule SEKOIA_Ransomware_Mallox : FILE
 		date = "2023-02-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_mallox.yar#L1-L38"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_mallox.yar#L1-L38"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2a549489e2455a2d84295604e29c727dd20d65f5a874209840ce187c35d9a439"
 		hash = "3f843cbffeba010445dae2b171caaa99c6b56360de5407da71210d007fe26673"
 		hash = "4075d6e02c022ee45e0cd1c826abf749200639ee8ebc42375dac2430abafb5d6"
@@ -222761,8 +222976,8 @@ rule SEKOIA_Crimeware_Njrat_Strings : FILE
 		date = "2022-08-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crimeware_njrat_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crimeware_njrat_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "47102adde81682c3c1c856c3495c6f98a9e39aa052eac2ab0a803dab44d19c26"
 		score = 75
 		quality = 80
@@ -222792,8 +223007,8 @@ rule SEKOIA_Apt_Tealkurma_Snappytcp_Reverse_Shell_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_tealkurma_snappytcp_reverse_shell_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_tealkurma_snappytcp_reverse_shell_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "feb24cafcf5b080c91dab42bf8d78fbdb0b7fae9395c7513f02aa90a25663d2c"
 		score = 75
 		quality = 80
@@ -222820,8 +223035,8 @@ rule SEKOIA_Apt_Cloudatlas_Powershower_Variant : FILE
 		date = "2023-12-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powershower_variant.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powershower_variant.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7bcfafd5a52d685fe33715c8c3725d95947c65863902fde05cf85685a6bfeab8"
 		score = 75
 		quality = 80
@@ -222845,8 +223060,8 @@ rule SEKOIA_Apt_Shadowpad_First_Called_Function : FILE
 		date = "2023-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_shadowpad_first_called_function.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_shadowpad_first_called_function.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a40db3fad01f4177973fd50bd489e5c4ff6d3592dfff063c2c31694007c31e0b"
 		score = 75
 		quality = 80
@@ -222889,8 +223104,8 @@ rule SEKOIA_Malware_Win_Lyceum_Maldoc_Macro_20220613
 		date = "2022-06-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_win_lyceum_maldoc_macro_20220613.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_win_lyceum_maldoc_macro_20220613.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a9f4957e8198b4cb2229913a405b3e0fc97cbd3598bb583dbfdaf56ca278d4cb"
 		score = 75
 		quality = 80
@@ -222913,8 +223128,8 @@ rule SEKOIA_Infostealer_Win_Stormkitty_Exfil_Urls : FILE
 		date = "2022-04-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_stormkitty_exfil_urls.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_stormkitty_exfil_urls.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ccf0efe9ccba8e37bc19fa241e2d7698b1a798a3e8026b1b6930452b8a8ba9b4"
 		score = 75
 		quality = 80
@@ -222940,8 +223155,8 @@ rule SEKOIA_Loader_Win_Ninerat
 		date = "2023-12-12"
 		modified = "2024-12-19"
 		reference = "https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_ninerat.yar#L4-L37"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_ninerat.yar#L4-L37"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "ba8cd92cc059232203bcadee260ddbae273fc4c89b18424974955607476982c4"
 		hash = "5b02fc3cfb5d74c09cab724b5b54c53a7c07e5766bffe5b1adf782c9e86a8541"
 		logic_hash = "eab81277a2ffe926c2d9f990ee2e36f0e5f27a14d3048c50d31952d90ce7ab0b"
@@ -222967,8 +223182,8 @@ rule SEKOIA_Tool_Edrsandblast_Cli_Strings : FILE
 		date = "2024-01-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_edrsandblast_cli_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_edrsandblast_cli_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dd6b3836b2f368c8d0ed06770f2469ef70d850ae1a9da26c7835f1877379efe9"
 		score = 75
 		quality = 80
@@ -222994,8 +223209,8 @@ rule SEKOIA_Tool_Yasso_Strings : FILE
 		date = "2023-06-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_yasso_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_yasso_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1d715b0962ba9ecbe11649ea85870a8f884f6dd7eda27b1f8eff0d7f5de8c765"
 		score = 75
 		quality = 80
@@ -223022,8 +223237,8 @@ rule SEKOIA_Tool_Sharphoundpowershell_Strings : FILE
 		date = "2022-08-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sharphoundpowershell_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sharphoundpowershell_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "29756acb0afd8aabac170ca8288f1dcffcb2e601c9bdba1cc7a30b8b415661f6"
 		score = 75
 		quality = 80
@@ -223052,8 +223267,8 @@ rule SEKOIA_Hacktool_Win_Gmer : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_win_gmer.yar#L3-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_win_gmer.yar#L3-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dbd4e97c343dcb14c6e814afa820a9fbb5aa4290c7ddf9d864029bb35bb96dbf"
 		score = 75
 		quality = 80
@@ -223078,8 +223293,8 @@ rule SEKOIA_Infostealer_Win_Vulturi : FILE
 		date = "2022-03-14"
 		modified = "2024-12-19"
 		reference = "https://lamp-ret.club/t/vulturi-cracked-by-tr0uble-and-eshelon_mayskih.193/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_vulturi.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_vulturi.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2d442768499ea0d4b6f5ac0d85521d73bb8337a53f1641485b0ce0054e2dc91c"
 		score = 75
 		quality = 80
@@ -223119,8 +223334,8 @@ rule SEKOIA_Apt_Gamaredon_Gamaredon_Lnk_Usb_Spreader
 		date = "2023-06-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_gamaredon_lnk_usb_spreader.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_gamaredon_lnk_usb_spreader.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2aee8bb2a953124803bc42e5c42935c92f87030b65448624f51183bf00dd1581"
 		logic_hash = "3adb2433eda559d9b32316f4733741b0fc8c576937b1decede8bc7d23b203a0e"
 		score = 75
@@ -223151,8 +223366,8 @@ rule SEKOIA_Hacktool_Gtunnel_Strings : FILE
 		date = "2023-04-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_gtunnel_strings.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_gtunnel_strings.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "76a67f0487fea7b890863bef06a48f665b611f7659eb374cd83cd4be01b812ab"
 		score = 75
 		quality = 55
@@ -223182,8 +223397,8 @@ rule SEKOIA_Apt_Boldmove_Strings : FILE
 		date = "2023-01-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_boldmove_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_boldmove_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "71649451b88629da1779c0856b2f1f60f87501962c69556f7943b049688a2d96"
 		score = 75
 		quality = 80
@@ -223210,8 +223425,8 @@ rule SEKOIA_Apt_Malware_Pocoproxy : FILE
 		date = "2024-08-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_malware_pocoproxy.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_malware_pocoproxy.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2b89f15012512002c656ff821bbbeca0"
 		hash = "8d850fed6bb1f3b60365ed656c6791c5"
 		logic_hash = "217f4eabb5ff4534878b6dd192ae446e651d8510f03ceb501eb33e91199c15a8"
@@ -223243,8 +223458,8 @@ rule SEKOIA_Win_Clipper_Generic : FILE
 		date = "2024-07-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_clipper_generic.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_clipper_generic.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f2fb2285adb10269aaf3d028d3803775ad86833b36cf24dabb8d404a6380b505"
 		score = 75
 		quality = 78
@@ -223267,8 +223482,8 @@ rule SEKOIA_Apt_Apt31_Pakdoor : FILE
 		date = "2021-10-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt31_pakdoor.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt31_pakdoor.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1d60edb577641ce47dc2a8299f8b7f878e37120b192655aaf80d1cde5ee482d2"
 		logic_hash = "ef001e31b34761688f32ec767082d9d7f9fc4e4368d567eb64b66583bcb7fc78"
 		score = 75
@@ -223297,8 +223512,8 @@ rule SEKOIA_Hacktool_Nbtscan_Strings : FILE
 		date = "2022-02-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_nbtscan_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_nbtscan_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "87e4f5dd16ee29dfd23b70dccbc41b0ef40c2db28f42fbd7fd84e5e93ca5c943"
 		score = 75
 		quality = 80
@@ -223327,8 +223542,8 @@ rule SEKOIA_Xworm_Dotnet_Injector
 		date = "2022-12-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/xworm_dotnet_injector.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/xworm_dotnet_injector.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4777edacf4719e602ae1fb7204ea97cd594277faa1c2b7ad430066ad82b40768"
 		score = 75
 		quality = 80
@@ -223358,8 +223573,8 @@ rule SEKOIA_Apt_Mustangpanda_Maliciousdll_Loading_Plugx_Strings
 		date = "2023-12-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_maliciousdll_loading_plugx_strings.yar#L3-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_maliciousdll_loading_plugx_strings.yar#L3-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "651c096cf7043a01d939dff9ba58e4d69f15b2244c71b43bedb4ada8c37e8859"
 		logic_hash = "667901d36585248a891b90ff8ed7006030151fbbbe0d4a85570944a94edba7f8"
 		score = 75
@@ -223387,8 +223602,8 @@ rule SEKOIA_Tool_Webshell_B374K_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_webshell_b374k_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_webshell_b374k_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1d27b23fceecbb9e854c41f6a8fb878e"
 		hash = "71fd853a3f3efc3dc2846e866187ee59"
 		hash = "187e001c32487d0d68197ddb7e7796c3"
@@ -223418,8 +223633,8 @@ rule SEKOIA_Loader_Win_Dodgebox
 		date = "2024-07-15"
 		modified = "2024-12-19"
 		reference = "https://www.zscaler.com/blogs/security-research/dodgebox-deep-dive-updated-arsenal-apt41-part-1"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_dodgebox.yar#L4-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_dodgebox.yar#L4-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "c6a3a1ea84251aed908702a1f2a565496d583239c5f467f5dcd0cfc5bfb1a6db"
 		hash = "33fd050760e251ab932e5ca4311b494ef72cee157b20537ce773420845302e49"
 		logic_hash = "e859da15a065454d273c4040b4e3409c3046cbcee135497bdcce6cff620c3cfb"
@@ -223441,8 +223656,8 @@ rule SEKOIA_Apt_Apt28_Htmlsmuggling
 		date = "2023-09-11"
 		modified = "2024-12-19"
 		reference = "https://www.zscaler.com/blogs/security-research/steal-it-campaign"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_htmlsmuggling.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_htmlsmuggling.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "47cca1d0a0843c8df43661ee8188dae86cce06e1f3982973871863728d328e89"
 		score = 75
 		quality = 80
@@ -223466,8 +223681,8 @@ rule SEKOIA_Apt_Gamaredon_Ddrdoh_Vbs_Downloader : FILE
 		date = "2023-01-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_ddrdoh_vbs_downloader.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_ddrdoh_vbs_downloader.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "940635313b23e29ac98310fc0f20352405c96190d56cd36ef028bf4d6e77fa6b"
 		score = 75
 		quality = 80
@@ -223501,8 +223716,8 @@ rule SEKOIA_Infostealer_Win_Acridrain_Mar23 : FILE
 		date = "2023-03-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_acridrain_mar23.yar#L1-L40"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_acridrain_mar23.yar#L1-L40"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7fa1822acc6264a3a58fffef3fc572f8818d99037b20d5abb8bfb41f025949d4"
 		score = 75
 		quality = 78
@@ -223548,8 +223763,8 @@ rule SEKOIA_Apt_Aptc60_Downloader_Strings : FILE
 		date = "2024-09-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_aptc60_downloader_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_aptc60_downloader_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b14ef85a60ac71c669cc960bdf580144"
 		logic_hash = "f05480834e6d91a852a190a2ecec05aaea1affa8a605a56c80962a9fbfc8f0c0"
 		score = 75
@@ -223576,8 +223791,8 @@ rule SEKOIA_Apt_Luckymouse_Sysupdate_Removing_Tool : FILE
 		date = "2022-08-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_luckymouse_sysupdate_removing_tool.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_luckymouse_sysupdate_removing_tool.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6a23fac99f26f4b0f9099e435ad53d9e83bf1322d190c565abf0c06dceeeaf34"
 		score = 75
 		quality = 80
@@ -223603,8 +223818,8 @@ rule SEKOIA_Tool_Petitpotato : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_petitpotato.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_petitpotato.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "93a46c7765ad9f18c2176b98c91edf97827707ffdefcedc40078c87c30343508"
 		score = 75
 		quality = 80
@@ -223631,8 +223846,8 @@ rule SEKOIA_Loader_Win_Jennlog
 		date = "2021-10-04"
 		modified = "2024-12-19"
 		reference = "https://www.sentinelone.com/labs/new-version-of-apostle-ransomware-reemerges-in-targeted-attack-on-higher-education/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_jennlog.yar#L4-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_jennlog.yar#L4-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0ffcd1f35570b28a1bd6f9a0361f8f921942f7345dcb2896fc092bb92f7d4d6d"
 		score = 75
 		quality = 80
@@ -223653,8 +223868,8 @@ rule SEKOIA_Apt_Muddywater_Moriagent : FILE
 		date = "2022-01-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_moriagent.yar#L3-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_moriagent.yar#L3-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "21389d4e71e9a19a9d263b8ced740c337ea88ed4ac97199897b0aa3f5914594a"
 		score = 75
 		quality = 80
@@ -223683,8 +223898,8 @@ rule SEKOIA_Apt_Backdoordiplomaty_Custommerlinagent_Strings : FILE
 		date = "2024-06-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_backdoordiplomaty_custommerlinagent_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_backdoordiplomaty_custommerlinagent_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "31d13e234dc3f68f6826a5310ac38693750f896318249d04a31c5e6c8d5eba91"
 		score = 75
 		quality = 80
@@ -223710,8 +223925,8 @@ rule SEKOIA_Nomercy : FILE
 		date = "2022-07-11"
 		modified = "2024-12-19"
 		reference = "https://blog.cyble.com/2022/07/07/nomercy-stealer-adding-new-features/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/nomercy.yar#L1-L61"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/nomercy.yar#L1-L61"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "9ecc76d4cda47a93681ddbb67b642c2e1f303ab834160ab94b79b47381e23a65"
 		hash = "557acce8b787aba87c8eeb939438b52c5ca953f28ad680a7faeb2b3046d3fda0"
 		logic_hash = "175bc58f1b34bb60f6cacc15747e944cbbdd58fe287ff46abed969eaa39870db"
@@ -223772,8 +223987,8 @@ rule SEKOIA_Apt_Toddycat_Tomberbil_Strings : FILE
 		date = "2024-04-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_toddycat_tomberbil_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_toddycat_tomberbil_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "92da6ba86cffec75a9af90a513840672b023c81baa9aedb2b706534cc39ecc09"
 		score = 75
 		quality = 80
@@ -223802,8 +224017,8 @@ rule SEKOIA_Apt_Darkpink_Loader_Decryptionroutine : FILE
 		date = "2023-01-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_darkpink_loader_decryptionroutine.yar#L4-L49"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_darkpink_loader_decryptionroutine.yar#L4-L49"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "3f38860d0f6f0ff1b65219379f8793383cba85b11de1c853192fb2d2ba99e481"
 		hash = "b3f1d6366ebc184f634a240c838b39d729c28b8718b0b9ca6be988a7e446ec42"
 		logic_hash = "fe2726b77c293fc2aa19216025cfa2b4cd0c5194730cbc57a1fcceb6f6198977"
@@ -223849,8 +224064,8 @@ rule SEKOIA_Apt_Windows_Wip19_Screencap : FILE
 		date = "2022-10-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_windows_wip19_screencap.yar#L4-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_windows_wip19_screencap.yar#L4-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "02479f0c8199b31f089608da0f44f1487b75790cb31c77bb65ca1fb0fd57ac0d"
 		score = 75
 		quality = 80
@@ -223870,8 +224085,8 @@ rule SEKOIA_Tool_Edrsandblast_Api_Strings : FILE
 		date = "2024-01-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_edrsandblast_api_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_edrsandblast_api_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cd6afe68cf04e4949add323e0b5af5ea577b3dca07743e312e8236bf5c937672"
 		score = 75
 		quality = 80
@@ -223898,8 +224113,8 @@ rule SEKOIA_Apt_Buhtrap_Maldocx
 		date = "2022-02-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_buhtrap_maldocx.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_buhtrap_maldocx.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "69968fa6836a71cd835f40c5168d197d3b5fc13b62791279f48a6bdeb4709bd5"
 		score = 75
 		quality = 80
@@ -223932,8 +224147,8 @@ rule SEKOIA_Apt_Mustangpanda_Windows_Shellcode_Decryptionalgorithm : FILE
 		date = "2022-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_windows_shellcode_decryptionalgorithm.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_windows_shellcode_decryptionalgorithm.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a2ad3bd4dcbee3e23762b674ee8b6717e7ece712b0128145518bfa5d2e4bd66a"
 		score = 75
 		quality = 80
@@ -223968,8 +224183,8 @@ rule SEKOIA_Loader_Win_Squirrelwaffle_Doc : FILE
 		date = "2021-09-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_squirrelwaffle_doc.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_squirrelwaffle_doc.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b9f7c3605e25c8c7caa5f70e492d46fb70e7cb6002704440e7346ebfb2bbc7bf"
 		score = 75
 		quality = 76
@@ -223993,8 +224208,8 @@ rule SEKOIA_Apt_Backdoordiplomaty_Phantomnet : FILE
 		date = "2024-06-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_backdoordiplomaty_phantomnet.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_backdoordiplomaty_phantomnet.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e4be9b9e092dcaa368650b7f696ca532f89752bdbe6b5fd09b4285a643c20b86"
 		score = 75
 		quality = 80
@@ -224019,8 +224234,8 @@ rule SEKOIA_Hacktool_Ligolo_Relay_Strings : FILE
 		date = "2022-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_ligolo_relay_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_ligolo_relay_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "57150b394cc7af9ae786b63d83acc29529fa037f0a52afde0e12a2eef93bf6c8"
 		score = 75
 		quality = 80
@@ -224046,8 +224261,8 @@ rule SEKOIA_Apt_Muddywater_Rotrot_Strings : FILE
 		date = "2024-06-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_rotrot_strings.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_rotrot_strings.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "425168003d0f14d791e7f46bf47c18652a1f6b66b9329155d2bca72cf0d8126b"
 		score = 75
 		quality = 80
@@ -224087,8 +224302,8 @@ rule SEKOIA_Koiloader_Powershell_Reflective_Loading : FILE
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/koiloader_powershell_reflective_loading.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/koiloader_powershell_reflective_loading.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "27deec01027a73129c6c8057eff1b48190c89ac18dcd7c390fc177d82a897290"
 		score = 75
 		quality = 80
@@ -224116,8 +224331,8 @@ rule SEKOIA_Backdoor_Win_Headertip : FILE
 		date = "2022-03-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_headertip.yar#L4-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_headertip.yar#L4-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e1523185eac41a615b8d2af8b7fd5fe07b755442df2836041be544dff6881237"
 		hash = "da8a98d9b9a3c176ba44fb69ad0a820a971950e05f1eb0c4bbbf6c2fbb748bdc"
 		hash = "63a218d3fc7c2f7fcadc0f6f907f326cc86eb3f8cf122704597454c34c141cf1"
@@ -224144,8 +224359,8 @@ rule SEKOIA_Infostealer_Win_Doenerium_Str : FILE
 		date = "2022-09-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_doenerium_str.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_doenerium_str.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9bc28d89ad2654c33f2ecd9736f5fb3a10dfc68dfef44ece6e628f5bb8db0800"
 		score = 75
 		quality = 80
@@ -224183,8 +224398,8 @@ rule SEKOIA_Implant_Win_Knotweed_Jumplump : FILE
 		date = "2022-07-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_knotweed_jumplump.yar#L3-L75"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_knotweed_jumplump.yar#L3-L75"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a2637a8a082b6a23756da188808405046ae986a5973f64859462c92e9306e6c8"
 		score = 75
 		quality = 55
@@ -224262,8 +224477,8 @@ rule SEKOIA_Luckymouse_Sysupdate_Loader : FILE
 		date = "2022-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/luckymouse_sysupdate_loader.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/luckymouse_sysupdate_loader.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9d46b74d8e5f94ecd844cffcd6d0d29eb662374c1d6fbe87acf3c877e5f963b3"
 		score = 75
 		quality = 80
@@ -224286,8 +224501,8 @@ rule SEKOIA_Guloader_Lnk_File : FILE
 		date = "2024-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guloader_lnk_file.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guloader_lnk_file.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d69038a8b26c7fc7ba7b0968c7c91b589b25512dcf7e3ad5ee56453a4654a1ab"
 		score = 75
 		quality = 80
@@ -224313,8 +224528,8 @@ rule SEKOIA_Infostealer_Win_Agrat : FILE
 		date = "2022-06-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_agrat.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_agrat.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5b02880dbc75d9e4d95ec55c8e8630a47198ee4cc25e3ff79c93e9fe634fadca"
 		score = 75
 		quality = 80
@@ -224349,8 +224564,8 @@ rule SEKOIA_Apt_Toddycat_Toddybox_Strings : FILE
 		date = "2023-11-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_toddycat_toddybox_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_toddycat_toddybox_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b71fad12d4485268cbeff98b8a8d6067ac8f62164be60cdb61f3f37ab471a247"
 		score = 75
 		quality = 80
@@ -224380,8 +224595,8 @@ rule SEKOIA_Infostealer_Win_Acrstealer_Str : FILE
 		date = "2024-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_acrstealer_str.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_acrstealer_str.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "53d313857577b39b51a3e396c078d39a8b8ab803295b689357c3e8ea94cac9f7"
 		score = 75
 		quality = 80
@@ -224418,8 +224633,8 @@ rule SEKOIA_Apt_Kimsuky_Sharpext_Jsexfil_Strings : FILE
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharpext_jsexfil_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharpext_jsexfil_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "37ea72b369baaced89f30f655901cc4a9d6a70d00cfca3b92a1015aca64d4e2c"
 		score = 75
 		quality = 80
@@ -224445,8 +224660,8 @@ rule SEKOIA_Apt_Badmagic_Listfiles_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_listfiles_pshscript.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_listfiles_pshscript.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4401d31e4b0484776aab51c161a301fc4ee3e944a1669df763bd274014178368"
 		score = 75
 		quality = 80
@@ -224470,8 +224685,8 @@ rule SEKOIA_Malware_Swordldr : FILE
 		date = "2024-09-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_swordldr.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_swordldr.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "d0cc758082e303275cbb8cd6b2048eff"
 		hash = "7aa57da44718cd88f7d37b33a5d3ad74"
 		logic_hash = "9e408181b9122925c0ff9efdaed688e659596b58b9108c0f280d9bc1624d73cb"
@@ -224507,8 +224722,8 @@ rule SEKOIA_Tool_Multidump_Strings : FILE
 		date = "2024-03-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_multidump_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_multidump_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8d98cf89d56f5a949023364f94c8d55f8875408b082fb52e118f99d46533124d"
 		score = 75
 		quality = 80
@@ -224536,8 +224751,8 @@ rule SEKOIA_Bot_Lin_Xorddos_Strings : FILE
 		date = "2023-11-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_lin_xorddos_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_lin_xorddos_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b91cfeeaddffe98ac1649c5d88a2091cf7ab8ff65b232f09c323d23684cb2a2d"
 		score = 75
 		quality = 80
@@ -224562,8 +224777,8 @@ rule SEKOIA_Apt_Unk_Batcopier_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://www.seqrite.com/blog/operation-oxidovy-sophisticated-malware-campaign-targets-czech-officials-using-nato-themed-decoys/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unk_batcopier_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unk_batcopier_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0007d6d00d5b8db048456bb566ef9ed4516c4e1b392cc73c40396785ba885f55"
 		score = 75
 		quality = 80
@@ -224588,8 +224803,8 @@ rule SEKOIA_Win_Malware_Statc_Downloader : FILE
 		date = "2023-08-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_malware_statc_downloader.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_malware_statc_downloader.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "173ea5af2e71b6ed70abd52a5d2f4de040393a6d2ff4978bbb6e73d96742b010"
 		logic_hash = "a99970a6ace88234e5e2bda009f8d87e6a0dc8c1a4655cca128e30292a21502c"
 		score = 75
@@ -224622,8 +224837,8 @@ rule SEKOIA_Apt_Gamaredon_Lnk_Spreader : FILE
 		date = "2023-06-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_lnk_spreader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_lnk_spreader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7d6264ce74e298c6d58803f9ebdb4a40b4ce909d02fd62f54a1f8d682d73519a"
 		logic_hash = "e8a82fd4cdce7bc888184ccf8d182ab5bb53e30de04b02b7c63379bae5d21b1f"
 		score = 75
@@ -224648,8 +224863,8 @@ rule SEKOIA_Exploit_Win_Cloudatlas_Cve_2018_0798 : CVE_2018_0798 FILE
 		date = "2022-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_win_cloudatlas_cve_2018_0798.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_win_cloudatlas_cve_2018_0798.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "c2064c7f4826c46bc609c472597366fd"
 		hash = "e2281402c63d4b544b81678250d24e61"
 		hash = "a97fa135d7e42886bcfdacca0d96c047"
@@ -224678,8 +224893,8 @@ rule SEKOIA_Rat_Win_Ninerat
 		date = "2023-12-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_ninerat.yar#L4-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_ninerat.yar#L4-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "47e017b40d418374c0889e4d22aa48633b1d41b16b61b1f2897a39112a435d30"
 		hash = "82d4a0fef550af4f01a07041c16d851f262d859a3352475c62630e2c16a21def"
 		logic_hash = "bbb695444a6ec0d6049d0ce233ca37de6f78393e5ceb5d454867c8b554269684"
@@ -224709,8 +224924,8 @@ rule SEKOIA_Infostealer_Win_Meduzastealer : FILE
 		date = "2023-06-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_meduzastealer.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_meduzastealer.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e81a5a9611662422eb7a87c0c1a370cee6f138fd6169225d969b669337d91a06"
 		score = 75
 		quality = 80
@@ -224743,8 +224958,8 @@ rule SEKOIA_Downloader_Win_Cobianrat : FILE
 		date = "2024-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_cobianrat.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_cobianrat.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7a70779d9d7de5e370fac0fa2d4ccd13"
 		hash = "2ce40599a4990680db3af5defcd5381a"
 		hash = "56515c48f82475e7bb6a26b027a459d7"
@@ -224775,8 +224990,8 @@ rule SEKOIA_Apt_Oilrig_Clipog_Strings : FILE
 		date = "2023-10-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_clipog_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_clipog_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "16f3fef59db9c58025a4a977de944b628e9dc850f87c1bb22e2f2f97601e5107"
 		score = 75
 		quality = 80
@@ -224802,8 +225017,8 @@ rule SEKOIA_Trojan_And_Keepspy : FILE
 		date = "2023-06-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_and_keepspy.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_and_keepspy.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "03a954a5585a9a80fdc5a0cd2644a819c540d43b260e040b627530ca88ee08fa"
 		score = 75
 		quality = 80
@@ -224832,8 +225047,8 @@ rule SEKOIA_Apt_Spikedwine_Malicious_Hta
 		date = "2024-02-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_spikedwine_malicious_hta.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_spikedwine_malicious_hta.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "305896cde5d95c29de511541a961063730709d40d67a8788f084c17f181e3baf"
 		score = 75
 		quality = 80
@@ -224859,8 +225074,8 @@ rule SEKOIA_Typhon_Reborn_Stealer
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/typhon_reborn_stealer.yar#L3-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/typhon_reborn_stealer.yar#L3-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0db77a2e1d6b7274b0256fe469b72953c1b8598cbfc1715a43e5fbfa7899fe4c"
 		score = 75
 		quality = 80
@@ -224884,8 +225099,8 @@ rule SEKOIA_Stealer_Win_Mgbot_Credential_Stealer : FILE
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://www.welivesecurity.com/2023/04/26/evasive-panda-apt-group-malware-updates-popular-chinese-software/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/stealer_win_mgbot_credential_stealer.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/stealer_win_mgbot_credential_stealer.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "174a62201c7e2af67b7ad37bf7935f064a379f169cf257ca16e912a46ecc9841"
 		hash = "cb7d9feda7d8ebfba93ec428d5a8a4382bf58e5a70e4b51eb1938d2691d5d4a5"
 		logic_hash = "27f1b0ac818753804f0e67ac158d9376ab6beff8613ef94a1aa6cf8dd6815d49"
@@ -224913,8 +225128,8 @@ rule SEKOIA_Apt_Turla_Kazuar_Variant_2023 : FILE
 		date = "2023-11-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_turla_kazuar_variant_2023.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_turla_kazuar_variant_2023.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "98207fef906c922ff09f72b0dea7103c0fb86c5ec4712a23ecba6840b79b0ad5"
 		score = 75
 		quality = 80
@@ -224939,8 +225154,8 @@ rule SEKOIA_Loader_Win_Goshellcode : FILE
 		date = "2023-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/yoda66/GoShellcode/blob/main/gosc.go"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_goshellcode.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_goshellcode.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "94445af999055bf7d7cddc0d1d5183ab2776d85285f0522a28fac6c5a6101906"
 		hash = "fdea8b01b2597ceafe6f08b5fd12cc603b1e3ce2037731c0b6defde6935b1ce0"
 		logic_hash = "48ec87f284fbd14cbdb6b6b0f2e0fa6eb5ea19f112648660e0b8e525c562e3fc"
@@ -224970,8 +225185,8 @@ rule SEKOIA_Apt_Konni_Check_Bat : FILE
 		date = "2023-11-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_konni_check_bat.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_konni_check_bat.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "13a9dd6978985eb17960794c6de2ee2e6411e6afeb705ff95ced72bc0efb5d8c"
 		score = 75
 		quality = 80
@@ -225002,8 +225217,8 @@ rule SEKOIA_Win_Malware_Janelarat_Strings : FILE
 		date = "2023-08-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_malware_janelarat_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_malware_janelarat_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "00df0a1f037e24ff1528d524fb7398735e2c3e0a9995a9f95a5293b04748f06e"
 		logic_hash = "cf2ca92cf790211f69ea9645f1c1b865d5503d14a1dcce535b4a69c735ea3dad"
 		score = 75
@@ -225029,8 +225244,8 @@ rule SEKOIA_Backdoor_Win_Minibike : FILE
 		date = "2024-04-08"
 		modified = "2024-12-19"
 		reference = "https://www.mandiant.com/resources/blog/suspected-iranian-unc1549-targets-israel-middle-east"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_minibike.yar#L4-L37"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_minibike.yar#L4-L37"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "985967e245d8fbc722e30371c9ed48c3269ceaa6b9b9b80caf2b95c920c856c2"
 		hash = "ab0b602665b609392eacdcbfc6c1981f216c19f21e2156a55cf9998eab02227b"
 		hash = "8e2429d70989bbdd2ea8842dce7c3d790ebe148490ee519b47767557f4a4a733"
@@ -225059,8 +225274,8 @@ rule SEKOIA_Storm_1811_Files_Dat
 		date = "2024-06-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/storm_1811_files_dat.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/storm_1811_files_dat.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d1d5b76671cefe8b876ca8df50205a04ebbcd973f115919b901f6a7946492904"
 		score = 75
 		quality = 80
@@ -225093,8 +225308,8 @@ rule SEKOIA_Implant_Win_Magicrat : FILE
 		date = "2022-09-13"
 		modified = "2024-12-19"
 		reference = "https://blog.talosintelligence.com/2022/09/lazarus-magicrat.html"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_magicrat.yar#L4-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_magicrat.yar#L4-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "9dc04153455d054d7e04d46bcd8c13dd1ca16ab2995e518ba9bf33b43008d592"
 		hash = "c2904dc8bbb569536c742fca0c51a766e836d0da8fac1c1abd99744e9b50164f"
 		hash = "f6827dc5af661fbb4bf64bc625c78283ef836c6985bb2bfb836bd0c8d5397332"
@@ -225117,8 +225332,8 @@ rule SEKOIA_Apt_Kimsuky_Sharptongue_Strings : FILE
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharptongue_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharptongue_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a7a9045485f6e713a8ae1bc87cd1296d64905b18e5d13d6e2b9a95328181af54"
 		score = 75
 		quality = 80
@@ -225144,8 +225359,8 @@ rule SEKOIA_Tool_Revsocks_Strings : FILE
 		date = "2024-03-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_revsocks_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_revsocks_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f1702aaaebc1ba720f688f0694a69fef55a2556b1f07dd4b846be1ae32ff5529"
 		score = 75
 		quality = 80
@@ -225172,8 +225387,8 @@ rule SEKOIA_Tool_Win_Forkplayground : FILE
 		date = "2023-02-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_forkplayground.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_forkplayground.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "23d93b7eef978f76c9aa6c0bc28a661d160b0a871fd320442b6c27bc92bc279e"
 		score = 75
 		quality = 80
@@ -225201,8 +225416,8 @@ rule SEKOIA_Tool_Gost_Tunnel_Strings : FILE
 		date = "2023-02-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_gost_tunnel_strings.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_gost_tunnel_strings.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "eba1557acc1d9f16817a4bcd24631334a12357e45ad23f1c333de686f20f9291"
 		score = 75
 		quality = 80
@@ -225240,8 +225455,8 @@ rule SEKOIA_Tool_Win_Lightrail : FILE
 		date = "2024-02-29"
 		modified = "2024-12-19"
 		reference = "https://www.mandiant.com/resources/blog/suspected-iranian-unc1549-targets-israel-middle-east"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_lightrail.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_lightrail.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e7ddab967b0487827db069833221aa2fe4ca05f7cda976cbc528ecb306a22774"
 		hash = "4ecd511d9654f7fd66a61eb4ab6d7153040b5092d1594ff39935f01fbdbd4914"
 		hash = "3472bc8ed6182eb17811c97ada7ebd48034ad09b6a7062b341fe09818d7a309f"
@@ -225272,8 +225487,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_8 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_8.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_8.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "71e4eb41968818e1dd484a259af9eec30a517423b00da75ce21773bf695cbc7d"
 		score = 75
 		quality = 80
@@ -225299,8 +225514,8 @@ rule SEKOIA_Killfloor_Avkiller_Strings : FILE
 		date = "2024-10-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/killfloor_avkiller_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/killfloor_avkiller_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "9f16176ac20f7855fa960d321e156d69"
 		hash = "4b019e9ed2de734e242602abce06f7c1"
 		hash = "81ae32d9de8fd21acfc61d62f3292277"
@@ -225332,8 +225547,8 @@ rule SEKOIA_Loader_Win_Konni_Bat : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_konni_bat.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_konni_bat.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3476e41461692c3ccfc0ef47a4d5b8822c4940987755763d2a5913e27d9350d4"
 		score = 75
 		quality = 80
@@ -225363,8 +225578,8 @@ rule SEKOIA_Hacktool_Win_Uknowseckeylogger : FILE
 		date = "2022-10-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_win_uknowseckeylogger.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_win_uknowseckeylogger.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "83a731a5b1853edcce963d458fc170206086305f3e43403c930c9633918e8ff1"
 		score = 75
 		quality = 80
@@ -225392,8 +225607,8 @@ rule SEKOIA_Exploit_Linux_Eop_Cve202121974_Exploit_Strings : CVE_2021_21974 FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_cve202121974_exploit_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_cve202121974_exploit_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a2e6e2660fcbf6ffa80809c02ca78fae85d27f6cd8d2c83bb2645a86124ca7f2"
 		score = 75
 		quality = 80
@@ -225419,8 +225634,8 @@ rule SEKOIA_Infostealer_Win_Bebra : FILE
 		date = "2023-02-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_bebra.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_bebra.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7841746c54c53dbcafdf3f357c7a84b90fe3b089e07f30dea15ef6f7f15b0f00"
 		logic_hash = "588fa3091f0dc565123c60d59479202d036e092499eca6204d420395ddc332f9"
 		score = 75
@@ -225454,8 +225669,8 @@ rule SEKOIA_Ransomware_Win_Blackcat : FILE
 		date = "2022-01-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_blackcat.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_blackcat.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8a60fd14835f9e8683c3e60a19f23bc00020ccd22e74bffbc8ed19fcb8d0e39a"
 		score = 75
 		quality = 80
@@ -225492,8 +225707,8 @@ rule SEKOIA_Apt_Lazarus_Pondrat : FILE
 		date = "2024-09-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_pondrat.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_pondrat.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b62c912de846e743effdf7e5654a7605"
 		hash = "61d7b2c7814971e5323ec67b3a3d7f45"
 		hash = "ce35c935dcc9d55b2c79945bac77dc8e"
@@ -225525,8 +225740,8 @@ rule SEKOIA_Rat_Win_Asbit : FILE
 		date = "2022-09-19"
 		modified = "2024-12-19"
 		reference = "https://blogs.juniper.net/en-us/threat-research/asbit-an-emerging-remote-desktop-trojan"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_asbit.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_asbit.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1362ebe89a4d2645eb687d92510daa355a16f05da7f5513817f8439f29722827"
 		score = 75
 		quality = 80
@@ -225551,8 +225766,8 @@ rule SEKOIA_Tool_Scanline_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_scanline_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_scanline_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e02ae30451aa5eaffb588e92ecc221bf6ed07097bc493c6a55cf688da8b76151"
 		score = 75
 		quality = 80
@@ -225579,8 +225794,8 @@ rule SEKOIA_Reverseshell_Win_1St_Troy : FILE
 		date = "2023-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/reverseshell_win_1st_troy.yar#L4-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/reverseshell_win_1st_troy.yar#L4-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "186a6663eb91999b3e2637898ab40034f5fcd451150c9199d9b49328e64f90b5"
 		hash = "5b015e69629de37507e96ce258c27479d157714121d7c622698c6d1d6b547425"
 		logic_hash = "a85a6ef0fe3b3fde3cb833579f4fd69cd159737888ae41e69e40a6bdc1172d1f"
@@ -225605,8 +225820,8 @@ rule SEKOIA_Apt_Apt41_Keyplug_Dropper : FILE
 		date = "2024-06-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt41_keyplug_dropper.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt41_keyplug_dropper.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a61f57302d8fe58ed8b77542c94159acbc36a3bd52c204171e76e668d10a74e7"
 		score = 75
 		quality = 80
@@ -225632,8 +225847,8 @@ rule SEKOIA_Backdoor_Lin_Bpfdoor : FILE
 		date = "2022-05-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/Neo23x0/signature-base/blob/master/yara/mal_lnx_implant_may22.yar"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_lin_bpfdoor.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_lin_bpfdoor.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c917bd12731d761645adea72bc68c50927a0c2b0c31b2109f7065a992d338329"
 		score = 75
 		quality = 80
@@ -225659,8 +225874,8 @@ rule SEKOIA_Apt_Gamaredon_Htmlsmuggling_2024 : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_htmlsmuggling_2024.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_htmlsmuggling_2024.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "ab2807824e68d5efb4c896e1af82e693"
 		hash = "926b7e65d0d61cd6ba9e085193ae8b1d"
 		logic_hash = "9cd82f497fd7b82f02fec4ce1d131cd2685861c7c02aaae992e07a7d8bd30595"
@@ -225691,8 +225906,8 @@ rule SEKOIA_Apt_Darkpink_Kamikakabot_Strings
 		date = "2023-02-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_darkpink_kamikakabot_strings.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_darkpink_kamikakabot_strings.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0bc37c96b591d8edb1fd288ef874b3cc31879ce166b8734a3dd0e29644cbea55"
 		score = 75
 		quality = 80
@@ -225730,8 +225945,8 @@ rule SEKOIA_Guerrilla_Lemongroup : FILE
 		date = "2023-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/guerrilla_lemongroup.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/guerrilla_lemongroup.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b644cb537a42217f2549f37bfe07ae0b7ba39fc248ab3d5fd870384c7684683b"
 		score = 75
 		quality = 80
@@ -225764,8 +225979,8 @@ rule SEKOIA_Infostealer_Win_Xenostealer_Strings : FILE
 		date = "2024-10-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/moom825/XenoStealer/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_xenostealer_strings.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_xenostealer_strings.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b74733d68e95220ab0630a68ddf973b0c959fd421628e639c1b91e465ba9299b"
 		logic_hash = "1c48b15b8e9648c1c4d2f9c0a9ee3f4c48605fa44772b87a03ad81923e5adf15"
 		score = 75
@@ -225808,8 +226023,8 @@ rule SEKOIA_Tool_Impersonate_Strings : FILE
 		date = "2024-07-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_impersonate_strings.yar#L3-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_impersonate_strings.yar#L3-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "63c46a2d97d0a8360351b8906665186c5ad2dcaa6f2edba6da7bf4de2ce00241"
 		score = 75
 		quality = 80
@@ -225840,8 +226055,8 @@ rule SEKOIA_Downloader_Mac_Rustbucket : FILE
 		date = "2023-04-24"
 		modified = "2024-12-19"
 		reference = "https://www.jamf.com/blog/bluenoroff-apt-targets-macos-rustbucket-malware/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_mac_rustbucket.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_mac_rustbucket.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "38106b043ede31a66596299f17254d3f23cbe1f983674bf9ead5006e0f0bf880"
 		hash = "bea33fb3205319868784c028418411ee796d6ee3dfe9309f143e7e8106116a49"
 		hash = "7981ebf35b5eff8be2f3849c8f3085b9cec10d9759ff4d3afd46990520de0407"
@@ -225877,8 +226092,8 @@ rule SEKOIA_Crime_Sload_Zip_Archives : FILE
 		date = "2022-08-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_zip_archives.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_zip_archives.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f2bc6464de008f2ce40acabd87ebbd91659d317f57e223118937ba51f70d0f7f"
 		score = 75
 		quality = 80
@@ -225903,8 +226118,8 @@ rule SEKOIA_Apt_Badmagic_Commonmagic_Screenshot_Module : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_commonmagic_screenshot_module.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_commonmagic_screenshot_module.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "caab57534a00620974f7d49c7b38a3f191aca596b69b3e4c499e3099023c2f9c"
 		score = 75
 		quality = 80
@@ -225929,8 +226144,8 @@ rule SEKOIA_Infostealer_Win_Cinoshistealer : FILE
 		date = "2023-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_cinoshistealer.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_cinoshistealer.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c4d8418a7bd1bf205295100d993562c89b17b80889cad5aac7a74f89e66543ce"
 		score = 75
 		quality = 80
@@ -225966,8 +226181,8 @@ rule SEKOIA_Infostealer_Win_Ducklogs : FILE
 		date = "2022-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_ducklogs.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_ducklogs.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5db1a5595ec41488da620606bbcb36d0d686f9d6b7a0479439c53625df0886a0"
 		score = 75
 		quality = 80
@@ -226004,8 +226219,8 @@ rule SEKOIA_Koiloader_Lnk : FILE
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/koiloader_lnk.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/koiloader_lnk.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "49953c76796f671ed80afa21872aac500d706f2af4426a5ec2854e16b9d0e474"
 		score = 75
 		quality = 80
@@ -226031,8 +226246,8 @@ rule SEKOIA_Tool_Dogtunnel_Strings : FILE
 		date = "2024-03-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_dogtunnel_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_dogtunnel_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "04e7141e67ba841b0955b9e36c43be1f5b22e635b96d58b8b1b52fd507ddd929"
 		score = 75
 		quality = 80
@@ -226059,8 +226274,8 @@ rule SEKOIA_Apt_Reaper_Malicious_Lnk : FILE
 		date = "2023-09-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_reaper_malicious_lnk.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_reaper_malicious_lnk.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8cec5819dd7b01b3993acae056f5640fa28ffe76b05d2d9e59779a73eb00bd6e"
 		score = 75
 		quality = 80
@@ -226084,8 +226299,8 @@ rule SEKOIA_Apt_Kimsuky_Sharpext_Devps1_Strings : FILE
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharpext_devps1_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharpext_devps1_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "32e96440838bf63679b2a05ce4e6c226bed515ceb5180e3cf079206e21a0c0c5"
 		score = 75
 		quality = 55
@@ -226111,8 +226326,8 @@ rule SEKOIA_Apt_Sofacy_Graphitemalware_Generic : FILE
 		date = "2022-09-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sofacy_graphitemalware_generic.yar#L3-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sofacy_graphitemalware_generic.yar#L3-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f4c994c36768bae6d6e3b5aeefb634e485ab7b483a693781f29d5ff44c71996f"
 		score = 75
 		quality = 80
@@ -226141,8 +226356,8 @@ rule SEKOIA_Infostealer_Win_Nemesis_In_Memory : FILE
 		date = "2023-03-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_nemesis_in_memory.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_nemesis_in_memory.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "65d2dd9a10238e6d65d8992aa9cc145f73bcba9be49ed552f8b0c44723ec4c87"
 		score = 75
 		quality = 80
@@ -226177,8 +226392,8 @@ rule SEKOIA_Apt_Kimsuky_Powershell : FILE
 		date = "2024-09-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_powershell.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_powershell.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "6babb53d881448dc58dd7c32fcd4208a"
 		hash = "29ec7a4495ea512d44d33c9847893200"
 		hash = "fde68771cebd7ecd81721b0dff5b7869"
@@ -226207,8 +226422,8 @@ rule SEKOIA_Weevely_Webshell_Payload : FILE
 		date = "2024-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/weevely_webshell_payload.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/weevely_webshell_payload.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bb02ec519d77526cc81ebd7743336b333b9498f79079f7008970cf1bb51c4948"
 		score = 75
 		quality = 80
@@ -226233,8 +226448,8 @@ rule SEKOIA_Apt_Oilrig_Odagent_Strings : FILE
 		date = "2023-12-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_odagent_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_odagent_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "14a1399ff3519632e3bbb6eea0d44e9908cfc03728bd26f610ab75fff6a8d2c6"
 		score = 75
 		quality = 80
@@ -226261,8 +226476,8 @@ rule SEKOIA_Apt_Apt28_Htmlsmuggling_Disclosing_Ip : FILE
 		date = "2023-09-11"
 		modified = "2024-12-19"
 		reference = "https://www.zscaler.com/blogs/security-research/steal-it-campaign"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_htmlsmuggling_disclosing_ip.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_htmlsmuggling_disclosing_ip.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "047d2d5f8d04576b6d57bc599f82406804845a3acb7628e7ad9b56e71e4dfe92"
 		score = 75
 		quality = 80
@@ -226287,8 +226502,8 @@ rule SEKOIA_Loader_Win_Operationmagalenha_Vbs
 		date = "2023-05-31"
 		modified = "2024-12-19"
 		reference = "https://www.sentinelone.com/labs/operation-magalenha-long-running-campaign-pursues-portuguese-credentials-and-pii/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_operationmagalenha_vbs.yar#L1-L39"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_operationmagalenha_vbs.yar#L1-L39"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bb1c48ea6a4d9f0bc04df558837f2d448b38eac920cb4030e01b915a4e442708"
 		score = 75
 		quality = 78
@@ -226333,8 +226548,8 @@ rule SEKOIA_Exploit_Linux_Eop_Dirtyc0W_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_dirtyc0w_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_dirtyc0w_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "70f0dda642e7892e35c1afabb4fa6a9fe62ad82d5aa2d90787e83809bc6f5859"
 		score = 75
 		quality = 80
@@ -226359,8 +226574,8 @@ rule SEKOIA_Apt_Emissarypanda_Web_Auto_Attack_Tool : FILE
 		date = "2022-08-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_emissarypanda_web_auto_attack_tool.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_emissarypanda_web_auto_attack_tool.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bc55758367ba0a6b5cf963bcb51b7770b2c7b1cf43b0b79e663b4110f6a7bba8"
 		score = 75
 		quality = 80
@@ -226389,8 +226604,8 @@ rule SEKOIA_Malware_Valleyrat_Strings_Config : FILE
 		date = "2024-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_valleyrat_strings_config.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_valleyrat_strings_config.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b1887a48e59ac7b1b1742854d2a228af"
 		hash = "f6c69e83ce61aacacfbc410345008268"
 		hash = "63ad42e03aca6ce447fb447e21aeb385"
@@ -226424,8 +226639,8 @@ rule SEKOIA_Backdoor_Win_Sidewinder_Cobaltstrike_2022_09
 		date = "2022-10-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_sidewinder_cobaltstrike_2022_09.yar#L4-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_sidewinder_cobaltstrike_2022_09.yar#L4-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f2b719170783c1bfaa4c4772e5cff73797be3056204566844c236d1857869e4c"
 		score = 75
 		quality = 80
@@ -226448,8 +226663,8 @@ rule SEKOIA_Tool_Juicypotato_Exploit_Strings : FILE
 		date = "2022-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_juicypotato_exploit_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_juicypotato_exploit_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ef23ea2931a1b6e094c0d7bb813305c09a2214ce36680ae057926dfdc1105c80"
 		score = 75
 		quality = 80
@@ -226480,8 +226695,8 @@ rule SEKOIA_Apt_Kimsuky_Powershell_Dropper_Strings : FILE
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_powershell_dropper_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_powershell_dropper_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e98f23ddf02049126786e9300e7b6661b2a74817b36e2f3a661b07b24ef4402d"
 		score = 75
 		quality = 80
@@ -226507,8 +226722,8 @@ rule SEKOIA_Apt_Apt_K_47_Walkershell : FILE
 		date = "2024-02-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt_k_47_walkershell.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt_k_47_walkershell.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0dffd8e4d6c244a4faea0f8b8cda1e544a732ad9982e7963b21d5f71080f8f5d"
 		score = 75
 		quality = 80
@@ -226537,8 +226752,8 @@ rule SEKOIA_Implant_Win_Apt29_2022_10
 		date = "2023-02-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_apt29_2022_10.yar#L4-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_apt29_2022_10.yar#L4-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1cffaf3be725d1514c87c328ca578d5df1a86ea3b488e9586f9db89d992da5c4"
 		hash = "381a3c6c7e119f58dfde6f03a9890353a20badfa1bfa7c38ede62c6b0692103c"
 		logic_hash = "b9300c2f06b54b16e1cab579d686d986caacf3b6eccec3a4e62d58e94b50bfb4"
@@ -226560,8 +226775,8 @@ rule SEKOIA_Apt_Muddywater_Powershell_Reverse_Secure_Proxy
 		date = "2023-11-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_powershell_reverse_secure_proxy.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_powershell_reverse_secure_proxy.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6507bc030d60af5559492bbb02bc619646306ab06c9bd9d3f78ae6ce55307bda"
 		score = 75
 		quality = 80
@@ -226586,8 +226801,8 @@ rule SEKOIA_Trojan_Win_Grandoreiro : FILE
 		date = "2022-08-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_win_grandoreiro.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_win_grandoreiro.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7424478b0cdfe922c2f98bf42e505f22fb0700cfeb54912630ce404c59b05c5e"
 		score = 75
 		quality = 80
@@ -226620,8 +226835,8 @@ rule SEKOIA_Wiper_Win_Ruransom : FILE
 		date = "2022-11-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_win_ruransom.yar#L4-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_win_ruransom.yar#L4-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e16cfe7a273bfa01e2ae56174e6ea10a84d42542a62dda5e7b095a0c30082a31"
 		score = 75
 		quality = 80
@@ -226646,8 +226861,8 @@ rule SEKOIA_Apt_Luckymouse_Rshell_Strings : FILE
 		date = "2022-08-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_luckymouse_rshell_strings.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_luckymouse_rshell_strings.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ffca47856d4c4d83312220cff23c0a556be0e675d59ac009c2f74fc0e39cb816"
 		score = 75
 		quality = 80
@@ -226679,8 +226894,8 @@ rule SEKOIA_Apt_Apt37_Chinotto_Powershell_Variant
 		date = "2023-03-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt37_chinotto_powershell_variant.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt37_chinotto_powershell_variant.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b4d17467f15d52bd615e335fa8bc31381ec273b67dabb74655f47179f04f631f"
 		score = 75
 		quality = 80
@@ -226708,8 +226923,8 @@ rule SEKOIA_Backdoor_Mul_Sparkrat : FILE
 		date = "2023-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/XZB-1248/Spark"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_mul_sparkrat.yar#L1-L59"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_mul_sparkrat.yar#L1-L59"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "377fc647e9a7ee6d5ad69370d5a2264302215401417951432f904c25e26169b9"
 		score = 75
 		quality = 55
@@ -226774,8 +226989,8 @@ rule SEKOIA_Miner_Lin_Xmrig_Strings : FILE
 		date = "2022-09-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/miner_lin_xmrig_strings.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/miner_lin_xmrig_strings.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4946e5099d7d342c8cf6644146ffec8506e786a1d4de0b05ef039bcf2b0fdad2"
 		score = 75
 		quality = 80
@@ -226817,8 +227032,8 @@ rule SEKOIA_Apt_Uac0154_Malicious_Html_Smuggling : FILE
 		date = "2023-10-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uac0154_malicious_html_smuggling.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uac0154_malicious_html_smuggling.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ba37b076ac29edcb9af7792420b527b0d64e7838e0237b39afe98a817eafdf7e"
 		score = 75
 		quality = 80
@@ -226843,8 +227058,8 @@ rule SEKOIA_Apt_Gobrat_2 : FILE
 		date = "2024-09-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gobrat_2.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gobrat_2.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9f2fdbe2cc39c91b2ac8904fb29a0142bf770859d17590017920203641860a13"
 		score = 75
 		quality = 80
@@ -226868,8 +227083,8 @@ rule SEKOIA_Apt_Apt10_Hui_Loader : FILE
 		date = "2022-07-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt10_hui_loader.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt10_hui_loader.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "33df202599c6bceff2cf76acdc0096f7167acb69c541b3cfe4cdc34edc174005"
 		score = 75
 		quality = 80
@@ -226892,8 +227107,8 @@ rule SEKOIA_Apt_Cloudatlas_Powershower_Clean : FILE
 		date = "2022-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_powershower_clean.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_powershower_clean.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "24ea6ec0cd8dbcebdf7e42dbd48319562d8682fefd5d0d464a3a5c4b90be40f3"
 		score = 75
 		quality = 80
@@ -226921,8 +227136,8 @@ rule SEKOIA_Loader_Win_Svcready_Imports : FILE
 		date = "2022-06-08"
 		modified = "2024-12-19"
 		reference = "https://threatresearch.ext.hp.com/svcready-a-new-loader-reveals-itself/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_svcready_imports.yar#L3-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_svcready_imports.yar#L3-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f210c5363d19dbc822b8476f8ecfd86184af8f1c36819a6c868f171152e7cb74"
 		score = 75
 		quality = 80
@@ -226946,8 +227161,8 @@ rule SEKOIA_Hacktool_Pplblade_Strings : FILE
 		date = "2023-11-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_pplblade_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_pplblade_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e853e109dbf5dfcba465f61cb689f261df5156e98297d3d00f700e20491de66e"
 		score = 75
 		quality = 80
@@ -226972,8 +227187,8 @@ rule SEKOIA_Tool_Enum4Linux_Strings
 		date = "2024-02-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_enum4linux_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_enum4linux_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d3f7ddbdfb679b34777298aec84464d55fac7600b855526a7f13d8c8f17ab888"
 		score = 75
 		quality = 80
@@ -227004,8 +227219,8 @@ rule SEKOIA_Backoor_Win_Gobear
 		date = "2024-02-13"
 		modified = "2024-12-19"
 		reference = "https://medium.com/s2wblog/kimsuky-disguised-as-a-korean-company-signed-with-a-valid-certificate-to-distribute-troll-stealer-cfa5d54314e2"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backoor_win_gobear.yar#L4-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backoor_win_gobear.yar#L4-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8ca2699058ded62cbf4b78040985a4e5ebce0a1ff94034206c81a4c8e91f479b"
 		score = 75
 		quality = 80
@@ -227026,8 +227241,8 @@ rule SEKOIA_Downloader_Win_Fake_Tor_Browser
 		date = "2022-10-05"
 		modified = "2024-12-19"
 		reference = "https://securelist.com/onionpoison-infected-tor-browser-installer-youtube/107627/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_fake_tor_browser.yar#L4-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_fake_tor_browser.yar#L4-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5fe60673e54a6904f4fd068b04b950b895b18e7766d2e7343eae2b1bba9591f9"
 		score = 75
 		quality = 80
@@ -227047,8 +227262,8 @@ rule SEKOIA_Tool_Win_Driverjack : FILE
 		date = "2024-09-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/klezVirus/DriverJack/blob/master/DriverJack"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_driverjack.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_driverjack.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "649fc12915bdcdebbc3798a8ad0b9b32"
 		logic_hash = "0ea81c32b75ff66434f0c949be7d1478ce9268eb1b67dc5b7d6c7604cedcd72c"
 		score = 75
@@ -227076,8 +227291,8 @@ rule SEKOIA_Apt_Kimsuky_Sharpext_Devtoolmodule_Strings : FILE
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharpext_devtoolmodule_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharpext_devtoolmodule_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "61007801d28636c6d88b14225f34910d03e82337520257637a5017d58600b2bc"
 		score = 75
 		quality = 80
@@ -227102,8 +227317,8 @@ rule SEKOIA_Apt_Badmagic_Commonmagic_Generic_1 : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_commonmagic_generic_1.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_commonmagic_generic_1.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "513226d050945af1a8bbc51f9a48936c815bfc6cd43b0766e34ac000d3c90625"
 		score = 75
 		quality = 80
@@ -227129,8 +227344,8 @@ rule SEKOIA_Loader_Win_Piccassoloader : CVE_2023_38831
 		date = "2023-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_piccassoloader.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_piccassoloader.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "93e598f6c70dcb1ddf20ea926af72241e135bdf910f3721a7a0c3036f6a3d1b9"
 		score = 75
 		quality = 76
@@ -227154,8 +227369,8 @@ rule SEKOIA_Hacktool_Mimikatz_Obfuscated : FILE
 		date = "2022-07-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_mimikatz_obfuscated.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_mimikatz_obfuscated.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9f75e10122df0f57382e939d82b0ab4047d3d42f198c59faa22177d6d5d9afd7"
 		score = 75
 		quality = 80
@@ -227187,8 +227402,8 @@ rule SEKOIA_Tool_Rubeus_Strings : FILE
 		date = "2024-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_rubeus_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_rubeus_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "adc6a5207bb15c8020ca170564ea9066b2c0b0e09839d6838744c623f59153cf"
 		score = 75
 		quality = 80
@@ -227218,8 +227433,8 @@ rule SEKOIA_Backdoor_Powershellempire_Csharp : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_powershellempire_csharp.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_powershellempire_csharp.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "536ef1167627c3dadb866d55e7eae2220c3fbd6961e2cfa71656656d984b9b90"
 		score = 75
 		quality = 80
@@ -227250,8 +227465,8 @@ rule SEKOIA_Stealer_Win_Demotryspy : FILE
 		date = "2024-02-09"
 		modified = "2024-12-19"
 		reference = "https://paper.seebug.org/3115/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/stealer_win_demotryspy.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/stealer_win_demotryspy.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b7a910e4d394d2122e6b4fe76daa6691a642396e27f7a47d09232f4b7eb424ee"
 		score = 75
 		quality = 80
@@ -227280,8 +227495,8 @@ rule SEKOIA_Tool_Soaphound_Strings : FILE
 		date = "2024-11-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_soaphound_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_soaphound_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b2a953590d75213388473fb51e6b5f2f"
 		logic_hash = "14ff92230d0999a39a6e1042f5c42b5ae275d90ece3d74727e5da44c569a93eb"
 		score = 75
@@ -227308,8 +227523,8 @@ rule SEKOIA_Tool_Win_Snap2Html : FILE
 		date = "2024-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_snap2html.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_snap2html.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8805a80193ba1323dffd68456833f27cc93f2182660a5047dbe69e8ed65ac184"
 		score = 75
 		quality = 80
@@ -227343,8 +227558,8 @@ rule SEKOIA_Bot_Lin_Lucifer_Strings : FILE
 		date = "2024-09-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_lin_lucifer_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_lin_lucifer_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "23276c627d27f36c1ec15b1779835b921652a8fcff898041f1920902262faf41"
 		score = 75
 		quality = 80
@@ -227372,8 +227587,8 @@ rule SEKOIA_Hacktool_Impacket_Compiled_Binary : FILE
 		date = "2022-02-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_impacket_compiled_binary.yar#L1-L36"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_impacket_compiled_binary.yar#L1-L36"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "133f9d0103774701894ea884bc2c52840b405fa21acb9ebab615816ec411b0bf"
 		score = 75
 		quality = 80
@@ -227415,8 +227630,8 @@ rule SEKOIA_Rat_Win_Atharvan
 		date = "2023-02-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_atharvan.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_atharvan.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fee9a5a684b3e9bd629a0e87bdf63ba0c1fc1e970ca3b7fec8d7a4f2f60a355a"
 		score = 75
 		quality = 78
@@ -227439,8 +227654,8 @@ rule SEKOIA_Tool_Bypassgodzilla : FILE
 		date = "2024-09-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_bypassgodzilla.yar#L1-L38"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_bypassgodzilla.yar#L1-L38"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "571c9042c627abba19ba1d591e2083eb"
 		hash = "56cfc5a876f8f55bf184be9f368b6d8a"
 		hash = "d4f7ca537701aee8849c474bc4df19d1"
@@ -227478,8 +227693,8 @@ rule SEKOIA_Luckymouse_Sysupdate_Payload : FILE
 		date = "2022-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/luckymouse_sysupdate_payload.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/luckymouse_sysupdate_payload.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e8501a50c65330153e613ae5bd6bbfbe4372d85175c3ed81d202ec5f177a94be"
 		score = 75
 		quality = 80
@@ -227502,8 +227717,8 @@ rule SEKOIA_Apt_Polonium_Technocreep_Strings : FILE
 		date = "2022-10-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_polonium_technocreep_strings.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_polonium_technocreep_strings.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6fbd14d39f215b835c0fe7709041ca982774be42d389397d19a41fda6f7a00d1"
 		score = 75
 		quality = 80
@@ -227536,8 +227751,8 @@ rule SEKOIA_Ransomware_Win_Avoslocker : FILE
 		date = "2021-08-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_avoslocker.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_avoslocker.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f810deb1ba171cea5b595c6d3f816127fb182833f7a08a98de93226d4f6a336f"
 		hash = "c0a42741eef72991d9d0ee8b6c0531fc19151457a8b59bdcf7b6373d1fe56e02"
 		hash = "84d94c032543e8797a514323b0b8fd8bd69b4183f17351628b13d1464093af2d"
@@ -227566,8 +227781,8 @@ rule SEKOIA_Unk_Quad7_Fsynet_Strings : FILE
 		date = "2024-08-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/unk_quad7_fsynet_strings.yar#L1-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/unk_quad7_fsynet_strings.yar#L1-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f42849076e24b7827218f7a25bc11ccc"
 		hash = "b3b09819f820a4ecd31f82f369000af2"
 		hash = "92093dd7ba6ae8fe34a215c4c4bd1cd4"
@@ -227606,8 +227821,8 @@ rule SEKOIA_Apt_Cerana_Keeper_Yk0130 : FILE
 		date = "2024-10-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cerana_keeper_yk0130.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cerana_keeper_yk0130.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2554e4864294dc96a5b4548dd42c7189"
 		logic_hash = "4462c6b7f46520207f49275292a3be873540becb593176d771d3489fba6f4cb0"
 		score = 75
@@ -227631,8 +227846,8 @@ rule SEKOIA_Malware_Valleyrat_Downloader_Strings : FILE
 		date = "2024-06-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_valleyrat_downloader_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_valleyrat_downloader_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "321683ac5bdec626cf140cb50507fb03aea2a32635eb6cec884a3fa43c1a9d91"
 		score = 75
 		quality = 80
@@ -227658,8 +227873,8 @@ rule SEKOIA_Tinyfluff_Nodejs : FILE
 		date = "2022-04-20"
 		modified = "2024-12-19"
 		reference = "https://blog.group-ib.com/oldgremlin_comeback"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tinyfluff_nodejs.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tinyfluff_nodejs.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "bd0a6a3628f268a37ac9d708d03f57feef5ed55e"
 		hash = "bd0a6a3628f268a37ac9d708d03f57feef5ed55e"
 		logic_hash = "7fa07b6ea32b914887bdcada0f9fda086bc29a44bfdf27e7433ef589192f4b82"
@@ -227686,8 +227901,8 @@ rule SEKOIA_In2Al5D_P3In4Er_Loader : FILE
 		date = "2023-04-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/in2al5d_p3in4er_loader.yar#L3-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/in2al5d_p3in4er_loader.yar#L3-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fb7dadcd1e87c15cacfc046e76648b1fa29f1bce44fa0314b84746ca57eebaed"
 		score = 75
 		quality = 80
@@ -227710,8 +227925,8 @@ rule SEKOIA_Apt_Granitetyphoon_Sword2023_Strings : FILE
 		date = "2023-05-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_granitetyphoon_sword2023_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_granitetyphoon_sword2023_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8644547f093295eeac30c9040796329a3e2222c06a942d14899545726c8bed78"
 		score = 75
 		quality = 80
@@ -227738,8 +227953,8 @@ rule SEKOIA_Apt_Aptk47_Maliciouslnk : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_aptk47_maliciouslnk.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_aptk47_maliciouslnk.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "6a405d4e88b4acb9706e19a83aad9cf6"
 		logic_hash = "865bb08f57affb3795853aa3c9f49577efb74df9b32e7760263b9fb08246a3ab"
 		score = 75
@@ -227765,8 +227980,8 @@ rule SEKOIA_Hacktool_Stowaway_Strings : FILE
 		date = "2023-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_stowaway_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_stowaway_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "10d28637e47d43497923a192c9e3a8bb35b480a314c71132866bdf0e49c2c460"
 		score = 75
 		quality = 80
@@ -227798,8 +228013,8 @@ rule SEKOIA_Apt_Susp_Lazarus_Dangerous_Password : FILE
 		date = "2023-09-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_susp_lazarus_dangerous_password.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_susp_lazarus_dangerous_password.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2b159266bd6bba20ffaa627dac840840eaaad98e7962f48bbae428e687155b3d"
 		score = 65
 		quality = 80
@@ -227823,8 +228038,8 @@ rule SEKOIA_Loader_Win_Batloader_Scripts : FILE
 		date = "2022-11-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_batloader_scripts.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_batloader_scripts.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "aab6c7780bbc7bed8994b4e70129107bb7b719642fae92b1d3f9146eb11efabc"
 		score = 75
 		quality = 80
@@ -227861,8 +228076,8 @@ rule SEKOIA_Apt_Ta410_Flowcloud_Loader : FILE
 		date = "2024-05-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_ta410_flowcloud_loader.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_ta410_flowcloud_loader.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "450cfdfbd9a42b623fc1acb55f3ea309ae54282b480edcb9495f4d45874d3922"
 		score = 75
 		quality = 80
@@ -227892,8 +228107,8 @@ rule SEKOIA_Apt_Unk_Dex_China_Freedom_Trap_Spyware : FILE
 		date = "2022-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unk_dex_china_freedom_trap_spyware.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unk_dex_china_freedom_trap_spyware.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "ceb70fce74898ea64ded6880a978441c"
 		logic_hash = "f85f78a1a58fa8b2698637f8c540877ea1c5141ff7f74e8c2f2755f5aba5a599"
 		score = 75
@@ -227930,8 +228145,8 @@ rule SEKOIA_Implant_Lin_Lightning : FILE
 		date = "2022-07-21"
 		modified = "2024-12-19"
 		reference = "https://www.intezer.com/blog/research/lightning-framework-new-linux-threat/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_lin_lightning.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_lin_lightning.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "215eea8275fa69a901f6413b334d2824086098e9a9bb2cffd7cb9df5c869be4c"
 		score = 75
 		quality = 80
@@ -227965,8 +228180,8 @@ rule SEKOIA_Implant_Win_Incontroller : FILE
 		date = "2022-04-14"
 		modified = "2024-12-19"
 		reference = "https://www.mandiant.com/resources/incontroller-state-sponsored-ics-tool"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_incontroller.yar#L4-L49"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_incontroller.yar#L4-L49"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "69296ca3575d9bc04ce0250d734d1a83c1348f5b6da756944933af0578bd41d2"
 		logic_hash = "988e3004169817758a38dc7cd621ed351dac4de41e6dad03ab1cdfc07b8a6cac"
 		score = 75
@@ -228001,8 +228216,8 @@ rule SEKOIA_Apt_Gamaredon_Htmlsmuggling_Attachment_Stage2 : FILE
 		date = "2023-01-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_htmlsmuggling_attachment_stage2.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_htmlsmuggling_attachment_stage2.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "42e637f628db6719342ae104c6c89bb80609c5f3f5c2586daccb31f7d688a2a1"
 		score = 75
 		quality = 80
@@ -228029,8 +228244,8 @@ rule SEKOIA_Infostealer_Win_Pennywise_Mar23 : FILE
 		date = "2023-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_pennywise_mar23.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_pennywise_mar23.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "55d7d6894de23af38230eaaff0a38c31d11d3df34aacd21fd93393d266c9357c"
 		score = 75
 		quality = 80
@@ -228063,8 +228278,8 @@ rule SEKOIA_Malware_Httpshell_Strings : FILE
 		date = "2024-01-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/malware_httpshell_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/malware_httpshell_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8f6f6ad459cc6edd80432528a507ca2cb84e6859be94f2e1caaea801bf809375"
 		score = 75
 		quality = 80
@@ -228093,8 +228308,8 @@ rule SEKOIA_Apt_Spikedwine_Wineloader : FILE
 		date = "2024-02-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_spikedwine_wineloader.yar#L3-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_spikedwine_wineloader.yar#L3-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c71d7ef8cb89d8fcd42e3178a729d912d5fe8e9eb396e46d7a0f5176a9398d75"
 		score = 75
 		quality = 80
@@ -228122,8 +228337,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_10 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_10.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_10.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6ded3f5b7e9c7f2c09e3bc0869e41775e4bb31a39e6fef8209f50f5091e8d2e2"
 		score = 75
 		quality = 80
@@ -228149,8 +228364,8 @@ rule SEKOIA_Backdoor_Win_Nukesped_Andariel
 		date = "2023-11-27"
 		modified = "2024-12-19"
 		reference = "https://asec.ahnlab.com/en/59073/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_nukesped_andariel.yar#L4-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_nukesped_andariel.yar#L4-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d6421f3d0a3059e4104cfdceebb237269592f8ace7cc8d5bd613d239e4c010f4"
 		score = 75
 		quality = 80
@@ -228170,8 +228385,8 @@ rule SEKOIA_Strongpity_Malware : FILE
 		date = "2024-02-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/strongpity_malware.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/strongpity_malware.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "14be5eccb4e754d6dad69cda51a924241cc75f5d758bc2d746acfe41e1684b3a"
 		score = 75
 		quality = 80
@@ -228196,8 +228411,8 @@ rule SEKOIA_Apt_Darkpink_Sample : FILE
 		date = "2023-06-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_darkpink_sample.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_darkpink_sample.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8dc3f6179120f03fd6cb2299dbc94425451d84d6852b801a313a39e9df5d9b1a"
 		logic_hash = "c9d3952036bffe2d924ea553fd53f8b6f0b3f16f1060fbde69496c800d4d5ad9"
 		score = 75
@@ -228222,8 +228437,8 @@ rule SEKOIA_Apt_Apt28_Wayzgoose_Exploit_String : FILE
 		date = "2024-04-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_wayzgoose_exploit_string.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_wayzgoose_exploit_string.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "804de275f7e8c43fe5690c0bd9338b134c0c47f845f1c3b3a747c3765815084c"
 		score = 75
 		quality = 80
@@ -228250,8 +228465,8 @@ rule SEKOIA_Rat_Win_Tutclient : FILE
 		date = "2024-02-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/AdvancedHacker101/C-Sharp-R.A.T-Client"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_tutclient.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_tutclient.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f780948ab03dd0cd64d023367186a88c9eaa566170142e34aaa08788d9a684eb"
 		score = 75
 		quality = 80
@@ -228279,8 +228494,8 @@ rule SEKOIA_Emmenhtal_Strings_Hta_Exe : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/emmenhtal_strings_hta_exe.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/emmenhtal_strings_hta_exe.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e86a22f1c73b85678e64341427c7193ba65903f3c0f29af2e65d7c56d833d912"
 		logic_hash = "93f85a4ccb58c6aeb664c4c843ff80a4ab7b4308a944537f7ebe087515a61659"
 		score = 75
@@ -228308,8 +228523,8 @@ rule SEKOIA_Zip_Win_Abcloader
 		date = "2024-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/zip_win_abcloader.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/zip_win_abcloader.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0c7d8e611781b29e15df415640858294"
 		logic_hash = "024d068a86432f35b0f7af0c4cdccb37d0979d01e90f7c9d1ae8a2dddfa3bfc8"
 		score = 75
@@ -228334,8 +228549,8 @@ rule SEKOIA_Apt_Uta0178_Javascript_Inclusion_Strings
 		date = "2024-01-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_uta0178_javascript_inclusion_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_uta0178_javascript_inclusion_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d3fedf49417178df374d6ae20e57ffcfa00cb68a647769964c049d9a8e0f4958"
 		score = 75
 		quality = 80
@@ -228362,8 +228577,8 @@ rule SEKOIA_Rat_Win_Asyncrat : FILE
 		date = "2023-01-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_asyncrat.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_asyncrat.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5e35b034ba1761fae780429be377b70ae8ce62273670042ff067c38ed8bb5a9e"
 		score = 75
 		quality = 80
@@ -228397,8 +228612,8 @@ rule SEKOIA_Apt_Andariel_Nestdoor_Variants_Strings : FILE
 		date = "2024-06-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_andariel_nestdoor_variants_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_andariel_nestdoor_variants_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bc01138d1fc079c2b778175742e121f10cb47f29cc4eb04d38b4f0f5740f05a4"
 		score = 75
 		quality = 80
@@ -228427,8 +228642,8 @@ rule SEKOIA_Ransomware_Win_Blackmatter
 		date = "2021-08-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_blackmatter.yar#L4-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_blackmatter.yar#L4-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5a407a9901314211e13bef30254f1d129cf3c731ea970abff8602f1ae40177cb"
 		score = 75
 		quality = 80
@@ -228448,8 +228663,8 @@ rule SEKOIA_Tool_Ehole : FILE
 		date = "2023-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_ehole.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_ehole.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "df937417b2f8e12f80fbe2edaa0863de6ed7862c117dff2a21255cb7d1d9ad3d"
 		score = 75
 		quality = 80
@@ -228477,8 +228692,8 @@ rule SEKOIA_Bot_Lin_Zerobot_Dec22 : FILE
 		date = "2022-08-05"
 		modified = "2024-12-19"
 		reference = "https://www.fortinet.com/blog/threat-research/zerobot-new-go-based-botnet-campaign-targets-multiple-vulnerabilities"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_lin_zerobot_dec22.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_lin_zerobot_dec22.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0f4faba9873fa360615b20bc637ecb40f56e6c7f65153f61a762e378320f94c1"
 		score = 75
 		quality = 80
@@ -228515,8 +228730,8 @@ rule SEKOIA_Apt_Mustangpanda_Tinynote : FILE
 		date = "2023-06-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_tinynote.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_tinynote.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "20723b449d057ddf09fa34aa7511275939f98c6c84593af64d99f980c679b2c1"
 		score = 75
 		quality = 80
@@ -228543,8 +228758,8 @@ rule SEKOIA_Downloader_Win_Search : FILE
 		date = "2024-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_win_search.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_win_search.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "a29fa85ecfc0e5554c21f3b9db185de97b3504517403f4aa102adbd2c46dc1bf"
 		hash = "f83e2b3be2e6db20806a4b9b216edc7508fa81ce60bf59436d53d3ae435b6060"
 		logic_hash = "1b25f04d1d2c9b7bdc7e0bd17d2f2876c27f9c4acb3a2afca6a4df531e769740"
@@ -228569,8 +228784,8 @@ rule SEKOIA_Apt_Granitetyphoon_Pingpulllinux_Strings : FILE
 		date = "2023-05-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_granitetyphoon_pingpulllinux_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_granitetyphoon_pingpulllinux_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "89c89bb24d1996c04fba0e6ebfd2aaf1544d8a9e6333b896c1855747fb979308"
 		score = 75
 		quality = 80
@@ -228601,8 +228816,8 @@ rule SEKOIA_Apt_Gamaredon_Stealer_Obfuscation_2 : FILE
 		date = "2022-02-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_stealer_obfuscation_2.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_stealer_obfuscation_2.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6ffd8504ba8ca614d3941bd46b944d85e0ad4b9d8d2960d508f50550497d2852"
 		score = 75
 		quality = 80
@@ -228625,8 +228840,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_2 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_2.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_2.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c26779cd35d6430da3629df8b310356d663c05e82db0aca0fc974bc3a298c92e"
 		score = 75
 		quality = 80
@@ -228651,8 +228866,8 @@ rule SEKOIA_Crime_Sload_Vbs_Downloader_Strings_1 : FILE
 		date = "2022-08-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/crime_sload_vbs_downloader_strings_1.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_vbs_downloader_strings_1.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "06e4fcb6c48078c6c44d779820fc901b0f335b9495097ed28206826a959d0712"
 		score = 75
 		quality = 80
@@ -228677,8 +228892,8 @@ rule SEKOIA_Apt_Sidecopy_Actionrat_Packer_Strings : FILE
 		date = "2023-05-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sidecopy_actionrat_packer_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sidecopy_actionrat_packer_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1bb6896ac3efa0e43cc27f56d7324ab9bdd2c401941eeefc4e7be62b407657af"
 		score = 75
 		quality = 80
@@ -228703,8 +228918,8 @@ rule SEKOIA_Apt_Aptc36_Vbs_Maldoc : FILE
 		date = "2022-02-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_aptc36_vbs_maldoc.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_aptc36_vbs_maldoc.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cf448731378e97d740d42aa19d1bb81330c3998f07e94ce57bd8d82fc39c6428"
 		score = 75
 		quality = 51
@@ -228732,8 +228947,8 @@ rule SEKOIA_Apt_Lazarus_Dll_C2_Comms : FILE
 		date = "2023-04-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_dll_c2_comms.yar#L1-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_dll_c2_comms.yar#L1-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "fe948451df90df80c8028b969bf89ecbf501401e7879805667c134080976ce2e"
 		hash = "bb1066c1ca53139dc5a2c1743339f4e6360d6fe4f2f3261d24fc28a12f3e2ab9"
 		hash = "dca33d6dacac0859ec2f3104485720fe2451e21eb06e676f4860ecc73a41e6f9"
@@ -228765,8 +228980,8 @@ rule SEKOIA_Rat_Win_Xworm_V3 : FILE
 		date = "2023-03-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_xworm_v3.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_xworm_v3.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0016647c3c7031e744c0af6f9eadb73ab5cab1ca4f8ce7633f4aa069b62755cd"
 		hash = "07e747a9313732d2dcf7609b6a09ac58d38f5643299440b827ec55f260e33c12"
 		hash = "de0127ba872c0677c3594c66b2298edea58d097b5fa697302a16b1689147b147"
@@ -228804,8 +229019,8 @@ rule SEKOIA_Apt_Polonium_Deepcreep_Strings : FILE
 		date = "2022-10-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_polonium_deepcreep_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_polonium_deepcreep_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "60724d2eb964e2c3681b72bdb732ca640b603af7dc94b4eb6608c77cddb94011"
 		score = 75
 		quality = 80
@@ -228831,8 +229046,8 @@ rule SEKOIA_Ransomware_Win_Agenda : FILE
 		date = "2022-12-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_agenda.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_agenda.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7e315f639c4d785639bf7ed3bd805551366b4da10a664a42bf801c54c6f7bd2d"
 		score = 75
 		quality = 80
@@ -228866,8 +229081,8 @@ rule SEKOIA_Apt_Implant_Xdealer_Stealer_Strings : FILE
 		date = "2024-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_implant_xdealer_stealer_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_implant_xdealer_stealer_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "79ba2fd14cd2eb73848026f79ce6115df813e0fda3a071ab26659874e04e2201"
 		score = 75
 		quality = 80
@@ -228893,8 +229108,8 @@ rule SEKOIA_Radx_Stealer : FILE
 		date = "2023-12-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/radx_stealer.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/radx_stealer.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b83ca089bb0ea7ad8b0f372de9a95ea9d35514f6a063b63986e6fd25bdc07095"
 		score = 75
 		quality = 80
@@ -228922,8 +229137,8 @@ rule SEKOIA_Wiper_Win_Nominatus_Toxicbattery : FILE
 		date = "2022-11-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_win_nominatus_toxicbattery.yar#L4-L42"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_win_nominatus_toxicbattery.yar#L4-L42"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c226a4c3bcc451482eb782c1cb84f3e956be1e214368d1b315076078d3148955"
 		score = 75
 		quality = 80
@@ -228959,8 +229174,8 @@ rule SEKOIA_Loader_Win_Abcloader : FILE
 		date = "2024-08-19"
 		modified = "2024-12-19"
 		reference = "https://nsfocusglobal.com/new-apt-group-actor240524-a-closer-look-at-its-cyber-tactics-against-azerbaijan-and-israel/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_abcloader.yar#L4-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_abcloader.yar#L4-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0d1dca5eaad49c2dbd979e1bf0b5f8d0"
 		hash = "9a640889e82407b06c546fea15be668f"
 		logic_hash = "64d171d31c2f03ac18dde61d5b57fba91448045404b0ff619fb8cd437a561b1f"
@@ -228986,8 +229201,8 @@ rule SEKOIA_Apt_Sandworm_Orcshred_Apr2022 : FILE
 		date = "2022-04-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_orcshred_apr2022.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_orcshred_apr2022.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "de38cf43fa5cc756c26ae241f2e60636c2aabbe4254fdeca2340c62873498de7"
 		score = 75
 		quality = 80
@@ -229013,8 +229228,8 @@ rule SEKOIA_Tool_Dynamicwrapper_Strings : FILE
 		date = "2023-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_dynamicwrapper_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_dynamicwrapper_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fad5fec74dc3efdd7fc67ef1c6373957df4ee564f3fe6333b924b236ea7458d9"
 		score = 75
 		quality = 80
@@ -229039,8 +229254,8 @@ rule SEKOIA_Vpn_Mul_Softether
 		date = "2024-04-15"
 		modified = "2024-12-19"
 		reference = "https://www.softether.org/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/vpn_mul_softether.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/vpn_mul_softether.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f93e838631518590e518f29557c60a40734da30b62c056f8ebb8febed389551b"
 		score = 75
 		quality = 80
@@ -229075,8 +229290,8 @@ rule SEKOIA_Tool_Sharpsecdump : FILE
 		date = "2023-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_sharpsecdump.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_sharpsecdump.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f183069d843767daa97bc81385e5e1b3a19c556f8171f28f8806aebe7a226176"
 		score = 75
 		quality = 80
@@ -229102,8 +229317,8 @@ rule SEKOIA_Apt_Badmagic_Malicious_Lnk : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_malicious_lnk.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_malicious_lnk.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b83749c71cefb485f8bbea1d465fc477de159e086efa04ebce4d0778a203ed89"
 		score = 75
 		quality = 80
@@ -229128,8 +229343,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_9 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_9.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_9.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "deb0773e6300ed0f4c099359731812216390017eaf8de678b2a5ed237906f03f"
 		score = 75
 		quality = 80
@@ -229154,8 +229369,8 @@ rule SEKOIA_Apt_Apt37_Malicious_Hta_File : FILE
 		date = "2023-03-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt37_malicious_hta_file.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt37_malicious_hta_file.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "85289bea86641ea9c359c361d075783449d453017485170abc87c47872792210"
 		score = 75
 		quality = 80
@@ -229183,8 +229398,8 @@ rule SEKOIA_Backdoor_Win_Warhawk
 		date = "2022-10-24"
 		modified = "2024-12-19"
 		reference = "https://www.zscaler.com/blogs/security-research/warhawk-new-backdoor-arsenal-sidewinder-apt-group-0"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_warhawk.yar#L1-L56"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_warhawk.yar#L1-L56"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7d3574c62df44b74337fc74ec7877792b4ffa1486a49bb19668433c3ca8836b5"
 		hash = "624c6b56ee3865f4a5792ad1946a8e86b876440a5af3bac22ac1dee92f1b7372"
 		hash = "58b3686e4255d32dbcf7dee9dac1d5be6d4692d086cde167da1e1a5e0e1b315a"
@@ -229222,8 +229437,8 @@ rule SEKOIA_Downloader_Mac_Smooth_Operator : FILE
 		date = "2023-07-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/downloader_mac_smooth_operator.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/downloader_mac_smooth_operator.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "031f766d6ab7d94ed7ba4324d4bdfa3fbc11986fba35487a88a1ee3aba090c82"
 		score = 75
 		quality = 80
@@ -229247,8 +229462,8 @@ rule SEKOIA_Apt_Cloudmensis_Spyagent_Strings : FILE
 		date = "2022-07-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudmensis_spyagent_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudmensis_spyagent_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ad858b1b78fb4ac6efee093b11fde14956d63bc6b300ef37bf1f2a3356cf4402"
 		score = 75
 		quality = 80
@@ -229275,8 +229490,8 @@ rule SEKOIA_Apt_Cottonsandstorm_Win_Implant : FILE
 		date = "2024-11-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cottonsandstorm_win_implant.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cottonsandstorm_win_implant.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f797d71ed07d6e05556300e4ce0f2927"
 		logic_hash = "dcb25ee236ca52f23cc6bfdbcedcbc6d407e88f06341e684f202a59954733ade"
 		score = 75
@@ -229307,8 +229522,8 @@ rule SEKOIA_Apt_Cloudatlas_Rtf_Shellcode_Cve_2018_0798 : FILE
 		date = "2022-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_rtf_shellcode_cve_2018_0798.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_rtf_shellcode_cve_2018_0798.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a8c320ca81ef196b84a8fb08d9e02ef8cfb338024fa7e6776ff6c8c049b8e63c"
 		score = 75
 		quality = 80
@@ -229332,8 +229547,8 @@ rule SEKOIA_Loader_Win_Stealthvector : FILE
 		date = "2021-08-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_stealthvector.yar#L4-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_stealthvector.yar#L4-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "166b6dcdac31f4bf51e4b20a7c3f7d4f7017ca0c30fa123d5591e25c3fa66107"
 		hash = "ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf"
 		hash = "0faddbe1713455e3fc9777ec45adf07b28e24f4c3ddca37586c2aa6b539898c0"
@@ -229363,8 +229578,8 @@ rule SEKOIA_Hacktool_Fscan_Strings : FILE
 		date = "2023-12-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_fscan_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_fscan_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b1c88af2f90921fab4ac32ef65e226a652b8df2915abc62de0a28af9ad59811c"
 		score = 75
 		quality = 80
@@ -229394,8 +229609,8 @@ rule SEKOIA_Apt_Apt33_Tickler : FILE
 		date = "2024-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt33_tickler.yar#L4-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt33_tickler.yar#L4-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "8bd712b0a49f4fecd39d30ebd121832c"
 		hash = "3f29429fce0168748d7cc75e1478aedc"
 		logic_hash = "97b858819a1920e6dcdd1a9489754a948de8e6e39b4282e7fe4f6431617a9849"
@@ -229417,8 +229632,8 @@ rule SEKOIA_Loader_Win_Red0044_Powershell_May24 : FILE
 		date = "2024-05-03"
 		modified = "2024-12-19"
 		reference = "https://twitter.com/crep1x/status/1786150734121120075"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_red0044_powershell_may24.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_red0044_powershell_may24.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "73939f65b93b320b9e220ee284ea524864a6b05c7608213009ac5f00b3faeedc"
 		score = 75
 		quality = 80
@@ -229451,8 +229666,8 @@ rule SEKOIA_Apt_Muddywater_Manifestation_Backdoor : FILE
 		date = "2022-01-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_manifestation_backdoor.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_manifestation_backdoor.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "477ed53ccd337dd21ab84b7d36b995a653d0aad6676e02cbe5e9f581bface253"
 		score = 75
 		quality = 80
@@ -229479,8 +229694,8 @@ rule SEKOIA_Platypus_Winlinmac_Strings : FILE
 		date = "2023-12-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/platypus_winlinmac_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/platypus_winlinmac_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3c8e928fb8328381997230d4b60de20d07a9a3aee006aad9fc0b67fcfe61a63b"
 		score = 75
 		quality = 80
@@ -229510,8 +229725,8 @@ rule SEKOIA_Tool_Powershell_Unicorn : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_powershell_unicorn.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_powershell_unicorn.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8be79789cf77d4f304d9fef4ad6a2d2ac7686b015fff3301fb3e369f2f06230a"
 		score = 75
 		quality = 80
@@ -229536,8 +229751,8 @@ rule SEKOIA_Apt_Susp_Apt28_Uac0063_Malicious_Doc_Vba : FILE
 		date = "2024-07-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_susp_apt28_uac0063_malicious_doc_vba.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_susp_apt28_uac0063_malicious_doc_vba.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "fceffb8ae94cef3af21b2943131e94db9e0e67073de48d9d32601a245448d067"
 		logic_hash = "c57676b765364c5c51d2bf231b5fe858129b45ba837ec6554b353177bb16bd8a"
 		score = 65
@@ -229562,8 +229777,8 @@ rule SEKOIA_Trojan_Android_Brata : FILE
 		date = "2022-01-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_android_brata.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_android_brata.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0c94e5e0c01d4fa9bf28603787029938a3159f468dd3876e7d25646e93dd68b8"
 		score = 75
 		quality = 80
@@ -229596,8 +229811,8 @@ rule SEKOIA_Tool_Pivotnacci
 		date = "2024-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_pivotnacci.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_pivotnacci.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b0e4bc997775fb5ff258a23e07a58b4897a2ce9d3fffab86e93919857e566d18"
 		score = 75
 		quality = 80
@@ -229626,8 +229841,8 @@ rule SEKOIA_Trojan_Win_Bbtok_Dll1_Sep23 : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://research.checkpoint.com/2023/behind-the-scenes-of-bbtok-analyzing-a-bankers-server-side-components/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_win_bbtok_dll1_sep23.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_win_bbtok_dll1_sep23.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "5353956345206982af9bde55300fc405ba6e40722e8f51e8717c30ad32bc8f91"
 		logic_hash = "1b1e25f7d760d275d2ef01390c215edb1752ad65383c92a21d71d9e65da3c5f8"
 		score = 75
@@ -229661,8 +229876,8 @@ rule SEKOIA_Hacktool_Lazagne_Strings : FILE
 		date = "2022-02-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_lazagne_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_lazagne_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a6db351fee9a28b1a6d82c2ce063088a1050ee8379cc13ca3cf8cc2038043951"
 		score = 75
 		quality = 80
@@ -229692,8 +229907,8 @@ rule SEKOIA_Icebot_Exported_Function : FILE
 		date = "2022-01-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/icebot_exported_function.yar#L4-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/icebot_exported_function.yar#L4-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "5ee5b869689686d9352c73173304627bb424b8d0a8510e6f16726ac84fdec79d"
 		hash = "0f76768f65775329d7a0ddb977ea822d992d086ce48a23679cef66e3b4d2f4ed"
 		hash = "f06c7f1b91fb2f64e1f38df6eaf2b52a74b16cc958d74c4401fdaf180deb595a"
@@ -229720,8 +229935,8 @@ rule SEKOIA_Rat_Win_Borat : FILE
 		date = "2022-04-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_borat.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_borat.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "53d6d9fe6b3218d97079e624379863d927d0b783b24acbda359b18daafb5162e"
 		score = 75
 		quality = 80
@@ -229755,8 +229970,8 @@ rule SEKOIA_Apt_Nobelium_Nativezone_Gen : FILE
 		date = "2022-02-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_nobelium_nativezone_gen.yar#L3-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_nobelium_nativezone_gen.yar#L3-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "63ad9fc510541f98237fa5b254dc4a147539cbf485b2889d97bf3b619c3db3ae"
 		score = 75
 		quality = 80
@@ -229781,8 +229996,8 @@ rule SEKOIA_Tool_Win_Gosecretsdump : FILE
 		date = "2024-06-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/C-Sto/gosecretsdump/releases"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_gosecretsdump.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_gosecretsdump.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "957b0deae745e4fda5a790acc391cebf9d193efb2a19ad5eb18c54da8c17bcfa"
 		score = 75
 		quality = 80
@@ -229816,8 +230031,8 @@ rule SEKOIA_Apt_Gamaredon_Gamaredon_Lnk_Usb_Spreader_Encoded : FILE
 		date = "2023-06-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_gamaredon_lnk_usb_spreader_encoded.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_gamaredon_lnk_usb_spreader_encoded.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "28358a4a6acdcdfc6d41ea642220ef98c63b9c3ef2268449bb02d2e2e71e7c01"
 		logic_hash = "81ab55330b3003cb698ade7e14eaea5fb03e5d2d3dd310b7db682aeef9b51f6e"
 		score = 75
@@ -229844,8 +230059,8 @@ rule SEKOIA_Apt_Kimsuky_Toddlershark_Obfuscated : FILE
 		date = "2024-03-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_toddlershark_obfuscated.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_toddlershark_obfuscated.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5f067ce32e7fee5cf481d82bb98f4ae10bd7187078bc111b08fc58d043954152"
 		score = 75
 		quality = 80
@@ -229871,8 +230086,8 @@ rule SEKOIA_Apt_Susp_Apt28_Uac0063_Hta_Loader
 		date = "2024-07-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_susp_apt28_uac0063_hta_loader.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_susp_apt28_uac0063_hta_loader.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "332d9db35daa83c5ad226b9bf50e992713bc6a69c9ecd52a1223b81e992bc725"
 		logic_hash = "494331a8088d350e4e49e67fe64041d451886e501775413f908bd9b3faa98aeb"
 		score = 65
@@ -229898,8 +230113,8 @@ rule SEKOIA_Tool_Win_Sharpshares : FILE
 		date = "2024-06-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/mitchmoser/SharpShares/releases"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_win_sharpshares.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_win_sharpshares.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6aa96d7c24638451bde98497cc7c844c87612d81cc7826113729c80bd5180442"
 		score = 75
 		quality = 80
@@ -229932,8 +230147,8 @@ rule SEKOIA_Infostealer_Win_Whitesnake_Stealer_Feb23 : FILE
 		date = "2023-03-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_whitesnake_stealer_feb23.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_whitesnake_stealer_feb23.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "90007c38c644b79b2a60d9a252bd95071c5be57c649d73b66a73a1158cddc2fb"
 		score = 75
 		quality = 80
@@ -229967,8 +230182,8 @@ rule SEKOIA_Backdoor_Win_Rollsling : FILE
 		date = "2023-10-24"
 		modified = "2024-12-19"
 		reference = "https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_rollsling.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_rollsling.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "d9add2bfdfebfa235575687de356f0cefb3e4c55964c4cb8bfdcdc58294eeaca"
 		hash = "48538a935ddf2cbeb4918d0ccf9372ec8e0a57c5fd145a584a9b1bb4ebbcd5ce"
 		hash = "18825be6b269087d7699f3d0aa2e6db2ae72ded36c56aa8e7b8a606dde3741fa"
@@ -229996,8 +230211,8 @@ rule SEKOIA_Apt_Queueseed : FILE
 		date = "2024-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_queueseed.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_queueseed.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "80d1135d63a351cabf45d2266c0ffc770e11669103107cd40caf00eb62c836ed"
 		score = 75
 		quality = 80
@@ -230030,8 +230245,8 @@ rule SEKOIA_Apt_Polonium_Powershell_Creepydrive_Strings
 		date = "2022-06-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_polonium_powershell_creepydrive_strings.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_polonium_powershell_creepydrive_strings.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "28b8f10a36d13e97e606b082f20c50c3d48241409e7f1aca621e2af9d756dbe5"
 		score = 75
 		quality = 80
@@ -230063,8 +230278,8 @@ rule SEKOIA_Kimsuky_Konni_Dll : FILE
 		date = "2022-09-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/kimsuky_konni_dll.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/kimsuky_konni_dll.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7099156decdfe35cde22958133d851479f12180fff7b5744af0c549ab8259636"
 		score = 75
 		quality = 80
@@ -230100,8 +230315,8 @@ rule SEKOIA_Hacktool_Ntdsdumpex_Strings : FILE
 		date = "2022-02-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_ntdsdumpex_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_ntdsdumpex_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3295816133ca00aeaf3f4967135ed045ed64d20393f482eafbe4e74f0f63aa47"
 		score = 75
 		quality = 80
@@ -230128,8 +230343,8 @@ rule SEKOIA_Apt_Apt28_Ukrnet_Phishing_Page : FILE
 		date = "2024-09-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_ukrnet_phishing_page.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_ukrnet_phishing_page.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "20dc3a5beb8e3a7801e010b4113efef1"
 		hash = "5f1462144d7704101cd71c679ea0322b"
 		logic_hash = "3d077a7ce35094bcbda763c131d4564ffbcea0373f5cbd30406ada4e9db36529"
@@ -230161,8 +230376,8 @@ rule SEKOIA_Tool_Gsocket_Strings : FILE
 		date = "2024-06-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_gsocket_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_gsocket_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c54308293a9f64b571282eac9fba01e4671ba6b0cd45936fab92d4d9af904bbb"
 		score = 75
 		quality = 80
@@ -230190,8 +230405,8 @@ rule SEKOIA_Tool_Rsockstun_Strings : FILE
 		date = "2023-12-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_rsockstun_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_rsockstun_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8faf1004ec56728f1e451734ed651e8f77a49faf7f232df82e0b4950a9f1d198"
 		score = 75
 		quality = 80
@@ -230217,8 +230432,8 @@ rule SEKOIA_Infostealer_Win_44Caliber : FILE
 		date = "2022-03-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/razexgod/44CALIBER"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_44caliber.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_44caliber.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4b80d6b2116f53926897aa79a7c232413974caefaf524f50e6a7cede11f3aaa0"
 		score = 75
 		quality = 80
@@ -230251,8 +230466,8 @@ rule SEKOIA_Apt_Kimsuky_Klogexe : FILE
 		date = "2024-09-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_klogexe.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_klogexe.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e1d683ee1746c08c5fff1c4c2b3b02f0"
 		hash = "90946c6358eacd119fe1eb36ec7a0a18"
 		hash = "9760f489a390665b5e7854429b550c83"
@@ -230287,8 +230502,8 @@ rule SEKOIA_Apt_Sugardump_Credentials_Stealer_Http : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sugardump_credentials_stealer_http.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sugardump_credentials_stealer_http.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8d1725da41704fd534d3438021a98d0fb9b9b5bfdc63cc3144c4957954be1870"
 		score = 75
 		quality = 80
@@ -230323,8 +230538,8 @@ rule SEKOIA_Backdoor_Win_Foresttiger : FILE
 		date = "2023-10-24"
 		modified = "2024-12-19"
 		reference = "https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_foresttiger.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_foresttiger.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "e06f29dccfe90ae80812c2357171b5c48fba189ae103d28e972067b107e58795"
 		hash = "0be1908566efb9d23a98797884f2827de040e4cedb642b60ed66e208715ed4aa"
 		logic_hash = "401adaad1597c017c976c5b0b8f67851469c95758779b7691ebb037d0dda9f38"
@@ -230352,8 +230567,8 @@ rule SEKOIA_Generic_Sharpshooter_Payload_5 : FILE
 		date = "2023-02-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_sharpshooter_payload_5.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_sharpshooter_payload_5.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a68342b5bb2622deb71432da85cc249f35ca5b7b5dc70e069d6dcb6e9488e97e"
 		score = 75
 		quality = 80
@@ -230380,8 +230595,8 @@ rule SEKOIA_Apt_Emberbear_Credpump_Strings : FILE
 		date = "2023-02-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_emberbear_credpump_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_emberbear_credpump_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6f2c96fe3f314221626b4c053658af0e7231f151886f10eb1d69e07ea3e5c634"
 		score = 75
 		quality = 80
@@ -230407,8 +230622,8 @@ rule SEKOIA_Apt_Muddywater_Powgoop_Decoded : FILE
 		date = "2022-01-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_powgoop_decoded.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_powgoop_decoded.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6654d8107bb2ad6344f1fa03c6525ed9a0b8e49627787355efe857e80a02eca4"
 		score = 75
 		quality = 80
@@ -230437,8 +230652,8 @@ rule SEKOIA_Win_Loader_Astasialoader_Strings : FILE
 		date = "2023-08-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_loader_astasialoader_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_loader_astasialoader_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "44b6f7508a82ff6a4d65defc189303eeee393b5fd498de73d74d0a2c75c87401"
 		logic_hash = "02a7bed506865d761ec03b8de4b7fc636b71f48c62e933013f2ffa23deabb62e"
 		score = 75
@@ -230469,8 +230684,8 @@ rule SEKOIA_Apt_Mustangpanda_Zpakage : FILE
 		date = "2023-03-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_zpakage.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_zpakage.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "711c0e83f4e626a7b54e3948b281a71915a056c5341c8f509ecba535bc199bee"
 		logic_hash = "52ad51589ca154fbf6e5829a2c80a9b811809288bed6995820a0ca8aa218d8ef"
 		score = 75
@@ -230507,8 +230722,8 @@ rule SEKOIA_Apt_Mustangpanda_Downloader : FILE
 		date = "2022-03-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_downloader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_downloader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0bff0ee2960ecfa29939720e7efacaa35359f4fe555ae160c674efebf29bf61e"
 		score = 75
 		quality = 80
@@ -230534,8 +230749,8 @@ rule SEKOIA_Apt_Kimsuky_Malicious_Gotopwsh_Lnk : FILE
 		date = "2023-09-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_malicious_gotopwsh_lnk.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_malicious_gotopwsh_lnk.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1537ea232e745b1ed9e4b7f6b9ba779a3498f5edf0c46bdccfdc511137b2bb3a"
 		score = 75
 		quality = 80
@@ -230558,8 +230773,8 @@ rule SEKOIA_Apt_Oilrig_Maliciousdocument_May2022 : FILE
 		date = "2022-05-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_maliciousdocument_may2022.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_maliciousdocument_may2022.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d4aa960d4471ddf66ec6f98a5c883177763771ba9960b749509311a05384d9a7"
 		score = 75
 		quality = 80
@@ -230588,8 +230803,8 @@ rule SEKOIA_Ursnif : FILE
 		date = "2024-12-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ursnif.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ursnif.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fd3c3be5ede0a980b44560cfb9b8c4c1ee322091fa86bc9143f30dc900053c2b"
 		score = 75
 		quality = 80
@@ -230619,8 +230834,8 @@ rule SEKOIA_Backdoor_Powershellempire_Sharpire : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_powershellempire_sharpire.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_powershellempire_sharpire.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a4da54a16ee1ac3dea3b3b5a5983638ea28fd1e6d580cd48db595f15a92817a1"
 		score = 75
 		quality = 80
@@ -230647,8 +230862,8 @@ rule SEKOIA_Tool_Cheat_Engine : FILE
 		date = "2024-07-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_cheat_engine.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_cheat_engine.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2a70016be13c4eff7f7381fd0e34c345c95f09d4cd8b754ea68d59adfe3fe4b6"
 		score = 75
 		quality = 80
@@ -230678,8 +230893,8 @@ rule SEKOIA_Apt_Suspected_Sandworm_Sdelete_Wiper : FILE
 		date = "2023-10-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_suspected_sandworm_sdelete_wiper.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_suspected_sandworm_sdelete_wiper.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "094b946b89cfb475b8692f88af73fa8768a933139e0df9d6e7d7aa8614d3ab14"
 		score = 75
 		quality = 80
@@ -230704,8 +230919,8 @@ rule SEKOIA_Apt_Oilrig_Powerexchange : FILE
 		date = "2023-10-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_powerexchange.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_powerexchange.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5e505e9bbb17500f7e9a316b66bccb62089172582478230e0bda736bbefa1fd6"
 		score = 75
 		quality = 80
@@ -230732,8 +230947,8 @@ rule SEKOIA_Tool_Rathole_Strings : FILE
 		date = "2024-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_rathole_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_rathole_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f7c42328a38b2c101ea2d179b6adf9cf3d842d9e1c91e85fc6e684ee4f82458f"
 		score = 75
 		quality = 80
@@ -230760,8 +230975,8 @@ rule SEKOIA_Infostealer_Win_Enigma_Stealer_Module : FILE
 		date = "2023-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_enigma_stealer_module.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_enigma_stealer_module.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "4d2fb518c9e23c5c70e70095ba3b63580cafc4b03f7e6dce2931c54895f13b2c"
 		logic_hash = "0a6615d65867a160e1c87fbcfe30090d44d7f5c25b3a904f8719be7b385b14bb"
 		score = 75
@@ -230796,8 +231011,8 @@ rule SEKOIA_Clipper_Win_Atlas_Strings
 		date = "2023-07-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/clipper_win_atlas_strings.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/clipper_win_atlas_strings.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c8ad062b69dfe996a488ee9c79f0e7e0016f57f5b54fc39aeb4e207d2a42aa75"
 		score = 75
 		quality = 80
@@ -230827,8 +231042,8 @@ rule SEKOIA_Hacktool_Iox_Tunneling : FILE
 		date = "2022-10-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_iox_tunneling.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_iox_tunneling.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e15df032864799e282ee89402d22b82e5d4b8f469ec292575a1bcb78d24db012"
 		score = 75
 		quality = 80
@@ -230856,8 +231071,8 @@ rule SEKOIA_Apt_Cerana_Keeper_Dropboxflop : FILE
 		date = "2024-10-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cerana_keeper_dropboxflop.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cerana_keeper_dropboxflop.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "2b65b74e52fbf25cb400dbdfcd1a06a7"
 		logic_hash = "5b2dfdf0c35f574e7006bb3e6eafa10d0e7fc7d980d443b31d4d6d6b7cec2fce"
 		score = 75
@@ -230881,8 +231096,8 @@ rule SEKOIA_Apt_Kimsuky_Sharpext_Compromised_Securepreferences
 		date = "2022-07-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_kimsuky_sharpext_compromised_securepreferences.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_kimsuky_sharpext_compromised_securepreferences.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "662358fdb4c4cfa9984d06e391ade52e1c7a3d7b78724aea4fb0d6035fe2e7b2"
 		score = 75
 		quality = 80
@@ -230907,8 +231122,8 @@ rule SEKOIA_Apt_Badmagic_Ld_Dll_Loader_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_ld_dll_loader_pshscript.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_ld_dll_loader_pshscript.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8482521fe1f90c008948e551df35448b870145cf8b58f3c5019cafb66bb0ae36"
 		score = 75
 		quality = 80
@@ -230934,8 +231149,8 @@ rule SEKOIA_Apt_Lazarus_Lambload_Timecheck : FILE
 		date = "2023-11-27"
 		modified = "2024-12-19"
 		reference = "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_lambload_timecheck.yar#L1-L67"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_lambload_timecheck.yar#L1-L67"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "019e559f3596cf83f7e7ada05f6550b50b2d45d577600fa549470b98af93e23b"
 		score = 75
 		quality = 80
@@ -230983,8 +231198,8 @@ rule SEKOIA_Tool_Godpotato : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_godpotato.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_godpotato.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ea182b187fcd1ba61d3e2d10a689cf0212267dede1342e817e47551506a780ab"
 		score = 75
 		quality = 80
@@ -231013,8 +231228,8 @@ rule SEKOIA_Apt_Toneshell_Loader : FILE
 		date = "2024-10-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_toneshell_loader.yar#L1-L40"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_toneshell_loader.yar#L1-L40"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "41e0d172d900344a3692b88fff7527d9"
 		hash = "782cf7183735935f3f7aad041cec3184"
 		hash = "97c1f436028c58b51d4c92ee9c9ce424"
@@ -231061,8 +231276,8 @@ rule SEKOIA_Apt_Implant_Xdealer_Vbs_Launcher_Strings : FILE
 		date = "2024-03-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_implant_xdealer_vbs_launcher_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_implant_xdealer_vbs_launcher_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e206189fd21ed7b3bf48a51d955df9055b7f7aa502b7fac52b274cc414adea0d"
 		score = 75
 		quality = 80
@@ -231087,8 +231302,8 @@ rule SEKOIA_Apt_Luckymouse_Compromised_Electronapp : FILE
 		date = "2022-08-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_luckymouse_compromised_electronapp.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_luckymouse_compromised_electronapp.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "939546b75d5f7161bb8eb1fd838a9a7c0c88cb58a0f01f67e687523e5b31b0aa"
 		score = 75
 		quality = 80
@@ -231111,8 +231326,8 @@ rule SEKOIA_Hacktool_Ipmipwner_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_ipmipwner_strings.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_ipmipwner_strings.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "122311e1791d018f08f3d5ecdf2e0efe3aa5bb913b2c1ce6a3797e8ceb2676eb"
 		score = 75
 		quality = 80
@@ -231136,8 +231351,8 @@ rule SEKOIA_Infostealer_Win_Monster_Stub : FILE
 		date = "2024-08-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_monster_stub.yar#L1-L31"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_monster_stub.yar#L1-L31"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d6362c54b1f56ffa878423fbb1a3f57508d20e06b573c732f892494178a49200"
 		score = 75
 		quality = 80
@@ -231176,8 +231391,8 @@ rule SEKOIA_Hacktool_Socat_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_socat_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_socat_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8f0c907fa2de4141c55073ea5b4a8174f50c716fc7a60d3e838115859a938084"
 		score = 75
 		quality = 80
@@ -231202,8 +231417,8 @@ rule SEKOIA_Loader_Win_Bumblebee : FILE
 		date = "2022-04-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_bumblebee.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_bumblebee.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "97755e8d593acbc9acc8ce7f1a82a345fc7eea049addbb96577f6abc1b6d5fd6"
 		score = 75
 		quality = 80
@@ -231228,8 +231443,8 @@ rule SEKOIA_Trojan_Android_Xenomorph : FILE
 		date = "2022-02-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_android_xenomorph.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_android_xenomorph.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d44e5742449cd9c19b50ab23f452378d5627e19140554d12086994d820df9c64"
 		score = 75
 		quality = 80
@@ -231255,8 +231470,8 @@ rule SEKOIA_Wiper_Win_Isaacwiper
 		date = "2022-03-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_win_isaacwiper.yar#L4-L45"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_win_isaacwiper.yar#L4-L45"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0338e11ece112b6f7d88db49cfc703a4431d7ee54f4b9ff0b9e2ea50d39cab4f"
 		score = 75
 		quality = 80
@@ -231291,8 +231506,8 @@ rule SEKOIA_Apt_Gelsemium_Wolfsbane_Rootkit : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gelsemium_wolfsbane_rootkit.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gelsemium_wolfsbane_rootkit.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "ba08e63ad65a9bdcdb1655f25d32c808"
 		logic_hash = "a7440e1b4c0bbff0d80d7152e3bfb0867abe9b0151b45f88aa656f3c9a55b303"
 		score = 75
@@ -231322,8 +231537,8 @@ rule SEKOIA_Implant_Mac_Rustbucket : FILE
 		date = "2023-04-24"
 		modified = "2024-12-19"
 		reference = "https://www.jamf.com/blog/bluenoroff-apt-targets-macos-rustbucket-malware/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_mac_rustbucket.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_mac_rustbucket.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "9ca914b1cfa8c0ba021b9e00bda71f36cad132f27cf16bda6d937badee66c747"
 		logic_hash = "ab7bc706b0d3f0dcd739ffe7f8153ba7377892143d8d53ce1591519ffe4ae84f"
 		score = 75
@@ -231350,8 +231565,8 @@ rule SEKOIA_Tool_Tokenplayer_Strings : FILE
 		date = "2024-11-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_tokenplayer_strings.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_tokenplayer_strings.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f01eae4ee3cc03d621be7b0af7d60411"
 		logic_hash = "e419fa8c690816cd0e449f0a1d66d170e8806b38a99758631719b239363e330e"
 		score = 75
@@ -231382,8 +231597,8 @@ rule SEKOIA_Apt_Yemen_Apk_Guardzoo : FILE
 		date = "2024-08-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_yemen_apk_guardzoo.yar#L1-L40"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_yemen_apk_guardzoo.yar#L1-L40"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "3afad114c68489e2d294720339baf570"
 		hash = "c59d0f5c8d00485199f147b96c5abca0"
 		hash = "75c58948725133160085dc1cfdf602ec"
@@ -231430,8 +231645,8 @@ rule SEKOIA_Spyware_And_Strongpity_Mobile_Backdoor : FILE
 		date = "2023-01-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/spyware_and_strongpity_mobile_backdoor.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/spyware_and_strongpity_mobile_backdoor.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9005fe938433223f32642f6bbf7c4c58f0b927a006e283c8b12f79103ec02cfc"
 		score = 75
 		quality = 80
@@ -231454,8 +231669,8 @@ rule SEKOIA_Apt_Gamaredon_Flash_Infostealer : FILE
 		date = "2023-01-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_flash_infostealer.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_flash_infostealer.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5a3ee8c2c3c377bea7de1993e5ef744796130643575bcce1b6181d68190aafb7"
 		score = 75
 		quality = 80
@@ -231483,8 +231698,8 @@ rule SEKOIA_Clipper_Win_Cryptoclippy : FILE
 		date = "2023-04-11"
 		modified = "2024-12-19"
 		reference = "https://unit42.paloaltonetworks.com/crypto-clipper-targets-portuguese-speakers/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/clipper_win_cryptoclippy.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/clipper_win_cryptoclippy.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "057cb5bb957c2338a50c05cfa0177f75bcf263281ddcc5f365298bccafc64cb4"
 		score = 75
 		quality = 80
@@ -231517,8 +231732,8 @@ rule SEKOIA_Wiper_Hermeticwiper_Variants
 		date = "2022-02-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/wiper_hermeticwiper_variants.yar#L3-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/wiper_hermeticwiper_variants.yar#L3-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d0c358517b0a6334d430d3bd75d6c58243ce84e0f90afe48a5069a1e1954119c"
 		score = 75
 		quality = 80
@@ -231545,8 +231760,8 @@ rule SEKOIA_Rat_Win_Romcom_Payload
 		date = "2022-11-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_romcom_payload.yar#L4-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_romcom_payload.yar#L4-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "56f016df8e9165522e18f34bdb7c3044ee8927f53dd6818fa2b3d6424191d8e0"
 		score = 75
 		quality = 80
@@ -231566,8 +231781,8 @@ rule SEKOIA_Hacktool_Microsocks_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_microsocks_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_microsocks_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b76b66fbdd9a7e2ea8adb68781d6b14c18189a8b330a61c2a65e7394ef8024c3"
 		score = 75
 		quality = 80
@@ -231591,8 +231806,8 @@ rule SEKOIA_Implant_Win_Havoc_Default_Strings : FILE
 		date = "2022-10-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_havoc_default_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_havoc_default_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dbf17e579071f265961657d73c6a2e51630b23e80376491df2e631cee5ffb1b4"
 		score = 75
 		quality = 80
@@ -231623,8 +231838,8 @@ rule SEKOIA_Generic_Bat_Script_Mock_Http_Services : FILE
 		date = "2023-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_bat_script_mock_http_services.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_bat_script_mock_http_services.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d34be59cfb054895381580e7852bba6b899cfb680882b7fd24a72438131c3bee"
 		score = 75
 		quality = 80
@@ -231654,8 +231869,8 @@ rule SEKOIA_Apt_Blackwood_Nspx30_Plugin : FILE
 		date = "2024-01-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_blackwood_nspx30_plugin.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_blackwood_nspx30_plugin.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cf7c232a5a817ff5c0da04744abf99ed2fcea587e3e6f6e8bf3aef7ca8f2b51b"
 		score = 75
 		quality = 76
@@ -231680,8 +231895,8 @@ rule SEKOIA_Rat_Win_Remcos : FILE
 		date = "2023-01-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_remcos.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_remcos.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "259f31d745449dc81cde698bb0ae4a20b4bbf050a1c818fbb5a891f26ca2e856"
 		score = 75
 		quality = 80
@@ -231714,8 +231929,8 @@ rule SEKOIA_Rat_Win_Konni_Rat : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_konni_rat.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_konni_rat.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "764e75d3e433a8784e826f436896c50c9622129412ff277b55ec9aaf1402ff5e"
 		score = 75
 		quality = 80
@@ -231746,8 +231961,8 @@ rule SEKOIA_Backdoor_Win_Winordll64
 		date = "2023-02-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_winordll64.yar#L4-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_winordll64.yar#L4-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "30e6f01f30d6ef11c75e133d309cebc87b69ede8eb38aa14d237760e99b52c54"
 		score = 75
 		quality = 80
@@ -231767,8 +231982,8 @@ rule SEKOIA_Bot_Lin_Kinsing_Strings : FILE
 		date = "2023-11-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bot_lin_kinsing_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bot_lin_kinsing_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "164b22734541d43047a2ea868cf0a269efe69c64a6392030168f4d391b1be777"
 		score = 75
 		quality = 80
@@ -231799,8 +232014,8 @@ rule SEKOIA_Tool_Generic_Python_Reverse_Shell_Strings : FILE
 		date = "2024-04-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_generic_python_reverse_shell_strings.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_generic_python_reverse_shell_strings.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bb4fcef595f4be035815f536786987ac1343727f16c0560a1cb593e854ba8f17"
 		score = 75
 		quality = 80
@@ -231824,8 +232039,8 @@ rule SEKOIA_Rat_Win_Millenium : FILE
 		date = "2023-11-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_millenium.yar#L1-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_millenium.yar#L1-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bcf4158b9bfee65cd9bd74163ac108ea1de8ec0e9ad066e77bec788ae6fb7283"
 		score = 75
 		quality = 80
@@ -231862,8 +232077,8 @@ rule SEKOIA_Koi_Koiloader : FILE
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/koi_koiloader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/koi_koiloader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7b4f12b0dec3927a46db1c8b2163e54a0a515d2b7360ba94647097fecf3d4653"
 		score = 75
 		quality = 80
@@ -231889,8 +232104,8 @@ rule SEKOIA_Botnet_Lin_Tsunami : FILE
 		date = "2024-09-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/botnet_lin_tsunami.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/botnet_lin_tsunami.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "536a28db011459d841652e25a852ccf2"
 		logic_hash = "8678ead4c863b2bc6bbb5e0023dee10f4e9f031bd0c8f515ad30d6145755ccaa"
 		score = 75
@@ -231919,8 +232134,8 @@ rule SEKOIA_Apt_Cloudatlas_Stagescalldllmainafterexec
 		date = "2023-10-31"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_cloudatlas_stagescalldllmainafterexec.yar#L1-L46"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_cloudatlas_stagescalldllmainafterexec.yar#L1-L46"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6d1c1717b4012e72b0069068158265dfd215cd7685a5489aba3de4a9024bfa28"
 		score = 75
 		quality = 80
@@ -231974,8 +232189,8 @@ rule SEKOIA_Win_Infostealer_Serpent_Strings : FILE
 		date = "2023-12-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/win_infostealer_serpent_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/win_infostealer_serpent_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5266d1c8228f02e8ac9da5ddd8b968fde0d0e83afa408d405ec4ca50c3453928"
 		score = 75
 		quality = 80
@@ -232005,8 +232220,8 @@ rule SEKOIA_Backdoor_Win_Blackrat : FILE
 		date = "2023-09-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_blackrat.yar#L4-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_blackrat.yar#L4-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "c2500a6e12f22b16e221ba01952b69c92278cd05632283d8b84c55c916efe27c"
 		logic_hash = "4edf1335e357ebc02e4abb51cd8d808ae39e649cf19cdb3ec667c9cf313181a9"
 		score = 75
@@ -232034,8 +232249,8 @@ rule SEKOIA_Implant_Win_Sliver_Dll : FILE
 		date = "2021-11-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_sliver_dll.yar#L3-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_sliver_dll.yar#L3-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "251a123fe70338d18c9bc9fb9e0b0d542f2b94203bee8537244e62fa102f371b"
 		score = 75
 		quality = 80
@@ -232060,8 +232275,8 @@ rule SEKOIA_Hacktool_Mimikat_Ssp_Strings : FILE
 		date = "2023-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_mimikat_ssp_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_mimikat_ssp_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "06325bf495963db90b14fb16a5f3eafda9e4554f753d04405af51c6041a9b166"
 		score = 75
 		quality = 80
@@ -232087,8 +232302,8 @@ rule SEKOIA_Apt_Unc4990_Explorer_Ps1_Reverse_B64 : FILE
 		date = "2024-02-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unc4990_explorer_ps1_reverse_b64.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unc4990_explorer_ps1_reverse_b64.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bf13fbf2dbe6a718510f3e435a9fe06517ed962f8e129d79a15e6a301e5713ca"
 		score = 75
 		quality = 80
@@ -232113,8 +232328,8 @@ rule SEKOIA_Bumblebee_Loader : FILE
 		date = "2022-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/bumblebee_loader.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/bumblebee_loader.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "73c0195c51b5f8c36ab6d7a0e783f1229709d51fc42e2486c02fa65bbbdf955b"
 		score = 75
 		quality = 80
@@ -232140,8 +232355,8 @@ rule SEKOIA_Apt_Evasive_Panda_Rphost_Dll : FILE
 		date = "2024-03-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_evasive_panda_rphost_dll.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_evasive_panda_rphost_dll.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "fa44028115912c95b5efb43218f3c7237d5c349f"
 		logic_hash = "2132f1c69db8fd5793c858ada2443fdfa1f941e68d24cc337766df99f8b3a895"
 		score = 75
@@ -232166,8 +232381,8 @@ rule SEKOIA_Darkriver_Encodedurl : FILE
 		date = "2023-10-10"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/darkriver_encodedurl.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/darkriver_encodedurl.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "5c9551388213f54c4b54cd42ccb034d8d9173a4bbfcf8b666e0db8df929762e7"
 		hash = "13de9f39b1ad232e704b5e0b5051800fcd844e9f661185ace8287a23e9b3868e"
 		hash = "3b05e89ff2338472cc493d59bae450338effd29f0ed7d46fb999709e63cf2472"
@@ -232195,8 +232410,8 @@ rule SEKOIA_Apt_Andariel_Keylogger_Strings : FILE
 		date = "2024-06-17"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_andariel_keylogger_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_andariel_keylogger_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "671698af4fbaed3d19f3d3498263183909db9422a5a0a8f12ba119409773c505"
 		score = 75
 		quality = 80
@@ -232221,8 +232436,8 @@ rule SEKOIA_Apt_Lazarus_Blindingcan_Rtti
 		date = "2022-10-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_lazarus_blindingcan_rtti.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_lazarus_blindingcan_rtti.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fbec1f9a180782bf330d86facbada9af018741897c58f4ab6e0b52a1b38ae966"
 		score = 75
 		quality = 80
@@ -232247,8 +232462,8 @@ rule SEKOIA_Apt_Win_Disabledefender
 		date = "2022-09-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_win_disabledefender.yar#L3-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_win_disabledefender.yar#L3-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3b8c8d9144d9f97ee053c7cefc30d3920940bc33efcd1d7f5c61666217ef7896"
 		score = 75
 		quality = 80
@@ -232275,8 +232490,8 @@ rule SEKOIA_Infostealer_Win_Lumma_Strings_Aug23 : FILE
 		date = "2023-09-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_lumma_strings_aug23.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_lumma_strings_aug23.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "704a31b0f7c30602305768f13bf6108ebaf08c62451833731d2f2f020efce386"
 		score = 75
 		quality = 80
@@ -232307,8 +232522,8 @@ rule SEKOIA_Apt_Ta428_Tmanger_Strings : FILE
 		date = "2022-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_ta428_tmanger_strings.yar#L1-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_ta428_tmanger_strings.yar#L1-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e045f38367fa7f3cdcc908e60de4386889c7878c95b1a40f63fd70683699b0f1"
 		score = 75
 		quality = 80
@@ -232340,8 +232555,8 @@ rule SEKOIA_Rat_Win_Arrow_Str : FILE
 		date = "2022-08-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_arrow_str.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_arrow_str.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "faf66a14e563066bb86ceadc787c092a5a13a43f936f0d9d19fbe7d4352ea5d8"
 		score = 75
 		quality = 80
@@ -232375,8 +232590,8 @@ rule SEKOIA_Apt_Gelsemium_Wolfsbane_Launcher : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gelsemium_wolfsbane_launcher.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gelsemium_wolfsbane_launcher.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "87e437cf74ce4b1330b8af9ff71edae2"
 		logic_hash = "9ecc3a8cb82f6183c263dde03a14f721d2e3aeb2338afc28e0368c323e5d51a9"
 		score = 75
@@ -232403,8 +232618,8 @@ rule SEKOIA_Apt_Tealkurma_Snappytcp_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_tealkurma_snappytcp_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_tealkurma_snappytcp_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b91adef3332850d952cace104fc05e1b09e6175a27ae991905defc46de608e88"
 		score = 75
 		quality = 80
@@ -232429,8 +232644,8 @@ rule SEKOIA_Tool_Printnotifypotato : FILE
 		date = "2023-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_printnotifypotato.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_printnotifypotato.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5d4b7d1582c2b3f53ca5e1ff6e7ff97a677fe8870e94415f7328ea0a0387049c"
 		score = 75
 		quality = 80
@@ -232458,8 +232673,8 @@ rule SEKOIA_Apt_Unk_Hrserv_Webshell_Strings : FILE
 		date = "2023-11-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unk_hrserv_webshell_strings.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unk_hrserv_webshell_strings.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b5650e08227bbdb82c635bd67abae57e3107be9126639619809bfbe2a7ffee89"
 		score = 75
 		quality = 80
@@ -232488,8 +232703,8 @@ rule SEKOIA_Generic_Tor_Hidden_Service_Leading_To_Winports : FILE
 		date = "2023-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_tor_hidden_service_leading_to_winports.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_tor_hidden_service_leading_to_winports.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "39db199ba7fede8df4bdb505b071240dda96b74f66f818f90047dad338dc4a72"
 		score = 75
 		quality = 80
@@ -232516,8 +232731,8 @@ rule SEKOIA_Infostealer_Win_Banditstealer : FILE
 		date = "2023-07-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_banditstealer.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_banditstealer.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "64d4860dd8a783be10541dd5c939dcd2a2b08309a7cd17b9dbbda1ba8b26485d"
 		score = 75
 		quality = 80
@@ -232559,8 +232774,8 @@ rule SEKOIA_Infostealer_Win_Nekostealer : FILE
 		date = "2023-01-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_nekostealer.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_nekostealer.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f027775bebb48ceb128392040ec2ac8ad84f2a2009760c040e4d376c2f06b663"
 		score = 75
 		quality = 80
@@ -232587,8 +232802,8 @@ rule SEKOIA_Apt_Apt_K_47_Orpcbackdoor : FILE
 		date = "2024-02-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt_k_47_orpcbackdoor.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt_k_47_orpcbackdoor.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4a05e68eca0954e3bca5ebec6c63bf0535051f8d99f65940b7ed00f49e659f2d"
 		score = 75
 		quality = 55
@@ -232616,8 +232831,8 @@ rule SEKOIA_Apt_Apt41_Powershell_Collection_Script : FILE
 		date = "2023-11-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt41_powershell_collection_script.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt41_powershell_collection_script.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8b0462636c9f6270baff2bf09638e94db6d5a0472b8216ddd1919a77b6a63aca"
 		score = 75
 		quality = 70
@@ -232644,8 +232859,8 @@ rule SEKOIA_Implant_Mac_Smoothoperator_Update_Agent : FILE
 		date = "2023-07-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_mac_smoothoperator_update_agent.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_mac_smoothoperator_update_agent.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d5a0d87ac810097983df92ab1b1ff9775093b0aaaf551a74ff6fe5149dbd3a21"
 		score = 75
 		quality = 80
@@ -232671,8 +232886,8 @@ rule SEKOIA_Infostealer_Win_Stealc_Str_Oct24 : FILE
 		date = "2024-10-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_stealc_str_oct24.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_stealc_str_oct24.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4f7fece81c3fe1e56b57aed4030b48331b53443a200799046fe84c895b591a71"
 		score = 75
 		quality = 80
@@ -232707,8 +232922,8 @@ rule SEKOIA_Exploit_Linux_Eop_Ubuntu_Overlayfs_Local_Privesc_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_ubuntu_overlayfs_local_privesc_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_ubuntu_overlayfs_local_privesc_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "48ff9d2a10eef1e9b9088ba4a53aa77f43324e5d51da65b65a5829276067f011"
 		score = 75
 		quality = 80
@@ -232736,8 +232951,8 @@ rule SEKOIA_Apt_Badmagic_Reco_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_reco_pshscript.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_reco_pshscript.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "86369267545241f33c6fc7dab11eb06f71641d8e9cd0365ddcc676d4f4c9739b"
 		score = 75
 		quality = 80
@@ -232763,8 +232978,8 @@ rule SEKOIA_Apt_Gamaredon_Ddrdoh_Vbs_Downloader_Vbs : FILE
 		date = "2023-01-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_ddrdoh_vbs_downloader_vbs.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_ddrdoh_vbs_downloader_vbs.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c91e1ce26c0735e8c68fe39f2fbeda8aed51cd4f9a0b967b5d184843728dcef4"
 		score = 75
 		quality = 78
@@ -232792,8 +233007,8 @@ rule SEKOIA_Tool_Chisel_Strings : FILE
 		date = "2024-03-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_chisel_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_chisel_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fe389d9d0ae73c79f1040274e21135d4df645c5ac672fc824923f0a5a085be8a"
 		score = 75
 		quality = 80
@@ -232821,8 +233036,8 @@ rule SEKOIA_Hacktool_Mimilite : FILE
 		date = "2023-12-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_mimilite.yar#L1-L37"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_mimilite.yar#L1-L37"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "504bc58e1c4143cc2322d564b637b0e014a4ead44f56a75fe1202b0d0a2e8bbc"
 		score = 75
 		quality = 80
@@ -232865,8 +233080,8 @@ rule SEKOIA_Apt_Mustangpanda_Tonedrop : FILE
 		date = "2023-06-19"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_tonedrop.yar#L1-L43"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_tonedrop.yar#L1-L43"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "97f9138810fbc56fa1cab671865b3234f63fcd0f9a15ba012dfe76e86c6dbd48"
 		score = 75
 		quality = 78
@@ -232914,8 +233129,8 @@ rule SEKOIA_Merlin_Win_Exe : FILE
 		date = "2022-01-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/merlin_win_exe.yar#L4-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/merlin_win_exe.yar#L4-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6a42e9ea9749dc894788d80cd4395da026ef3c49eab1de6802e09f8b1751f5bd"
 		score = 75
 		quality = 80
@@ -232941,8 +233156,8 @@ rule SEKOIA_Implant_Mul_Alchimist : FILE
 		date = "2022-10-18"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_mul_alchimist.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_mul_alchimist.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "d4a5338c502b145a1d7ad9f35779e24d66ee2d11bf760d498aab39e2c62fbeb4"
 		score = 75
 		quality = 80
@@ -232971,8 +233186,8 @@ rule SEKOIA_Generic_Php_Webshell : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/generic_php_webshell.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/generic_php_webshell.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "617264a785b8e9e87a39e12d7b72963d94e0686a174716347369fe71ab7a78af"
 		score = 75
 		quality = 80
@@ -232995,8 +233210,8 @@ rule SEKOIA_Apt_Apt41_Javascript_Dropper : FILE
 		date = "2024-02-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt41_javascript_dropper.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt41_javascript_dropper.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3e34af7141e41044c3d3e099e8b8deafc7441ea47ccbd8af7ffe686f10bb18a2"
 		score = 75
 		quality = 80
@@ -233024,8 +233239,8 @@ rule SEKOIA_Infostealer_Win_Xehook_Str : FILE
 		date = "2024-06-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_xehook_str.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_xehook_str.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "543ec3b523e5f00d3c285e453c8d11f3d5c7778b2986b7fe03f2d62ff18c2778"
 		score = 75
 		quality = 80
@@ -233064,8 +233279,8 @@ rule SEKOIA_Apt_Muddywater_Muddyc2Go_Dll_Launcher_Strings : FILE
 		date = "2024-03-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_muddywater_muddyc2go_dll_launcher_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_muddywater_muddyc2go_dll_launcher_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "1a0827082d4b517b643c86ee678eaa53f85f1b33ad409a23c50164c3909fdaca"
 		logic_hash = "b91653e313258ebd2073a398d0467800056ac94adab02c3a83aa8a379710e4e6"
 		score = 75
@@ -233092,8 +233307,8 @@ rule SEKOIA_Launcher_Win_Bluehaze : FILE
 		date = "2022-12-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/launcher_win_bluehaze.yar#L4-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/launcher_win_bluehaze.yar#L4-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "56a9d6d713a5744e77c8d34ad28983bb3b2aded1abff47dbf2d887724bd3ed4e"
 		score = 75
 		quality = 80
@@ -233118,8 +233333,8 @@ rule SEKOIA_Infostealer_Win_Edgeguard : FILE
 		date = "2023-08-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_edgeguard.yar#L1-L32"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_edgeguard.yar#L1-L32"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "11396aea2e166456ec8311f95a8037aac41f69caf3158f8c19cb0c38327842d6"
 		score = 75
 		quality = 80
@@ -233159,8 +233374,8 @@ rule SEKOIA_Loader_Win_Aresloader : FILE
 		date = "2023-05-02"
 		modified = "2024-12-19"
 		reference = "https://blog.cyble.com/2023/04/28/citrix-users-at-risk-aresloader-spreading-through-disguised-gitlab-repo/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_aresloader.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_aresloader.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2edbb625394506e865580373d5c3454b4fa201183c84d247b4373f24e25f5fd4"
 		score = 75
 		quality = 80
@@ -233195,8 +233410,8 @@ rule SEKOIA_Rootkit_Win_Purplefox_360_Tct : FILE
 		date = "2022-03-28"
 		modified = "2024-12-19"
 		reference = "https://www.trendmicro.com/en_us/research/22/c/purple-fox-uses-new-arrival-vector-and-improves-malware-arsenal.html"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rootkit_win_purplefox_360_tct.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rootkit_win_purplefox_360_tct.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "6b4ca65bc05ea1e8036140a62b94c8b75afe30a5e37cae9a5ae2a9c828cd6275"
 		score = 75
 		quality = 80
@@ -233222,8 +233437,8 @@ rule SEKOIA_Ransomware_Lin_Avoslocker_Strings : FILE
 		date = "2022-02-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_lin_avoslocker_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_lin_avoslocker_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0cd7b6ea8857ce827180342a1c955e79c3336a6cf2000244e5cfd4279c5fc1b6"
 		hash = "7c935dcd672c4854495f41008120288e8e1c144089f1f06a23bd0a0f52a544b1"
 		hash = "10ab76cd6d6b50d26fde5fe54e8d80fceeb744de8dbafddff470939fac6a98c4"
@@ -233251,8 +233466,8 @@ rule SEKOIA_Apt_Mustangpanda_Windows_Remoteshell : FILE
 		date = "2022-12-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_windows_remoteshell.yar#L1-L121"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_windows_remoteshell.yar#L1-L121"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4a72ae1574022d6454e29a6b05a0279f2e774f8218d24a3a866721d958c52e1a"
 		score = 75
 		quality = 80
@@ -233342,8 +233557,8 @@ rule SEKOIA_Infostealer_Win_Blackcap : FILE
 		date = "2023-03-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_blackcap.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_blackcap.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b826c88d557ea0a516534946ad9531eda1a875cb9c4ddf92d9b98f8c7b86623e"
 		score = 75
 		quality = 80
@@ -233369,8 +233584,8 @@ rule SEKOIA_Stealer_Win_Luca : FILE
 		date = "2022-07-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/stealer_win_luca.yar#L3-L49"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/stealer_win_luca.yar#L3-L49"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3694db49d84f92c70c51e4fe6f126fd56b3d7d8ed26619137fd55b0adb97865e"
 		score = 75
 		quality = 78
@@ -233421,8 +233636,8 @@ rule SEKOIA_Manjusaka_Samples : FILE
 		date = "2022-08-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/manjusaka_samples.yar#L1-L41"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/manjusaka_samples.yar#L1-L41"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "58dcc406c87a8ec66c0904c4cf518cb38bca1aa9058196ce5d496f6269258200"
 		score = 75
 		quality = 78
@@ -233470,8 +233685,8 @@ rule SEKOIA_Apt_Badmagic_Installpzz_Pshscript : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_installpzz_pshscript.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_installpzz_pshscript.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "58256cffd1d5060769f304393c22b6488abe9515eb7df2a967ba2fed85a9ec9a"
 		score = 75
 		quality = 80
@@ -233498,8 +233713,8 @@ rule SEKOIA_Backdoor_Win_Minibus : FILE
 		date = "2024-02-29"
 		modified = "2024-12-19"
 		reference = "https://www.mandiant.com/resources/blog/suspected-iranian-unc1549-targets-israel-middle-east"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_minibus.yar#L4-L41"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_minibus.yar#L4-L41"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "57dabcc15c84c4497b3561f19a7e464fb0dfe93576f4caea88c7cd8534cb4bfd"
 		score = 75
 		quality = 80
@@ -233526,8 +233741,8 @@ rule SEKOIA_Backdoor_Win_Kimsuky : FILE
 		date = "2024-06-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_kimsuky.yar#L4-L38"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_kimsuky.yar#L4-L38"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "000e2926f6e094d01c64ff972e958cd38590299e9128a766868088aa273599c7"
 		hash = "cca1705d7a85fe45dce9faec5790d498427b3fa8e546d7d7b57f18a925fdfa5d"
 		logic_hash = "ba40427f7e305a6e6cec6bb0165b49e6ce215ecf66fc2e05954c10e4d9acf9b0"
@@ -233549,8 +233764,8 @@ rule SEKOIA_Infostealer_Win_Blustealer : FILE
 		date = "2022-10-05"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_blustealer.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_blustealer.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "fc7c11a9ddd21228aa773da6054220211327727a87d48008b7edb202c48666d8"
 		score = 75
 		quality = 80
@@ -233586,8 +233801,8 @@ rule SEKOIA_Backdoor_Mul_Supershell_Client : FILE
 		date = "2024-04-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_mul_supershell_client.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_mul_supershell_client.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "a42906f8b392089fa1fe3ea264f6cb549ce5437b5ea253d9e1b8dd94bf115dad"
 		hash = "d97b41e8cd6b63cd55c9a4f99ccadf5a9141088319bc9eb467d96e54080f3c85"
 		hash = "2b54d1c064892a22f48b5742ba6da55bf62b73e5b1e0649e8b7880b286498735"
@@ -233616,8 +233831,8 @@ rule SEKOIA_Apt_Oilrig_Saitama_Backdoor_May2022_2 : FILE
 		date = "2022-05-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_saitama_backdoor_may2022_2.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_saitama_backdoor_may2022_2.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "622c386d4b10b81a5c84f9c093d91add04497a707ba88e8395fda8587b5c3791"
 		score = 75
 		quality = 80
@@ -233644,8 +233859,8 @@ rule SEKOIA_Apt_Tortoiseshell_Wateringhole_Script : FILE
 		date = "2023-05-24"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_tortoiseshell_wateringhole_script.yar#L1-L22"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_tortoiseshell_wateringhole_script.yar#L1-L22"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8ad886443b1bd17048054b57650d38cda1ffccc10fedfac86283a41daf956dc2"
 		score = 75
 		quality = 80
@@ -233675,8 +233890,8 @@ rule SEKOIA_Rat_Win_Reverserat
 		date = "2023-02-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_reverserat.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_reverserat.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "b277a824b2671f40298ce03586a2ccc0fca2a081a66230c57a3060c2028f13ee"
 		hash = "8b87459483248d7b95424cd52b7d4f3031e89c6644adc2e167556e071d9ec3aa"
 		logic_hash = "13a5a916e084996ce4d7840581250f7630652acdcad0f66e21763cb3a9cbccc3"
@@ -233703,8 +233918,8 @@ rule SEKOIA_Apt_Icepeony_Icecache : FILE
 		date = "2024-10-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_icepeony_icecache.yar#L1-L46"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_icepeony_icecache.yar#L1-L46"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "38708c33dafb5625ddde1030a7efa7db"
 		hash = "1e102c8909b2bf71c626b81f7526ee01"
 		hash = "34bc3c586a48f836b00aff59fe891b30"
@@ -233757,8 +233972,8 @@ rule SEKOIA_Infostealer_Win_Blackguard_Mar23 : FILE
 		date = "2023-03-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_blackguard_mar23.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_blackguard_mar23.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "63d77808036478da0c8d38a6d3581ccd2d4e46ae16ec9e817f09f8b633b01843"
 		score = 75
 		quality = 80
@@ -233790,8 +234005,8 @@ rule SEKOIA_Apt_Sidecopy_Malicious_Macro : FILE
 		date = "2023-05-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sidecopy_malicious_macro.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sidecopy_malicious_macro.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b1d9d7af8507b478b2a8d34a4a5ca3714b219a42d5b3f9d5026d98351294e1cf"
 		score = 75
 		quality = 80
@@ -233819,8 +234034,8 @@ rule SEKOIA_Apt_Sandworm_Olympicdestroyer : FILE
 		date = "2022-04-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_olympicdestroyer.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_olympicdestroyer.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a68a96ab036e69a32e173b2d2fa6a81ab872032f89bfdfc3cd4446305a33921b"
 		score = 75
 		quality = 80
@@ -233848,8 +234063,8 @@ rule SEKOIA_Exploit_Linux_Eop_Pwnkit_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_pwnkit_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_pwnkit_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "9805cc7a6022f7a3372df5d74cef68c6fd0e51072154c82212415846f3603667"
 		score = 75
 		quality = 80
@@ -233878,8 +234093,8 @@ rule SEKOIA_Webshell_Icesword_Strings : FILE
 		date = "2024-11-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/webshell_icesword_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/webshell_icesword_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "0447352827e61696304a8e3d34e1d270"
 		hash = "f49cfcda0abdefa385eda7ec7e7a5411"
 		hash = "e1518388375ba772ed20503ec6dc6c8a"
@@ -233907,8 +234122,8 @@ rule SEKOIA_Tool_Koblas_Server_Strings : FILE
 		date = "2024-05-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_koblas_server_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_koblas_server_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "590f3f71564c347be7b3b2a583606c3854744d0023cde464374cd7b61ec5a2d7"
 		score = 75
 		quality = 80
@@ -233934,8 +234149,8 @@ rule SEKOIA_Apt_Gamaredon_Htmlsmuggling_Attachment : FILE
 		date = "2023-01-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_htmlsmuggling_attachment.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_htmlsmuggling_attachment.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e13da493404b27ef0c026ca32accbb30792981e810c099d633f5de225e241b4d"
 		score = 75
 		quality = 80
@@ -233961,8 +234176,8 @@ rule SEKOIA_Exploit_Linux_Eop_Dirtypipe_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_dirtypipe_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_dirtypipe_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0abb8de541acea57ced20f66c0aad7b010fea647996039809d36e94555dee204"
 		score = 75
 		quality = 80
@@ -233988,8 +234203,8 @@ rule SEKOIA_Exploit_Linux_Eop_Rationallove_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_rationallove_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_rationallove_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "84a53a1d4f08e178a5cf1c968b3b98ae8624c3d052760517ec88bddd25833108"
 		score = 75
 		quality = 80
@@ -234014,8 +234229,8 @@ rule SEKOIA_Spyware_And_Fastfire : FILE
 		date = "2022-11-03"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/spyware_and_fastfire.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/spyware_and_fastfire.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2600fc0a8fc6279936decf80256be1fc8cb581a59ef6646fe48b5885e104365e"
 		score = 75
 		quality = 80
@@ -234046,8 +234261,8 @@ rule SEKOIA_Infostealer_Win_Mars_Stealer : FILE
 		date = "2022-02-03"
 		modified = "2024-12-19"
 		reference = "https://3xp0rt.com/posts/mars-stealer"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_mars_stealer.yar#L3-L44"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_mars_stealer.yar#L3-L44"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b2b36a280c3c6cbbb8cbb9f1dd3eb48a4943ebbddb48eba2ac3d0db03924cafd"
 		score = 75
 		quality = 80
@@ -234088,8 +234303,8 @@ rule SEKOIA_Apt_Tortoiseshell_Imaploader : FILE
 		date = "2023-11-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_tortoiseshell_imaploader.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_tortoiseshell_imaploader.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "93f57940ed69145064e5153cc9b099fb9456116cae808acfb4e6f7f14003dde7"
 		score = 75
 		quality = 80
@@ -234115,8 +234330,8 @@ rule SEKOIA_Apt_Gamaredon_Vbs_Downloader : FILE
 		date = "2023-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_vbs_downloader.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_vbs_downloader.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "e3ae516ea18f2912b7f0fb7864542ae609167fb29751b87cbf6f9cd34ec858ba"
 		score = 75
 		quality = 68
@@ -234145,8 +234360,8 @@ rule SEKOIA_Apt_Apt28_Susp_Graphite_Downloader : FILE
 		date = "2022-01-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_susp_graphite_downloader.yar#L3-L26"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_susp_graphite_downloader.yar#L3-L26"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ca5aa7ea995aca9003fd98da2fba7bbec1e049d979a6b05e07b80876bab5a1c9"
 		score = 65
 		quality = 80
@@ -234178,8 +234393,8 @@ rule SEKOIA_Hacktool_Rubeus_Strings : FILE
 		date = "2022-02-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/hacktool_rubeus_strings.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/hacktool_rubeus_strings.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "606c1b3c29dd4b609eba64bc5d02a81859bb574ee10bce8b0f355ac01d99689f"
 		score = 75
 		quality = 80
@@ -234206,8 +234421,8 @@ rule SEKOIA_Infostealer_Win_Enigma_Loader_Module : FILE
 		date = "2023-01-30"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_enigma_loader_module.yar#L1-L25"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_enigma_loader_module.yar#L1-L25"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "f1623c2f7c00affa3985cf7b9cdf25e39320700fa9d69f9f9426f03054b4b712"
 		logic_hash = "f5485b14291acc299d66b72aefd2d5e558d82f6a90450d293eb147f05423f2d8"
 		score = 75
@@ -234240,8 +234455,8 @@ rule SEKOIA_Koi_Powershell_Loading_Obfuscatednet
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/koi_powershell_loading_obfuscatednet.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/koi_powershell_loading_obfuscatednet.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "82f30c04474ea77af5169771a2c0e75ba792fd32dc559b8c29172b73ace4ef10"
 		score = 75
 		quality = 80
@@ -234267,8 +234482,8 @@ rule SEKOIA_Apt_Sandworm_Awfulshred_Obfuscation_Apr2022 : FILE
 		date = "2022-04-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sandworm_awfulshred_obfuscation_apr2022.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sandworm_awfulshred_obfuscation_apr2022.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "3e1eed3a4b638893828289f928a75b855bc9e1e29444ffa81c0461fdc1277cad"
 		score = 75
 		quality = 80
@@ -234292,8 +234507,8 @@ rule SEKOIA_Apt_Badmagic_Commonmagic_Usbstealer : FILE
 		date = "2023-05-15"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_badmagic_commonmagic_usbstealer.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_badmagic_commonmagic_usbstealer.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "a600f17bce9159b581c234cc101d1a0d093954fc9c79052dbca5451714fd7502"
 		score = 75
 		quality = 80
@@ -234319,8 +234534,8 @@ rule SEKOIA_Builder_Win_Royalroad_Rtf : FILE
 		date = "2022-06-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/builder_win_royalroad_rtf.yar#L1-L15"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/builder_win_royalroad_rtf.yar#L1-L15"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "831962105248e33422344d1431b90f2b567439b54252668f9294ea388f405b41"
 		score = 75
 		quality = 80
@@ -234344,8 +234559,8 @@ rule SEKOIA_Trojan_Win_Bbtok_Lnk_Sep23 : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://research.checkpoint.com/2023/behind-the-scenes-of-bbtok-analyzing-a-bankers-server-side-components/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/trojan_win_bbtok_lnk_sep23.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/trojan_win_bbtok_lnk_sep23.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "32bf07e3740399105359b62d8a612dfa731b024e06c9104b71b496919b5efe9e"
 		logic_hash = "5783487585dde1314c485bdcf3942b7e8b572c0689522ea136240833d2a64f5b"
 		score = 75
@@ -234372,8 +234587,8 @@ rule SEKOIA_Tool_Advancedrun_Strings : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_advancedrun_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_advancedrun_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "a1d50ebe6124584f32de0625475cdb74"
 		logic_hash = "58e5e0c903057ff382a78a37ba289cbaa5949d99a4b5ff77a223e86aab591f5d"
 		score = 75
@@ -234401,8 +234616,8 @@ rule SEKOIA_Backdoor_Win_Mgbot_Main
 		date = "2024-03-20"
 		modified = "2024-12-19"
 		reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/apt-attacks-telecoms-africa-mgbot"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_win_mgbot_main.yar#L4-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_win_mgbot_main.yar#L4-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "706c9030c2fa5eb758fa2113df3a7e79257808b3e79e46869d1bf279ed488c36"
 		hash = "017187a1b6d58c69d90d81055db031f1a7569a3b95743679b21e44ea82cfb6c7"
 		logic_hash = "61b335c88ce8bc56396b597c7c6f27b1d431941682401f0b3950c80edf7d8403"
@@ -234424,8 +234639,8 @@ rule SEKOIA_Apt_Gamaredon_Lnk : FILE
 		date = "2024-02-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_lnk.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_lnk.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "be73ffca4b88f11e33532cf9a179743508bfa7a60c6f4de98c245b350b5fb910"
 		score = 75
 		quality = 80
@@ -234449,8 +234664,8 @@ rule SEKOIA_Webshell_Wso_Webshell_Strings
 		date = "2022-04-22"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/webshell_wso_webshell_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/webshell_wso_webshell_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "4d6966a34dc8e7390913857144da106affea14668d1c2c11a05be62a6e625c8f"
 		score = 75
 		quality = 80
@@ -234478,8 +234693,8 @@ rule SEKOIA_Infostealer_Win_Redline_Strings : FILE
 		date = "2022-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_redline_strings.yar#L1-L47"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_redline_strings.yar#L1-L47"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "44443e16b788231b3f256b4d1e91c458c33963d5737d69fc5850f6b0efa7726b"
 		score = 75
 		quality = 78
@@ -234532,8 +234747,8 @@ rule SEKOIA_Loader_Latrodectus_Dll : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://twitter.com/Myrtus0x0/status/1732997981866209550"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_latrodectus_dll.yar#L1-L35"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_latrodectus_dll.yar#L1-L35"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "57aae1944eded14537cdc1c17b21cfc503687a416551b782fc76f8c7858e936e"
 		score = 75
 		quality = 80
@@ -234575,8 +234790,8 @@ rule SEKOIA_Infostealer_Win_Vidar_Strings_Nov23 : FILE
 		date = "2023-11-10"
 		modified = "2024-12-19"
 		reference = "https://twitter.com/crep1x/status/1722652451319202242"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_vidar_strings_nov23.yar#L1-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_vidar_strings_nov23.yar#L1-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "1a2fc421fb4058b78de28d97d69b126e685f7677b7998f5b6ae3cbcee0ef3f00"
 		score = 75
 		quality = 80
@@ -234616,8 +234831,8 @@ rule SEKOIA_Backdoor_Oyster
 		date = "2024-08-29"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/backdoor_oyster.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/backdoor_oyster.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ffd84d0c7064bcd69121aa606bc642ff2b5c9927ba622260a02a9689c7ab8878"
 		score = 75
 		quality = 80
@@ -234641,8 +234856,8 @@ rule SEKOIA_Pe_Stealer_Axilestealer_Strings : FILE
 		date = "2023-12-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/pe_stealer_axilestealer_strings.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/pe_stealer_axilestealer_strings.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "829b80c07ed4d9439d66956dbb106aa0cc9961dd2e5c05ffbe6c67e516613590"
 		score = 75
 		quality = 80
@@ -234676,8 +234891,8 @@ rule SEKOIA_Loader_Amadey_Stealer_Plugin : FILE
 		date = "2023-05-16"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_amadey_stealer_plugin.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_amadey_stealer_plugin.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0410492f9424797b670a14f43ce063458e59d7958e213c07c3d488a40bf370e6"
 		score = 75
 		quality = 80
@@ -234712,8 +234927,8 @@ rule SEKOIA_Infostealer_Win_Whitesnake_Loader_Feb23 : FILE
 		date = "2023-03-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_whitesnake_loader_feb23.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_whitesnake_loader_feb23.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c9d4414fb17c28a3ea2e75837732e1657bdc7b2df4a7ab34e458d659441759e8"
 		score = 75
 		quality = 80
@@ -234740,8 +234955,8 @@ rule SEKOIA_Loader_Win_Konni_Wpnprv : FILE
 		date = "2023-09-26"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_win_konni_wpnprv.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_win_konni_wpnprv.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "32178c97795aeead9c186e0b7fb508376045acb7534e6ce9e617c06fd399c3da"
 		score = 75
 		quality = 55
@@ -234769,8 +234984,8 @@ rule SEKOIA_Apt_Mustangpanda_Decrypt_Payload : FILE
 		date = "2022-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustangpanda_decrypt_payload.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustangpanda_decrypt_payload.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "dcc32580e351e605d21dc29558764c6fd85f8a9506de8e78f301459a5a2610b7"
 		score = 75
 		quality = 80
@@ -234805,8 +235020,8 @@ rule SEKOIA_Ransomware_Win_Masons_Jan2023 : FILE
 		date = "2023-02-13"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/ransomware_win_masons_jan2023.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/ransomware_win_masons_jan2023.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "7826978642c568f975e2b65d1575fdf92e634f7c80db2c86c9d7c8066e8955b8"
 		logic_hash = "05badf0364c6f61cd081a3ae64bc92b48e6f59c026a5d6b5b68acd5a8987cf91"
 		score = 75
@@ -234832,8 +235047,8 @@ rule SEKOIA_Apt_Apt28_Powershell_Ntlm_Stealer : FILE
 		date = "2023-09-07"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt28_powershell_ntlm_stealer.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt28_powershell_ntlm_stealer.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "29d039bf7d7018ebbae187ae0f057161c3f9256076324f06167872adc0accfa7"
 		score = 75
 		quality = 80
@@ -234860,8 +235075,8 @@ rule SEKOIA_Tool_Iodine_Strings : FILE
 		date = "2024-02-02"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_iodine_strings.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_iodine_strings.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "049b5af42d204061bd7e0c0294bb0abea492647dce8ec63fa3f296d1a19cb246"
 		score = 75
 		quality = 80
@@ -234887,8 +235102,8 @@ rule SEKOIA_Exploit_Linux_Eop_Polkit_Pkexec_Strings : FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_polkit_pkexec_strings.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_polkit_pkexec_strings.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "42d04204481c165ba1b5c4ee5ff1094c31400669b0eca041d736473d481e74b7"
 		score = 75
 		quality = 80
@@ -234913,8 +235128,8 @@ rule SEKOIA_Apt_Unk_Malicious_Lnk : FILE
 		date = "2024-09-06"
 		modified = "2024-12-19"
 		reference = "https://www.seqrite.com/blog/operation-oxidovy-sophisticated-malware-campaign-targets-czech-officials-using-nato-themed-decoys/"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unk_malicious_lnk.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unk_malicious_lnk.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "a8d7e56eb01a8cf576533db9af2e92ec"
 		logic_hash = "993411ceba45d1212a4840e6a35b72b52e64e78cbb2599ebc5c70c2fd3b8e552"
 		score = 75
@@ -234941,8 +235156,8 @@ rule SEKOIA_Apt_Aridviper_Rustsysjoker : FILE
 		date = "2023-11-27"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_aridviper_rustsysjoker.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_aridviper_rustsysjoker.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "cb3c5d37095c27aa169a6aa61fa12972ff71877c615eaa254c3906ef10c662a9"
 		score = 75
 		quality = 80
@@ -234967,8 +235182,8 @@ rule SEKOIA_Tool_Edrsandblast_Strings : FILE
 		date = "2024-01-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/tool_edrsandblast_strings.yar#L1-L29"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/tool_edrsandblast_strings.yar#L1-L29"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "8528c4c440734ba97b98b6e0857d95f38a91eaf9120ba2eacff292c864fb86a5"
 		score = 75
 		quality = 80
@@ -235003,8 +235218,8 @@ rule SEKOIA_Dropper_Win_Selfau3
 		date = "2024-02-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/dropper_win_selfau3.yar#L1-L24"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/dropper_win_selfau3.yar#L1-L24"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "5f69457127ae6cb84b04f72dd30393dbcf32b4ba26ec6d529eebcc03191cbed3"
 		score = 75
 		quality = 80
@@ -235032,8 +235247,8 @@ rule SEKOIA_Apt_Mustang_Panda_Toneshell : FILE
 		date = "2022-11-28"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_mustang_panda_toneshell.yar#L4-L160"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_mustang_panda_toneshell.yar#L4-L160"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "192fb01817cc6361062999cf539c51616d1755a5cd8e9d6e37bee6f6d04b0721"
 		score = 75
 		quality = 80
@@ -235155,8 +235370,8 @@ rule SEKOIA_Apt_Oilrig_Sc5Kv3_Strings : FILE
 		date = "2023-12-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_oilrig_sc5kv3_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_oilrig_sc5kv3_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "ace8e227abd97d0ec21815cc58c24d46e4944f2b0e1987672be53f81356a7a57"
 		score = 75
 		quality = 80
@@ -235180,8 +235395,8 @@ rule SEKOIA_Infostealer_Win_Stealc : FILE
 		date = "2023-02-12"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_stealc.yar#L1-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_stealc.yar#L1-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "60140c5a97494e6648dfce719ebce5644a3e05d4559d28874eb759b7d0e6a90e"
 		score = 75
 		quality = 55
@@ -235212,8 +235427,8 @@ rule SEKOIA_Implant_Win_Lyceum : FILE
 		date = "2022-06-13"
 		modified = "2024-12-19"
 		reference = "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/implant_win_lyceum.yar#L4-L30"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/implant_win_lyceum.yar#L4-L30"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "f6b4acf48877c1dd62fd2bfa19d701b0a79f052ec44fc5d4fe3dc7b02aa689c8"
 		score = 75
 		quality = 80
@@ -235238,8 +235453,8 @@ rule SEKOIA_Infostealer_Win_Aurora_Str : FILE
 		date = "2022-07-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_aurora_str.yar#L3-L34"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_aurora_str.yar#L3-L34"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "745443bb58f00cb09a1f323f530219913eaaf0d0e71c9a25af2072006f8c5f92"
 		score = 75
 		quality = 80
@@ -235279,8 +235494,8 @@ rule SEKOIA_Exploit_Linux_Eop_Cve20177308_Strings : CVE_2017_7308 FILE
 		date = "2023-12-08"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/exploit_linux_eop_cve20177308_strings.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/exploit_linux_eop_cve20177308_strings.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c9fd605ced8bb2c3861f642cdc08b99b320ee19658ce60f1b9679a1ccc427bf7"
 		score = 75
 		quality = 80
@@ -235306,8 +235521,8 @@ rule SEKOIA_Loader_Fakebat_Powershell_Fingerprint_May24 : FILE
 		date = "2024-06-21"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/loader_fakebat_powershell_fingerprint_may24.yar#L1-L27"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/loader_fakebat_powershell_fingerprint_may24.yar#L1-L27"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "04e5c888e5f71873c4fa2d732fbd8e40be3edf406300e65e489e1fa378028c5f"
 		score = 75
 		quality = 80
@@ -235340,8 +235555,8 @@ rule SEKOIA_Rat_Win_Xeno_Rat : FILE
 		date = "2024-02-09"
 		modified = "2024-12-19"
 		reference = "https://github.com/moom825/xeno-rat/tree/main/xeno%20rat%20client"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/rat_win_xeno_rat.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/rat_win_xeno_rat.yar#L1-L17"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "252dd8b236ce3570b6df504d307d88ee7431c0eee361813f1d4f8a66ef1db703"
 		score = 75
 		quality = 80
@@ -235366,8 +235581,8 @@ rule SEKOIA_Plugx_Final_Payload : FILE
 		date = "2023-07-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/plugx_final_payload.yar#L3-L23"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/plugx_final_payload.yar#L3-L23"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "bf5035eb7ed620edcf7a0e8e8be220451ce268fc49310f28059b60576d8c5182"
 		score = 75
 		quality = 80
@@ -235390,8 +235605,8 @@ rule SEKOIA_Infostealer_Win_Phoenix : FILE
 		date = "2023-06-20"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_phoenix.yar#L1-L33"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_phoenix.yar#L1-L33"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "c8a3a9a36c978cfc28fc6e21af10894161279dfd2e2ad665c3296fda10f6303d"
 		score = 75
 		quality = 80
@@ -235431,8 +235646,8 @@ rule SEKOIA_Apt_Sidecopy_Cheex : FILE
 		date = "2024-08-14"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_sidecopy_cheex.yar#L1-L16"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_sidecopy_cheex.yar#L1-L16"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		hash = "825c7a1603f800ff247c8f3e9a1420af"
 		logic_hash = "e5561466b616c746b33c0c4a46e8bdb0859e55aef8896bc1b14e54838c1661ee"
 		score = 75
@@ -235456,8 +235671,8 @@ rule SEKOIA_Apt_Unc4990_Emptyspace_Pyc : FILE
 		date = "2024-02-01"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_unc4990_emptyspace_pyc.yar#L1-L43"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_unc4990_emptyspace_pyc.yar#L1-L43"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "98e9c848f6b6276815b040681d7f36548b367257bb75d133309e89e8572a50b7"
 		score = 75
 		quality = 78
@@ -235508,8 +235723,8 @@ rule SEKOIA_Evilnumpayload_Fmtstr
 		date = "2022-07-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/evilnumpayload_fmtstr.yar#L1-L28"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/evilnumpayload_fmtstr.yar#L1-L28"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7aa55d0677e58658bb76a2d7386a7434011b5f9b8c9de1b718c37f85907ddcc3"
 		score = 75
 		quality = 80
@@ -235544,8 +235759,8 @@ rule SEKOIA_Apt_Apt35_Iisraid_Strings : FILE
 		date = "2023-05-11"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt35_iisraid_strings.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt35_iisraid_strings.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "de2ebef5ab46136aa54b146dbd4198f69801f3414d1d239fc7983c5b3c0115c4"
 		score = 75
 		quality = 80
@@ -235570,8 +235785,8 @@ rule SEKOIA_Infostealer_Win_Ginzostealer_Str : FILE
 		date = "2022-04-21"
 		modified = "2024-12-19"
 		reference = "https://blog.talosintelligence.com/2022/04/haskers-gang-zingostealer.html"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/infostealer_win_ginzostealer_str.yar#L1-L20"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/infostealer_win_ginzostealer_str.yar#L1-L20"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "b1c811a13cf0f632ac839b6a6de050fc59ffe3ed0704545feff02e13521ea53f"
 		score = 75
 		quality = 80
@@ -235598,8 +235813,8 @@ rule SEKOIA_Apt_Apt33_Falsefont : FILE
 		date = "2024-03-25"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_apt33_falsefont.yar#L1-L38"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_apt33_falsefont.yar#L1-L38"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "2eafe15d8e0df1b63b32463c4b44a9dc1d4251d01c15be20e4285c31e75b8348"
 		score = 75
 		quality = 53
@@ -235645,8 +235860,8 @@ rule SEKOIA_Apt_Gamaredon_Ddrdoh_Powershell_Backdoor : FILE
 		date = "2023-01-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_ddrdoh_powershell_backdoor.yar#L1-L19"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_ddrdoh_powershell_backdoor.yar#L1-L19"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "32d088affb65d410b2715fde28227792ea9f406e324de4a2e204e9850f0b81ce"
 		score = 75
 		quality = 80
@@ -235673,8 +235888,8 @@ rule SEKOIA_Apt_Ir_Sugarush_Implant : FILE
 		date = "2022-08-23"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_ir_sugarush_implant.yar#L1-L21"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_ir_sugarush_implant.yar#L1-L21"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "0d249552013c29ce1eb66dca2d93e5cde0a1b0fb80aae55469bec3bda224be91"
 		score = 75
 		quality = 80
@@ -235701,8 +235916,8 @@ rule SEKOIA_Apt_Gamaredon_Stealer_Obfuscation_1 : FILE
 		date = "2022-02-04"
 		modified = "2024-12-19"
 		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/yara_rules/apt_gamaredon_stealer_obfuscation_1.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/0cfec8bbe51bc92b4d612e53312f158b7597b151/LICENSE.md"
+		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_gamaredon_stealer_obfuscation_1.yar#L1-L18"
+		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
 		logic_hash = "7f6a5f8af73c4eb7debbadfd22232ad4e3f44e3aae36c3d624ce7a1a050e8782"
 		score = 75
 		quality = 80
@@ -235721,7 +235936,7 @@ rule SEKOIA_Apt_Gamaredon_Stealer_Obfuscation_1 : FILE
  * YARA Rule Set
  * Repository Name: Synacktiv
  * Repository: https://github.com/synacktiv/synacktiv-rules
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: d234cc4da0783db7dca56ae8dd5252afdc248df8
  * Number of Rules: 3
  * Skipped: 0 (age), 0 (quality), 5 (score), 0 (importance)
@@ -235927,7 +236142,7 @@ rule SYNACKTIV_SYNACKTIV_HKTL_Tunnel_X64_GO_Iox_May25 : COMMODITY FILE
  * YARA Rule Set
  * Repository Name: ArtifactDrop
  * Repository: https://github.com/matthieugras/artifact-drop/
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: d2bcbe820bc134a4ed672ef6013498f856561af4
  * Number of Rules: 1
  * Skipped: 0 (age), 0 (quality), 0 (score), 0 (importance)
@@ -235986,10 +236201,10 @@ rule ARTIFACTDROP_Go_Reflectiveloader_Decryption_Loop : FILE
  * YARA Rule Set
  * Repository Name: Signature Base
  * Repository: https://github.com/Neo23x0/signature-base
- * Retrieval Date: 2026-08-23
+ * Retrieval Date: 2026-08-30
  * Git Commit: e737ebd96c27a52ee99485d4d3e02e9c256d1d3a
  * Number of Rules: 4304
- * Skipped: 0 (age), 26 (quality), 553 (score), 0 (importance)
+ * Skipped: 0 (age), 27 (quality), 552 (score), 0 (importance)
  *
  * 
  * LICENSE
@@ -244014,7 +244229,7 @@ rule SIGNATURE_BASE_Pos_Malware_Malumpos
 		license_url = "https://github.com/Neo23x0/signature-base/blob/e737ebd96c27a52ee99485d4d3e02e9c256d1d3a/LICENSE"
 		logic_hash = "ece32e51a12adf0d68420c8d98efbe7df27b9061ddfe4dcedf151f9f06287eee"
 		score = 75
-		quality = 60
+		quality = 85
 		tags = ""
 		sample_filtype = "exe"
 
@@ -257669,7 +257884,7 @@ rule SIGNATURE_BASE_EXPL_Exchange_Proxyshell_Successful_Aug21_1 : SCRIPT
 		license_url = "https://github.com/Neo23x0/signature-base/blob/e737ebd96c27a52ee99485d4d3e02e9c256d1d3a/LICENSE"
 		logic_hash = "06ab609a8efe3b36b6356a9cf7b7b11b2fc2a556ec1df6995008a9df86b3fcee"
 		score = 65
-		quality = 83
+		quality = 58
 		tags = "SCRIPT"
 
 	strings:
@@ -270566,7 +270781,7 @@ rule SIGNATURE_BASE_FE_APT_Trojan_PL_RADIALPULSE_1
 		hash = "d72daafedf41d484f7f9816f7f076a9249a6808f1899649b7daa22c0447bb37b"
 		logic_hash = "d65a466cc15214d8e26597588c039a6b9fb4637ef8f3b1ebea27f016fbd5cba8"
 		score = 75
-		quality = 58
+		quality = 83
 		tags = ""
 
 	strings:
@@ -287045,7 +287260,7 @@ rule SIGNATURE_BASE_WEBSHELL_PHP_Generic_Callback : FILE
 		hash = "487e8c08e85774dfd1f5e744050c08eb7d01c6877f7d03d7963187748339e8c4"
 		logic_hash = "e12dec5252a816c10443fe0e0b40b0b9b4a187b32facd8e09e1f057801da25f9"
 		score = 60
-		quality = -128
+		quality = -103
 		tags = "FILE"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		importance = 70
@@ -288119,7 +288334,7 @@ rule SIGNATURE_BASE_WEBSHELL_PHP_Includer_Tiny : FILE
 		hash = "b3b0274cda28292813096a5a7a3f5f77378b8905205bda7bb7e1a679a7845004"
 		logic_hash = "e1efb6384009def30d845650fd0dd77319c3c7b4402cca074ca5c2a06372ab58"
 		score = 75
-		quality = 17
+		quality = 42
 		tags = "FILE"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		importance = 70
@@ -359209,7 +359424,7 @@ rule SIGNATURE_BASE_TA17_293A_Energetic_Bear_Api_Hashing_Tool : FILE
 		description = "Energetic Bear API Hashing Tool"
 		author = "CERT RE Team"
 		id = "4e58800a-9618-5d8b-954c-e843be6002c2"
-		date = "2026-02-23"
+		date = "2026-02-28"
 		modified = "2023-12-05"
 		reference = "https://github.com/Neo23x0/signature-base"
 		source_url = "https://github.com/Neo23x0/signature-base/blob/e737ebd96c27a52ee99485d4d3e02e9c256d1d3a/yara/apt_ta17_293A.yar#L77-L93"

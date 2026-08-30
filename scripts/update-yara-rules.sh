@@ -355,9 +355,50 @@ if [ -f "$SCRIPT_DIR/dedup-yara-rules.py" ]; then
         echo "[$TIMESTAMP] Rule-name dedup applied to $MASTER_FILE" >> "$LOG_FILE"
     else
         rm -f "$_dedup_tmp"
-        echo "[$TIMESTAMP] WARNING: rule-name dedup failed; combined pack left unmodified" >> "$LOG_FILE"
+        # Was a soft warning. Now fatal: 7c below resolves a "duplicated identifier"
+        # by DROPPING rule blocks, so letting ~14k duplicates through would have it
+        # delete them wholesale and still report success.
+        echo "[$TIMESTAMP] ERROR: rule-name dedup failed; refusing to publish (7c would drop duplicates as compile errors)" >> "$LOG_FILE"
+        exit 1
     fi
 fi
+
+# ========================================
+# 7c. Drop rules the SHIPPED engine cannot compile
+# ========================================
+# The app links a static libyara built `--without-crypto --disable-dotnet`, so
+# `pe.number_of_signatures`, `pe.signatures[]`, `pe.is_signed` and the whole
+# `dotnet` module do not exist for it. Upstream packs use them freely. libyara
+# aborts the ENTIRE compile on any error, so 1,626 unusable rules cost all
+# 12,401 and the scanner loaded ZERO rules -- every scan reported "no matches".
+#
+# Validation alone could not catch this: it gated with PATH `yarac` (Homebrew,
+# with OpenSSL + dotnet), an engine strictly MORE capable than the one we ship.
+# Filter against the real engine here so the published pack always loads.
+# Every failure below is FATAL. A missing script, an unbuildable gate, or a
+# failed filter must never degrade to "publish unfiltered" -- that silent-skip
+# is the exact failure class this whole change exists to remove.
+if [ ! -f "$SCRIPT_DIR/filter-yara-rules-vendored.py" ]; then
+    echo "[$TIMESTAMP] ERROR: filter-yara-rules-vendored.py is missing; refusing to publish" >> "$LOG_FILE"
+    exit 1
+fi
+
+_gate_bin="$(bash "$SCRIPT_DIR/build/build-yara-gate.sh" 2>>"$LOG_FILE")" || _gate_bin=""
+if [ -z "$_gate_bin" ]; then
+    echo "[$TIMESTAMP] ERROR: vendored-engine gate unavailable; refusing to publish an unverified pack" >> "$LOG_FILE"
+    exit 1
+fi
+
+_filt_tmp="$(/usr/bin/mktemp)"
+if ! _filt_summary=$(python3 "$SCRIPT_DIR/filter-yara-rules-vendored.py" \
+        "$MASTER_FILE" "$_filt_tmp" "$_gate_bin" 2>>"$LOG_FILE"); then
+    rm -f "$_filt_tmp"
+    echo "[$TIMESTAMP] ERROR: vendored-engine filter failed; refusing to publish" >> "$LOG_FILE"
+    exit 1
+fi
+mv -f "$_filt_tmp" "$MASTER_FILE"
+VENDORED_FILTER_SUMMARY="$_filt_summary"
+echo "[$TIMESTAMP] Vendored-engine filter applied: $_filt_summary" >> "$LOG_FILE"
 
 # ========================================
 # 8. Count rules and create version info
@@ -382,7 +423,9 @@ YARAIFY_COUNT=$(count_rules_in_dir sources/yaraify-abusech)
 DETECTRAPTOR_COUNT=$(count_rules_in_dir sources/detectraptor)
 GLASSWORM_COUNT=$(count_rules_in_dir sources/glassworm)
 VQL_ARTIFACT_COUNT=$(find "$YARA_DIR/vql-artifacts" -type f \( -name "*.yaml" -o -name "*.yml" \) 2>/dev/null | wc -l | tr -d ' ')
-TOTAL_COUNT=$(grep -c "^rule " "$MASTER_FILE" 2>/dev/null || true)
+# NOT `grep -c "^rule "` -- that misses private and indented declarations and
+# under-reported this pack by 24, disagreeing with what validate and the engine report.
+TOTAL_COUNT=$(grep -cE '^[[:space:]]*(global[[:space:]]+)?(private[[:space:]]+)?rule[[:space:]]' "$MASTER_FILE" 2>/dev/null || true)
 [[ "$TOTAL_COUNT" =~ ^[0-9]+$ ]] || TOTAL_COUNT=0
 
 echo "[$TIMESTAMP] Rule counts - Forge: $FORGE_COUNT, Citizen Lab: $CITIZENLAB_COUNT, macOS: $MACOS_COUNT, Awesome: $AWESOME_COUNT, YARAify: $YARAIFY_COUNT, DetectRaptor: $DETECTRAPTOR_COUNT, Glassworm: $GLASSWORM_COUNT, Total: $TOTAL_COUNT" >> "$LOG_FILE"
@@ -393,6 +436,7 @@ cat > "$YARA_DIR/version.json" << EOF
   "updated": "$TIMESTAMP",
   "total_rules": "$TOTAL_COUNT",
   "vql_artifacts": "$VQL_ARTIFACT_COUNT",
+  "vendored_engine_filter": ${VENDORED_FILTER_SUMMARY:-null},
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
@@ -489,8 +533,15 @@ cat > "$OFFLINE_DIR/README.md" << OFFLINEREADME
 ## Contents
 
 - \`yara-rules/\` - All YARA rules from 7 sources
-  - \`combined-rules-master.yar\` - Single consolidated file
-  - Source directories with individual rule files
+  - \`combined-rules-master.yar\` - Single consolidated file. **This is the only
+    file verified to compile against the engine Claw Edition ships** (a static
+    libyara built \`--without-crypto --disable-dotnet\`).
+  - Source directories with individual rule files. **NOT filtered.** They retain
+    rules using \`pe.number_of_signatures\`/\`pe.signatures\`/\`pe.is_signed\` and the
+    \`dotnet\` module, which that engine does not provide. libyara aborts the whole
+    compile on any error, so loading these directories recursively with Claw
+    Edition's engine will load ZERO rules. Use them with a full-featured
+    \`yara\`/\`yarac\` build, or use the master file.
 - \`vql-artifacts/\` - Velociraptor VQL detection artifacts
 - \`detection-data/\` - CSV detection data files
 - \`version.json\` - Version and source information

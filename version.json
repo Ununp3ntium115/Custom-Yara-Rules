@@ -1,11 +1,12 @@
 {
-  "updated": "2026-08-29 15:46:29",
-  "total_rules": "12377",
+  "updated": "2026-08-30 03:00:12",
+  "total_rules": "10778",
   "vql_artifacts": "31",
+  "vendored_engine_filter": {"rules_before": 12404, "rules_after": 10778, "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
-      "rule_count": "24748",
+      "rule_count": "23129",
       "packages": ["full", "extended", "core"]
     },
     "citizenlab": {
