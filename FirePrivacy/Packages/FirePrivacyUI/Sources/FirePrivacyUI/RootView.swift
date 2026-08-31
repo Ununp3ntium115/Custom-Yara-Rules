@@ -303,7 +303,6 @@ public struct AllFindingsView: View {
         .navigationTitle("All findings")
     }
 }
-#endif
 
 /// File types the picker accepts (IMP-001).
 ///
@@ -317,3 +316,4 @@ public enum ImportFileTypes {
         .plainText,
     ]
 }
+#endif

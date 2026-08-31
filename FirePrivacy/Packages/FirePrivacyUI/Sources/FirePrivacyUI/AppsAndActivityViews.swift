@@ -4,6 +4,7 @@ import ObservationCore
 import FindingEngine
 import KnowledgeBaseKit
 import ObservationStore
+import ReportKit
 
 /// The app list (DASH-004). The bundle identifier is always visible: Fire
 /// Privacy shows a display name only when it has a verified one.
