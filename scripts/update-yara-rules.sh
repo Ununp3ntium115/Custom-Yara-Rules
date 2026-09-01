@@ -389,16 +389,23 @@ if [ -z "$_gate_bin" ]; then
     exit 1
 fi
 
-_filt_tmp="$(/usr/bin/mktemp)"
+# TWO ARTIFACTS, not one. The filter used to overwrite $MASTER_FILE in place, but that
+# file is what the PUBLIC publish lane ships (Ununp3ntium115/Custom-Yara-Rules). Third
+# parties consuming it run their own, usually FULL-FEATURED, yara — for them the 1,608
+# authenticode and 18 dotnet rules work fine, and imposing our engine's restriction on
+# them silently deleted 1,626 working detections (t_df722d31). So:
+#   combined-rules-master.yar         -> FULL pack, published, unchanged for consumers
+#   combined-rules-vendored-compat.yar -> filtered pack the APP bundles, because the
+#                                         shipped static libyara cannot compile the rest
+COMPAT_FILE="$(dirname "$MASTER_FILE")/combined-rules-vendored-compat.yar"
 if ! _filt_summary=$(python3 "$SCRIPT_DIR/filter-yara-rules-vendored.py" \
-        "$MASTER_FILE" "$_filt_tmp" "$_gate_bin" 2>>"$LOG_FILE"); then
-    rm -f "$_filt_tmp"
+        "$MASTER_FILE" "$COMPAT_FILE" "$_gate_bin" 2>>"$LOG_FILE"); then
+    rm -f "$COMPAT_FILE"
     echo "[$TIMESTAMP] ERROR: vendored-engine filter failed; refusing to publish" >> "$LOG_FILE"
     exit 1
 fi
-mv -f "$_filt_tmp" "$MASTER_FILE"
 VENDORED_FILTER_SUMMARY="$_filt_summary"
-echo "[$TIMESTAMP] Vendored-engine filter applied: $_filt_summary" >> "$LOG_FILE"
+echo "[$TIMESTAMP] Vendored-engine compat pack written to $COMPAT_FILE: $_filt_summary" >> "$LOG_FILE"
 
 # ========================================
 # 8. Count rules and create version info
@@ -504,6 +511,12 @@ mkdir -p "$OFFLINE_DIR"
 # Copy all YARA rules
 mkdir -p "$OFFLINE_DIR/yara-rules"
 cp "$MASTER_FILE" "$OFFLINE_DIR/yara-rules/" 2>/dev/null || true
+# BOTH packs ship. The app downloads this zip and installs from it at RUNTIME
+# (YARARulesUpdaterService), so shipping only the full master would reinstall a
+# pack the app's --without-crypto libyara cannot compile and bring back the
+# zero-rules failure through the update path. External consumers still get the
+# full master; the app prefers the compat member when present.
+cp "$COMPAT_FILE" "$OFFLINE_DIR/yara-rules/" 2>/dev/null || true
 cp -r "$YARA_DIR/sources/"* "$OFFLINE_DIR/yara-rules/" 2>/dev/null || true
 
 # Copy VQL artifacts
