@@ -298,6 +298,19 @@ if [ -f "packages/full/yara-rules-full.yar" ]; then
 fi
 
 # Add Citizen Lab rules
+#
+# DELIBERATELY still *.yar only, though Citizen Lab ships .yara exclusively, so
+# this block emits NOTHING today (kanban t_f7c0794b). Widening the glob is a
+# one-word change and is NOT made here on purpose: citizenlab carries an
+# unresolved prose licence ("upstream per-file; preserve notices") with no legal
+# review on record (kanban t_4a5c367f), and it is pinned in
+# scripts/validate-yara-package.sh UNRESOLVED_BASELINE. Widening the glob would
+# begin REDISTRIBUTING that content, turning an accounting bug into a licensing
+# one. The provenance lie it caused is fixed at the counter instead.
+#
+# TO ENABLE, once the licence is answered: change the two globs below to
+#   sources/citizenlab/*.yar sources/citizenlab/*.yara
+# and the counter above follows automatically.
 if [ -d "sources/citizenlab" ] && ls sources/citizenlab/*.yar 1>/dev/null 2>&1; then
     echo "// ========== Citizen Lab Rules ==========" >> "$MASTER_FILE"
     for file in sources/citizenlab/*.yar; do
@@ -422,8 +435,39 @@ count_rules_in_dir() {
     printf '%s' "$count"
 }
 
+# Count rules under $1 matching ONLY the glob $2 — used where a count must mirror
+# the assembler's predicate rather than everything present on disk.
+count_rules_matching() {
+    local dir="$1" pattern="$2" count=0 file file_count
+    [[ -d "$dir" ]] || { printf '0'; return; }
+    while IFS= read -r -d '' file; do
+        file_count=$(grep -c "^rule " "$file" 2>/dev/null || true)
+        [[ "$file_count" =~ ^[0-9]+$ ]] || file_count=0
+        count=$((count + file_count))
+    done < <(find "$dir" -type f -name "$pattern" -print0 2>/dev/null)
+    printf '%s' "$count"
+}
+
 FORGE_COUNT=$(count_rules_in_dir packages/full)
-CITIZENLAB_COUNT=$(count_rules_in_dir sources/citizenlab)
+# PROVENANCE HONESTY (2026-09-03, kanban t_f7c0794b).
+#
+# count_rules_in_dir globs BOTH *.yar and *.yara. The ASSEMBLER above globs only
+# *.yar, and Citizen Lab ships .yara exclusively — so the assembler emits nothing
+# while this counter reported 4. That number is not cosmetic: it flows into
+# version.json ("rule_count"), both READMEs, the offline-package manifest, the
+# daily log line and the commit message. Every one of them claimed rules that are
+# not in the pack. Verified: grep -c for OLEAuthor/OLETitle/OLELastSavedBy in
+# combined-rules-master.yar returns 0.
+#
+# The count must describe what SHIPS, so it now uses the assembler's own
+# predicate. When the glob below is widened (see the comment at the Citizen Lab
+# assembly block) this count follows automatically — the two can no longer drift.
+CITIZENLAB_COUNT=$(count_rules_matching sources/citizenlab "*.yar")
+CITIZENLAB_ON_DISK=$(count_rules_in_dir sources/citizenlab)
+if [ "$CITIZENLAB_COUNT" != "$CITIZENLAB_ON_DISK" ]; then
+  echo "[$TIMESTAMP] WARNING: citizenlab has ${CITIZENLAB_ON_DISK} rules on disk but ${CITIZENLAB_COUNT} reach the pack (extension-glob mismatch, kanban t_f7c0794b)" >> "$LOG_FILE"
+  echo "WARNING: citizenlab contributes ${CITIZENLAB_COUNT} of ${CITIZENLAB_ON_DISK} rules on disk (see kanban t_f7c0794b)" >&2
+fi
 MACOS_COUNT=$(count_rules_in_dir sources/macos-specific)
 AWESOME_COUNT=$(count_rules_in_dir sources/awesome-yara)
 YARAIFY_COUNT=$(count_rules_in_dir sources/yaraify-abusech)

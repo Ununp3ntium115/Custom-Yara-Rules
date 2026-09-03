@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-02 03:00:54",
+  "updated": "2026-09-03 03:00:33",
   "total_rules": "12404",
   "vql_artifacts": "31",
-  "vendored_engine_filter": {"rules_before": 12404, "rules_after": 10778, "source_sha256": "7dbc4ea7c319f12b1a0463205186aa07e2626fdb4ef6f57117e7979f34e06aac", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
+  "vendored_engine_filter": {"rules_before": 12404, "rules_after": 10778, "source_sha256": "7f072d0c58414a94b14a43453fc047d081aaa8fbcca36657acf0e2d68b0f7f98", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
@@ -11,7 +11,7 @@
     },
     "citizenlab": {
       "url": "https://github.com/citizenlab/malware-signatures",
-      "rule_count": "4"
+      "rule_count": "0"
     },
     "macos_specific": {
       "url": "https://gist.github.com/pedramamini/c586a151a978f971b70412ca4485c491",
@@ -24,7 +24,7 @@
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "609",
+      "rule_count": "610",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
