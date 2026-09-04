@@ -1,5 +1,5 @@
 // Velociraptor Claw Edition - Combined YARA Rules
-// Generated: 2026-09-03 03:00:33
+// Generated: 2026-09-04 03:00:43
 // Sources: YARA Forge, Citizen Lab, macOS-Specific, Awesome-YARA, YARAify/abuse.ch, DetectRaptor, GlasswormYARA
 
 // ========== YARA Forge Rules ==========

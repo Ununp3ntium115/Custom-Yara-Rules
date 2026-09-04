@@ -2,19 +2,185 @@
   "schema": "velociraptor-claw-yara-source-manifest/v1",
   "generated_by": "scripts/update-yara-rules.sh",
   "active_sources": [
-    {"id":"yara_forge","name":"YARA Forge","url":"https://github.com/YARAHQ/yara-forge","license":"mixed-upstream; review generated package notices","role":"primary curated packages","required":true,"production_enabled":true},
-    {"id":"citizenlab","name":"Citizen Lab malware signatures","url":"https://github.com/citizenlab/malware-signatures","license":"upstream per-file; preserve notices","role":"malware signatures","required":false,"production_enabled":true},
-    {"id":"macos_specific","name":"pedramamini macOS malware rules","url":"https://gist.github.com/pedramamini/c586a151a978f971b70412ca4485c491","license":"verify upstream before redistribution","role":"macOS-specific coverage","required":false,"production_enabled":false,"quarantine_reason":"Upstream endpoint currently returns a literal 404 response; do not compile or publish until refreshed and validated."},
-    {"id":"awesome_yara","name":"InQuest Awesome-YARA collection","url":"https://github.com/InQuest/awesome-yara","license":"mixed; source-specific review required","role":"curated collection index","required":false,"production_enabled":false,"quarantine_reason":"Contains Android rules requiring the androguard module and unsupported metadata fields under YARA 4.5.8."},
-    {"id":"signature_base","name":"Neo23x0 Signature Base","url":"https://github.com/Neo23x0/signature-base","license":"Detection Rule License (DRL) 1.1 unless overridden per file","role":"included by awesome_yara collection","required":false,"production_enabled":false,"quarantine_reason":"Ingested into the quarantined Awesome-YARA collection; compile compatibility is not established."},
-    {"id":"yara_rules","name":"Yara-Rules community rules","url":"https://github.com/Yara-Rules/rules","license":"GPL-2.0; distribution review required","role":"included by awesome_yara collection","required":false,"production_enabled":false,"quarantine_reason":"GPL-2.0 content remains review-only and is not included in the production master."},
-    {"id":"yaraify_abusech","name":"YARAhub / YARAify","url":"https://yaraify.abuse.ch/yarahub/","license":"TLP:CLEAR community rules; preserve upstream metadata","role":"community rules","required":false,"production_enabled":false,"quarantine_reason":"Contains unreferenced strings and undefined identifiers under YARA 4.5.8."},
-    {"id":"detectraptor","name":"DetectRaptor","url":"https://github.com/mgreen27/DetectRaptor","license":"upstream repository license; review before redistribution","role":"Velociraptor YARA/VQL artifacts","required":false,"production_enabled":true},
-    {"id":"glassworm_yara","name":"GlasswormYARA","url":"https://github.com/Ununp3ntium115/GlasswormYARA","license":"upstream repository license; preserve attribution","role":"custom Glassworm rules and IOC data","required":false,"production_enabled":true}
+    {
+      "id": "yara_forge",
+      "name": "YARA Forge",
+      "url": "https://github.com/YARAHQ/yara-forge",
+      "license": "mixed-upstream; review generated package notices",
+      "role": "primary curated packages",
+      "required": true,
+      "production_enabled": true
+    },
+    {
+      "id": "citizenlab",
+      "name": "Citizen Lab malware signatures",
+      "url": "https://github.com/citizenlab/malware-signatures",
+      "license": "upstream per-file; preserve notices",
+      "role": "malware signatures",
+      "required": false,
+      "production_enabled": true
+    },
+    {
+      "id": "macos_specific",
+      "name": "pedramamini macOS malware rules",
+      "url": "https://gist.github.com/pedramamini/c586a151a978f971b70412ca4485c491",
+      "license": "verify upstream before redistribution",
+      "role": "macOS-specific coverage",
+      "required": false,
+      "production_enabled": false,
+      "quarantine_reason": "Upstream endpoint currently returns a literal 404 response; do not compile or publish until refreshed and validated."
+    },
+    {
+      "id": "awesome_yara",
+      "name": "InQuest Awesome-YARA collection",
+      "url": "https://github.com/InQuest/awesome-yara",
+      "license": "mixed; source-specific review required",
+      "role": "curated collection index",
+      "required": false,
+      "production_enabled": false,
+      "quarantine_reason": "Contains Android rules requiring the androguard module and unsupported metadata fields under YARA 4.5.8."
+    },
+    {
+      "id": "signature_base",
+      "name": "Neo23x0 Signature Base",
+      "url": "https://github.com/Neo23x0/signature-base",
+      "license": "Detection Rule License (DRL) 1.1 unless overridden per file",
+      "role": "included by awesome_yara collection",
+      "required": false,
+      "production_enabled": false,
+      "quarantine_reason": "Ingested into the quarantined Awesome-YARA collection; compile compatibility is not established."
+    },
+    {
+      "id": "yara_rules",
+      "name": "Yara-Rules community rules",
+      "url": "https://github.com/Yara-Rules/rules",
+      "license": "GPL-2.0; distribution review required",
+      "role": "included by awesome_yara collection",
+      "required": false,
+      "production_enabled": false,
+      "quarantine_reason": "GPL-2.0 content remains review-only and is not included in the production master."
+    },
+    {
+      "id": "yaraify_abusech",
+      "name": "YARAhub / YARAify",
+      "url": "https://yaraify.abuse.ch/yarahub/",
+      "license": "TLP:CLEAR community rules; preserve upstream metadata",
+      "role": "community rules",
+      "required": false,
+      "production_enabled": false,
+      "quarantine_reason": "Contains unreferenced strings and undefined identifiers under YARA 4.5.8."
+    },
+    {
+      "id": "detectraptor",
+      "name": "DetectRaptor",
+      "url": "https://github.com/mgreen27/DetectRaptor",
+      "license": "upstream repository license; review before redistribution",
+      "role": "Velociraptor YARA/VQL artifacts",
+      "required": false,
+      "production_enabled": true
+    },
+    {
+      "id": "glassworm_yara",
+      "name": "GlasswormYARA",
+      "url": "https://github.com/Ununp3ntium115/GlasswormYARA",
+      "license": "upstream repository license; preserve attribution",
+      "role": "custom Glassworm rules and IOC data",
+      "required": false,
+      "production_enabled": true
+    }
   ],
   "candidate_sources": [
-    {"id":"inquest_yara_rules","name":"InQuest yara-rules","url":"https://github.com/InQuest/yara-rules","license":"MIT","status":"review-only","reason":"Potentially useful but overlaps existing InQuest-derived content; add only after duplicate and license audit."},
-    {"id":"malpedia_signator_rules","name":"Malpedia Signator rules","url":"https://github.com/malpedia/signator-rules","license":"CC BY-SA 4.0","status":"review-only","reason":"Good coverage, but share-alike and redistribution obligations require explicit product/legal review."},
-    {"id":"bartblaze_yara_rules","name":"bartblaze Yara-rules","url":"https://github.com/bartblaze/Yara-rules","license":"MIT/TLP:CLEAR claims; verify per-file metadata","status":"review-only","reason":"Promising TLP:CLEAR coverage, but requires provenance, duplicate, and compile testing before activation."}
+    {
+      "id": "inquest_yara_rules",
+      "name": "InQuest yara-rules",
+      "url": "https://github.com/InQuest/yara-rules",
+      "license": "MIT",
+      "status": "review-only",
+      "reason": "Potentially useful but overlaps existing InQuest-derived content; add only after duplicate and license audit."
+    },
+    {
+      "id": "malpedia_signator_rules",
+      "name": "Malpedia Signator rules",
+      "url": "https://github.com/malpedia/signator-rules",
+      "license": "CC BY-SA 4.0",
+      "status": "review-only",
+      "reason": "Good coverage, but share-alike and redistribution obligations require explicit product/legal review."
+    },
+    {
+      "id": "bartblaze_yara_rules",
+      "name": "bartblaze Yara-rules",
+      "url": "https://github.com/bartblaze/Yara-rules",
+      "license": "MIT/TLP:CLEAR claims; verify per-file metadata",
+      "status": "review-only",
+      "reason": "Promising TLP:CLEAR coverage, but requires provenance, duplicate, and compile testing before activation."
+    }
+  ],
+  "runtime_fetch_sources": [
+    {
+      "id": "yara_forge",
+      "name": "YARA Forge",
+      "github_repo": "YARAHQ/yara-forge",
+      "license": "mixed-upstream; review generated package notices",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "Licence is unresolved prose, not an SPDX identifier \u2014 one of the four shipping sources pinned by t_4a5c367f. Runtime fetch does not itself resolve the terms; it only removes the REDISTRIBUTION trigger. A legal_review with a 'LEGAL-PASS: yara_forge' line is still required before enabling."
+    },
+    {
+      "id": "citizenlab",
+      "name": "Citizen Lab malware signatures",
+      "github_repo": "citizenlab/malware-signatures",
+      "license": "upstream per-file; preserve notices",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "Licence is unresolved prose, not an SPDX identifier \u2014 one of the four shipping sources pinned by t_4a5c367f. Runtime fetch does not itself resolve the terms; it only removes the REDISTRIBUTION trigger. A legal_review with a 'LEGAL-PASS: citizenlab' line is still required before enabling."
+    },
+    {
+      "id": "detectraptor",
+      "name": "DetectRaptor",
+      "github_repo": "mgreen27/DetectRaptor",
+      "license": "upstream repository license; review before redistribution",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "Licence is unresolved prose, not an SPDX identifier \u2014 one of the four shipping sources pinned by t_4a5c367f. Runtime fetch does not itself resolve the terms; it only removes the REDISTRIBUTION trigger. A legal_review with a 'LEGAL-PASS: detectraptor' line is still required before enabling."
+    },
+    {
+      "id": "glassworm_yara",
+      "name": "GlasswormYARA",
+      "github_repo": "Ununp3ntium115/GlasswormYARA",
+      "license": "upstream repository license; preserve attribution",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "Licence is unresolved prose, not an SPDX identifier \u2014 one of the four shipping sources pinned by t_4a5c367f. Runtime fetch does not itself resolve the terms; it only removes the REDISTRIBUTION trigger. A legal_review with a 'LEGAL-PASS: glassworm_yara' line is still required before enabling."
+    },
+    {
+      "id": "yara_rules",
+      "name": "Yara-Rules community rules",
+      "github_repo": "Yara-Rules/rules",
+      "license": "GPL-2.0; distribution review required",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "GPL-2.0 is reciprocal. Per the standing gate from t_2edc91a9 this source needs a legal_review document under docs/legal/ carrying a literal 'LEGAL-PASS: yara_rules' line before the runtime-fetch control may be enabled. Not yet reviewed."
+    },
+    {
+      "id": "malpedia_signator_rules",
+      "name": "Malpedia Signator rules",
+      "github_repo": "malpedia/signator-rules",
+      "license": "CC BY-SA 4.0",
+      "redistribution_trigger": true,
+      "runtime_fetch_eligible": false,
+      "legal_review": null,
+      "attribution_wired": false,
+      "reason_if_disabled": "CC BY-SA 4.0 is share-alike. Runtime fetch removes the redistribution trigger, but the ShareAlike and attribution terms still need a recorded legal pass ('LEGAL-PASS: malpedia_signator_rules') before the control may be enabled."
+    }
   ]
 }
