@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-04 03:00:43",
+  "updated": "2026-09-05 03:00:18",
   "total_rules": "12404",
   "vql_artifacts": "31",
-  "vendored_engine_filter": {"rules_before": 12404, "rules_after": 10778, "source_sha256": "a2b903cd8642ef20c413bee4b18d0ba60da38d5e57cac6975a91ccac967603e9", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
+  "vendored_engine_filter": {"rules_before": 12404, "rules_after": 10778, "source_sha256": "51909d62a1202614a55c41a5caefc0a83906ff2b04a0c7e670c48f6e66478289", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
