@@ -4,7 +4,7 @@ rule Redtail_Installer_Script
         description = "RedTail botnet multi-arch installer script - selects arch, finds writable+exec dir avoiding noexec, unpacks redtail.<arch>, runs with ssh propagation arg"
         author = "p0tatosmash3r"
         date = "2026-09-05"
-        yarahub_author_twitter = ""
+        hash = "1e70b63472772e3f5092ffe9c3573470e73590e6ab6d93fdcede1d368a5fd72d"
         yarahub_reference_link = "https://malpedia.caad.fkie.fraunhofer.de/details/elf.redtail"
         yarahub_reference_md5 = "224b41af1717915304b30540473b8db2"
         yarahub_uuid = "a80a0cb5-6889-4dfa-9ba4-63dd280bac5e"

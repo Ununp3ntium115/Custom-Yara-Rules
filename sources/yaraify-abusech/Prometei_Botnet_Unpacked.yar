@@ -4,7 +4,7 @@ rule Prometei_Botnet_Unpacked
         description = "Prometei cryptomining botnet (unpacked ELF payload) - SMB-spreading miner with encrypted C2"
         author = "p0tatosmash3r"
         date = "2026-09-05"
-        yarahub_author_twitter = ""
+        hash = "e98f72882d520f1a1d17036847154b84db0b44a463f75d2d12af1bb9c48fff95"
         yarahub_reference_link = "https://malpedia.caad.fkie.fraunhofer.de/details/elf.prometei"
         yarahub_reference_md5 = "e7efed36b9ca6a61ed7505aeeec20706"
         yarahub_uuid = "0f9cd6e6-3ad9-4869-a0a9-e3aeecc0771f"
