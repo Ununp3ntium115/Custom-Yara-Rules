@@ -3,7 +3,7 @@ rule Android_Spyware_OceanLotus_PhantomLance {
         description = "Detects OceanLotus (APT32) PhantomLance Android spyware APK files based on C2 domains and specific internal DEX framework invocations"
         author = "Serhii Kocherhan"
         date = "2026-09-06"
-        yarahub_twitter = @skocherhan
+        yarahub_twitter = "@skocherhan"
         yarahub_uuid = "4eca4c72-2e84-465f-ab25-7874b4e8b586"
         yarahub_license = "CC0 1.0"
         yarahub_rule_matching_tlp = "TLP:WHITE"

@@ -3,7 +3,7 @@ rule LNK_Timestomped_PowerShell_Obfuscated {
         description = "Detects timestomped LNK files with 1970 timestamps, zeroed volume serial, msedge icon, and obfuscated PowerShell arguments"
         author = "Serhii Kocherhan"
         date = "2026-09-03"
-        yarahub_twitter = @skocherhan
+        yarahub_twitter = "@skocherhan"
         yarahub_uuid = "53fa78e8-1e68-4127-8aee-525676d1d0f3"
         yarahub_license = "CC0 1.0"
         yarahub_rule_matching_tlp = "TLP:WHITE"
@@ -33,9 +33,9 @@ rule LNK_Timestomped_PowerShell_Obfuscated {
         $lnk_magic at 0 and filesize < 2MB and
         (
             // Check for 1970 FILETIME at CreationTime (0x1C), AccessTime (0x24), and WriteTime (0x2C)
-            uint64(0x1C) == 0x019DB1DED53E8000 and
-            uint64(0x24) == 0x019DB1DED53E8000 and
-            uint64(0x2C) == 0x019DB1DED53E8000
+            $ft_1970 at 0x1C and
+            $ft_1970 at 0x24 and
+            $ft_1970 at 0x2C
         ) and
         (
             // Match obfuscated PowerShell argument structure

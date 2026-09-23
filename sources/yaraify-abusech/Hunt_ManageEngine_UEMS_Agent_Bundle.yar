@@ -3,7 +3,7 @@ rule Hunt_ManageEngine_UEMS_Agent_Bundle {
         description = "Detects archives, installers, or files containing ManageEngine UEMS Agent and Remote Control bundled components"
         author = "Serhii Kocherhan"
         date = "2026-09-05"
-        yarahub_twitter = @skocherhan
+        yarahub_twitter = "@skocherhan"
         yarahub_uuid = "428f029a-e4e6-43bc-9630-29599f78252a"
         yarahub_license = "CC0 1.0"
         yarahub_rule_matching_tlp = "TLP:WHITE"

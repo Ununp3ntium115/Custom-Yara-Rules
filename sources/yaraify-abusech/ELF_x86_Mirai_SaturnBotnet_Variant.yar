@@ -3,7 +3,7 @@ rule ELF_x86_Mirai_SaturnBotnet_Variant {
         description = "Detects Mirai-derived SaturnBotnet variant targeting Linux x86 devices via Huawei, GPON, and JAWS RCE exploits"
         author = "Serhii Kocherhan"
         date = "2026-09-02"
-        yarahub_author_twitter = @skocherhan
+        yarahub_author_twitter = "@skocherhan"
         yarahub_uuid = "2d8f1594-c263-4615-9d5e-d1a9399d6372"
         yarahub_license = "CC0 1.0"
         yarahub_rule_matching_tlp = "TLP:WHITE"

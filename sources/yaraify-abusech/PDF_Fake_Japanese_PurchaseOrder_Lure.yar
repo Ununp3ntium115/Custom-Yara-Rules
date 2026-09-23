@@ -3,7 +3,7 @@ rule PDF_Fake_Japanese_PurchaseOrder_Lure {
         description = "Detects fake Japanese purchase order PDF lure files containing specific localized title bar strings and Adobe Acrobat update errors"
         author = "Serhii Kocherhan"
         date = "2026-09-03"
-        yarahub_twitter = @skocherhan
+        yarahub_twitter = "@skocherhan"
         yarahub_uuid = "23288f42-77da-4374-9d9b-2707714d505e"
         yarahub_license = "CC0 1.0"
         yarahub_rule_matching_tlp = "TLP:WHITE"
