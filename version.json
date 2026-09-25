@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-24 03:00:43",
+  "updated": "2026-09-25 12:27:30",
   "total_rules": "12400",
   "vql_artifacts": "31",
-  "vendored_engine_filter": {"rules_before": 12400, "rules_after": 10774, "source_sha256": "4a3e63a5730f8a8b9bf6316f647b15c656e09c07da7d930860be6d17f46dad56", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
+  "vendored_engine_filter": {"rules_before": 12400, "rules_after": 10774, "source_sha256": "74a83ccf48f8857553547f6741b3376ae6e119aa40b4ba7615cefb059246e02e", "rules_dropped": 1626, "imports_dropped": ["dotnet"], "passes": 3, "engine": "vendored static libyara (--without-crypto --disable-dotnet)"},
   "sources": {
     "yara_forge": {
       "url": "https://yarahq.github.io/",
@@ -24,7 +24,7 @@
     },
     "yaraify_abusech": {
       "url": "https://yaraify.abuse.ch/yarahub/",
-      "rule_count": "875",
+      "rule_count": "877",
       "description": "YARAhub community rules (TLP:WHITE)"
     },
     "detectraptor": {
