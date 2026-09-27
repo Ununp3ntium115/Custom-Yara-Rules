@@ -12,16 +12,36 @@ rule HUNT_NET_Loader_BitmapStego_LateBindingInvoke
         yarahub_rule_matching_tlp = "TLP:WHITE"
         yarahub_rule_sharing_tlp  = "TLP:WHITE"
     strings:
-        $lb1 = "LateBinding" ascii fullword
-        $lb2 = "LateCall" ascii fullword
-        $r1  = "GetExportedTypes" ascii fullword
-        $r2  = "GetMethods" ascii fullword
-        $res = "ComponentResourceManager" ascii fullword
-        $px1 = "GetPixel" ascii fullword
-        $px2 = "LockBits" ascii fullword
-        $inv = "Invoke" wide fullword
+        // step 1: where the image comes from
+        $src1 = "ComponentResourceManager" ascii fullword
+        $src2 = "ResourceManager" ascii fullword
+        $src3 = "GetManifestResourceStream" ascii fullword
+        $src4 = "FromStream" ascii fullword
+        // step 2: reading pixels, slow path and fast path
+        $gp   = "GetPixel" ascii fullword
+        $cr   = "get_R" ascii fullword
+        $cg   = "get_G" ascii fullword
+        $cb   = "get_B" ascii fullword
+        $lk   = "LockBits" ascii fullword
+        $scan = "get_Scan0" ascii fullword
+        // step 3: loading bytes as code
+        $load = "Load" ascii fullword
+        // step 4: finding and calling the entry
+        $rf1  = "GetExportedTypes" ascii fullword
+        $rf2  = "GetTypes" ascii fullword
+        $rf3  = "GetMethods" ascii fullword
+        $rf4  = "GetMethod" ascii fullword
+        $rf5  = "get_EntryPoint" ascii fullword
+        $iv1  = "Invoke" ascii fullword
+        $iv2  = "Invoke" wide fullword
+        $iv3  = "InvokeMember" ascii fullword
+        $iv4  = "LateCall" ascii fullword
+        $iv5  = "CreateInstance" ascii fullword
     condition:
-        dotnet.is_dotnet and
-        for any r in dotnet.assembly_refs : ( r.name == "Microsoft.VisualBasic" ) and
-        all of ($lb*) and all of ($r*) and $res and $inv and any of ($px*)
+        dotnet.is_dotnet and filesize < 15MB and
+        any of ($src*) and
+        (($gp and 2 of ($c*)) or ($lk and $scan)) and
+        $load and
+        any of ($rf*) and
+        any of ($iv*)
 }
