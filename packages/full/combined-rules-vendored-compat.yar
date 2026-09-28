@@ -1,5 +1,5 @@
 // Velociraptor Claw Edition - Combined YARA Rules
-// Generated: 2026-09-27 03:00:57
+// Generated: 2026-09-28 14:28:17
 // Sources: YARA Forge, Citizen Lab, macOS-Specific, Awesome-YARA, YARAify/abuse.ch, DetectRaptor, GlasswormYARA
 
 // ========== YARA Forge Rules ==========
@@ -372549,85 +372549,6 @@ rule SIGNATURE_BASE_Poseidongroup_Maldoc_2 : FILE
 // See yara-rules/source-manifest.json for provenance and reasons.
 
 // ========== DetectRaptor (mgreen27) Rules ==========
-rule RUSSIANPANDA_Meduzastealer : FILE
-{
-	meta:
-		description = "Detects MeduzaStealer 1-2024"
-		author = "RussianPanda"
-		id = "6bc4c048-a32d-5a9c-b213-980c64d08d29"
-		date = "2024-01-01"
-		modified = "2024-01-01"
-		reference = "https://russianpanda.com/2023/06/28/Meduza-Stealer-or-The-Return-of-The-Infamous-Aurora-Stealer/"
-		source_url = "https://github.com/RussianPanda95/Yara-Rules/blob/790ec6378c8e8262a673603ef0172bedf0967d58/MeduzaStealer/MeduzaStealer_1-1-2024.yar#L1-L16"
-		license_url = "N/A"
-		logic_hash = "0547e51abd04302c45f1319bc21046ade019bc98eb85d9cba67cb2109ff642eb"
-		score = 75
-		quality = 83
-		tags = "FILE"
-
-	strings:
-		$s1 = {41 70 70 44 61 74 61 5c 4c 6f 63 61 6c 5c 54 65 6d 70 5c 57 69 6e 55 70 64 61 74 65 2e 65 78 65}
-		$s2 = {0f 57 ?? ?? ?? 00 00 66 0f 7f 85 ?? ?? 00 00}
-		$s3 = {48 8d 15 ?? ?? 05 00 49 8b cf}
-		$s4 = {48 8d 0d ?? ?? 06 00 ff 15 ?? ?? 06 00}
-
-	condition:
-		3 of ( $s* ) and filesize < 1MB
-}
-rule SEKOIA_Crime_Sload_Vbs_Downloader_Strings_2 : FILE
-{
-	meta:
-		description = "Detects an sLoad downloader based on strings"
-		author = "Sekoia.io"
-		id = "77ff0d21-9249-43b2-9a6d-87988a2dec3b"
-		date = "2022-08-02"
-		modified = "2024-12-19"
-		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/crime_sload_vbs_downloader_strings_2.yar#L1-L17"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
-		logic_hash = "06e4fcb6c48078c6c44d779820fc901b0f335b9495097ed28206826a959d0712"
-		score = 75
-		quality = 80
-		tags = "FILE"
-		version = "1.0"
-		classification = "TLP:CLEAR"
-
-	strings:
-		$ = "On Error Resume Next"
-		$ = {0A [4] 3D 41 72 72 61 79}
-		$ = { 2E 50 61 74 74 65 72 6E 20 3D 20 22 28 [4-10] 7C [4-10] 7C [4-10] 7C [4-10] 7C [4-10] 7C [4-10] 7C [4-10] 7C }
-
-	condition:
-		all of them and filesize < 20KB
-}
-rule SEKOIA_Apt_Luckymouse_Sysupdate_Removing_Tool : FILE
-{
-	meta:
-		description = "Detects the SysUpdate removing tool"
-		author = "Sekoia.io"
-		id = "711d059c-6229-49ef-aa20-a04d505838dc"
-		date = "2022-08-03"
-		modified = "2024-12-19"
-		reference = "https://github.com/SEKOIA-IO/Community"
-		source_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/yara_rules/apt_luckymouse_sysupdate_removing_tool.yar#L1-L18"
-		license_url = "https://github.com/SEKOIA-IO/Community/blob/fa3a9630ef9ce484fb1b945480a43f989e6865d4/LICENSE.md"
-		logic_hash = "6a23fac99f26f4b0f9099e435ad53d9e83bf1322d190c565abf0c06dceeeaf34"
-		score = 75
-		quality = 80
-		tags = "FILE"
-		version = "1.0"
-		classification = "TLP:CLEAR"
-
-	strings:
-		$ = "KsWAYYYXXsFUCK" wide
-		$ = "remove Services:%s %d" wide
-		$ = "remove dir:%s %d" wide
-		$ = "remove reg %d" wide
-
-	condition:
-		uint16be( 0 ) == 0x4d5a and filesize < 11MB and 2 of them
-}
-
 rule GLASSWORM_KNOWN_HASHES_ATTACHED_LIST
 {
     meta:

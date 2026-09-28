@@ -22,9 +22,6 @@ rule PhantomStealerV4
         
     strings:
         $a = "PhantomStealer4"
-        $b = "PhantomStealer4.Passwords"
-        $c = "PhantomStealer4.Network"
-        $d = "PhantomStealer4.Targets"
     condition:
-        uint16(0) == 0x5A4D and $a and $b and $c and $d
+        uint16(0) == 0x5A4D and $a
 }
