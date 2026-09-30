@@ -145,7 +145,7 @@ impl ThorScanner {
             
             if self.redb_hook.is_some() {
                 cmd.arg("--redb-optimized");
-                log::info("🔧 ReDB optimization enabled for scan");
+                log::info!("🔧 ReDB optimization enabled for scan");
             }
         }
 
@@ -181,7 +181,7 @@ impl ThorScanner {
             .context("Failed to parse Thor output as JSON")?;
 
         // Save results to file
-        fs::write(output_path, &stdout).await
+        fs::write(output_path, stdout.as_bytes()).await
             .context("Failed to write scan results")?;
 
         if self.enterprise_mode {

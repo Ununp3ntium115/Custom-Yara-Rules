@@ -1,0 +1,81 @@
+# Builds the pyro-thor CLI for Apple Silicon (aarch64-apple-darwin), Intel
+# (x86_64-apple-darwin) and a universal lipo'd binary on a GitHub-hosted
+# Apple Silicon runner, so no local Xcode / Apple Silicon Mac is needed.
+#
+# Only runs when the Rust code changes; the scheduled YARA package sync
+# (packages/, sources/, vql-artifacts/, detection-data/) does not trigger it.
+name: Build macOS (arm64 + universal)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'Cargo.toml'
+      - 'build.rs'
+      - 'Makefile'
+      - '.github/workflows/build-macos.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'Cargo.toml'
+      - 'build.rs'
+      - 'Makefile'
+      - '.github/workflows/build-macos.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: pyro-thor (arm64, x86_64, universal)
+    runs-on: macos-latest   # Apple Silicon
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust targets
+        run: |
+          rustup update stable --no-self-update
+          rustup target add aarch64-apple-darwin x86_64-apple-darwin
+          echo "Host: $(uname -m)"; rustc --version
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: cargo-macos-${{ hashFiles('Cargo.toml') }}
+          restore-keys: cargo-macos-
+
+      - name: Test (native arm64)
+        run: cargo test --target aarch64-apple-darwin
+
+      - name: Build universal binary
+        run: make macos-universal
+
+      - name: Verify slices
+        run: |
+          set -euo pipefail
+          U=target/universal-apple-darwin/release/pyro-thor
+          ARCHS="$(lipo -archs "$U")"; echo "universal: $ARCHS"
+          for A in arm64 x86_64; do echo "$ARCHS" | tr ' ' '\n' | grep -qx "$A"; done
+          target/aarch64-apple-darwin/release/pyro-thor --help >/dev/null
+          echo "arm64 binary runs natively"
+
+      - name: Stage artifacts
+        run: |
+          mkdir -p dist
+          cp target/aarch64-apple-darwin/release/pyro-thor   dist/pyro-thor-macos-arm64
+          cp target/x86_64-apple-darwin/release/pyro-thor    dist/pyro-thor-macos-x86_64
+          cp target/universal-apple-darwin/release/pyro-thor dist/pyro-thor-macos-universal
+          codesign --force --sign - dist/pyro-thor-macos-*
+          (cd dist && shasum -a 256 pyro-thor-macos-* > SHA256SUMS && cat SHA256SUMS)
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pyro-thor-macos
+          path: dist/
+          retention-days: 30
