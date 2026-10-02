@@ -20,7 +20,8 @@ rule gafgyt_langflow_sbox_cipher
         $sbox = { 0d b4 5b 02 a9 50 f7 9e 45 ec 93 3a e1 88 2f d6 7d 24 cb 72 19 c0 67 0e }
 
         // 16-byte cipher key: DEADBEEF CAFEBABE E0A4CBD6 BADC0DE5 (little-endian dwords).
-        // 0xE0A4CBD6 is also the PRGA/LCG init seed. Actor-unique, cross-arch.
+        // 0xE0A4CBD6 is also the PRGA/LCG init seed. Cross-arch, but not
+        // actor-unique: corroboration only (see condition).
         $key = { ef be ad de be ba fe ca d6 cb a4 e0 e5 0d dc ba }
 
         // sockaddr_in for the C2: AF_INET (0x0002) + port 1337 (htons -> 39 05).
@@ -29,10 +30,12 @@ rule gafgyt_langflow_sbox_cipher
         $c2_ip = "184.174.96.191"
 
     condition:
+        // Revised 2026-08-10: $key is not actor-unique (seen in unrelated
+        // builds), so it only corroborates the C2 address. $sbox stands alone.
         uint32(0) == 0x464c457f and
         (
             $sbox or
-            $key or
-            ($sockaddr_c2 and $c2_ip)
+            ($sockaddr_c2 and $c2_ip) or
+            ($key and $c2_ip)
         )
 }
