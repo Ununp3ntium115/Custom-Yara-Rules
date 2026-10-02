@@ -1,5 +1,5 @@
 use anyhow::{Context, Result};
-use redb::{Database, ReadableTable, TableDefinition};
+use redb::{Database, ReadableTable, ReadableTableMetadata, TableDefinition};
 use serde::{Deserialize, Serialize};
 use std::path::Path;
 use tokio::fs;
@@ -109,7 +109,7 @@ impl YaraRulesRedbHook {
             let mut table = write_txn.open_table(YARA_RULES_TABLE)
                 .context("Failed to open YARA rules table")?;
             
-            table.insert(&rule.id, rule_data.as_slice())
+            table.insert(&rule.id.as_str(), rule_data.as_slice())
                 .context("Failed to insert YARA rule")?;
         }
         
@@ -169,7 +169,7 @@ impl YaraRulesRedbHook {
             let mut table = write_txn.open_table(RULE_METADATA_TABLE)
                 .context("Failed to open rule metadata table")?;
             
-            table.insert(&metadata.rule_id, metadata_data.as_slice())
+            table.insert(&metadata.rule_id.as_str(), metadata_data.as_slice())
                 .context("Failed to insert rule metadata")?;
         }
         
@@ -210,7 +210,7 @@ impl YaraRulesRedbHook {
             let mut table = write_txn.open_table(THREAT_INTEL_TABLE)
                 .context("Failed to open threat intel table")?;
             
-            table.insert(&indicator.id, intel_data.as_slice())
+            table.insert(&indicator.id.as_str(), intel_data.as_slice())
                 .context("Failed to insert threat intel indicator")?;
         }
         
@@ -293,7 +293,7 @@ impl YaraRulesRedbHook {
             }
             
             for key in keys_to_remove {
-                table.remove(&key)?;
+                table.remove(key.as_str())?;
                 removed_count += 1;
             }
         }
@@ -360,6 +360,7 @@ pub async fn sync_yara_rules_from_directory(
             
             let content = fs::read_to_string(&path).await
                 .context("Failed to read YARA rule file")?;
+            let hash = format!("{:x}", md5::compute(&content));
             
             let rule = YaraRule {
                 id: uuid::Uuid::new_v4().to_string(),
@@ -375,7 +376,7 @@ pub async fn sync_yara_rules_from_directory(
                 created_at: chrono::Utc::now(),
                 updated_at: chrono::Utc::now(),
                 version: "1.0".to_string(),
-                hash: format!("{:x}", md5::compute(&content)),
+                hash,
                 source: path.to_string_lossy().to_string(),
                 mitre_tactics: vec![],
                 mitre_techniques: vec![],
